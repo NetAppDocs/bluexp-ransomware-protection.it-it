@@ -1,0 +1,16 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: The BlueXP ransomware protection service enables you to view relevant information about cybersecurity and assess how resilient your data is to a cyber attack. 
+summary: Il servizio di protezione ransomware BlueXP consente di visualizzare informazioni rilevanti sulla cybersecurity e valutare la resilienza dei dati in caso di attacco informatico. 
+---
+= Documentazione sulla protezione ransomware BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

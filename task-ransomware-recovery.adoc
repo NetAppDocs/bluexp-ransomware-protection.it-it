@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: task-ransomware-recovery.html 
+keywords: ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, recovery 
+summary: 'Il ransomware Recover Dashboard offre opzioni per il recupero dei dati che potrebbero essere stati infettati dal ransomware. In questo modo è possibile eseguire il backup e l"esecuzione dei sistemi in modo molto rapido.' 
+---
+= Ripristino da un attacco ransomware
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La dashboard di recupero per la protezione ransomware di BlueXP offre opzioni per il ripristino dei dati che potrebbero essere stati infettati dal ransomware. In questo modo è possibile eseguire il backup e l'esecuzione dei sistemi in modo molto rapido.
+
+Se il pannello ransomware Incidents (incidenti ransomware) nella dashboard di protezione ransomware di BlueXP indica che uno o più volumi sono stati infettati dal ransomware, fare clic sul pulsante *Recover* (Ripristina) per tentare di risolvere il problema.
+
+A questo punto, la dashboard di ripristino ransomware consente di sostituire il volume infetto con una copia Snapshot che non è stata interessata dal ransomware.
+
+.Fasi
+. Dal pannello ransomware Incidents (incidenti ransomware), fare clic su *Recover* (Ripristina) per un volume che è stato infettato dal ransomware.
++
+Il dashboard di ripristino ransomware visualizza il nome del volume.
+
++
+image:screenshot_ransomware_recovery_dashboard.png["Una schermata della dashboard di ripristino della protezione ransomware di BlueXP."]
+
+. Fare clic su *Display Snapshots* (Visualizza snapshot) per visualizzare l'elenco delle snapshot disponibili per il volume.
++
+image:screenshot_ransomware_recovery_select_snap.png["Una schermata delle copie Snapshot disponibili per ripristinare il volume corrotto."]
+
+. Selezionare uno snapshot privo di dati crittografati e fare clic su *Recover* (Ripristina).
+. Nella finestra di dialogo "Recover data from selected snapshot" (Ripristina dati da snapshot selezionato), fare clic su *Yes* (Sì) per ripristinare i dati dall'istantanea.
++
+È possibile visualizzare lo stato di ripristino dello snapshot e vedere quando lo snapshot ha ripristinato il volume corrotto.
+
++
+image:screenshot_ransomware_recovery_snap_complete.png["Una schermata che mostra che lo snapshot ha ripristinato il volume corrotto."]
+
+
+
+.Risultato
+Il volume corrotto è stato ripristinato utilizzando uno snapshot creato in passato.
+
+Se l'operazione di ripristino è stata eseguita da uno snapshot che non era quello più recente, dopo il ripristino, tutti gli snapshot più recenti verranno cancellati dal sistema ONTAP perché si sospetta che siano corrotti (come mostrato nella schermata precedente).

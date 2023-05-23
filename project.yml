@@ -1,0 +1,80 @@
+---
+settings:
+  name: BlueXP ransomware protection
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: it-it,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
+sidebar:
+  entries:
+  - title: Documenti sulla protezione ransomware BlueXP
+    url: "/index.html"
+  - title: Note di rilascio
+    url: "/whats-new.html"
+  - title: Inizia subito
+    entries:
+    - title: Scopri di più sulla protezione ransomware di BlueXP
+      url: "/concept-ransomware-protection.html"
+    - title: Monitorare gli avvisi ransomware nel Centro notifiche
+      url: "/task-monitor-ransomware-alerts.html"
+  - title: Utilizzare la protezione ransomware BlueXP
+    entries:
+    - title: Gestisci i consigli sulla sicurezza informatica per i tuoi dati
+      url: "/task-analyze-ransomware-data.html"
+    - title: Gestisci le policy dei dati business-critical
+      url: "/task-select-business-critical-policies.html"
+    - title: Ripristino da un attacco ransomware
+      url: "/task-ransomware-recovery.html"
+  - title: Conoscenza e supporto
+    entries:
+    - title: Registrati per ricevere assistenza
+      url: "/task-support-registration.html"
+    - title: Richiedi assistenza
+      url: "/task-get-help.html"
+  - title: Note legali
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: Inizia subito
+    links:
+    - title: Scopri di più sulla protezione ransomware di BlueXP
+      url: concept-ransomware-protection.html
+    - title: Novità
+      url: whats-new.html
+  - title: Gestisci i consigli sulla cyber sicurezza
+    links:
+    - title: Visualizza i principali repository di dati in base alla sensibilità dei
+        dati
+      url: task-analyze-ransomware-data.html#top-data-repositories-by-data-sensitivity
+    - title: Visualizzare gli utenti aggiunti ai gruppi di amministratori di dominio
+      url: task-analyze-ransomware-data.html#domain-administrator-group-control
+    - title: Visualizzare i dati elencati in base alle autorizzazioni aperte
+      url: task-analyze-ransomware-data.html#data-listed-by-types-of-open-permissions
+    - title: Visualizzare i dati elencati in base ai file crittografati
+      url: task-analyze-ransomware-data.html#data-listed-by-encrypted-files
+    - title: Scopri in che modo i tuoi sistemi ONTAP sono protetti dal ransomware
+      url: task-analyze-ransomware-data.html#status-of-ontap-systems-hardening
+    - title: Seleziona le policy per i dati business-critical
+      url: task-select-business-critical-policies.html
+  - title: Ripristino da un attacco ransomware
+    links:
+    - title: Recuperare i dati dopo un attacco ransomware
+      url: task-ransomware-recovery.html
+  - title: Blog e community
+    links:
+    - title: Community NetApp
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: Casi d'utilizzo di BlueXP ransomware Protection
+      url: https://bluexp.netapp.com/ransomware-protection
+    - title: Blog BlueXP
+      url: https://bluexp.netapp.com/blog
+    - title: Webinar sul cloud
+      url: https://bluexp.netapp.com/events
+product-family:
+  name: BlueXP
+  repo: cloud-manager-family
+  sidebar_label: Tutta la documentazione BlueXP
