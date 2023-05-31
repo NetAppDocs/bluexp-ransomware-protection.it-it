@@ -2,22 +2,22 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cloud-manager-ransomware | NetApp Documentation</title>
-    <atom:link href="https://docs.netapp.com/it-it/cloud-manager-ransomware/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>https://docs.netapp.com/it-it/cloud-manager-ransomware</link>
+    <title>bluexp-ransomware-protection | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/it-it/bluexp-ransomware-protection/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/it-it/bluexp-ransomware-protection</link>
     <description>The latest updates from NetApp Documentation</description>
     <language>it-it</language>
     <ttl>60</ttl>
-    <pubDate>Wed, 24 May 2023 08:37:56 +0000</pubDate>
-    <lastBuildDate>Wed, 24 May 2023 08:37:56 +0000</lastBuildDate>
+    <pubDate>Wed, 31 May 2023 15:08:24 +0000</pubDate>
+    <lastBuildDate>Wed, 31 May 2023 15:08:24 +0000</lastBuildDate>
     
     
     
     <item>
-      <title>Novità della protezione ransomware di BlueXP (23 May 2023)</title>
-      <pubDate>Tue, 23 May 2023 21:32:47 +0000</pubDate>
-      <link>https://docs.netapp.com/it-it/cloud-manager-ransomware/whats-new.html?time=1684877567</link>
-      <guid isPermaLink="false">Tue, 23 May 2023 21:32:47 +0000</guid>
+      <title>Novità della protezione ransomware di BlueXP (31 May 2023)</title>
+      <pubDate>Wed, 31 May 2023 15:02:00 +0000</pubDate>
+      <link>https://docs.netapp.com/it-it/bluexp-ransomware-protection/whats-new.html?time=1685545320</link>
+      <guid isPermaLink="false">Wed, 31 May 2023 15:02:00 +0000</guid>
       <description><![CDATA[ Scopri le novità di BlueXP ransomware Protection. ]]></description>
     </item>
     
