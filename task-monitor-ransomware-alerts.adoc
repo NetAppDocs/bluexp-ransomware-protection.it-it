@@ -27,4 +27,4 @@ Per impostazione predefinita, BlueXP account Admins riceverà e-mail per tutti g
 
 Selezionare il tipo di notifica "critico" per ricevere gli avvisi e-mail di protezione ransomware BlueXP.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Scopri di più sul Centro notifiche"^] e come inviare e-mail di avviso per gli incidenti di protezione ransomware.
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Scopri di più sul Centro notifiche"^] e come inviare e-mail di avviso per gli incidenti di protezione ransomware.

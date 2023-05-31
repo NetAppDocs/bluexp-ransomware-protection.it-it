@@ -28,9 +28,9 @@ TIP: Il servizio di protezione ransomware BlueXP è attualmente un'offerta Beta.
 La protezione ransomware di BlueXP offre un singolo punto di visibilità e controllo per gestire e perfezionare la sicurezza dei dati in vari ambienti di lavoro e livelli dell'infrastruttura per rispondere meglio alle minacce quando si verificano. Attualmente, offre diverse funzionalità che possono aiutarti a proteggere il tuo cyberstorage. Le funzionalità attuali identificano quando:
 
 * I volumi nei tuoi ambienti di lavoro non vengono protetti eseguendo copie Snapshot periodiche.
-* I volumi nei tuoi ambienti di lavoro non vengono protetti creando backup nel cloud utilizzando https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup e ripristino BlueXP"^].
+* I volumi nei tuoi ambienti di lavoro non vengono protetti creando backup nel cloud utilizzando https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Backup e ripristino BlueXP"^].
 * I volumi negli ambienti di lavoro sono protetti da modifiche ed eliminazioni sullo storage WORM grazie alla tecnologia ONTAP SnapLock. https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html["Scopri di più su SnapLock"^].
-* I dati negli ambienti di lavoro e nelle origini dati non vengono sottoposti a scansione https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Classificazione BlueXP"^] identificare i problemi di conformità e privacy e individuare opportunità di ottimizzazione.
+* I dati negli ambienti di lavoro e nelle origini dati non vengono sottoposti a scansione https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Classificazione BlueXP"^] identificare i problemi di conformità e privacy e individuare opportunità di ottimizzazione.
 +
 Questa funzionalità è importante anche dal punto di vista della protezione ransomware, perché consente di comprendere meglio dove si trovano i dati importanti (sensibili e business-critical), in modo da poter essere sicuri di concentrare il tuo impegno in materia di protezione.
 
@@ -59,13 +59,13 @@ Le funzionalità anti-ransomware di ONTAP rilevano e avvisano in modo proattivo 
 
 link:task-analyze-ransomware-data.html["Scopri come visualizzare questi potenziali problemi nella dashboard di protezione ransomware di BlueXP."]
 
-Quando si utilizzano sistemi Cloud Volumes ONTAP, sono disponibili alcune protezioni ransomware aggiuntive che è possibile implementare direttamente dall'ambiente di lavoro. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-protecting-ransomware.html["Scopri come aggiungere ulteriore protezione contro ransomware"^].
+Quando si utilizzano sistemi Cloud Volumes ONTAP, sono disponibili alcune protezioni ransomware aggiuntive che è possibile implementare direttamente dall'ambiente di lavoro. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Scopri come aggiungere ulteriore protezione contro ransomware"^].
 
 
 
 == Ambienti di lavoro e origini dati supportati
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Classificazione BlueXP"^] È un prerequisito per l'utilizzo del servizio di protezione ransomware BlueXP. Dopo aver installato e attivato la classificazione BlueXP, è possibile utilizzare la protezione ransomware BlueXP per verificare la resilienza dei dati in caso di attacco informatico ai seguenti tipi di ambienti di lavoro e origini dati:
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Classificazione BlueXP"^] È un prerequisito per l'utilizzo del servizio di protezione ransomware BlueXP. Dopo aver installato e attivato la classificazione BlueXP, è possibile utilizzare la protezione ransomware BlueXP per verificare la resilienza dei dati in caso di attacco informatico ai seguenti tipi di ambienti di lavoro e origini dati:
 
 *Ambienti di lavoro:*
 
@@ -86,7 +86,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.
 * Account Google Drive
 
 
-La protezione ransomware di BlueXP monitora anche la configurazione globale di Active Directory, se disponibile https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["Configurato nella classificazione BlueXP"^].
+La protezione ransomware di BlueXP monitora anche la configurazione globale di Active Directory, se disponibile https://docs.netapp.com/us-en/bluexp-classification/task-add-active-directory-datasense.html["Configurato nella classificazione BlueXP"^].
 
 
 

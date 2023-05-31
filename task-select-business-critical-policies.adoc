@@ -27,7 +27,7 @@ Gli altri pannelli che utilizzano le policy definite come critiche includono:
 
 image:screenshot_critical_data_policies.png["Una schermata che mostra la pagina dati business-critical con una policy selezionata come business-critical."]
 
-La pagina dati business-critical visualizza tutte le policy definite nella classificazione BlueXP. Sono inclusi tutti i criteri predefiniti e tutti i criteri personalizzati creati dall'organizzazione. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html["Scopri di più sulle policy di classificazione di BlueXP"^].
+La pagina dati business-critical visualizza tutte le policy definite nella classificazione BlueXP. Sono inclusi tutti i criteri predefiniti e tutti i criteri personalizzati creati dall'organizzazione. https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["Scopri di più sulle policy di classificazione di BlueXP"^].
 
 
 
@@ -45,9 +45,9 @@ In questa pagina è possibile ordinare, filtrare e cercare criteri specifici per
 
 == Gestire le policy
 
-Fare clic su *Create policy* (Crea policy) per creare nuove policy che identificano i dati business-critical. Questa azione consente di accedere alla pagina di analisi della classificazione di BlueXP, in modo da poter creare il criterio. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#creating-custom-policies["Scopri di più sulla creazione di policy"^].
+Fare clic su *Create policy* (Crea policy) per creare nuove policy che identificano i dati business-critical. Questa azione consente di accedere alla pagina di analisi della classificazione di BlueXP, in modo da poter creare il criterio. https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#creating-custom-policies["Scopri di più sulla creazione di policy"^].
 
-Fare clic su image:screenshot_horizontal_more_button.gif["pulsante a tre punti"]> *Modifica query* per un criterio esistente se si desidera modificare il criterio. Viene visualizzata la pagina di analisi della classificazione BlueXP, che consente di personalizzare i risultati utilizzando filtri aggiuntivi per la policy. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#editing-policies["Scopri di più sulla modifica delle policy"^].
+Fare clic su image:screenshot_horizontal_more_button.gif["pulsante a tre punti"]> *Modifica query* per un criterio esistente se si desidera modificare il criterio. Viene visualizzata la pagina di analisi della classificazione BlueXP, che consente di personalizzare i risultati utilizzando filtri aggiuntivi per la policy. https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#editing-policies["Scopri di più sulla modifica delle policy"^].
 
 image:screenshot_add_edit_critical_data_policies.png["Una schermata che mostra il pulsante create policy (Crea policy) e il pulsante Edit policy (Modifica policy) per creare e modificare policy."]
 

@@ -28,7 +28,7 @@ Scopri le novità di BlueXP ransomware Protection.
 * Una nuova azione consigliata per "attivare le configurazioni di cyberstorage per le origini dati" identifica se le funzionalità Six ONTAP che aiutano a proteggere i dati sono attivate o disattivate. È necessario abilitare queste funzionalità su tutti i sistemi ONTAP e Cloud Volumes ONTAP on-premise.
 
 
-https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions["Consulta l'elenco di tutte le azioni consigliate"].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#list-of-recommended-actions["Consulta l'elenco di tutte le azioni consigliate"].
 
 
 
@@ -38,7 +38,7 @@ https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-d
 
 === È stata aggiunta una nuova dashboard di ripristino ransomware per aiutare a ripristinare il sistema da un attacco
 
-La dashboard di ripristino ransomware offre opzioni per il ripristino dei dati che potrebbero essere stati infettati dal ransomware. In questo modo è possibile eseguire il backup e l'esecuzione dei sistemi in modo molto rapido. A questo punto, l'azione di ripristino consente di sostituire un volume corrotto con una copia Snapshot che non è stata interessata dal ransomware. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-ransomware-recovery.html["Scopri di più"].
+La dashboard di ripristino ransomware offre opzioni per il ripristino dei dati che potrebbero essere stati infettati dal ransomware. In questo modo è possibile eseguire il backup e l'esecuzione dei sistemi in modo molto rapido. A questo punto, l'azione di ripristino consente di sostituire un volume corrotto con una copia Snapshot che non è stata interessata dal ransomware. https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-ransomware-recovery.html["Scopri di più"].
 
 
 
@@ -52,7 +52,7 @@ Una nuova pagina per i dati business-critical è stata aggiunta alla protezione 
 
 Se non è stata attivata una di queste policy per il servizio di protezione ransomware BlueXP, nel pannello delle azioni consigliate viene visualizzata una nuova azione denominata "Configura i dati business-critical".
 
-https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-critical-policies.html["Scopri di più sulla pagina dati business-critical"^].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-select-business-critical-policies.html["Scopri di più sulla pagina dati business-critical"^].
 
 
 
@@ -68,7 +68,7 @@ Ora puoi accedere a questo servizio dal menu di navigazione a sinistra di BlueXP
 
 === È stato aggiunto il supporto per ricevere avvisi di protezione ransomware BlueXP tramite e-mail e nel Centro notifiche
 
-La protezione ransomware BlueXP è stata integrata nel servizio di notifica BlueXP. È possibile visualizzare le notifiche di protezione ransomware di BlueXP facendo clic sulla campana di notifica nella barra dei menu di BlueXP. È inoltre possibile configurare BlueXP per inviare notifiche via email come avvisi, in modo da essere informati di importanti attività del sistema anche quando non si è connessi al sistema. L'e-mail può essere inviata a tutti i destinatari che devono essere a conoscenza degli avvisi ransomware. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-monitor-ransomware-alerts.html["Scopri come"].
+La protezione ransomware BlueXP è stata integrata nel servizio di notifica BlueXP. È possibile visualizzare le notifiche di protezione ransomware di BlueXP facendo clic sulla campana di notifica nella barra dei menu di BlueXP. È inoltre possibile configurare BlueXP per inviare notifiche via email come avvisi, in modo da essere informati di importanti attività del sistema anche quando non si è connessi al sistema. L'e-mail può essere inviata a tutti i destinatari che devono essere a conoscenza degli avvisi ransomware. https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-monitor-ransomware-alerts.html["Scopri come"].
 
 
 
@@ -84,7 +84,7 @@ Vengono ora visualizzate due nuove azioni consigliate per i seguenti problemi di
 * _Patch X CVE aperte in Y origini dati_ - i CVE senza patch sono stati trovati nei sistemi ONTAP
 
 
-È possibile selezionare queste azioni nell'interfaccia utente e seguire il flusso di lavoro per risolvere i problemi sottostanti. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions["Consulta l'elenco di tutte le azioni consigliate"].
+È possibile selezionare queste azioni nell'interfaccia utente e seguire il flusso di lavoro per risolvere i problemi sottostanti. https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#list-of-recommended-actions["Consulta l'elenco di tutte le azioni consigliate"].
 
 
 
@@ -94,7 +94,7 @@ Vengono ora visualizzate due nuove azioni consigliate per i seguenti problemi di
 
 === Nuovi pannelli per visualizzare il punteggio complessivo di protezione ransomware e le azioni consigliate
 
-Il pannello _ransomware Protection Score_ mostra il punteggio complessivo e le aree di cybersicurezza in cui esistono potenziali problemi. Il pannello _Recommended Actions_ elenca le potenziali azioni che puoi intraprendere per migliorare la tua resilienza a un attacco ransomware e fornisce un link per indagare sui problemi in modo da poter applicare le azioni laddove necessario. Questi due nuovi pannelli lavorano insieme per identificare la resilienza dei dati a un attacco ransomware e le azioni da eseguire per migliorare il tuo punteggio. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["Scopri di più qui"^].
+Il pannello _ransomware Protection Score_ mostra il punteggio complessivo e le aree di cybersicurezza in cui esistono potenziali problemi. Il pannello _Recommended Actions_ elenca le potenziali azioni che puoi intraprendere per migliorare la tua resilienza a un attacco ransomware e fornisce un link per indagare sui problemi in modo da poter applicare le azioni laddove necessario. Questi due nuovi pannelli lavorano insieme per identificare la resilienza dei dati a un attacco ransomware e le azioni da eseguire per migliorare il tuo punteggio. https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["Scopri di più qui"^].
 
 
 
@@ -104,7 +104,7 @@ Il pannello _ransomware Protection Score_ mostra il punteggio complessivo e le a
 
 === Nuovo pannello per visualizzare gli incidenti ransomware rilevati sui cluster
 
-Il pannello _ransomware Incidents_ mostra gli attacchi ransomware che si sono verificati sui sistemi. Il supporto attuale è per i cluster ONTAP on-premise che eseguono la protezione ransomware autonoma (ARP). ARP utilizza l'analisi dei carichi di lavoro in ambienti NAS (NFS e SMB) per rilevare e avvisare in modo proattivo in caso di attività anomale che potrebbero indicare un attacco ransomware. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-incidents-detected-on-your-systems["Scopri di più qui"^].
+Il pannello _ransomware Incidents_ mostra gli attacchi ransomware che si sono verificati sui sistemi. Il supporto attuale è per i cluster ONTAP on-premise che eseguono la protezione ransomware autonoma (ARP). ARP utilizza l'analisi dei carichi di lavoro in ambienti NAS (NFS e SMB) per rilevare e avvisare in modo proattivo in caso di attività anomale che potrebbero indicare un attacco ransomware. https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#ransomware-incidents-detected-on-your-systems["Scopri di più qui"^].
 
 
 
@@ -114,13 +114,13 @@ Il pannello _ransomware Incidents_ mostra gli attacchi ransomware che si sono ve
 
 === Nuovo pannello per mostrare le vulnerabilità di sicurezza dei cluster
 
-Il pannello _vulnerabilità del sistema di storage_ mostra il numero totale di vulnerabilità di sicurezza alte, medie e basse rilevate dal tool di consulenza digitale BlueXP su ciascuno dei cluster ONTAP. Le vulnerabilità elevate devono essere immediatamente considerate per assicurarsi che i sistemi non siano aperti per gli attacchi. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#storage-system-vulnerabilities["Fai clic qui per ulteriori informazioni"^].
+Il pannello _vulnerabilità del sistema di storage_ mostra il numero totale di vulnerabilità di sicurezza alte, medie e basse rilevate dal tool di consulenza digitale BlueXP su ciascuno dei cluster ONTAP. Le vulnerabilità elevate devono essere immediatamente considerate per assicurarsi che i sistemi non siano aperti per gli attacchi. https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#storage-system-vulnerabilities["Fai clic qui per ulteriori informazioni"^].
 
 
 
 === Nuovo pannello per visualizzare i file digitalizzati immutabili
 
-Il pannello _critical data immutability_ mostra il numero di elementi negli ambienti di lavoro protetti da modifiche ed eliminazioni sullo storage WORM grazie alla tecnologia ONTAP SnapLock. Ciò consente di visualizzare la quantità di dati che contiene una copia immutabile, in modo da poter comprendere meglio i piani di backup e ripristino rispetto al ransomware. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#data-in-your-volumes-that-are-being-protected-using-snaplock["Fai clic qui per ulteriori informazioni"^].
+Il pannello _critical data immutability_ mostra il numero di elementi negli ambienti di lavoro protetti da modifiche ed eliminazioni sullo storage WORM grazie alla tecnologia ONTAP SnapLock. Ciò consente di visualizzare la quantità di dati che contiene una copia immutabile, in modo da poter comprendere meglio i piani di backup e ripristino rispetto al ransomware. https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#data-in-your-volumes-that-are-being-protected-using-snaplock["Fai clic qui per ulteriori informazioni"^].
 
 
 
@@ -154,10 +154,10 @@ Il pannello _protezione avanzata degli ambienti ONTAP_ fornisce ora lo stato del
 
 Un nuovo pannello _rafforzare gli ambienti ONTAP_ fornisce lo stato di alcune impostazioni nei sistemi ONTAP che monitorano la sicurezza dell'implementazione in base a. https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["Guida al rafforzamento della sicurezza di NetApp per sistemi ONTAP"^] e a. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Funzione anti-ransomware di ONTAP"^] che rileva e avvisa in modo proattivo in caso di attività anomale.
 
-Puoi rivedere i consigli e decidere come affrontare i potenziali problemi. È possibile seguire la procedura per modificare le impostazioni dei cluster, rinviare le modifiche a un'altra volta o ignorare il suggerimento. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening["Fai clic qui per ulteriori informazioni"].
+Puoi rivedere i consigli e decidere come affrontare i potenziali problemi. È possibile seguire la procedura per modificare le impostazioni dei cluster, rinviare le modifiche a un'altra volta o ignorare il suggerimento. https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening["Fai clic qui per ulteriori informazioni"].
 
 
 
 === Nuovo pannello per mostrare come vengono protette le diverse categorie di dati utilizzando il backup e ripristino BlueXP
 
-Questo nuovo pannello _Backup Status_ mostra il backup completo delle categorie di dati più importanti nel caso in cui sia necessario eseguire il ripristino a causa di un attacco ransomware. Questi dati sono una rappresentazione visiva del numero di elementi di una categoria specifica in un ambiente di cui viene eseguito il backup con il ripristino di BlueXP. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data["Fai clic qui per ulteriori informazioni"].
+Questo nuovo pannello _Backup Status_ mostra il backup completo delle categorie di dati più importanti nel caso in cui sia necessario eseguire il ripristino a causa di un attacco ransomware. Questi dati sono una rappresentazione visiva del numero di elementi di una categoria specifica in un ambiente di cui viene eseguito il backup con il ripristino di BlueXP. https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data["Fai clic qui per ulteriori informazioni"].
