@@ -1,0 +1,240 @@
+---
+sidebar: sidebar 
+permalink: rp-use-recover.html 
+keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
+summary: 'Dopo un attacco, la protezione dal ransomware di BlueXP verifica che i dati di backup sullo storage secondario siano puliti, consiglia un recovery point effettivo (RPA) e orchestra il flusso di lavoro per un recovery resistente ai crash.' 
+---
+= Ripristino in seguito a un attacco ransomware (dopo la neutralizzazione degli incidenti)
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Dopo che i carichi di lavoro sono stati contrassegnati come "pronti per il recovery", la protezione dal ransomware di BlueXP consiglia un recovery point effettivo (RPA) e orchestra il workflow per un recovery resistente ai crash.
+
+
+
+== Visualizza i carichi di lavoro pronti per il ripristino
+
+Esaminare i carichi di lavoro che si trovano nello stato di ripristino "necessario ripristino".
+
+.Fasi
+. Effettuare una delle seguenti operazioni:
++
+** Dal dashboard, esaminare i totali "Ripristina necessario" nel riquadro Avvisi e selezionare *Visualizza tutto*.
+** Dal menu, selezionare *Ripristino*.
+
+
+. Esaminare le informazioni sul carico di lavoro nella pagina *Ripristino*.
++
+image:screen-recovery.png["Pagina di ripristino"]
+
+
+
+
+
+== Ripristinare un carico di lavoro
+
+Utilizzando la protezione dal ransomware di BlueXP, l'amministratore dello storage può determinare il modo migliore per ripristinare i workload dal punto di ripristino consigliato o dal punto di ripristino preferito.
+
+L'amministratore dello storage di sicurezza può ripristinare i dati a diversi livelli:
+
+* Recovery di tutti i volumi
+* Ripristinare un'applicazione a livello di volume o di file e cartella.
+* Ripristinare una condivisione file a livello di volume, directory o file/cartella.
+* Eseguire il ripristino da un datastore a livello di macchina virtuale.
+
+
+Il processo varia leggermente a seconda del tipo di carico di lavoro.
+
+.Fasi
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Recovery*.
+. Esaminare le informazioni sul carico di lavoro nella pagina *Ripristino*.
+. Seleziona un carico di lavoro in stato "Ripristino necessario".
+. Per ripristinare, selezionare *Ripristina*.
+. *Ripristina ambito*: Selezionare il tipo di ripristino che si desidera completare:
++
+** Tutti i volumi
+** Per volume
+** Per file: È possibile specificare una cartella o singoli file da ripristinare.
++
+
+TIP: È possibile selezionare fino a 100 file o una singola cartella.
+
+
+
+. Continuare con una delle seguenti procedure a seconda che sia stata scelta l'applicazione, il volume o il file.
+
+
+
+
+=== Ripristinare tutti i volumi
+
+. Nella pagina Ripristina, nell'ambito Ripristina, selezionare *tutti i volumi*.
++
+image:screen-recovery-all-volumes.png["Pagina Ripristina da tutti i volumi"]
+
+. *Sorgente*: Selezionare la freccia verso il basso accanto a sorgente per visualizzare i dettagli.
++
+.. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+TIP: La protezione ransomware di BlueXP identifica il punto di ripristino migliore come l'ultimo backup poco prima dell'incidente e mostra un'indicazione di "più sicuro per tutti i volumi". Ciò significa che tutti i volumi verranno ripristinati in una copia prima del primo attacco sul primo volume rilevato.
+
+
+
+. *Destinazione*: Selezionare la freccia verso il basso accanto a destinazione per visualizzare i dettagli.
++
+.. Selezionare l'ambiente di lavoro.
+.. Selezionare la VM di storage.
+.. Selezionare l'aggregato.
+.. Modificare il prefisso del volume che verrà anteposto a tutti i nuovi volumi.
++
+
+TIP: Il nome del nuovo volume viene visualizzato come prefisso + nome del volume originale + nome del backup + data di backup.
+
+
+
+. Selezionare *Salva*.
+. Selezionare *Avanti*.
+. Rivedere le selezioni.
+. Selezionare *Restore* (Ripristina).
+. Dal menu superiore, selezionare *Recovery* (Ripristino) per esaminare il carico di lavoro nella pagina Recovery (Ripristino) in cui lo stato dell'operazione si sposta tra gli stati.
+
+
+
+
+=== Ripristinare un workload dell'applicazione a livello di volume
+
+. Nella pagina Ripristina, nell'ambito Ripristina, selezionare *per volume*.
++
+image:screen-recovery-byvolume.png["Ripristino per pagina del volume"]
+
+. Nell'elenco dei volumi, selezionare il volume che si desidera ripristinare.
+. *Sorgente*: Selezionare la freccia verso il basso accanto a sorgente per visualizzare i dettagli.
++
+.. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+TIP: La protezione ransomware di BlueXP identifica il punto di ripristino migliore come l'ultimo backup poco prima dell'incidente e mostra un'indicazione "consigliata".
+
+
+
+. *Destinazione*: Selezionare la freccia verso il basso accanto a destinazione per visualizzare i dettagli.
++
+.. Selezionare l'ambiente di lavoro.
+.. Selezionare la VM di storage.
+.. Selezionare l'aggregato.
+.. Rivedere il nuovo nome del volume.
++
+
+TIP: Il nome del nuovo volume viene visualizzato come nome originale del volume + nome del backup + data di backup.
+
+
+
+. Selezionare *Salva*.
+. Selezionare *Avanti*.
+. Rivedere le selezioni.
+. Selezionare *Restore* (Ripristina).
+. Dal menu superiore, selezionare *Recovery* (Ripristino) per esaminare il carico di lavoro nella pagina Recovery (Ripristino) in cui lo stato dell'operazione si sposta tra gli stati.
+
+
+
+
+=== Ripristinare un workload dell'applicazione a livello di file
+
+. Nella pagina Ripristina, nell'ambito Ripristina, selezionare *per file*.
+. Nell'elenco dei volumi, selezionare il volume che si desidera ripristinare.
+. *Sorgente*: Selezionare la freccia verso il basso accanto a sorgente per visualizzare i dettagli.
++
+.. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+TIP: La protezione ransomware di BlueXP identifica il punto di ripristino migliore come l'ultimo backup poco prima dell'incidente e mostra un'indicazione "consigliata".
+
+.. Selezionare fino a 100 file o una singola cartella da ripristinare.
+
+
+. *Destinazione*: Selezionare la freccia verso il basso accanto a destinazione per visualizzare i dettagli.
++
+.. Scegliere dove ripristinare i dati: Percorso di origine originale o percorso alternativo che è possibile specificare.
++
+
+TIP: Mentre i file o la directory originali verranno sovrascritti dai dati ripristinati, i nomi dei file e delle cartelle originali rimarranno gli stessi a meno che non si specifichino nuovi nomi.
+
+.. Selezionare l'ambiente di lavoro.
+.. Selezionare la VM di storage.
+.. Facoltativamente, immettere il percorso.
++
+
+TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristinati in un nuovo volume nella directory di livello superiore.
+
+.. Selezionare se si desidera che i nomi dei file o della directory ripristinati siano gli stessi nomi della posizione corrente o nomi diversi.
+
+
+. Selezionare *Salva*.
+. Selezionare *Avanti*.
+. Rivedere le selezioni.
+. Selezionare *Restore* (Ripristina).
+. Dal menu superiore, selezionare *Recovery* (Ripristino) per esaminare il carico di lavoro nella pagina Recovery (Ripristino) in cui lo stato dell'operazione si sposta tra gli stati.
+
+
+
+
+=== Ripristino di una condivisione di file o di un datastore a livello di volume o file
+
+. Dopo aver selezionato una condivisione di file o un archivio dati da ripristinare, nella pagina Ripristina, nell'ambito Ripristina, selezionare *per volume* o *per file*.
++
+image:screen-recovery-fileshare.png["Pagina di ripristino che mostra il ripristino della condivisione file"]
+
+. Nell'elenco dei volumi, selezionare il volume che si desidera ripristinare.
+. *Sorgente*: Selezionare la freccia verso il basso accanto a sorgente per visualizzare i dettagli.
++
+.. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+TIP: La protezione ransomware di BlueXP identifica il punto di ripristino migliore come l'ultimo backup poco prima dell'incidente e mostra un'indicazione "consigliata".
+
+
+
+. *Destinazione*: Selezionare la freccia verso il basso accanto a destinazione per visualizzare i dettagli.
++
+.. Scegliere dove ripristinare i dati: Percorso di origine originale o percorso alternativo che è possibile specificare.
++
+
+TIP: Mentre i file o la directory originali verranno sovrascritti dai dati ripristinati, i nomi dei file e delle cartelle originali rimarranno gli stessi a meno che non si specifichino nuovi nomi.
+
+.. Selezionare l'ambiente di lavoro.
+.. Selezionare la VM di storage.
+.. Facoltativamente, immettere il percorso.
++
+
+TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristinati in un nuovo volume nella directory di livello superiore.
+
+
+
+. Selezionare *Salva*.
+. Rivedere le selezioni.
+. Selezionare *Restore* (Ripristina).
+. Dal menu, selezionare *Recovery* (Ripristino) per esaminare il carico di lavoro nella pagina Recovery (Ripristino) in cui lo stato dell'operazione passa attraverso gli stati.
+
+
+
+
+=== Ripristinare una condivisione di file VM a livello di VM
+
+Nella pagina Recovery (Ripristino), dopo aver selezionato una macchina virtuale da ripristinare, continuare con la procedura descritta di seguito.
+
+. *Sorgente*: Selezionare la freccia verso il basso accanto a sorgente per visualizzare i dettagli.
++
+image:screen-recovery-vm.png["Pagina di ripristino che mostra una VM in fase di ripristino"]
+
+. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
+. *Destinazione*: Alla posizione originale.
+. Selezionare *Avanti*.
+. Rivedere le selezioni.
+. Selezionare *Restore* (Ripristina).
+. Dal menu, selezionare *Recovery* (Ripristino) per esaminare il carico di lavoro nella pagina Recovery (Ripristino) in cui lo stato dell'operazione passa attraverso gli stati.
+

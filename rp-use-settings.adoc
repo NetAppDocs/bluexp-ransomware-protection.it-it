@@ -1,0 +1,147 @@
+---
+sidebar: sidebar 
+permalink: rp-use-settings.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
+summary: Puoi configurare diverse opzioni, tra cui una destinazione di backup, nel servizio di protezione dal ransomware BlueXP. 
+---
+= Configurare le impostazioni di protezione dal ransomware BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+È possibile configurare una destinazione di backup esaminando i suggerimenti sul dashboard.
+
+
+
+== Aggiungere una destinazione di backup
+
+La protezione dal ransomware di BlueXP identifica i workload che non hanno ancora backup e anche quelli che non hanno ancora destinazioni di backup assegnate.
+
+Per proteggere questi workload, è necessario aggiungere una destinazione di backup. È possibile scegliere una delle seguenti destinazioni di backup:
+
+* NetApp StorageGRID
+* Amazon Web Services (AWS)
+
+
+È possibile aggiungere una destinazione di backup in base all'azione consigliata dal Dashboard.
+
+
+
+=== Accedere alle opzioni destinazione backup dalle azioni consigliate del dashboard
+
+Il Dashboard fornisce molti consigli. Si consiglia di configurare una destinazione di backup.
+
+.Fasi
+. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
+. Esaminare il riquadro delle azioni consigliate del dashboard.
++
+image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Pagina del dashboard"]
+
+. Nel dashboard, selezionare *Rivedi e correggi* per la raccomandazione "Configura destinazioni di backup".
+. Continuare con le istruzioni a seconda del provider di backup.
+
+
+
+
+== Aggiungere StorageGRID come destinazione di backup
+
+Per impostare NetApp StorageGRID come destinazione di backup, immettere le seguenti informazioni.
+
+. Nella pagina *Impostazioni > Destinazioni di backup*, selezionare *Aggiungi*.
+. Immettere un nome per la destinazione di backup.
++
+image:screen-settings-backup-destination-storagegrid.png["Pagina destinazioni di backup"]
+
+. Selezionare *StorageGRID*.
+. Selezionare la freccia verso il basso accanto a ciascuna impostazione e immettere o selezionare i valori:
++
+** *Impostazioni provider*:
++
+*** Creare un nuovo bucket o portare il proprio bucket che memorizzerà i backup.
+*** Nodo gateway StorageGRID Nome di dominio, porta, chiave di accesso StorageGRID e credenziali chiave segreta completi.
+
+
+** *Networking*: Scegliere IPSpace.
++
+*** IPSpace è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup. Le LIF intercluster per questo IPSpace devono disporre di accesso a Internet in uscita.
+
+
+** *Blocco di backup*: Scegliere se si desidera che il servizio protegga i backup dalla modifica o dall'eliminazione. Questa opzione utilizza la tecnologia DataLock di NetApp. Ciascun backup verrà bloccato durante il periodo di conservazione o per un minimo di 30 giorni, più un periodo di buffer massimo di 14 giorni.
++
+
+CAUTION: Se si configura ora l'impostazione del blocco di backup, non sarà possibile modificarla in un secondo momento dopo la configurazione della destinazione di backup.
+
++
+*** *Modalità conformità*: Gli utenti non possono sovrascrivere o eliminare i file di backup protetti durante il periodo di conservazione.
+
+
+
+
+. Selezionare *Aggiungi*.
+
+
+.Risultato
+La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
+
+image:screen-settings-backup-destinations-list-storagegrid.png["Pagina destinazioni di backup opzione Impostazioni"]
+
+
+
+== Aggiungere Amazon Web Services come destinazione di backup
+
+Per configurare AWS come destinazione di backup, immettere le seguenti informazioni.
+
+Per informazioni sulla gestione dello storage AWS in BlueXP, fare riferimento a. https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gestisci i bucket Amazon S3"^].
+
+. Nella pagina *Impostazioni > Destinazioni di backup*, selezionare *Aggiungi*.
+. Immettere un nome per la destinazione di backup.
++
+image:screen-settings-backup-destination-storagegrid.png["Pagina destinazioni di backup"]
+
+. Selezionare *Amazon Web Services*.
+. Selezionare la freccia verso il basso accanto a ciascuna impostazione e immettere o selezionare i valori:
++
+** *Impostazioni provider*:
++
+*** Crea un nuovo bucket, seleziona un bucket esistente se già esistente in BlueXP o porta il tuo bucket in cui archiviare i backup.
+*** Account AWS, regione, chiave di accesso e chiave segreta per le credenziali AWS
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Se si desidera portare il proprio secchio, fare riferimento a Aggiungi S3 secchielli"^].
+
+
+
+** *Crittografia*: Se si sta creando un nuovo bucket S3, immettere le informazioni sulla chiave di crittografia fornite dal provider. Se si sceglie un bucket esistente, le informazioni di crittografia sono già disponibili.
++
+I dati nel bucket sono criptati con chiavi gestite da AWS per impostazione predefinita. Puoi continuare a utilizzare le chiavi gestite da AWS oppure gestire la crittografia dei tuoi dati con le tue chiavi.
+
+** *Rete*: Scegliere IPSpace e se si utilizza un endpoint privato.
++
+*** IPSpace è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup. Le LIF intercluster per questo IPSpace devono disporre di accesso a Internet in uscita.
+*** In alternativa, è possibile scegliere se utilizzare un endpoint privato AWS (PrivateLink) precedentemente configurato.
++
+Per utilizzare AWS PrivateLink, consultare la sezione https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink per Amazon S3"^].
+
+
+
+** *Blocco di backup*: Scegliere se si desidera che il servizio protegga i backup dalla modifica o dall'eliminazione. Questa opzione utilizza la tecnologia DataLock di NetApp. Ciascun backup verrà bloccato durante il periodo di conservazione o per un minimo di 30 giorni, più un periodo di buffer massimo di 14 giorni.
++
+
+CAUTION: Se si configura ora l'impostazione del blocco di backup, non sarà possibile modificarla in un secondo momento dopo la configurazione della destinazione di backup.
+
++
+*** *Governance mode*: Utenti specifici (con autorizzazione S3:BypassGovernanceRetention) possono sovrascrivere o eliminare i file protetti durante il periodo di conservazione.
+*** *Modalità conformità*: Gli utenti non possono sovrascrivere o eliminare i file di backup protetti durante il periodo di conservazione.
+
+
+
+
+. Selezionare *Aggiungi*.
+
+
+.Risultato
+La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
+
+image:screen-settings-backup-destinations-list-aws.png["Pagina destinazioni di backup opzione Impostazioni"]

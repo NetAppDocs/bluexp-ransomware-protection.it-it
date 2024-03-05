@@ -1,0 +1,273 @@
+---
+sidebar: sidebar 
+permalink: rp-use-protect.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies 
+summary: Puoi proteggere i workload dagli attacchi ransomware assegnando policy a un carico di lavoro nella protezione dal ransomware di BlueXP. 
+---
+= Proteggi i carichi di lavoro dagli attacchi ransomware
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Puoi proteggere i workload dagli attacchi ransomware eseguendo le seguenti azioni utilizzando la protezione dal ransomware di BlueXP.
+
+* Visualizza la protezione dei carichi di lavoro esistenti.
+* Assegnazione di una policy a un carico di lavoro.
++
+** Aumentare la protezione delle applicazioni per evitare futuri attacchi RW.
+** Modificare la protezione per un carico di lavoro precedentemente protetto nel servizio RW.
+
+
+* Gestire i criteri (solo quelli creati).
+
+
+La protezione dal ransomware di BlueXP assegna una priorità a ogni workload durante il rilevamento. La priorità del carico di lavoro è determinata dalle seguenti frequenze di istantanea:
+
+* *Critico*: Copie snapshot acquisite meno di 1 TB all'ora (pianificazione di protezione altamente aggressiva)
+* *Importante*: Le copie snapshot sono state acquisite meno di 1 al giorno e più di 1 all'ora
+* *Standard*: Le copie snapshot sono state acquisite più di 1 copie al giorno
+
+
+*Stato di protezione*: Un carico di lavoro può mostrare uno dei seguenti stati di protezione per indicare se un criterio è applicato o meno:
+
+* *Protetto*: Viene applicato un criterio.
+* *A rischio*: Non viene applicata alcuna politica.
+* *In corso*: È in corso l'applicazione di un criterio, ma non è ancora stato completato.
+* *Non riuscito*: Un criterio è applicato ma non funziona.
+
+
+*Stato di protezione*: Un carico di lavoro può avere uno dei seguenti stati di integrità di protezione:
+
+* *Integro*: La protezione del carico di lavoro è abilitata e i backup e le copie Snapshot sono stati completati.
+* *In corso*: Sono in corso backup o copie Snapshot.
+* *Non riuscito*: I backup o le copie Snapshot non sono stati completati correttamente.
+* *N/A*: La protezione non è abilitata o sufficiente sul carico di lavoro.
+
+
+
+
+== Visualizza la protezione ransomware del carico di lavoro
+
+Uno dei primi passi nella protezione dei carichi di lavoro è la visualizzazione dei carichi di lavoro attuali e del loro stato di protezione. Sono visualizzabili i seguenti tipi di carichi di lavoro:
+
+* Workload VM
+* Workload di condivisione di file
+
+
+.Fasi
+. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
+. Effettuare una delle seguenti operazioni:
++
+** Nel riquadro protezione dati dashboard, selezionare *Visualizza tutto*.
+** Dal menu, selezionare *protezione*.
++
+image:screen-protection.png["Pagina di protezione"]
+
+
+
+. Da questa pagina è possibile assegnare un criterio a un carico di lavoro.
+
+
+
+
+== Assegnazione di una policy di protezione predefinita ai carichi di lavoro
+
+Per proteggere i tuoi dati, puoi assegnare una policy di protezione dal ransomware esistente a uno o più carichi di lavoro. È inoltre possibile assegnare un criterio diverso a un carico di lavoro che dispone già di un criterio.
+
+La protezione dal ransomware di BlueXP include le seguenti policy predefinite allineate con la priorità dei workload:
+
+[cols="10,15a,20,15,15,15"]
+|===
+| Livello dei criteri | Snapshot | Frequenza | Conservazione (giorni) | N. di copie Snapshot | Numero massimo totale di copie Snapshot 
+
+
+.4+| *Politica critica dei carichi di lavoro*  a| 
+Quarto ogni ora
+| Ogni 15 minuti | 3 | 288 | 309 
+
+
+| Ogni giorno  a| 
+Ogni 1 giorni
+| 14 | 14 | 309 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 309 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 309 
+
+
+.4+| *Policy importante sui carichi di lavoro*  a| 
+Quarto ogni ora
+| Ogni 30 minuti | 3 | 144 | 165 
+
+
+| Ogni giorno  a| 
+Ogni 1 giorni
+| 14 | 14 | 165 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 165 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 165 
+
+
+.4+| *Norma sui carichi di lavoro standard*  a| 
+Quarto ogni ora
+| Ogni 60 minuti | 3 | 72 | 93 
+
+
+| Ogni giorno  a| 
+Ogni 1 giorni
+| 14 | 14 | 93 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 93 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 93 
+|===
+.Fasi
+. Dalla protezione dal ransomware di BlueXP, esegui una delle seguenti operazioni:
++
+** Nel riquadro protezione dati dashboard, selezionare *Visualizza tutto*.
+** Nel riquadro Dashboard Recommendation (Consiglio dashboard), selezionare un suggerimento sull'assegnazione di un criterio e selezionare *Review and fix* (Rivedi e correggi*).
+** Dal menu, selezionare *protezione*.
+
+
+. Nella pagina protezione, esaminare i carichi di lavoro e selezionare *Proteggi* accanto al carico di lavoro.
++
+Viene visualizzato un elenco di criteri.
+
++
+image:screen-protect-policy-list.png["Elenco dei criteri di protezione"]
+
+. Per visualizzare i dettagli, fare clic sulla freccia rivolta verso il basso di un criterio.
+. Selezionare un criterio da assegnare al carico di lavoro.
+. Selezionare *Proteggi*.
+. Esaminare il riquadro azioni consigliate del dashboard, che mostra l'azione come "completata".
+
+
+
+
+== Creare un criterio di protezione
+
+Se i criteri esistenti non soddisfano le esigenze aziendali, è possibile creare un nuovo criterio di protezione. È possibile creare da zero i propri criteri oppure utilizzarne uno esistente e modificarne le impostazioni.
+
+È possibile creare policy che governano lo storage primario e secondario e trattano allo stesso tempo lo storage primario e secondario o in modo diverso.
+
+È possibile creare un criterio durante la loro gestione o durante il processo di assegnazione di un criterio a un carico di lavoro.
+
+.Procedura per la creazione di un criterio durante la gestione dei criteri
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
++
+image:screen-protection2.png["Pagina di protezione"]
+
+. Nella pagina protezione, selezionare *Gestisci criteri*.
++
+image:screen-protection-policy-manage2.png["Pagina Gestisci criteri"]
+
+. Nella pagina Gestisci criteri, selezionare *Aggiungi*.
++
+image:screen-protection-policy-add2.png["Pagina Aggiungi criterio"]
+
+. Immettere il nome di un nuovo criterio o un nome di criterio esistente per copiarlo. Se si immette un nome di criterio esistente, scegliere il criterio da copiare.
++
+
+NOTE: Se si sceglie di copiare e modificare un criterio esistente, è necessario modificare almeno un'impostazione per renderla univoca.
+
+. Per ciascun elemento, selezionare la freccia verso il basso.
++
+** *Archiviazione primaria*:
++
+*** *Pianificazioni copie snapshot*: Scegliere le opzioni di pianificazione, il numero di copie snapshot da conservare e selezionare per attivare la pianificazione.
+*** *Rilevamento primario*: Abilita il servizio per rilevare gli incidenti ransomware sullo storage primario.
+*** *Blocca estensioni file*: Abilitare questa opzione affinché il blocco di servizio conosca le estensioni file sospette. Il servizio esegue copie Snapshot automatizzate quando è abilitato il rilevamento primario.
+
+
+** *Archiviazione secondaria*:
++
+*** *Pianificazioni di backup*: Scegliere le opzioni di pianificazione per l'archiviazione secondaria e attivare la pianificazione.
+*** *Rilevamento secondario*: Abilita il servizio per rilevare gli incidenti ransomware sullo storage secondario.
+*** *Blocca backup*: Scegliere questa opzione per evitare che i backup sullo storage secondario vengano modificati o eliminati per un determinato periodo di tempo. Questo viene anche chiamato _storage immutabile_.
++
+Questa opzione utilizza la tecnologia DataLock di NetApp, che blocca i backup sullo storage secondario. Il periodo di tempo in cui il file di backup viene bloccato (e conservato) viene definito periodo di conservazione DataLock. E si basa sulla pianificazione dei criteri di backup e sull'impostazione di conservazione definita, oltre a un buffer di 14 giorni. Qualsiasi policy di conservazione DataLock inferiore a 30 giorni viene arrotondata al minimo di 30 giorni.
+
+
+
+
+
+. Selezionare *Aggiungi*.
+
+
+.Procedura per creare un criterio durante l'assegnazione dei criteri di protezione
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
++
+image:screen-protection2.png["Pagina di protezione"]
+
+. Nella pagina protezione, selezionare *protezione*.
+. Dalla pagina di protezione, selezionare *Aggiungi*.
++
+image:screen-protection-policy-add2.png["Pagina Aggiungi criterio"]
+
+. Completare il processo, che equivale alla creazione di un criterio dalla pagina Gestisci criteri.
+
+
+
+
+== Assegnare un criterio di protezione diverso
+
+È possibile scegliere una policy di protezione diversa per un carico di lavoro.
+Potresti voler aumentare la protezione per prevenire futuri attacchi ransomware modificando la policy di protezione.
+
+.Fasi
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Dalla pagina di protezione, selezionare un carico di lavoro e selezionare *Proteggi*.
+. Nella pagina protezione, selezionare un criterio diverso per il carico di lavoro.
+. Per modificare i dettagli del criterio, selezionare la freccia verso il basso a destra e modificare i dettagli.
+. Selezionare *Salva* per terminare la modifica.
+
+
+
+
+== Modificare un criterio esistente
+
+È possibile modificare i dettagli di un criterio solo quando il criterio non è associato a un carico di lavoro.
+
+.Fasi
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Nella pagina protezione, selezionare *Gestisci criteri*.
+. Nella pagina Gestisci criteri, selezionare l'opzione *azioni* per il criterio che si desidera modificare.
+. Dal menu azioni, selezionare *Modifica criterio*.
+. Modificare i dettagli.
+. Selezionare *Salva* per terminare la modifica.
+
+
+
+
+== Eliminazione di un criterio
+
+È possibile eliminare una policy di protezione non attualmente associata a alcun carico di lavoro.
+
+.Fasi
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Nella pagina protezione, selezionare *Gestisci criteri*.
+. Nella pagina Gestisci criteri, selezionare l'opzione *azioni* per il criterio che si desidera eliminare.
+. Dal menu azioni, selezionare *Elimina criterio*.
+

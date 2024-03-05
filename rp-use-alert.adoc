@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: rp-use-alert.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
+summary: 'Se la protezione ransomware di BlueXP rileva un possibile attacco, viene visualizzato un avviso sulla dashboard della protezione dal ransomware di BlueXP, a indicare un potenziale attacco ransomware. Inoltre, il servizio avvia immediatamente l"acquisizione di una copia Snapshot. A questo punto, dovresti esaminare il rischio potenziale nella scheda degli avvisi della protezione ransomware di BlueXP.' 
+---
+= Rispondi a un avviso ransomware rilevato
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se la protezione ransomware di BlueXP rileva un possibile attacco, viene visualizzato un avviso nella dashboard di protezione dal ransomware di BlueXP e nelle notifiche di BlueXP, in alto a destra, che indica un potenziale attacco ransomware. Inoltre, il servizio avvia immediatamente l'acquisizione di una copia Snapshot. A questo punto, dovresti valutare il rischio potenziale nella scheda *Avvisi* della protezione dal ransomware di BlueXP.
+
+Per iniziare il ripristino dei dati, contrassegnare l'avviso come pronto per il ripristino in modo che l'amministratore dello storage possa avviare il processo di ripristino.
+
+Ogni avviso potrebbe avere più incidenti su volumi diversi con stati diversi, quindi assicurati di esaminare tutti gli incidenti.
+
+Il servizio fornisce informazioni denominate _prove_ su ciò che ha causato l'emissione dell'avviso, come le seguenti:
+
+* Le estensioni dei file sono state create o modificate
+* Si è verificata la creazione del file ed è stato aumentato di una percentuale elencata
+* Si è verificata l'eliminazione dei file e l'aumento è stato calcolato in percentuale
+
+
+Un avviso si basa sui seguenti tipi di comportamento:
+
+* *Potenziale attacco*: Si verifica un avviso quando la protezione autonoma dal ransomware rileva una nuova estensione e l'evento viene ripetuto più di 20 volte nelle ultime 24 ore (comportamento predefinito).
+* *Avvertenza*: Si verifica un avviso basato sui seguenti comportamenti:
++
+** Il rilevamento di una nuova estensione non è stato identificato in precedenza e lo stesso comportamento non si ripete abbastanza volte per dichiararla come attacco.
+** Si osserva un'elevata entropia.
+** Le operazioni di lettura/scrittura/ridenominazione/eliminazione dei file hanno subito un aumento dell'attività del 100% oltre la baseline.
+
+
+
+
+Le prove si basano sulle informazioni fornite dalla protezione autonoma dal ransomware in ONTAP. Per ulteriori informazioni, fare riferimento a. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Panoramica della protezione ransomware autonoma"^].
+
+
+
+== Visualizza avvisi
+
+Puoi accedere agli avvisi dalla dashboard della protezione dal ransomware di BlueXP o dalla scheda *Alerts*.
+
+.Fasi
+. Nella dashboard di protezione dal ransomware di BlueXP, consulta il pannello Alerts.
+. Selezionare *Visualizza tutto* sotto una delle statue.
+. Fare clic su un avviso per esaminare tutti gli incidenti su ciascun volume per ciascun avviso.
+. Per rivedere gli avvisi aggiuntivi, fare clic su *Alert* nella barra di navigazione in alto a sinistra.
+. Esaminare gli avvisi nella pagina Avvisi.
++
+image:screen-alerts.png["Pagina Avvisi"]
+
+. Continuare con <<Contrassegna gli incidenti ransomware come pronti per il recovery (dopo la neutralizzazione degli incidenti)>>.
+
+
+
+
+== Contrassegna gli incidenti ransomware come pronti per il recovery (dopo la neutralizzazione degli incidenti)
+
+Una volta mitigato l'attacco e sei pronto a ripristinare i carichi di lavoro, dovresti comunicare con il tuo team di amministrazione dello storage che i dati sono pronti per il recovery, in modo che possano avviare il processo di recovery.
+
+.Fasi
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
++
+image:screen-alerts.png["Pagina Avvisi"]
+
+. Nella pagina Avvisi, selezionare l'avviso.
+. Esaminare gli incidenti nell'avviso.
++
+image:screen-alerts-incidents.png["Pagina incidenti di avviso"]
+
+. Se si stabilisce che gli incidenti sono pronti per il ripristino, selezionare *Segna ripristino necessario*.
+. Confermare l'azione e selezionare *Segna ripristino necessario*.
+. Per avviare il ripristino del carico di lavoro, selezionare *Recupera* carico di lavoro nel messaggio o selezionare la scheda *Recovery*.
+
+
+.Risultato
+Dopo aver contrassegnato l'avviso per il ripristino, l'avviso passa dalla scheda Avvisi alla scheda Ripristino.

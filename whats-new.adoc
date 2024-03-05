@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack' 
+summary: Scopri le novità di BlueXP ransomware Protection. 
+---
+= Note della release: Novità dell'anteprima della protezione dal ransomware BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Scopri le novità dell'anteprima della protezione dal ransomware BlueXP.
+
+
+
+== 5 marzo 2024
+
+Questa release di anteprima della protezione dal ransomware di BlueXP include i seguenti aggiornamenti:
+
+* *Gestione dei criteri di protezione*: Oltre a utilizzare i criteri predefiniti, è ora possibile creare, modificare ed eliminare i criteri. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Ulteriori informazioni sulla gestione dei criteri"].
+* *Immutabilità nello storage secondario (DataLock)*: È ora possibile rendere immutabile il backup nello storage secondario utilizzando la tecnologia NetApp DataLock nell'archivio oggetti. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Ulteriori informazioni sulla creazione di criteri di protezione"].
+
+
+* *Backup automatico su NetApp StorageGRID*: Oltre a utilizzare AWS, è ora possibile scegliere StorageGRID come destinazione di backup. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Ulteriori informazioni sulla configurazione delle destinazioni di backup"].
+* *Caratteristiche aggiuntive per esaminare i potenziali attacchi*: Ora puoi visualizzare ulteriori dettagli forensi per analizzare il potenziale attacco rilevato. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Scopri di più sulla risposta a un avviso ransomware rilevato"].
+* *Processo di ripristino*. Il processo di ripristino è stato migliorato. Ora è possibile eseguire il ripristino di un volume per volume, di tutti i volumi per un carico di lavoro o anche di alcuni file dal volume, tutto in un singolo flusso di lavoro. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Scopri di più sul ripristino in seguito a un attacco ransomware (dopo la neutralizzazione degli incidenti)"].
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Scopri di più sulla protezione ransomware di BlueXP"].
+
+
+
+== 6 ottobre 2023
+
+Il servizio di protezione dal ransomware BlueXP è una soluzione SaaS per la protezione dei dati, il rilevamento di potenziali attacchi e il recovery dei dati da un attacco ransomware.
+
+Per la versione in anteprima, il servizio protegge i carichi di lavoro basati sull'applicazione dei datastore Oracle, MySQL, VM e file share nello storage NAS on-premise, oltre che in Cloud Volumes ONTAP su AWS (utilizzando il protocollo NFS) attraverso i singoli account BlueXP ed esegue il backup dei dati nel cloud storage di Amazon Web Services.
+
+Il servizio di protezione dal ransomware di BlueXP offre un utilizzo completo di diverse tecnologie NetApp per permettere all'amministratore della sicurezza dei dati o al Security Operations Engineer di raggiungere i seguenti obiettivi:
+
+* Visualizza rapidamente la protezione dal ransomware su tutti i tuoi workload.
+* Ottieni informazioni dettagliate sulle raccomandazioni relative alla protezione dal ransomware
+* Migliora il livello di protezione in base alle raccomandazioni di protezione dal ransomware BlueXP.
+* Assegna policy di protezione dal ransomware per proteggere i tuoi carichi di lavoro principali e i dati ad alto rischio dagli attacchi ransomware.
+* Monitora la salute dei carichi di lavoro contro gli attacchi ransomware che cercano anomalie nei dati.
+* Valutare rapidamente l'impatto degli incidenti ransomware sul carico di lavoro.
+* Esegui il ripristino in maniera intelligente dai ransomware eseguendo il ripristino dei dati e garantendo che non si verifichi una nuova infezione da tali dati.
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Scopri di più sulla protezione ransomware di BlueXP"].

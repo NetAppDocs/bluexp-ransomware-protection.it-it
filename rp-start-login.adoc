@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: rp-start-login.html 
+keywords: bluexp login, ransomware protection log in 
+summary: Inizia con la protezione dal ransomware di BlueXP accedendo al servizio in BlueXP. 
+---
+= Accedi alla protezione dal ransomware di BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+USA NetApp BlueXP per accedere al servizio di protezione dal ransomware di BlueXP.
+
+Per accedere a BlueXP, puoi utilizzare le credenziali del sito di supporto NetApp oppure iscriverti per un login cloud NetApp utilizzando la tua email e una password. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Scopri di più sull'accesso"^].
+
+.Fasi
+. Aprire un browser Web e accedere a. https://console.bluexp.netapp.com/["Console BlueXP"^].
++
+Viene visualizzata la pagina di accesso a NetApp BlueXP.
+
+. Accedere a BlueXP.
+. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
++
+Se è la prima volta che accedi a questo servizio, viene visualizzata la pagina iniziale.
+
++
+In caso contrario, verrà visualizzata la dashboard di protezione dal ransomware BlueXP.
+
++
+image:screen-dashboard.png["Dashboard della protezione dal ransomware di BlueXP"]
+
+. Iniziare a utilizzare il servizio.
++
+** Se non hai un connettore BlueXP o non è quello per questa anteprima, potrebbe essere necessario contattare il supporto NetApp o seguire i messaggi per iscriverti a questa anteprima.
+** Se sei un nuovo utente di BlueXP e non hai utilizzato alcun connettore, quando selezioni "*ransomware Protection*", viene visualizzato un messaggio sulla registrazione. Procedi e invia il modulo. NetApp ti contatterà in merito alla tua richiesta di valutazione.
+** Se sei un utente BlueXP con un connettore esistente, quando selezioni "*ransomware Protection*", viene visualizzato un messaggio sulla registrazione.
+** Se stai già partecipando all'anteprima, quando selezioni "*ransomware Protection*", puoi procedere con il servizio. Se non l'hai già fatto, seleziona l'opzione *rileva carichi di lavoro*.
+
+
+

@@ -1,0 +1,58 @@
+---
+settings:
+  name: BlueXP ransomware protection
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: it-it,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
+sidebar:
+  entries:
+  - title: Documenti sulla protezione ransomware BlueXP
+    url: "/index.html"
+  - title: Note di rilascio
+    url: "/whats-new.html"
+  - title: Inizia subito
+    entries:
+    - title: Scopri di più sulla protezione ransomware di BlueXP
+      url: "/concept-ransomware-protection.html"
+    - title: Prerequisiti
+      url: "/rp-start-prerequisites.html"
+    - title: Avvio rapido
+      url: "/rp-start-quick-start.html"
+    - title: Imposta la protezione dal ransomware BlueXP
+      url: "/rp-start-setup.html"
+    - title: Accedi alla protezione dal ransomware di BlueXP
+      url: "/rp-start-login.html"
+    - title: Rileva i carichi di lavoro
+      url: "/rp-start-discover.html"
+    - title: Configurare le destinazioni di backup
+      url: "/rp-use-settings.html"
+    - title: FAQ
+      url: "/rp-start-faq.html"
+  - title: Utilizzare la protezione ransomware BlueXP
+    entries:
+    - title: USA una panoramica sulla protezione dal ransomware di BlueXP
+      url: "/rp-use-overview.html"
+    - title: Visualizza la salute del carico di lavoro utilizzando la Dashboard
+      url: "/rp-use-dashboard.html"
+    - title: Proteggere i carichi di lavoro
+      url: "/rp-use-protect.html"
+    - title: Rispondere a un avviso rilevato
+      url: "/rp-use-alert.html"
+    - title: Ripristino da un attacco ransomware
+      url: "/rp-use-recover.html"
+  - title: Conoscenza e supporto
+    entries:
+    - title: Registrati per ricevere assistenza
+      url: "/task-support-registration.html"
+    - title: Richiedi assistenza
+      url: "/task-get-help.html"
+  - title: Note legali
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP
+  repo: bluexp-family

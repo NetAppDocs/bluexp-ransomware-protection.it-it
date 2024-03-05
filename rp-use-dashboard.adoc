@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: rp-use-dashboard.html 
+keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
+summary: La dashboard della protezione dal ransomware di BlueXP fornisce informazioni sulla salute della protezione dei workload. È possibile determinare rapidamente i workload a rischio, protetti o coinvolti in un incidente o nel ripristino, nonché misurare la protezione tenendo conto della quantità di storage protetto o a rischio. È inoltre possibile utilizzare la dashboard per esaminare e agire in base ai consigli sulla protezione. 
+---
+= Visualizza lo stato dei carichi di lavoro con un'occhiata utilizzando la dashboard
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+La dashboard per la protezione dal ransomware di BlueXP fornisce informazioni immediate sulla salute della protezione dei workload. Puoi determinare rapidamente i workload a rischio o protetti, identificare i workload che ne sono influenzati da un incidente o nel recovery e misurare il grado di protezione tenendo conto della quantità di storage protetto o a rischio.
+
+È inoltre possibile utilizzare la dashboard per esaminare e agire in base ai consigli sulla protezione.
+
+
+
+== Esaminare lo stato dei carichi di lavoro utilizzando la dashboard
+
+.Fasi
+. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
++
+Dopo il rilevamento, la Dashboard mostra la salute della data Protection dei carichi di lavoro.
+
++
+image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Pagina del dashboard"]
+
+. Dal dashboard, è possibile visualizzare ed eseguire una delle seguenti operazioni in ciascuno dei riquadri:
++
+** *Protezione dei dati del carico di lavoro*: Fare clic su *Visualizza tutto* per visualizzare tutti i carichi di lavoro a rischio o protetti nella pagina protezione. I carichi di lavoro sono a rischio quando i livelli di protezione non corrispondono a una policy di protezione. Fare riferimento a. link:rp-use-protect.html["Proteggere i carichi di lavoro"].
+** *Avvisi e recupero dati del carico di lavoro*: Fare clic su *Visualizza tutto* per visualizzare gli incidenti attivi che hanno influito sul carico di lavoro, sono pronti per il ripristino dopo che gli incidenti sono stati neutralizzati o sono in fase di recupero. Fare riferimento a. link:rp-use-alert.html["Rispondere a un avviso rilevato"].
++
+Un incidente è classificato in uno dei seguenti stati:
+
++
+*** Interessato (visualizzato nella pagina Avvisi)
+*** Pronto per il ripristino (visualizzato nella pagina di ripristino)
+*** Ripristino (viene visualizzato nella pagina di ripristino)
+*** Ripristino non riuscito (visualizzato nella pagina di ripristino)
+*** Recuperato (visualizzato nella pagina di ripristino)
+
+
+** *Azioni consigliate*: Per aumentare la protezione, rivedere ogni raccomandazione e fare clic su *Rivedi e correggi*.
++
+Fare riferimento a. link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Rivedere i consigli sulla protezione sulla dashboard"] oppure link:/rp-use-protect.html["Proteggere i carichi di lavoro"].
+
++
+Tutti i suggerimenti aggiunti dall'ultima volta che si è visitato il Dashboard sono indicati con "nuovo" per almeno 24 ore. Le azioni sono elencate in ordine di priorità, con le più importanti in alto. È possibile rivedere e agire su ciascuno di essi o eliminarlo.
+
++
+Il numero totale di azioni non include le azioni respinte.
+
+** *Dati del carico di lavoro*: Monitoraggio delle modifiche apportate alla copertura di protezione negli ultimi 7 giorni.
+** *Backup del carico di lavoro*: Monitoraggio delle modifiche apportate ai backup dei carichi di lavoro creati dal servizio che non sono riusciti o sono stati completati correttamente negli ultimi 7 giorni.
+
+
+
+
+
+
+== Rivedere i consigli sulla protezione sulla dashboard
+
+La protezione dal ransomware di BlueXP valuta la protezione sui carichi di lavoro e raccomanda azioni per migliorare tale protezione.
+
+È possibile rivedere un suggerimento e agire su di esso, che cambia lo stato del suggerimento in completo. Oppure, se si desidera agire in seguito, è possibile eliminarlo. L'annullamento di un'azione sposta il suggerimento in un elenco di azioni respinte, che è possibile rivedere in un secondo momento.
+
+Ecco un esempio delle raccomandazioni che il servizio offre.
+
+[cols="30,30,30"]
+|===
+| Consiglio | Descrizione | Come risolvere il problema 
+
+
+| Aggiungi una policy di protezione dal ransomware | Il carico di lavoro non è attualmente protetto. | Assegnare una policy al carico di lavoro.
+Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
+
+
+| Configurare le destinazioni di backup | Il workload non dispone al momento di destinazioni di backup. | Aggiungete destinazioni di backup a questo workload per proteggerlo.
+Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"].
+Fare riferimento a. link:rp-use-manage.html["Gestire i carichi di lavoro"]. 
+
+
+| Rafforzare una politica. | Alcuni carichi di lavoro potrebbero non disporre di una protezione sufficiente. Rafforza la protezione sui carichi di lavoro con una policy. | Aumenta la conservazione, Aggiungi i backup, applica i backup immutabili, blocca le estensioni di file sospette, abilita il rilevamento sullo storage secondario e molto altro ancora.
+Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
+
+
+| Proteggi i workload dell'applicazione critici o importanti da ransomware. | La pagina protezione visualizza i carichi di lavoro dell'applicazione critici o importanti (in base al livello di priorità assegnato) che non sono protetti. | Assegnare una policy a questi carichi di lavoro.
+Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
+
+
+| Proteggi i carichi di lavoro critici o importanti di condivisione file dal ransomware. | La pagina protezione visualizza i carichi di lavoro critici o importanti del tipo file Share o Datastore non protetti. | Assegnazione di una policy a ciascun carico di lavoro.
+Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
+
+
+| Rivedere i nuovi avvisi | Esistono nuovi avvisi. | Rivedere i nuovi avvisi.
+Fare riferimento a. link:rp-use-alert.html["Rispondi a un avviso ransomware rilevato"]. 
+|===
+.Fasi
+. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
+. Dal riquadro azioni consigliate, selezionare un suggerimento e selezionare *Rivedi e correggi*.
+. Per chiudere l'azione in un secondo momento, selezionare *Chiudi*.
++
+Il suggerimento scompare dall'elenco delle attività e viene visualizzato nell'elenco delle attività respinte.
+
++
+
+TIP: È possibile modificare in un secondo momento un elemento da liquidare in un elemento da fare. Quando si contrassegna un elemento completato o si modifica un elemento respinto in un'azione attività, le azioni totale aumentano di 1.
+
+. Per rivedere le informazioni su come agire in base alle raccomandazioni, selezionare l'icona *informazioni*.
+
