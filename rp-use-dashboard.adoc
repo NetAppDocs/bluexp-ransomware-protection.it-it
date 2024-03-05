@@ -45,7 +45,7 @@ Un incidente è classificato in uno dei seguenti stati:
 
 ** *Azioni consigliate*: Per aumentare la protezione, rivedere ogni raccomandazione e fare clic su *Rivedi e correggi*.
 +
-Fare riferimento a. link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Rivedere i consigli sulla protezione sulla dashboard"] oppure link:/rp-use-protect.html["Proteggere i carichi di lavoro"].
+Fare riferimento a. link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Rivedere i consigli sulla protezione sulla dashboard"] oppure link:rp-use-protect.html["Proteggere i carichi di lavoro"].
 
 +
 Tutti i suggerimenti aggiunti dall'ultima volta che si è visitato il Dashboard sono indicati con "nuovo" per almeno 24 ore. Le azioni sono elencate in ordine di priorità, con le più importanti in alto. È possibile rivedere e agire su ciascuno di essi o eliminarlo.
@@ -79,8 +79,7 @@ Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli
 
 
 | Configurare le destinazioni di backup | Il workload non dispone al momento di destinazioni di backup. | Aggiungete destinazioni di backup a questo workload per proteggerlo.
-Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"].
-Fare riferimento a. link:rp-use-manage.html["Gestire i carichi di lavoro"]. 
+Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"]. 
 
 
 | Rafforzare una politica. | Alcuni carichi di lavoro potrebbero non disporre di una protezione sufficiente. Rafforza la protezione sui carichi di lavoro con una policy. | Aumenta la conservazione, Aggiungi i backup, applica i backup immutabili, blocca le estensioni di file sospette, abilita il rilevamento sullo storage secondario e molto altro ancora.

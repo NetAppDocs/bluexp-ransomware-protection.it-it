@@ -995,7 +995,6 @@ Al momento, il backup e recovery di BlueXP (Cloud Backup) supporta una policy di
   <block id="0e645a267bfad78391e9ba300248f4c8" category="list-text">Recuperato (visualizzato nella pagina di ripristino)</block>
   <block id="e1ea3e4666c6bde33b99591d46854931" category="list-text">*Azioni consigliate*: Per aumentare la protezione, rivedere ogni raccomandazione e fare clic su *Rivedi e correggi*.</block>
   <block id="c09a3324882f0d3d76129ae7f12aff7c" category="inline-link-macro">Rivedere i consigli sulla protezione sulla dashboard</block>
-  <block id="feb5fd9ce95da4f8222794f85299750e" category="paragraph">Fare riferimento a. <block ref="299e61f449baeabd97c5a478162c3894" category="inline-link-macro-rx"></block> oppure <block ref="557266238ed2b5b635d754ed261b4581" category="inline-link-macro-rx"></block>.</block>
   <block id="101c0effc71862c6f6eba24e5b3882e0" category="paragraph">Tutti i suggerimenti aggiunti dall'ultima volta che si è visitato il Dashboard sono indicati con "nuovo" per almeno 24 ore. Le azioni sono elencate in ordine di priorità, con le più importanti in alto. È possibile rivedere e agire su ciascuno di essi o eliminarlo.</block>
   <block id="c1dd10de17e4b2e973884d48acfb02d0" category="paragraph">Il numero totale di azioni non include le azioni respinte.</block>
   <block id="6308193424a44f7cb12ce18a9cc42d47" category="list-text">*Dati del carico di lavoro*: Monitoraggio delle modifiche apportate alla copertura di protezione negli ultimi 7 giorni.</block>
@@ -1010,9 +1009,6 @@ Al momento, il backup e recovery di BlueXP (Cloud Backup) supporta una policy di
   <block id="2b23e67a81e3d69dd9c1a80ae371b5ac" category="cell">Assegnare una policy al carico di lavoro.
 Fare riferimento a. <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>.</block>
   <block id="e08278c8217792f95a8bc1de9c7a7d8b" category="cell">Il workload non dispone al momento di destinazioni di backup.</block>
-  <block id="827541907ba6873ebf770b4e03175c3f" category="cell">Aggiungete destinazioni di backup a questo workload per proteggerlo.
-Fare riferimento a. <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block>.
-Fare riferimento a. <block ref="8451c8808a80959dcb5e4c769b7fcdd6" category="inline-link-macro-rx"></block>.</block>
   <block id="eebff47fbf7c92aeaa2f87d473eb32ec" category="cell">Rafforzare una politica.</block>
   <block id="2efe8733dcd7aa63db28fb5caa6a3f8a" category="cell">Alcuni carichi di lavoro potrebbero non disporre di una protezione sufficiente. Rafforza la protezione sui carichi di lavoro con una policy.</block>
   <block id="8db2e9b654cd93f28beeae96f827c30a" category="cell">Aumenta la conservazione, Aggiungi i backup, applica i backup immutabili, blocca le estensioni di file sospette, abilita il rilevamento sullo storage secondario e molto altro ancora.
@@ -1087,4 +1083,7 @@ Fare riferimento a. <block ref="09d5258094b1e39cdb847e9d6bbdf0b2" category="inli
   <block id="dbc3399491cf278353174a615694d8f2" category="sidebar">Documenti sulla protezione ransomware BlueXP</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Note di rilascio</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conoscenza e supporto</block>
+  <block id="d05a1c13f5b6a28e222f869b1414a93a" category="paragraph">Fare riferimento a. <block ref="299e61f449baeabd97c5a478162c3894" category="inline-link-macro-rx"></block> oppure <block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block>.</block>
+  <block id="600a7b18be10701f94a8ee3667ed9056" category="cell">Aggiungete destinazioni di backup a questo workload per proteggerlo.
+Fare riferimento a. <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block>.</block>
 </blocks>

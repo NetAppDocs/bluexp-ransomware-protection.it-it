@@ -39,7 +39,7 @@ indexpage:
     - title: USA una panoramica sulla protezione dal ransomware di BlueXP
       url: "/rp-use-overview.html"
     - title: Rileva i carichi di lavoro
-      url: "/rp-use-discover.html"
+      url: "/rp-start-discover.html"
     - title: Visualizza la salute del carico di lavoro utilizzando la Dashboard
       url: "/rp-use-dashboard.html"
     - title: Proteggere i carichi di lavoro
