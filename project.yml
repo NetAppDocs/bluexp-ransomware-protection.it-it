@@ -45,12 +45,7 @@ sidebar:
       url: "/rp-use-alert.html"
     - title: Ripristino da un attacco ransomware
       url: "/rp-use-recover.html"
-  - title: Conoscenza e supporto
-    entries:
-    - title: Registrati per ricevere assistenza
-      url: "/task-support-registration.html"
-    - title: Richiedi assistenza
-      url: "/task-get-help.html"
+  - section: support
   - title: Note legali
     url: "/legal-notices.html"
 product-family:
