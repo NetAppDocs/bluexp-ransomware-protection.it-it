@@ -56,7 +56,7 @@ Qualsiasi browser moderno funzionerà.
 Sì, la protezione dal ransomware BlueXP rileva le pianificazioni Snapshot impostate in ONTAP.
 
 *Se imposti una policy utilizzando la protezione dal ransomware di BlueXP, devi apportare modifiche future solo in questo servizio?*
-No, è possibile apportare modifiche ai criteri da qualsiasi servizio.
+Ti consigliamo di apportare modifiche alla policy dal servizio di protezione dal ransomware di BlueXP.
 
 
 
