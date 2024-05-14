@@ -14,7 +14,7 @@ summary: La dashboard della protezione dal ransomware di BlueXP fornisce informa
 [role="lead"]
 La dashboard per la protezione dal ransomware di BlueXP fornisce informazioni immediate sulla salute della protezione dei workload. Puoi determinare rapidamente i workload a rischio o protetti, identificare i workload che ne sono influenzati da un incidente o nel recovery e misurare il grado di protezione tenendo conto della quantità di storage protetto o a rischio.
 
-È inoltre possibile utilizzare la dashboard per esaminare e agire in base ai consigli sulla protezione.
+Puoi anche utilizzare la dashboard per esaminare e agire in base ai consigli sulla protezione, accedere alle impostazioni globali, scaricare i report e accedere a questa documentazione tecnica.
 
 
 
@@ -26,7 +26,7 @@ La dashboard per la protezione dal ransomware di BlueXP fornisce informazioni im
 Dopo il rilevamento, la Dashboard mostra la salute della data Protection dei carichi di lavoro.
 
 +
-image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Pagina del dashboard"]
+image:screen-dashboard.png["Pagina del dashboard"]
 
 . Dal dashboard, è possibile visualizzare ed eseguire una delle seguenti operazioni in ciascuno dei riquadri:
 +
@@ -82,15 +82,28 @@ Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli
 Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"]. 
 
 
+| Modificare il nome del workload | I carichi di lavoro utilizzano nomi predefiniti. | Assegnare un nome descrittivo al carico di lavoro.
+Fare riferimento a. link:rp-use-manage.html["Gestire i carichi di lavoro"]. 
+
+
+| Attivare il rilevamento delle minacce | Inviare dati a un sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. | Immettere i dettagli del server SIEM/XDR per abilitare il rilevamento delle minacce.
+Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"].
+Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"]. 
+
+
+| Abilita una protezione coerente del carico di lavoro per applicazioni o VMware | Questi workload non vengono gestiti dal software SnapCenter o dal plug-in SnapCenter per VMware vSphere. | Per farle gestire da SnapCenter, abilita una protezione coerente con il carico di lavoro.
+Fare riferimento a. link:rp-use-protect.html["Proteggere il carico di lavoro dagli attacchi ransomware"]. 
+
+
 | Rafforzare una politica. | Alcuni carichi di lavoro potrebbero non disporre di una protezione sufficiente. Rafforza la protezione sui carichi di lavoro con una policy. | Aumenta la conservazione, Aggiungi i backup, applica i backup immutabili, blocca le estensioni di file sospette, abilita il rilevamento sullo storage secondario e molto altro ancora.
 Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
 
 
-| Proteggi i workload dell'applicazione critici o importanti da ransomware. | La pagina protezione visualizza i carichi di lavoro dell'applicazione critici o importanti (in base al livello di priorità assegnato) che non sono protetti. | Assegnare una policy a questi carichi di lavoro.
+| Proteggi i workload dell'applicazione critici o altamente importanti dal ransomware. | La pagina protezione visualizza i carichi di lavoro dell'applicazione critici o altamente importanti (in base al livello di priorità assegnato) che non sono protetti. | Assegnare una policy a questi carichi di lavoro.
 Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
 
 
-| Proteggi i carichi di lavoro critici o importanti di condivisione file dal ransomware. | La pagina protezione visualizza i carichi di lavoro critici o importanti del tipo file Share o Datastore non protetti. | Assegnazione di una policy a ciascun carico di lavoro.
+| Proteggi i carichi di lavoro di condivisione file, critici o altamente importanti, dal ransomware. | La pagina protezione visualizza i carichi di lavoro critici o molto importanti del tipo file Share o DataStore non protetti. | Assegnazione di una policy a ciascun carico di lavoro.
 Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
 
 
@@ -109,4 +122,49 @@ Il suggerimento scompare dall'elenco delle attività e viene visualizzato nell'e
 TIP: È possibile modificare in un secondo momento un elemento da liquidare in un elemento da fare. Quando si contrassegna un elemento completato o si modifica un elemento respinto in un'azione attività, le azioni totale aumentano di 1.
 
 . Per rivedere le informazioni su come agire in base alle raccomandazioni, selezionare l'icona *informazioni*.
+
+
+
+
+== Scaricare i file CSV
+
+È possibile scaricare file CSV che mostrano i dettagli relativi alla protezione, agli avvisi e al ripristino.
+
+È possibile scaricare i file CSV da una delle opzioni del menu principale:
+
+* *Dashboard:* contiene tutte le informazioni di riepilogo per tutti i carichi di lavoro.
+* *Protezione*: Contiene lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale protetto e a rischio.
+* *Avvisi*: Include lo stato e i dettagli di tutti gli avvisi, compreso il numero totale di avvisi e istantanee automatiche.
+* *Recovery*: Include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro contrassegnati come "Ripristino necessario", "in corso", "Ripristino non riuscito" e "ripristinato correttamente".
+
+
+Se si scaricano file CSV dalla pagina protezione, Avvisi o Ripristino, solo i dati contenuti in tale pagina vengono inclusi nel file CSV.
+
+I file CSV includono i dati per tutti i carichi di lavoro su tutti gli ambienti di lavoro BlueXP.
+
+.Fasi
+. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
++
+image:screen-dashboard.png["Pagina del dashboard"]
+
+. Dalla dashboard o da un'altra pagina, selezionare *Aggiorna* image:button-refresh.png["Opzione di aggiornamento"] in alto a destra per aggiornare i dati che verranno visualizzati nei file.
+. Effettuare una delle seguenti operazioni:
++
+** Nella pagina Dashboard o Altro, selezionare *Download* image:button-download.png["Opzione di download"] opzione.
+** Dal menu di protezione dal ransomware di BlueXP, seleziona *Report*.
+
+
+. Se è stata selezionata l'opzione *rapporti*, selezionare uno dei file preconfigurati e selezionare *Scarica (CSV)*.
+
+
+
+
+== Accedere alla documentazione tecnica
+
+Puoi accedere alla documentazione tecnica da docs.netapp.com o dall'interno del servizio di protezione dal ransomware BlueXP.
+
+.Fasi
+. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
+. Dal dashboard, selezionare le *azioni* verticali image:button-actions-vertical.png["Opzione azioni verticali"] opzione.
+. Seleziona *Novità* per visualizzare i dettagli nelle Note sulla versione o *documentazione* per visualizzare la home page della documentazione relativa alla protezione dal ransomware di BlueXP.
 

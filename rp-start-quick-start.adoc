@@ -23,6 +23,7 @@ link:rp-start-prerequisites.html["Assicurati che il tuo ambiente soddisfi questi
 * link:rp-start-setup.html["Preparare NetApp StorageGRID o Amazon Web Services come destinazione di backup"].
 * link:rp-start-setup.html["Configurare un connettore in BlueXP"].
 * link:rp-start-setup.html["Configurare le destinazioni di backup"].
+* link:rp-start-setup.html["Abilitare facoltativamente il rilevamento delle minacce"].
 * link:rp-start-discover.html["Scopri i carichi di lavoro in BlueXP"].
 
 

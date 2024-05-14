@@ -4,7 +4,7 @@ permalink: concept-ransomware-protection.html
 keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity 
 summary: Gli attacchi ransomware possono costare tempo di business, risorse e reputazione. Il servizio di protezione ransomware BlueXP consente di visualizzare informazioni rilevanti sulla cybersecurity e valutare la resilienza della tua organizzazione in caso di attacco informatico. Inoltre, fornisce un elenco di avvisi e correzioni per rendere i dati più sicuri. 
 ---
-= Scopri l'anteprima della protezione dal ransomware BlueXP
+= Scopri di più sulla protezione ransomware di BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,10 +16,7 @@ summary: Gli attacchi ransomware possono costare tempo di business, risorse e re
 [role="lead"]
 Gli attacchi ransomware possono bloccare l'accesso ai sistemi e i dati, mentre gli autori degli attacchi possono chiedere riscatti in cambio del rilascio o della decrittografia dei dati. Secondo IDC, non è raro che le vittime del ransomware subiscano diversi attacchi ransomware. L'attacco può interrompere l'accesso ai tuoi dati tra un giorno e diverse settimane.
 
-La protezione dal ransomware di BlueXP è un servizio di orchestrazione per protezione, rilevamento e recovery del ransomware. Per la versione in anteprima, il servizio protegge i carichi di lavoro basati su applicazioni dei datastore Oracle, MySQL, VM, e condivisioni di file sullo storage NAS on-premise oltre che su Cloud Volumes ONTAP in Amazon Web Services (utilizzando il protocollo NFS) tra gli account BlueXP ed effettua il backup dei dati su cloud storage Amazon Web Services o NetApp StorageGRID.
-
-
-NOTE: QUESTA DOCUMENTAZIONE VIENE FORNITA COME ANTEPRIMA TECNOLOGICA.  Con questa offerta di anteprima, NetApp si riserva il diritto di modificare i dettagli dell'offerta, i contenuti e la tempistica prima della disponibilità generale.
+La protezione dal ransomware di BlueXP è un servizio di orchestrazione per protezione, rilevamento e recovery del ransomware. Il servizio protegge i carichi di lavoro basati su applicazioni dei datastore Oracle, MySQL, VM e file share su storage NAS on-premise (utilizzando i protocolli NFS e CIFS), oltre a Cloud Volumes ONTAP in Amazon Web Services negli account BlueXP ed effettua il backup dei dati su cloud storage Amazon Web Services e NetApp StorageGRID.
 
 
 
@@ -27,12 +24,10 @@ NOTE: QUESTA DOCUMENTAZIONE VIENE FORNITA COME ANTEPRIMA TECNOLOGICA.  Con quest
 
 Il servizio di protezione dal ransomware di BlueXP offre un utilizzo completo di diverse tecnologie NetApp così che il tuo amministratore dello storage, amministratore della sicurezza dei dati o ingegnere delle operazioni di sicurezza possano raggiungere i seguenti obiettivi:
 
-* *Identifica* tutti i workload basati su applicazioni, condivisioni di file o gestiti da VMware in NAS NetApp on-premise con ambienti di lavoro NFS in BlueXP, tra account BlueXP, aree di lavoro e connettori BlueXP. Quindi, il servizio categorizza la priorità dei dati e offre consigli per i miglioramenti alla protezione dal ransomware.
+* *Identifica* tutti i carichi di lavoro basati su applicazioni, condivisioni di file o gestiti da VMware in NAS NetApp on-premise con ambienti di lavoro NFS o CIFS in BlueXP, tra account BlueXP, aree di lavoro e connettori BlueXP. Quindi, il servizio categorizza la priorità dei dati e offre consigli per i miglioramenti alla protezione dal ransomware.
 * *Proteggi* i tuoi carichi di lavoro abilitando backup e copie Snapshot sui tuoi dati.
 * *Detect* anomalie che potrebbero essere attacchi ransomware.
-
-
-* *Rispondi* ai potenziali attacchi ransomware avviando automaticamente una copia Snapshot NetApp ONTAP.
+* *Rispondi* ai potenziali attacchi ransomware avviando automaticamente una Snapshot NetApp ONTAP a prova di manomissione che è bloccata in modo che la copia non possa essere eliminata accidentalmente o malamente. I tuoi dati di backup rimarranno immutabili e protetti end-to-end dagli attacchi ransomware all'origine e alla destinazione.
 * *Recupera* i tuoi workload che aiutano ad accelerare l'uptime dei workload orchestrando diverse tecnologie NetApp. È possibile scegliere di ripristinare volumi, cartelle o file specifici. Il servizio fornisce consigli sulle opzioni migliori.
 
 
@@ -51,30 +46,27 @@ La protezione dal ransomware BlueXP offre i seguenti benefici:
 * Protegge i dati nei principali carichi di lavoro basati sull'applicazione, come i datastore e le condivisioni di file MySQL, Oracle e VMware.
 * Rileva gli attacchi ransomware sui dati in tempo reale sullo storage primario utilizzando la tecnologia ai.
 * Avvia azioni automatizzate in risposta ai potenziali attacchi rilevati creando copie Snapshot e avviando avvisi relativi ad attività anomale.
-* Applica una recovery ridotta per soddisfare le policy di RPO. La protezione ransomware di BlueXP orchestra il recovery dagli incidenti ransomware utilizzando diversi servizi di recovery di NetApp, tra cui backup e recovery di BlueXP (in precedenza Cloud Backup).
+* Applica una recovery ridotta per soddisfare le policy di RPO. La protezione ransomware di BlueXP orchestra il recovery dagli incidenti ransomware utilizzando diversi servizi di recovery di NetApp, tra cui backup e recovery di BlueXP (in precedenza Cloud Backup) e SnapCenter.
 
 
 
 
 == Costo
 
-NetApp non ti addebita i costi per l'utilizzo della versione di anteprima della protezione dal ransomware di BlueXP.
+NetApp non ti addebita i costi per l'utilizzo della versione di prova della protezione dal ransomware di BlueXP. Puoi utilizzare la versione completa della protezione dal ransomware di BlueXP con una licenza NetApp o un abbonamento AWS.
 
 
 
 == Licensing
 
-L'anteprima della protezione dal ransomware di BlueXP non richiede licenze speciali.  Tutte le licenze di anteprima sono licenze di valutazione.
+Grazie alla protezione dal ransomware di BlueXP, puoi utilizzare diversi piani di licenza, tra cui una versione di prova gratuita, un'iscrizione pay-as-you-go o il "Bring Your Own License".
+
+La protezione dal ransomware di BlueXP richiede una licenza NetApp ONTAP.
 
 
-TIP: Per la versione di anteprima, NetApp aiuta a configurare la valutazione e le eventuali licenze richieste.
+NOTE: La release generale della protezione ransomware di BlueXP, a differenza della release Preview, include una licenza per la tecnologia di protezione autonoma dal ransomware NetApp. Fare riferimento a. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Panoramica della protezione ransomware autonoma"^] per ulteriori informazioni.
 
-L'anteprima della protezione dal ransomware di BlueXP richiede le seguenti licenze:
-
-* ONTAP
-* Tecnologia per la protezione autonoma dal ransomware NetApp. Fare riferimento a. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Panoramica della protezione ransomware autonoma"^] per ulteriori informazioni.
-* Servizio di backup e recovery di BlueXP
-
+Per ulteriori informazioni, vedere link:rp-start-licenses.html["Impostare la licenza"].
 
 
 
@@ -90,9 +82,9 @@ image:diagram-rp-architecture-preview3.png["Diagramma che mostra l'architettura 
 
 
 | *IDENTIFICA*  a| 
-* Trova tutti i dati NAS (NFS mount) on-premise del cliente connessi ad BlueXP.
-* Identifica i dati dei clienti dalle API di servizio ONTAP e li associa ai workload. Scopri di più https://docs.netapp.com/us-en/ontap-family/["ONTAP"^] e. https://docs.netapp.com/us-en/snapcenter/index.html["Software SnapCenter"^].
-* Rileva il livello di protezione corrente di ogni volume delle copie Snapshot NetApp e delle policy di backup, oltre a qualsiasi funzionalità di rilevamento on-box. Il servizio associa quindi questa postura di protezione ai workload utilizzando backup e recovery di BlueXP, il Digital Advisor di BlueXP, i servizi e le tecnologie NetApp e ONTAP come protezione autonoma da ransomware, FPolicy, policy di backup e policy Snapshot.
+* Trova tutti i dati NAS on-premise del cliente (protocolli NFS e CIFS) connessi ad BlueXP.
+* Identifica i dati dei clienti provenienti dalle API dei servizi ONTAP e SnapCenter e li associa ai workload. Scopri di più https://docs.netapp.com/us-en/ontap-family/["ONTAP"^] e. https://docs.netapp.com/us-en/snapcenter/index.html["Software SnapCenter"^].
+* Rileva il livello di protezione corrente di ogni volume delle copie Snapshot NetApp e delle policy di backup, oltre a qualsiasi funzionalità di rilevamento on-box. Il servizio associa quindi questa postura di protezione ai workload utilizzando backup e recovery di BlueXP, BlueXP Digital Advisor, i servizi e le tecnologie NetApp e ONTAP come protezione autonoma da ransomware, FPolicy, policy di backup e policy Snapshot.
 Scopri di più https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione ransomware autonoma"^] e. https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup e ripristino BlueXP"^], https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor di BlueXP"^], e. https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy di ONTAP"^].
 * Assegna una priorità aziendale a ogni carico di lavoro in base ai livelli di protezione rilevati automaticamente e consiglia policy di protezione per i carichi di lavoro in base alla priorità aziendale.
 * La protezione dal ransomware inoltre apprende le associazioni di policy e consiglia policy personalizzate per carichi di lavoro simili.
@@ -101,7 +93,7 @@ Scopri di più https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["P
 
 
 | *PROTEGGI*  a| 
-* Monitora attivamente i workload e orchestra l'utilizzo di backup e recovery di BlueXP e le API ONTAP applicando policy a ciascuno dei workload identificati.
+* Monitora attivamente i workload e orchestra l'utilizzo di backup e recovery di BlueXP, le API SnapCenter e ONTAP applicando policy a ciascuno dei workload identificati.
 
 
 
@@ -131,7 +123,7 @@ Scopri di più https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["P
 
 == Destinazioni di backup supportate, ambienti di lavoro e origini dati
 
-Utilizza l'anteprima della protezione ransomware di BlueXP per scoprire quanto siano resilienti i tuoi dati a un attacco informatico sui seguenti tipi di destinazioni di backup, ambienti di lavoro e origini dati:
+Utilizza la protezione ransomware di BlueXP per scoprire quanto siano resilienti i tuoi dati rispetto a un attacco informatico sui seguenti tipi di destinazioni di backup, ambienti di lavoro e origini dati:
 
 *Target di backup supportati*
 
@@ -141,18 +133,20 @@ Utilizza l'anteprima della protezione ransomware di BlueXP per scoprire quanto s
 
 *Ambienti di lavoro supportati*
 
-* NAS ONTAP on-premise (con protocollo NFS)
-* ONTAP Select
-* Cloud Volumes ONTAP in AWS (utilizzando il protocollo NFS)
+* NAS ONTAP on-premise (con protocolli NFS e CIFS)
++
+I gruppi flessibili non sono supportati.
+
+* Cloud Volumes ONTAP in AWS (con protocolli NFS e CIFS)
 
 
 *Origini dati*
 
-Per la versione di anteprima, il servizio protegge i seguenti carichi di lavoro basati su applicazioni:
+Il servizio protegge i seguenti carichi di lavoro basati su applicazioni sui volumi di dati primari:
 
 * Condivisioni di file NetApp
 * Datastore VMware
-* Database (per la versione di anteprima, Oracle e MySQL)
+* Database (MySQL e Oracle)
 
 
 
@@ -162,5 +156,5 @@ Per la versione di anteprima, il servizio protegge i seguenti carichi di lavoro 
 Potresti trarre beneficio dalla comprensione di una certa terminologia relativa alla protezione dal ransomware.
 
 * *Protezione*: La protezione nel ransomware di BlueXP significa garantire che snapshot e backup immutabili vengano eseguiti regolarmente su un dominio di sicurezza diverso utilizzando policy di protezione.
-* *Carico di lavoro*: Un carico di lavoro nell'anteprima della protezione dal ransomware di BlueXP può includere database MySQL o Oracle, datastore VMware o condivisioni di file.
+* *Carico di lavoro*: Un carico di lavoro nella protezione dal ransomware di BlueXP può includere database MySQL o Oracle, datastore VMware o condivisioni di file.
 

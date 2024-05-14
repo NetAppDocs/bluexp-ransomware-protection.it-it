@@ -14,22 +14,26 @@ summary: Puoi proteggere i workload dagli attacchi ransomware assegnando policy 
 [role="lead"]
 Puoi proteggere i workload dagli attacchi ransomware eseguendo le seguenti azioni utilizzando la protezione dal ransomware di BlueXP.
 
-* Visualizza la protezione dei carichi di lavoro esistenti.
-* Assegnazione di una policy a un carico di lavoro.
+* Modifica dei dettagli esistenti relativi alla protezione dei carichi di lavoro.
 +
-** Aumentare la protezione delle applicazioni per evitare futuri attacchi RW.
-** Modificare la protezione per un carico di lavoro precedentemente protetto nel servizio RW.
+** Modifica il nome di un carico di lavoro (ad esempio, applicazioni e datastore di macchine virtuali) non gestito in SnapCenter.
+** Modificare la priorità o l'importanza del carico di lavoro.
 
 
-* Gestire i criteri (solo quelli creati).
+* Abilita una protezione coerente con il carico di lavoro, che funziona con il software SnapCenter o il plug-in SnapCenter per VMware vSphere.
+* Creare o gestire strategie di protezione dal ransomware che includano policy create per snapshot, backup e rilevamento dei ransomware.
++
+** Importare una strategia e regolarla.
+** Modificare o eliminare le strategie di rilevamento (solo quelle create).
 
 
-La protezione dal ransomware di BlueXP assegna una priorità a ogni workload durante il rilevamento. La priorità del carico di lavoro è determinata dalle seguenti frequenze di istantanea:
 
-* *Critico*: Le copie snapshot sono acquisite più di 1 TB all'ora (programma di protezione altamente aggressivo)
-* *Importante*: Le copie snapshot sono state acquisite meno di 1 TB all'ora ma più di 1 TB al giorno
-* *Standard*: Le copie snapshot sono state acquisite più di 1 copie al giorno
 
+
+
+== Informazioni sulla protezione
+
+La pagina protezione mostra le seguenti informazioni sulla protezione del carico di lavoro:
 
 *Stato di protezione*: Un carico di lavoro può mostrare uno dei seguenti stati di protezione per indicare se un criterio è applicato o meno:
 
@@ -39,45 +43,41 @@ La protezione dal ransomware di BlueXP assegna una priorità a ogni workload dur
 * *Non riuscito*: Un criterio è applicato ma non funziona.
 
 
-*Stato di protezione*: Un carico di lavoro può avere uno dei seguenti stati di integrità di protezione:
+*Stato di rilevamento*: Un carico di lavoro può avere uno dei seguenti stati di rilevamento ransomware:
 
-* *Integro*: La protezione del carico di lavoro è abilitata e i backup e le copie Snapshot sono stati completati.
-* *In corso*: Sono in corso backup o copie Snapshot.
-* *Non riuscito*: I backup o le copie Snapshot non sono stati completati correttamente.
-* *N/A*: La protezione non è abilitata o sufficiente sul carico di lavoro.
-
-
+* *Apprendimento*: Al carico di lavoro è stata recentemente assegnata una policy di rilevamento del ransomware e il servizio sta analizzando i workload.
+* *Attivo*: Viene assegnato un criterio di protezione dal rilevamento ransomware.
+* *Non impostato*: Non è stata assegnata una policy di protezione dal rilevamento ransomware.
+* *Errore*: È stata assegnata una policy di rilevamento ransomware, ma il servizio ha riscontrato un errore.
 
 
-== Visualizza la protezione ransomware del carico di lavoro
+*Criterio di rilevamento*: Viene visualizzato il nome del criterio di rilevamento ransomware, se ne è stato assegnato uno. Se il criterio di rilevamento non è stato assegnato, viene visualizzato "N/A".
 
-Uno dei primi passi nella protezione dei carichi di lavoro è la visualizzazione dei carichi di lavoro attuali e del loro stato di protezione. Sono visualizzabili i seguenti tipi di carichi di lavoro:
+*Criteri di backup e snapshot*: In questa colonna vengono visualizzati i criteri di backup e snapshot applicati al carico di lavoro e al prodotto o servizio che gestisce tali criteri.
 
-* Workload VM
-* Workload di condivisione di file
-
-
-.Fasi
-. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
-. Effettuare una delle seguenti operazioni:
-+
-** Nel riquadro protezione dati dashboard, selezionare *Visualizza tutto*.
-** Dal menu, selezionare *protezione*.
-+
-image:screen-protection.png["Pagina di protezione"]
-
-
-
-. Da questa pagina è possibile assegnare un criterio a un carico di lavoro.
+* Gestito da SnapCenter
+* Gestito dal plug-in SnapCenter per VMware vSphere
+* Gestito da backup e recovery di BlueXP
+* Nome della policy di protezione ransomware che gestisce snapshot e backup
+* Nessuno
 
 
 
 
-== Assegnazione di una policy di protezione predefinita ai carichi di lavoro
+=== Importanza del carico di lavoro
 
-Per proteggere i tuoi dati, puoi assegnare una policy di protezione dal ransomware esistente a uno o più carichi di lavoro. È inoltre possibile assegnare un criterio diverso a un carico di lavoro che dispone già di un criterio.
+La protezione dal ransomware di BlueXP assegna un'importanza o una priorità a ogni workload durante il rilevamento, in base a un'analisi di ogni workload. L'importanza del carico di lavoro è determinata dalle seguenti frequenze di istantanea:
 
-La protezione dal ransomware di BlueXP include le seguenti policy predefinite allineate con la priorità dei workload:
+* *Critico*: Le copie snapshot sono acquisite più di 1 TB all'ora (programma di protezione altamente aggressivo)
+* *Alto*: Le copie snapshot sono state acquisite meno di 1 TB all'ora ma più di 1 TB al giorno
+* *Standard*: Le copie snapshot sono state acquisite più di 1 copie al giorno
+
+
+
+
+=== Policy di rilevamento ransomware predefinite basate sull'importanza dei workload
+
+Puoi scegliere una delle seguenti policy predefinite di protezione dal ransomware BlueXP che sono allineate con l'importanza dei carichi di lavoro:
 
 [cols="10,15a,20,15,15,15"]
 |===
@@ -104,7 +104,7 @@ Ogni 30 giorni
 | 60 | 2 | 309 
 
 
-.4+| *Policy importante sui carichi di lavoro*  a| 
+.4+| *Politica per carichi di lavoro elevati*  a| 
 Quarto ogni ora
 | Ogni 30 minuti | 3 | 144 | 165 
 
@@ -143,72 +143,147 @@ Ogni 1 settimana
 Ogni 30 giorni
 | 60 | 2 | 93 
 |===
+
+
+== Visualizza la protezione dal ransomware su un carico di lavoro
+
+Uno dei primi passi nella protezione dei carichi di lavoro è la visualizzazione dei carichi di lavoro attuali e del loro stato di protezione. Sono visualizzabili i seguenti tipi di carichi di lavoro:
+
+* Workload delle applicazioni
+* Workload VM
+* Workload di condivisione di file
+
+
 .Fasi
-. Dalla protezione dal ransomware di BlueXP, esegui una delle seguenti operazioni:
+. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
+. Effettuare una delle seguenti operazioni:
 +
-** Nel riquadro protezione dati dashboard, selezionare *Visualizza tutto*.
-** Nel riquadro Dashboard Recommendation (Consiglio dashboard), selezionare un suggerimento sull'assegnazione di un criterio e selezionare *Review and fix* (Rivedi e correggi*).
+** Nel riquadro protezione dati del dashboard, selezionare *Visualizza tutto*.
 ** Dal menu, selezionare *protezione*.
-
-
-. Nella pagina protezione, esaminare i carichi di lavoro e selezionare *Proteggi* accanto al carico di lavoro.
 +
-Viene visualizzato un elenco di criteri.
+image:screen-protection-sc-columns.png["Pagina di protezione"]
+
+
+
+. Da questa pagina è possibile visualizzare e modificare i dettagli relativi alla protezione del carico di lavoro.
+
+
+
+
+== Modificare i dettagli di protezione dei carichi di lavoro
+
+Puoi modificare i dettagli di protezione come la priorità del workload e il nome del workload, se tale workload non è gestito dal backup e recovery di SnapCenter o BlueXP.
+
+.Fasi
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Nella pagina protezione, selezionare un carico di lavoro.
++
+image:screen-protection-details2.png["Dettagli del carico di lavoro nella pagina protezione"]
 
 +
-image:screen-protect-policy-list.png["Elenco dei criteri di protezione"]
+Dalla pagina dei dettagli del carico di lavoro è possibile assegnare un criterio a un carico di lavoro, modificare il nome o la priorità di un carico di lavoro, visualizzare gli avvisi, visualizzare le destinazioni di backup e visualizzare le informazioni di ripristino.
 
-. Per visualizzare i dettagli, fare clic sulla freccia rivolta verso il basso di un criterio.
-. Selezionare un criterio da assegnare al carico di lavoro.
-. Selezionare *Proteggi*.
-. Esaminare il riquadro azioni consigliate del dashboard, che mostra l'azione come "completata".
+. Per modificare il nome di un carico di lavoro, fare clic su *matita* image:button_pencil.png["Matita"] accanto al nome del carico di lavoro e modificare il nome.
+. Per modificare l'importanza del carico di lavoro dalla priorità assegnata, fare clic su *matita* image:button_pencil.png["Matita"] accanto alla priorità del carico di lavoro e modificarla.
+. Per visualizzare il criterio associato al carico di lavoro, nel riquadro protezione della pagina Dettagli carico di lavoro, fare clic su *Visualizza criterio*.
+. Per visualizzare le destinazioni di backup del carico di lavoro, nel riquadro protezione della pagina Dettagli carico di lavoro, fare clic su *Visualizza destinazione di backup*.
++
+Viene visualizzato un elenco di destinazioni di backup configurate.
+Per ulteriori informazioni, vedere link:rp-use-settings.html["Configurare le impostazioni di protezione"].
 
 
 
 
-== Creare un criterio di protezione
 
-Se i criteri esistenti non soddisfano le esigenze aziendali, è possibile creare un nuovo criterio di protezione. È possibile creare da zero i propri criteri oppure utilizzarne uno esistente e modificarne le impostazioni.
+== Abilita una protezione coerente con applicazioni o VM con SnapCenter
 
-È possibile creare policy che governano lo storage primario e secondario e trattano allo stesso tempo lo storage primario e secondario o in modo diverso.
+L'attivazione della protezione coerente con le applicazioni o le VM consente di proteggere le applicazioni o i carichi di lavoro delle VM in modo coerente, raggiungendo uno stato di inattività e coerente per evitare potenziali perdite di dati successivamente se il ripristino è necessario.
 
-È possibile creare un criterio durante la loro gestione o durante il processo di assegnazione di un criterio a un carico di lavoro.
+Questo processo avvia l'installazione del software SnapCenter per le applicazioni o del plug-in SnapCenter per VMware vSphere per le VM.
 
-.Procedura per la creazione di un criterio durante la gestione dei criteri
+Una volta abilitata una protezione coerente con il carico di lavoro, puoi gestire le strategie di protezione nella protezione dal ransomware di BlueXP. La strategia di protezione include le policy di backup e Snapshot gestite altrove, oltre a una policy di rilevamento del ransomware gestita nella protezione dal ransomware di BlueXP.
+
+Per ulteriori informazioni su SnapCenter, fare riferimento alle seguenti informazioni:
+
+* https://docs.netapp.com/us-en/snapcenter/index.html["Software SnapCenter"^]
+* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html["Plug-in SnapCenter per VMware vSphere"^]
+
+
+.Fasi
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Nella pagina protezione, selezionare un carico di lavoro.
++
+image:screen-protection-sc-columns.png["Pagina di protezione"]
+
+. Nella pagina protezione, selezionare *azioni* image:screenshot_horizontal_more_button.gif["Pulsante azioni"] E nel menu a discesa, selezionare *attiva protezione coerente con il carico di lavoro* per attivare SnapCenter.
++
+
+TIP: Se si sceglie un carico di lavoro basato su VM, viene visualizzato il collegamento per installare il plug-in SnapCenter per VMware vSphere invece di "Installa SnapCenter".
+
++
+image:screen-protection-enable-sc.png["Abilita pagina di protezione coerente con il carico di lavoro"]
+
+. Nel campo posizione carico di lavoro, selezionare *Copia* per copiare la posizione del carico di lavoro negli Appunti da utilizzare nell'installazione di SnapCenter. Scorri verso il basso per vedere il resto dei dettagli del carico di lavoro.
+. Selezionare *Installa SnapCenter*.
++
+** Se è stato selezionato un carico di lavoro basato sull'applicazione, vengono visualizzate le informazioni sul software SnapCenter.
+** Se è stato selezionato un carico di lavoro basato su VM, vengono visualizzate le informazioni relative al plug-in SnapCenter per VMware vSphere.
+
+
+. Seguire le informazioni per installare SnapCenter.
+. Torna alla protezione dal ransomware di BlueXP. Selezionare *protezione* per visualizzare la pagina protezione.
+. Esaminare i dettagli nella colonna Criteri di backup e snapshot nella pagina protezione per verificare che i criteri siano gestiti altrove.
+
+
+
+
+== Creare una strategia di protezione dal ransomware (se non disponi di policy di backup o snapshot)
+
+Se sul workload non esistono policy di backup o snapshot, puoi creare una strategia di protezione dal ransomware, che può includere le seguenti policy che crei nella protezione dal ransomware di BlueXP:
+
+* Policy di Snapshot
+* Policy di backup
+* Policy di rilevamento del ransomware
+
+
+.Passaggi per creare una strategia di protezione dal ransomware
 . Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
 +
-image:screen-protection2.png["Pagina di protezione"]
+image:screen-protection-sc-columns.png["Pagina di protezione"]
 
-. Nella pagina protezione, selezionare *Gestisci criteri*.
+. Dalla pagina protezione, seleziona *Gestisci strategie di protezione ransomware*.
 +
-image:screen-protection-policy-manage2.png["Pagina Gestisci criteri"]
+image:screen-protection-strategy-manage2.png["Pagina Gestione strategia"]
 
-. Nella pagina Gestisci criteri, selezionare *Aggiungi*.
-+
-image:screen-protection-policy-add2.png["Pagina Aggiungi criterio"]
-
-. Immettere il nome di un nuovo criterio o un nome di criterio esistente per copiarlo. Se si immette un nome di criterio esistente, scegliere il criterio da copiare.
+. Dalla pagina delle strategie di protezione dal ransomware, seleziona *Aggiungi*.
+. Immettere un nuovo nome di strategia o un nome esistente per copiarlo. Se si immette un nome esistente, scegliere quale copiare e selezionare *Copia*.
 +
 
-NOTE: Se si sceglie di copiare e modificare un criterio esistente, è necessario modificare almeno un'impostazione per renderla univoca.
+NOTE: Se si sceglie di copiare e modificare una strategia esistente, il servizio aggiunge "_copy" al nome originale. È necessario modificare il nome e almeno un'impostazione per renderlo univoco.
 
-. Per ciascun elemento, selezionare la freccia verso il basso.
+. Per ciascun elemento, selezionare la *freccia giù*.
 +
-** *Archiviazione primaria*:
+** *Criteri di rilevamento*:
 +
-*** *Pianificazioni copie snapshot*: Scegliere le opzioni di pianificazione, il numero di copie snapshot da conservare e selezionare per attivare la pianificazione.
-*** *Rilevamento primario*: Abilita il servizio per rilevare gli incidenti ransomware sullo storage primario.
+*** *Policy*: Scegliere uno dei criteri di rilevamento preprogettati.
+*** *Rilevamento primario*: Abilitare il rilevamento ransomware per fare in modo che il servizio rilevi potenziali attacchi ransomware.
 *** *Blocca estensioni file*: Abilitare questa opzione affinché il blocco di servizio conosca le estensioni file sospette. Il servizio esegue copie Snapshot automatizzate quando è abilitato il rilevamento primario.
-
-
-** *Archiviazione secondaria*:
 +
+Se si desidera modificare le estensioni dei file bloccati, modificarle in System Manager.
+
+
+
+** *Snapshot policy*:
++
+*** *Nome criterio istantanea*: Immettere un nome per il criterio istantanea.
+*** *Pianificazioni istantanee*: Scegliere le opzioni di pianificazione, il numero di copie snapshot da conservare e selezionare per attivare la pianificazione.
+
+
+** *Politica di backup*:
++
+*** *Nome criterio di backup*: Immettere un nome nuovo o esistente.
+*** *Blocco di backup*: Scegliere questa opzione per evitare che i backup sullo storage secondario vengano modificati o eliminati per un determinato periodo di tempo. Questo viene anche chiamato _storage immutabile_.
 *** *Pianificazioni di backup*: Scegliere le opzioni di pianificazione per l'archiviazione secondaria e attivare la pianificazione.
-*** *Rilevamento secondario*: Abilita il servizio per rilevare gli incidenti ransomware sullo storage secondario.
-*** *Blocca backup*: Scegliere questa opzione per evitare che i backup sullo storage secondario vengano modificati o eliminati per un determinato periodo di tempo. Questo viene anche chiamato _storage immutabile_.
-+
-Questa opzione utilizza la tecnologia DataLock di NetApp, che blocca i backup sullo storage secondario. Il periodo di tempo in cui il file di backup viene bloccato (e conservato) viene definito periodo di conservazione DataLock. E si basa sulla pianificazione dei criteri di backup e sull'impostazione di conservazione definita, oltre a un buffer di 14 giorni. Qualsiasi policy di conservazione DataLock inferiore a 30 giorni viene arrotondata al minimo di 30 giorni.
-
 
 
 
@@ -216,58 +291,90 @@ Questa opzione utilizza la tecnologia DataLock di NetApp, che blocca i backup su
 . Selezionare *Aggiungi*.
 
 
-.Procedura per creare un criterio durante l'assegnazione dei criteri di protezione
-. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
-+
-image:screen-protection2.png["Pagina di protezione"]
-
-. Nella pagina protezione, selezionare *protezione*.
-. Dalla pagina di protezione, selezionare *Aggiungi*.
-+
-image:screen-protection-policy-add2.png["Pagina Aggiungi criterio"]
-
-. Completare il processo, che equivale alla creazione di un criterio dalla pagina Gestisci criteri.
 
 
+== Aggiungi una policy di rilevamento ai workload che dispongono già di policy di backup e snapshot
 
+Grazie alla protezione dal ransomware di BlueXP, puoi assegnare una policy di rilevamento del ransomware ai workload che hanno già policy di backup e snapshot, gestite in altri prodotti o servizi NetApp. Il criterio di rilevamento non modifica i criteri gestiti in altri prodotti.
 
-== Assegnare un criterio di protezione diverso
+Altri servizi, come backup e recovery di BlueXP e SnapCenter, utilizzano i seguenti tipi di policy per gestire i workload:
 
-È possibile scegliere una policy di protezione diversa per un carico di lavoro.
-Potresti voler aumentare la protezione per prevenire futuri attacchi ransomware modificando la policy di protezione.
+* Criteri che governano gli snapshot
+* Policy che governano la replica sullo storage secondario
+* Policy che governano i backup nello storage a oggetti
+
 
 .Fasi
 . Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
-. Dalla pagina di protezione, selezionare un carico di lavoro e selezionare *Proteggi*.
-. Nella pagina protezione, selezionare un criterio diverso per il carico di lavoro.
-. Per modificare i dettagli del criterio, selezionare la freccia verso il basso a destra e modificare i dettagli.
-. Selezionare *Salva* per terminare la modifica.
++
+image:screen-protection-sc-columns.png["Pagina di protezione"]
+
+. Nella pagina protezione, selezionare un carico di lavoro e selezionare *Proteggi*.
++
+La pagina di protezione mostra le policy gestite dal software SnapCenter, da SnapCenter per VMware vSphere e dal backup e recovery di BlueXP.
+
++
+Nell'esempio seguente vengono illustrati i criteri gestiti da SnapCenter:
+
++
+image:screen-protect-sc-policies.png["Pagina di protezione con criteri SnapCenter"]
+
++
+Il seguente esempio mostra le policy gestite dal backup e recovery di BlueXP:
+
++
+image:screen-protect-br-policies.png["Pagina di protezione che mostra le policy di backup e recovery di BlueXP"]
+
+. Per visualizzare i dettagli dei criteri gestiti altrove, fare clic sulla freccia *giù*.
+. Per applicare un criterio di rilevamento oltre ai criteri di snapshot e backup gestiti altrove, selezionare il criterio di rilevamento.
+. Selezionare *Proteggi*.
+. Nella pagina protezione, esaminare la colonna Criteri di rilevamento per vedere il criterio di rilevamento assegnato. Inoltre, nella colonna Criteri istantanea e backup viene visualizzato il nome del prodotto o servizio che gestisce i criteri.
 
 
 
 
-== Modificare un criterio esistente
+=== Assegnare un criterio diverso
 
-È possibile modificare i dettagli di un criterio solo quando il criterio non è associato a un carico di lavoro.
+È possibile assegnare un criterio di protezione diverso sostituendo quello corrente.
 
 .Fasi
 . Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
-. Nella pagina protezione, selezionare *Gestisci criteri*.
-. Nella pagina Gestisci criteri, selezionare l'opzione *azioni* per il criterio che si desidera modificare.
-. Dal menu azioni, selezionare *Modifica criterio*.
+. Nella pagina protezione, nella riga del carico di lavoro, selezionare *Modifica protezione*.
+. Nella pagina Criteri, fare clic sulla freccia verso il basso relativa al criterio che si desidera assegnare per rivedere i dettagli.
+. Selezionare il criterio che si desidera assegnare.
+. Selezionare *Proteggi* per terminare la modifica.
+
+
+
+
+== Gestire le strategie di protezione dal ransomware
+
+Puoi modificare o eliminare una strategia ransomware.
+
+
+
+=== Modifica una strategia di protezione dal ransomware
+
+È possibile modificare una strategia di protezione selezionando una diversa strategia dei criteri di rilevamento preconfigurati.
+
+.Fasi
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Dalla pagina protezione, seleziona *Gestisci strategie ransomware*.
+. Nella pagina Gestisci strategie, selezionare *azioni* image:screenshot_horizontal_more_button.gif["Pulsante azioni"] per la policy che si desidera modificare.
+. Dal menu azioni, selezionare *Modifica strategia*.
 . Modificare i dettagli.
 . Selezionare *Salva* per terminare la modifica.
 
 
 
 
-== Eliminazione di un criterio
+=== Elimina una strategia di protezione dal ransomware
 
-È possibile eliminare una policy di protezione non attualmente associata a alcun carico di lavoro.
+Puoi eliminare una strategia di protezione non attualmente associata a alcun carico di lavoro.
 
 .Fasi
 . Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
-. Nella pagina protezione, selezionare *Gestisci criteri*.
-. Nella pagina Gestisci criteri, selezionare l'opzione *azioni* per il criterio che si desidera eliminare.
-. Dal menu azioni, selezionare *Elimina criterio*.
+. Dalla pagina protezione, seleziona *Gestisci strategie ransomware*.
+. Nella pagina Gestisci strategie, selezionare *azioni* image:screenshot_horizontal_more_button.gif["Pulsante azioni"] per la strategia che si desidera eliminare.
+. Dal menu azioni, selezionare *Elimina strategia*.
 

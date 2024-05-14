@@ -22,17 +22,18 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 Per l'URL, in un browser, immettere: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Per accedere alla console BlueXP.
 
 *Ti serve una licenza per usare la protezione da ransomware di BlueXP?*
-Non è richiesto un file di licenza NetApp (NLF). L'anteprima della protezione dal ransomware di BlueXP non richiede licenze speciali.  Tutte le licenze di anteprima sono licenze di valutazione.
 
-La versione in anteprima di questo servizio richiede una licenza del servizio di backup e recovery di BlueXP.
+È possibile utilizzare i seguenti tipi di licenza:
 
+* Iscriviti per una prova gratuita di 90 giorni.
+* Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace.
+* BYOL (Bring Your Own License), ovvero un file di licenza NetApp (NLF) ottenuto dal rappresentante vendite NetApp Puoi utilizzare il numero di serie della licenza per attivare il BYOL nel Digital Wallet di BlueXP.
 
-TIP: Per la versione di anteprima, NetApp aiuta a configurare la valutazione e le eventuali licenze richieste.
 
 *In che modo abiliti la protezione dal ransomware BlueXP?*
 La protezione dal ransomware di BlueXP non richiede alcuna abilitazione. L'opzione di protezione dal ransomware viene automaticamente abilitata nel sistema di navigazione BlueXP a sinistra.
 
-Per la versione di anteprima, devi iscriverti o contattare il tuo commerciale NetApp per provare questo servizio. Quindi, quando si utilizza il connettore BlueXP, esso includerà le funzionalità appropriate per il servizio.
+Per iniziare, devi iscriverti o contattare il tuo rappresentante commerciale NetApp per provare questo servizio. Quindi, quando si utilizza il connettore BlueXP, esso includerà le funzionalità appropriate per il servizio.
 
 **La protezione anti-ransomware BlueXP è disponibile in modalità standard, limitata e privata?**
 Al momento, la protezione dal ransomware di BlueXP è disponibile solo in modalità standard. Continua a seguirci per saperne di più.
@@ -66,20 +67,17 @@ Ti consigliamo di apportare modifiche alla policy dal servizio di protezione dal
 Un carico di lavoro include tutti i volumi utilizzati da una singola istanza dell'applicazione. Ad esempio, un'istanza di Oracle DB implementata in ora3.host.com può avere vol1 GB e vol2 GB rispettivamente per dati e registri. Questi volumi costituiscono insieme il carico di lavoro per quella specifica istanza dell'istanza del database Oracle.
 
 *In che modo la protezione dal ransomware di BlueXP assegna la priorità ai dati del carico di lavoro?*
-La priorità dei dati per la versione di anteprima è determinata dalle copie Snapshot effettuate e dai backup pianificati.
+La priorità dei dati è determinata dalle copie Snapshot create e dai backup pianificati.
 
-La priorità del carico di lavoro è determinata dalle seguenti frequenze di istantanea:
+La priorità del carico di lavoro è determinata dalle frequenze dell'istantanea.
 
-* *Critico*: Copie snapshot acquisite meno di 1 TB all'ora (pianificazione di protezione altamente aggressiva)
-* *Importante*: Le copie snapshot sono state acquisite meno di 1 al giorno e più di 1 all'ora
-* *Standard*: Le copie snapshot sono state acquisite più di 1 copie al giorno
-
+link:rp-use-protect.html["Scopri la priorità o l'importanza del carico di lavoro"].
 
 **Aggiunto nuovo volume, ma non appare ancora**
 Se è stato aggiunto un nuovo volume al proprio ambiente, ripetere il rilevamento e applicare criteri di protezione per proteggere il nuovo volume.
 
 **La Dashboard non mostra tutti i miei workload. Che cosa potrebbe essere sbagliato?**
-Al momento sono supportati solo volumi NFS. I volumi iSCSI, i volumi CIFS e altre configurazioni non supportate vengono filtrati e non vengono visualizzati sulla dashboard.
+Al momento sono supportati solo volumi NFS e CIFS. I volumi iSCSI e altre configurazioni non supportate vengono filtrati e non vengono visualizzati nella dashboard.
 
 
 

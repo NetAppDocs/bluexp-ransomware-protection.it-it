@@ -12,7 +12,9 @@ summary: Puoi configurare diverse opzioni, tra cui una destinazione di backup, n
 
 
 [role="lead"]
-È possibile configurare una destinazione di backup esaminando i suggerimenti sul dashboard.
+È possibile configurare una destinazione di backup o abilitare il rilevamento delle minacce esaminando i consigli sul dashboard.
+
+L'attivazione del rilevamento delle minacce invia automaticamente i dati a un sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce.
 
 
 
@@ -38,7 +40,7 @@ Il Dashboard fornisce molti consigli. Si consiglia di configurare una destinazio
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
 . Esaminare il riquadro delle azioni consigliate del dashboard.
 +
-image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Pagina del dashboard"]
+image:screen-dashboard.png["Pagina del dashboard"]
 
 . Nel dashboard, selezionare *Rivedi e correggi* per la raccomandazione "Configura destinazioni di backup".
 . Continuare con le istruzioni a seconda del provider di backup.
@@ -46,7 +48,7 @@ image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Pa
 
 
 
-== Aggiungere StorageGRID come destinazione di backup
+=== Aggiungere StorageGRID come destinazione di backup
 
 Per impostare NetApp StorageGRID come destinazione di backup, immettere le seguenti informazioni.
 
@@ -90,7 +92,7 @@ image:screen-settings-backup-destinations-list-storagegrid.png["Pagina destinazi
 
 
 
-== Aggiungere Amazon Web Services come destinazione di backup
+=== Aggiungere Amazon Web Services come destinazione di backup
 
 Per configurare AWS come destinazione di backup, immettere le seguenti informazioni.
 
@@ -145,3 +147,29 @@ CAUTION: Se si configura ora l'impostazione del blocco di backup, non sarà poss
 La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
 
 image:screen-settings-backup-destinations-list-aws.png["Pagina destinazioni di backup opzione Impostazioni"]
+
+
+
+== Attivare il rilevamento delle minacce
+
+È possibile inviare automaticamente i dati a un sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce.
+
+. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
+. Esaminare il riquadro delle azioni consigliate del dashboard.
+. Nel dashboard, selezionare *Rivedi e correggi* per la raccomandazione "attiva rilevamento minacce".
++
+Viene visualizzata la pagina Impostazioni.
+
++
+image:screen-settings-threat-detection2.png["Pagina delle impostazioni"]
+
+. Nella pagina Impostazioni, selezionare *Connetti* nel riquadro rilevamento minacce.
++
+image:screen-settings-threat-detection-details.png["Abilita pagina dettagli rilevamento minacce"]
+
+. Immettere i dettagli del server SIEM per attivare il rilevamento delle minacce.
+. Selezionare *Abilita*.
++
+Il riquadro di rilevamento delle minacce nella pagina Impostazioni mostra "connesso".
+
+

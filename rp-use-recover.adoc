@@ -14,6 +14,13 @@ summary: 'Dopo un attacco, la protezione dal ransomware di BlueXP verifica che i
 [role="lead"]
 Dopo che i carichi di lavoro sono stati contrassegnati come "pronti per il recovery", la protezione dal ransomware di BlueXP consiglia un recovery point effettivo (RPA) e orchestra il workflow per un recovery resistente ai crash.
 
+* Se l'applicazione o la macchina virtuale è gestita da SnapCenter, la protezione dal ransomware di BlueXP ripristina lo stato precedente dell'applicazione o della macchina virtuale e l'ultima transazione mediante un processo coerente con l'applicazione o con le macchine virtuali.
+* Se l'applicazione o la VM è _non_ gestita da SnapCenter, la protezione dal ransomware di BlueXP ripristina l'applicazione o la VM, ripristina il carico di lavoro selezionando tutti i volumi o i file.
+
+
+
+TIP: Il ripristino dei workload può avere un impatto negativo sui workload in esecuzione. È necessario coordinare i processi di ripristino con gli stakeholder appropriati.
+
 
 
 == Visualizza i carichi di lavoro pronti per il ripristino
@@ -29,15 +36,49 @@ Esaminare i carichi di lavoro che si trovano nello stato di ripristino "necessar
 
 . Esaminare le informazioni sul carico di lavoro nella pagina *Ripristino*.
 +
-image:screen-recovery.png["Pagina di ripristino"]
+image:screen-recovery2.png["Pagina di ripristino"]
 
 
 
 
 
-== Ripristinare un carico di lavoro
+== Ripristinare un carico di lavoro gestito da SnapCenter
 
-Utilizzando la protezione dal ransomware di BlueXP, l'amministratore dello storage può determinare il modo migliore per ripristinare i workload dal punto di ripristino consigliato o dal punto di ripristino preferito.
+Utilizzando la protezione dal ransomware di BlueXP, l'amministratore dello storage può determinare la modalità migliore per ripristinare i workload dal punto di ripristino consigliato o dal punto di ripristino preferito.
+
+Lo stato dell'applicazione cambia se necessario per il ripristino. L'applicazione verrà ripristinata allo stato precedente dai file di controllo, se inclusi nel backup. Al termine del ripristino, l'applicazione si apre in modalità LETTURA/SCRITTURA.
+
+.Fasi
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Recovery*.
+. Esaminare le informazioni sul carico di lavoro nella pagina *Ripristino*.
+. Seleziona un carico di lavoro in stato "Ripristino necessario".
+. Per ripristinare, selezionare *Ripristina*.
+. *Ambito di ripristino*: Coerente con l'applicazione (o per SnapCenter per VM, l'ambito di ripristino è "per VM")
+. *Sorgente*: Selezionare la freccia verso il basso accanto a sorgente per visualizzare i dettagli. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+TIP: La protezione ransomware di BlueXP identifica il punto di ripristino migliore come l'ultimo backup poco prima dell'incidente e mostra un'indicazione "consigliata".
+
+. *Destinazione*: Selezionare la freccia verso il basso accanto a destinazione per visualizzare i dettagli.
++
+.. Selezionare la posizione originale o alternativa.
+.. Selezionare l'ambiente di lavoro.
+.. Selezionare la VM di storage.
+
+
+. Se la destinazione originale non dispone di spazio sufficiente per ripristinare il carico di lavoro, viene visualizzata la riga "archiviazione temporanea". È possibile selezionare la memoria temporanea per ripristinare i dati del carico di lavoro. I dati ripristinati verranno copiati dalla memoria temporanea alla posizione originale. Fare clic sulla freccia *giù* nella riga archiviazione temporanea e impostare il cluster di destinazione, la VM di archiviazione e il livello locale.
+. Selezionare *Salva*.
+. Selezionare *Avanti*.
+. Rivedere le selezioni.
+. Selezionare *Restore* (Ripristina).
+. Dal menu superiore, selezionare *Recovery* (Ripristino) per esaminare il carico di lavoro nella pagina Recovery (Ripristino) in cui lo stato dell'operazione si sposta tra gli stati.
+
+
+
+
+== Ripristino di un carico di lavoro non gestito da SnapCenter
+
+Utilizzando la protezione dal ransomware di BlueXP, l'amministratore dello storage può determinare la modalità migliore per ripristinare i workload dal punto di ripristino consigliato o dal punto di ripristino preferito.
 
 L'amministratore dello storage di sicurezza può ripristinare i dati a diversi livelli:
 
@@ -145,6 +186,9 @@ TIP: Il nome del nuovo volume viene visualizzato come nome originale del volume 
 
 === Ripristinare un workload dell'applicazione a livello di file
 
+Scaricare un elenco dei file interessati* prima di ripristinare il carico di lavoro di un'applicazione a livello di file. È ora possibile accedere alla pagina Avvisi per scaricare un elenco di file interessati, quindi utilizzare la pagina di ripristino per caricare l'elenco e scegliere i file da ripristinare.
+
+.Fasi
 . Nella pagina Ripristina, nell'ambito Ripristina, selezionare *per file*.
 . Nell'elenco dei volumi, selezionare il volume che si desidera ripristinare.
 . *Sorgente*: Selezionare la freccia verso il basso accanto a sorgente per visualizzare i dettagli.

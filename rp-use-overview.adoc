@@ -22,9 +22,9 @@ Utilizzando la protezione dal ransomware di BlueXP, puoi visualizzare la salute 
 
 * link:rp-use-protect.html["Proteggere i carichi di lavoro"]:
 +
-** Assegna una policy di protezione dal ransomware ai carichi di lavoro.
+** Assegna una strategia di protezione dal ransomware ai carichi di lavoro.
 ** Aumentare la protezione delle applicazioni per prevenire futuri attacchi ransomware.
-** Creare, modificare o eliminare un criterio di protezione.
+** Creare, modificare o eliminare una strategia di protezione.
 
 
 * link:rp-use-alert.html["Rispondi al rilevamento di potenziali attacchi ransomware"].
