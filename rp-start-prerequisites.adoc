@@ -35,6 +35,7 @@ Per ulteriori informazioni sulle licenze, fare riferimento a. link:concept-ranso
 
 * In BlueXP:
 +
+** Un ambiente di lavoro BlueXP con storage on-premise NetApp (con protocolli NAS o CIFS)
 ** Configurare un connettore BlueXP per ogni cloud privato virtuale (VPC) o in un'area on-premise in BlueXP. Fare riferimento a. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Documentazione di BlueXP per configurare il connettore"^].
 +
 

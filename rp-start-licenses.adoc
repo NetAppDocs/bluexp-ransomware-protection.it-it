@@ -12,13 +12,13 @@ summary: Inizia con la protezione dal ransomware di BlueXP configurando licenze.
 
 
 [role="lead"]
-Grazie alla protezione dal ransomware di BlueXP, puoi utilizzare diversi piani di licenza, tra cui una versione di prova gratuita, un'iscrizione pay-as-you-go o il "Bring Your Own License".
+Con la protezione dal ransomware di BlueXP, puoi usare piani di licenza diversi.
 
 È possibile utilizzare i seguenti tipi di licenza:
 
 * Iscriviti per una prova gratuita di 90 giorni.
-* Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace.
-* BYOL (Bring Your Own License), ovvero un file di licenza NetApp (NLF) ottenuto dal rappresentante vendite NetApp Puoi utilizzare il numero di serie della licenza per attivare il BYOL nel Digital Wallet di BlueXP.
+* Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace.  Questo sarà disponibile a breve.
+* BYOL (Bring Your Own License), ovvero un file di licenza NetApp (NLF) ottenuto dal rappresentante vendite NetApp Puoi utilizzare il numero di serie della licenza per attivare il BYOL nel Digital Wallet di BlueXP. Questo sarà disponibile a breve.
 
 
 Dopo aver configurato il BYOL o aver acquistato un abbonamento a PAYGO in AWS, puoi vedere la licenza nel portafoglio digitale di BlueXP *scheda licenze servizi dati* o l'abbonamento AWS attivo nella scheda *Sottoscrizioni* del portafoglio digitale di BlueXP.
@@ -57,8 +57,8 @@ image:screen-rp-landing.png["Screenshot della landing page per la protezione dal
 +
 Per aggiungere un connettore, fare riferimento a. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Scopri di più sui connettori"^].
 
-. Dopo aver configurato un connettore, nella landing page della protezione dal ransomware di BlueXP, il pulsante per aggiungere un connettore diventa un pulsante per iniziare una prova gratuita. Selezionare *Avvia prova gratuita*.
-. Rivedere le informazioni sulla prova gratuita e selezionare *Let's Go*.
+. Dopo aver configurato un connettore, nella landing page della protezione dal ransomware BlueXP, il pulsante per aggiungere un connettore diventa un pulsante per rilevare i workload. Selezionare *inizia rilevando i carichi di lavoro*.
+. Per rivedere le informazioni sulla prova gratuita, selezionare l'opzione a discesa in alto a destra.
 
 
 *Al termine della prova, richiedere un abbonamento o una licenza*
@@ -80,7 +80,7 @@ Questa procedura offre una panoramica di alto livello su come iscriversi diretta
 ** Viene visualizzato un messaggio che informa che la versione di prova gratuita sta per scadere. Nel messaggio, selezionare *Visualizza metodi di pagamento*.
 ** Fare clic sull'avviso *prova gratuita* in alto a destra e selezionare *Visualizza metodi di pagamento*.
 +
-image:screen-license-payment-methods.png["Pagina dei metodi di pagamento sulla protezione dal ransomware di BlueXP"]
+image:screen-license-payment-methods2.png["Pagina dei metodi di pagamento sulla protezione dal ransomware di BlueXP"]
 
 
 
@@ -102,9 +102,61 @@ image:screen-license-dw-add-license.png["Pagina licenza aggiunta portafoglio dig
 
 . Nella pagina Aggiungi licenza del Digital Wallet di BlueXP, seleziona *Inserisci numero di serie*, inserisci il numero di serie incluso nell'e-mail inviata e seleziona *Aggiungi licenza*.
 . Per visualizzare i dettagli della licenza nel Digital Wallet di BlueXP, dal menu di navigazione a sinistra di BlueXP, seleziona *Governance* > *Digital Wallet*.
-. Per visualizzare le informazioni sulla sottoscrizione, selezionare *Abbonamenti*. Per visualizzare le licenze BYOL, selezionare *licenze servizi dati*.
++
+** Per visualizzare le informazioni sulla sottoscrizione, selezionare *Abbonamenti*.
+** Per visualizzare le licenze BYOL, selezionare *licenze servizi dati*.
 +
 image:screen-dw-data-services-license.png["Pagina licenze servizi dati del Digital Wallet di BlueXP"]
+
+
+
+. Torna alla protezione dal ransomware di BlueXP. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
++
+Viene visualizzato un messaggio che indica che è stata aggiunta una licenza.
+
+
+
+
+
+== Iscriviti tramite Microsoft Azure Marketplace
+
+Questa procedura fornisce una panoramica di alto livello su come iscriversi direttamente in Azure Marketplace.
+
+.Fasi
+. Nella protezione dal ransomware di BlueXP, esegui una delle seguenti operazioni:
++
+** Viene visualizzato un messaggio che informa che la versione di prova gratuita sta per scadere. Nel messaggio, selezionare *Visualizza metodi di pagamento*.
+** Fare clic sull'avviso *prova gratuita* in alto a destra e selezionare *Visualizza metodi di pagamento*.
++
+image:screen-license-payment-methods2.png["Pagina dei metodi di pagamento sulla protezione dal ransomware di BlueXP"]
+
+
+
+. Nella pagina metodi di pagamento, seleziona *Sottoscrivi in Azure Marketplace*.
+. In Azure Marketplace, selezionare *Visualizza opzioni di acquisto*.
+. USA Azure Marketplace per sottoscrivere la protezione dal ransomware BlueXP.
+. Quando torni alla protezione ransomware di BlueXP, un messaggio indica che sei iscritto.
++
+
+NOTE: Ti viene inviata un'email che include il numero di serie della protezione dal ransomware di BlueXP e che indica che la protezione dal ransomware di BlueXP è sottoscritta in Azure Marketplace.
+
+. Torna alla pagina dei metodi di pagamento per la protezione dal ransomware di BlueXP.
+. Aggiungere la licenza a BlueXP selezionando *Aggiungi licenza a BlueXP*.
++
+Il servizio di Digital Wallet di BlueXP mostra la pagina Add License (Aggiungi licenza).
+
++
+image:screen-license-dw-add-license.png["Pagina licenza aggiunta portafoglio digitale BlueXP"]
+
+. Nella pagina Aggiungi licenza del Digital Wallet di BlueXP, seleziona *Inserisci numero di serie*, inserisci il numero di serie incluso nell'e-mail inviata e seleziona *Aggiungi licenza*.
+. Per visualizzare i dettagli della licenza nel Digital Wallet di BlueXP, dal menu di navigazione a sinistra di BlueXP, seleziona *Governance* > *Digital Wallet*.
++
+** Per visualizzare le informazioni sulla sottoscrizione, selezionare *Abbonamenti*.
+** Per visualizzare le licenze BYOL, selezionare *licenze servizi dati*.
++
+image:screen-dw-data-services-license.png["Pagina licenze servizi dati del Digital Wallet di BlueXP"]
+
+
 
 . Torna alla protezione dal ransomware di BlueXP. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
 +
@@ -181,28 +233,4 @@ Dopo aver pagato la licenza e averla registrata nel NetApp Support Site, BlueXP 
 .. Selezionare la scheda *licenze servizi dati*, selezionare l'icona *azioni ...* per il numero di serie del servizio che si sta aggiornando, quindi selezionare *Aggiorna licenza*.
 
 
-
-
-
-
-== Termina la prova gratuita
-
-È possibile interrompere la prova gratuita in qualsiasi momento o attendere la scadenza.
-
-.Fasi
-. Nella protezione dal ransomware BlueXP, in alto a destra, seleziona *prova gratuita - Visualizza dettagli*.
-. Nell'elenco a discesa, selezionare *fine prova gratuita*.
-+
-image:screen-license-trial-end.png["Termina la pagina di prova gratuita"]
-
-. Se si desidera eliminare tutti i dati, selezionare l'opzione *Elimina dati* al termine della prova gratuita.
-+
-In questo modo verranno eliminate tutte le pianificazioni, i piani di replica, i gruppi di risorse, i centri virtuali e i siti. I dati di controllo, i registri delle operazioni e la cronologia dei processi vengono conservati fino alla fine del ciclo di vita del prodotto.
-
-+
-
-NOTE: Se interrompi la prova gratuita e non ricevi alcuna richiesta di eliminazione dei dati e non acquisti una licenza o un abbonamento, 60 giorni dopo il termine della prova gratuita, la protezione dal ransomware di BlueXP elimina tutti i dati.
-
-. Digitare "fine prova" nella casella di testo.
-. Selezionare *fine*.
 

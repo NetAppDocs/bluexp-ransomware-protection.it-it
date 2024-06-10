@@ -26,6 +26,7 @@ Per proteggere questi workload, è necessario aggiungere una destinazione di bac
 
 * NetApp StorageGRID
 * Amazon Web Services (AWS)
+* Microsoft Azure
 
 
 È possibile aggiungere una destinazione di backup in base all'azione consigliata dal Dashboard.
@@ -42,8 +43,19 @@ Il Dashboard fornisce molti consigli. Si consiglia di configurare una destinazio
 +
 image:screen-dashboard.png["Pagina del dashboard"]
 
-. Nel dashboard, selezionare *Rivedi e correggi* per la raccomandazione "Configura destinazioni di backup".
+. Dal dashboard, selezionare *Rivedi e correggi* per la raccomandazione "prepara <backup provider> come destinazione di backup".
 . Continuare con le istruzioni a seconda del provider di backup.
+
+
+
+
+=== Accedere alla pagina Impostazioni dal menu
+
+È possibile accedere facilmente alla pagina Impostazioni dal menu.
+
+. Dal menu di protezione dal ransomware BlueXP, seleziona il menu Vertical (verticale) image:button-actions-vertical.png["Azioni verticali"]... opzione in alto a destra.
+. Dal menu, selezionare *Impostazioni*.
+. Per aggiungere una destinazione di backup, selezionare *Aggiungi*.
 
 
 
@@ -55,7 +67,7 @@ Per impostare NetApp StorageGRID come destinazione di backup, immettere le segue
 . Nella pagina *Impostazioni > Destinazioni di backup*, selezionare *Aggiungi*.
 . Immettere un nome per la destinazione di backup.
 +
-image:screen-settings-backup-destination-storagegrid.png["Pagina destinazioni di backup"]
+image:screen-settings-backup-destination-azure.png["Pagina destinazioni di backup"]
 
 . Selezionare *StorageGRID*.
 . Selezionare la freccia verso il basso accanto a ciascuna impostazione e immettere o selezionare i valori:
@@ -88,7 +100,7 @@ CAUTION: Se si configura ora l'impostazione del blocco di backup, non sarà poss
 .Risultato
 La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
 
-image:screen-settings-backup-destinations-list-storagegrid.png["Pagina destinazioni di backup opzione Impostazioni"]
+image:screen-settings-backup-destinations-list-azure.png["Pagina destinazioni di backup opzione Impostazioni"]
 
 
 
@@ -101,7 +113,7 @@ Per informazioni sulla gestione dello storage AWS in BlueXP, fare riferimento a.
 . Nella pagina *Impostazioni > Destinazioni di backup*, selezionare *Aggiungi*.
 . Immettere un nome per la destinazione di backup.
 +
-image:screen-settings-backup-destination-storagegrid.png["Pagina destinazioni di backup"]
+image:screen-settings-backup-destination-azure.png["Pagina destinazioni di backup"]
 
 . Selezionare *Amazon Web Services*.
 . Selezionare la freccia verso il basso accanto a ciascuna impostazione e immettere o selezionare i valori:
@@ -146,7 +158,65 @@ CAUTION: Se si configura ora l'impostazione del blocco di backup, non sarà poss
 .Risultato
 La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
 
-image:screen-settings-backup-destinations-list-aws.png["Pagina destinazioni di backup opzione Impostazioni"]
+image:screen-settings-backup-destinations-list-azure.png["Pagina destinazioni di backup opzione Impostazioni"]
+
+
+
+=== Aggiungere Microsoft Azure come destinazione di backup
+
+Per configurare Azure come destinazione di backup, immettere le seguenti informazioni.
+
+Per informazioni sulla gestione delle credenziali di Azure e delle iscrizioni al marketplace in BlueXP, fare riferimento a. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gestire le tue credenziali Azure e le iscrizioni al marketplace"^].
+
+. Nella pagina *Impostazioni > Destinazioni di backup*, selezionare *Aggiungi*.
+. Immettere un nome per la destinazione di backup.
++
+image:screen-settings-backup-destination-azure.png["Pagina destinazioni di backup"]
+
+. Selezionare *Azure*.
+. Selezionare la freccia verso il basso accanto a ciascuna impostazione e immettere o selezionare i valori:
++
+** *Impostazioni provider*:
++
+*** Crea un nuovo account storage, selezionane uno esistente (se già esistente) in BlueXP o crea un account storage proprietario che memorizzerà i backup.
+*** Iscrizione, regione e gruppo di risorse di Azure per le credenziali Azure
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Per trasferire il proprio account di storage, fare riferimento a Add Azure Blob storage accounts"^].
+
+
+
+** *Crittografia*: Se si crea un nuovo account di archiviazione, immettere le informazioni sulla chiave di crittografia fornite dal provider. Se si sceglie un account esistente, le informazioni sulla crittografia sono già disponibili.
++
+Per impostazione predefinita, i dati dell'account sono crittografati con chiavi gestite da Microsoft. Puoi continuare a utilizzare le chiavi gestite da Microsoft o gestire la crittografia dei tuoi dati con le tue chiavi.
+
+** *Rete*: Scegliere IPSpace e se si utilizza un endpoint privato.
++
+*** IPSpace è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup. Le LIF intercluster per questo IPSpace devono disporre di accesso a Internet in uscita.
+*** Facoltativamente, scegliere se utilizzare un endpoint privato Azure precedentemente configurato.
++
+Se si desidera utilizzare Azure PrivateLink, consultare la sezione https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^].
+
+
+
+** *Blocco di backup*: Scegliere se si desidera che il servizio protegga i backup dalla modifica o dall'eliminazione. Questa opzione utilizza la tecnologia DataLock di NetApp. Ciascun backup verrà bloccato durante il periodo di conservazione o per un minimo di 30 giorni, più un periodo di buffer massimo di 14 giorni.
++
+
+CAUTION: Se si configura ora l'impostazione del blocco di backup, non sarà possibile modificarla in un secondo momento dopo la configurazione della destinazione di backup.
+
++
+*** *Sbloccato*: Utenti specifici possono sovrascrivere o eliminare i file protetti durante il periodo di conservazione.
+*** *Bloccato*: Gli utenti non possono sovrascrivere o eliminare i file di backup protetti durante il periodo di conservazione. Questa opzione soddisfa la piena conformità alle normative.
+
+
+
+
+. Selezionare *Aggiungi*.
+
+
+.Risultato
+La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
+
+image:screen-settings-backup-destinations-list-azure.png["Pagina destinazioni di backup opzione Impostazioni"]
 
 
 
@@ -155,21 +225,18 @@ image:screen-settings-backup-destinations-list-aws.png["Pagina destinazioni di b
 È possibile inviare automaticamente i dati a un sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce.
 
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
-. Esaminare il riquadro delle azioni consigliate del dashboard.
-. Nel dashboard, selezionare *Rivedi e correggi* per la raccomandazione "attiva rilevamento minacce".
+. Dal menu di protezione dal ransomware BlueXP, seleziona il menu Vertical (verticale) image:button-actions-vertical.png["Azioni verticali"]... opzione in alto a destra.
+. Selezionare *Impostazioni*.
 +
 Viene visualizzata la pagina Impostazioni.
 
 +
-image:screen-settings-threat-detection2.png["Pagina delle impostazioni"]
+image:screen-settings-threat-detection3.png["Pagina delle impostazioni"]
 
-. Nella pagina Impostazioni, selezionare *Connetti* nel riquadro rilevamento minacce.
-+
-image:screen-settings-threat-detection-details.png["Abilita pagina dettagli rilevamento minacce"]
-
+. Nella pagina Impostazioni, selezionare *Connetti* nel riquadro di connessione SIEM.
 . Immettere i dettagli del server SIEM per attivare il rilevamento delle minacce.
 . Selezionare *Abilita*.
 +
-Il riquadro di rilevamento delle minacce nella pagina Impostazioni mostra "connesso".
+Nella pagina Impostazioni viene visualizzato "connesso".
 
 

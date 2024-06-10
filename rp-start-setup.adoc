@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: rp-start-setup.html 
-keywords: bluexp, ransomware protection, 
+keywords: bluexp, ransomware protection, aws, azure 
 summary: Per utilizzare la protezione dal ransomware di BlueXP, esegui alcuni passaggi per configurarla. 
 ---
 = Imposta la protezione dal ransomware BlueXP
@@ -24,6 +24,7 @@ Preparare una delle seguenti destinazioni di backup:
 
 * NetApp StorageGRID
 * Amazon Web Services
+* Microsoft Azure
 
 
 Dopo aver configurato le opzioni nella destinazione di backup stessa, la configurerai in seguito come destinazione di backup nel servizio di protezione dal ransomware di BlueXP.
@@ -43,6 +44,16 @@ Se si desidera utilizzare StorageGRID come destinazione di backup, fare riferime
 
 
 Per informazioni sulla gestione dello storage AWS in BlueXP, fare riferimento a. https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gestisci i bucket Amazon S3"^].
+
+
+
+=== Preparare Azure a diventare una destinazione di backup
+
+* Configurare un account in Azure.
+* Configurare https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Autorizzazioni Azure"^] In Azure.
+
+
+Per informazioni sulla gestione dello storage Azure in BlueXP, fare riferimento a. https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html["Gestione degli account storage Azure"^].
 
 
 

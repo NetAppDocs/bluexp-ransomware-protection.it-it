@@ -74,24 +74,24 @@ Ecco un esempio delle raccomandazioni che il servizio offre.
 | Consiglio | Descrizione | Come risolvere il problema 
 
 
-| Aggiungi una policy di protezione dal ransomware | Il carico di lavoro non è attualmente protetto. | Assegnare una policy al carico di lavoro.
+| Aggiungi una policy di protezione dal ransomware. | Il carico di lavoro non è attualmente protetto. | Assegnare una policy al carico di lavoro.
 Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
 
 
-| Configurare le destinazioni di backup | Il workload non dispone al momento di destinazioni di backup. | Aggiungete destinazioni di backup a questo workload per proteggerlo.
+| Preparare <backup provider> come destinazione di backup per eseguire il backup dei dati del workload. | Il workload non dispone al momento di destinazioni di backup. | Aggiungete destinazioni di backup a questo workload per proteggerlo.
 Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"]. 
 
 
-| Modificare il nome del workload | I carichi di lavoro utilizzano nomi predefiniti. | Assegnare un nome descrittivo al carico di lavoro.
+| Modificare il nome del workload. | I carichi di lavoro utilizzano nomi predefiniti. | Assegnare un nome descrittivo al carico di lavoro.
 Fare riferimento a. link:rp-use-manage.html["Gestire i carichi di lavoro"]. 
 
 
-| Attivare il rilevamento delle minacce | Inviare dati a un sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. | Immettere i dettagli del server SIEM/XDR per abilitare il rilevamento delle minacce.
+| Attivare il rilevamento delle minacce. | Inviare dati a un sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. | Immettere i dettagli del server SIEM/XDR per abilitare il rilevamento delle minacce.
 Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"].
 Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"]. 
 
 
-| Abilita una protezione coerente del carico di lavoro per applicazioni o VMware | Questi workload non vengono gestiti dal software SnapCenter o dal plug-in SnapCenter per VMware vSphere. | Per farle gestire da SnapCenter, abilita una protezione coerente con il carico di lavoro.
+| Abilita una protezione coerente del carico di lavoro per applicazioni o VMware. | Questi workload non vengono gestiti dal software SnapCenter o dal plug-in SnapCenter per VMware vSphere. | Per farle gestire da SnapCenter, abilita una protezione coerente con il carico di lavoro.
 Fare riferimento a. link:rp-use-protect.html["Proteggere il carico di lavoro dagli attacchi ransomware"]. 
 
 
@@ -107,7 +107,7 @@ Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli
 Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
 
 
-| Rivedere i nuovi avvisi | Esistono nuovi avvisi. | Rivedere i nuovi avvisi.
+| Rivedere i nuovi avvisi. | Esistono nuovi avvisi. | Rivedere i nuovi avvisi.
 Fare riferimento a. link:rp-use-alert.html["Rispondi a un avviso ransomware rilevato"]. 
 |===
 .Fasi

@@ -27,17 +27,17 @@ Viene visualizzata la pagina di accesso a NetApp BlueXP.
 Se è la prima volta che accedi a questo servizio, viene visualizzata la pagina iniziale.
 
 +
+image:screen-landing.png["Screenshot della landing page per la protezione dal ransomware BlueXP"]
+
++
 In caso contrario, verrà visualizzata la dashboard di protezione dal ransomware BlueXP.
 
 +
 image:screen-dashboard.png["Dashboard della protezione dal ransomware di BlueXP"]
 
-. Iniziare a utilizzare il servizio.
 +
-** Se non disponi di un connettore BlueXP o non è quello per questo servizio, potrebbe essere necessario contattare il supporto NetApp o seguire i messaggi per iscriverti.
-** Se sei un nuovo utente di BlueXP e non hai utilizzato alcun connettore, quando selezioni "*ransomware Protection*", viene visualizzato un messaggio sulla registrazione. Procedi e invia il modulo. NetApp ti contatterà in merito alla tua richiesta di valutazione.
-** Se sei un utente BlueXP con un connettore esistente, quando selezioni "*ransomware Protection*", viene visualizzato un messaggio sulla registrazione.
 
+NOTE: Se non disponi di un connettore BlueXP o non è quello per questo servizio, potrebbe essere necessario contattare il supporto NetApp.
 
 . Se non l'hai già fatto, seleziona l'opzione *rileva carichi di lavoro*.
 +
