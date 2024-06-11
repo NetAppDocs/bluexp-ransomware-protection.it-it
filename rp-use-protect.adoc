@@ -17,10 +17,7 @@ Puoi proteggere i workload dagli attacchi ransomware eseguendo le seguenti azion
 * Modifica dei dettagli esistenti relativi alla protezione dei carichi di lavoro.
 * Abilita una protezione coerente con il carico di lavoro, che funziona con il software SnapCenter o il plug-in SnapCenter per VMware vSphere.
 * Creare o gestire strategie di protezione dal ransomware che includano policy create per snapshot, backup e rilevamento dei ransomware.
-+
-** Importare una strategia e regolarla.
-
-
+* Importare una strategia e regolarla.
 
 
 
@@ -348,9 +345,3 @@ image:screen-protect-br-policies.png["Pagina di protezione che mostra le policy 
 . Selezionare il criterio che si desidera assegnare.
 . Selezionare *Proteggi* per terminare la modifica.
 
-
-
-
-== Gestire le strategie di protezione dal ransomware
-
-Puoi modificare o eliminare una strategia ransomware.

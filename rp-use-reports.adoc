@@ -18,7 +18,6 @@ Prima di scaricare i file CSV, è necessario aggiornare i dati, che aggiornano a
 
 È possibile scaricare i file CSV da una delle opzioni del menu principale:
 
-* *Dashboard:* contiene tutte le informazioni di riepilogo per tutti i carichi di lavoro.
 * *Protezione*: Contiene lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale protetto e a rischio.
 * *Avvisi*: Include lo stato e i dettagli di tutti gli avvisi, compreso il numero totale di avvisi e istantanee automatiche.
 * *Recovery*: Include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro contrassegnati come "Ripristino necessario", "in corso", "Ripristino non riuscito" e "ripristinato correttamente".

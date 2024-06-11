@@ -14,7 +14,7 @@ summary: Gli attacchi ransomware possono costare tempo di business, risorse e re
 
 
 [role="lead"]
-Gli attacchi ransomware possono bloccare l'accesso ai sistemi e i dati, mentre gli autori degli attacchi possono chiedere riscatti in cambio del rilascio o della decrittografia dei dati. Secondo IDC, non è raro che le vittime del ransomware subiscano diversi attacchi ransomware. L'attacco può interrompere l'accesso ai tuoi dati tra un giorno e diverse settimane.
+Gli attacchi ransomware possono bloccare l'accesso ai dati e gli hacker possono chiedere un riscatto in cambio del rilascio o della decrittografia dei dati. Secondo IDC, non è raro che le vittime del ransomware subiscano diversi attacchi ransomware. L'attacco può interrompere l'accesso ai tuoi dati tra un giorno e diverse settimane.
 
 La protezione dal ransomware di BlueXP è un servizio per proteggere i tuoi dati dai ransomware. Il servizio protegge i carichi di lavoro basati sulle applicazioni dei datastore Oracle, MySQL, VM e file share su storage NAS on-premise (utilizzando i protocolli NFS e CIFS), oltre a Cloud Volumes ONTAP per Amazon Web Services e Cloud Volumes ONTAP per Microsoft Azure con gli account BlueXP. Il servizio esegue il backup dei dati su Amazon Web Services, il cloud storage Microsoft Azure e NetApp StorageGRID.
 
@@ -25,10 +25,10 @@ La protezione dal ransomware di BlueXP è un servizio per proteggere i tuoi dati
 Il servizio di protezione dal ransomware di BlueXP offre un utilizzo completo di diverse tecnologie NetApp così che il tuo amministratore dello storage, amministratore della sicurezza dei dati o ingegnere delle operazioni di sicurezza possano raggiungere i seguenti obiettivi:
 
 * *Identifica* tutti i carichi di lavoro basati su applicazioni, condivisioni di file o gestiti da VMware in NAS NetApp on-premise con ambienti di lavoro NFS o CIFS in BlueXP, tra account BlueXP, aree di lavoro e connettori BlueXP. Quindi, il servizio categorizza la priorità dei dati e offre consigli per i miglioramenti alla protezione dal ransomware.
-* *Proteggi* i tuoi carichi di lavoro abilitando backup e copie Snapshot sui tuoi dati.
+* *Proteggi* i tuoi workload abilitando backup, copie Snapshot e strategie di protezione dal ransomware sui tuoi dati.
 * *Detect* anomalie che potrebbero essere attacchi ransomware.
 * *Rispondi* ai potenziali attacchi ransomware avviando automaticamente una Snapshot NetApp ONTAP a prova di manomissione che è bloccata in modo che la copia non possa essere eliminata accidentalmente o malamente. I tuoi dati di backup rimarranno immutabili e protetti end-to-end dagli attacchi ransomware all'origine e alla destinazione.
-* *Recupera* i tuoi workload che aiutano ad accelerare l'uptime dei workload orchestrando diverse tecnologie NetApp. È possibile scegliere di ripristinare volumi, cartelle o file specifici. Il servizio fornisce consigli sulle opzioni migliori.
+* *Recupera* i tuoi workload che aiutano ad accelerare l'uptime dei workload orchestrando diverse tecnologie NetApp. È possibile scegliere di ripristinare volumi specifici. Il servizio fornisce consigli sulle opzioni migliori.
 * *Governare*: Implementa la tua strategia di protezione dal ransomware e monitora i risultati.
 
 
@@ -85,7 +85,6 @@ image:diagram-rp-architecture-preview3.png["Diagramma che mostra l'architettura 
 * Rileva il livello di protezione corrente di ogni volume delle copie Snapshot NetApp e delle policy di backup, oltre a qualsiasi funzionalità di rilevamento on-box. Il servizio associa quindi questa postura di protezione ai workload utilizzando backup e recovery di BlueXP, i servizi ONTAP e le tecnologie NetApp come protezione autonoma da ransomware, FPolicy, policy di backup e policy Snapshot.
 Scopri di più https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione ransomware autonoma"^] e. https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup e ripristino BlueXP"^], e. https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy di ONTAP"^].
 * Assegna una priorità aziendale a ogni carico di lavoro in base ai livelli di protezione rilevati automaticamente e consiglia policy di protezione per i carichi di lavoro in base alla priorità aziendale.
-* La protezione dal ransomware inoltre apprende le associazioni di policy e consiglia policy personalizzate per carichi di lavoro simili.
 
 
 

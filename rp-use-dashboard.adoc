@@ -79,10 +79,7 @@ Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli
 
 
 | Preparare <backup provider> come destinazione di backup per eseguire il backup dei dati del workload. | Il workload non dispone al momento di destinazioni di backup. | Aggiungete destinazioni di backup a questo workload per proteggerlo.
-Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"]. 
-
-
-| Modificare il nome del workload. | I carichi di lavoro utilizzano nomi predefiniti. | Assegnare un nome descrittivo al carico di lavoro.
+Fare riferimento a. link:rp-use-settings.html["Configurare le impostazioni di protezione"].
 Fare riferimento a. link:rp-use-manage.html["Gestire i carichi di lavoro"]. 
 
 

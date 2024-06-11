@@ -67,7 +67,7 @@ Per impostare NetApp StorageGRID come destinazione di backup, immettere le segue
 . Nella pagina *Impostazioni > Destinazioni di backup*, selezionare *Aggiungi*.
 . Immettere un nome per la destinazione di backup.
 +
-image:screen-settings-backup-destination-azure.png["Pagina destinazioni di backup"]
+image:screen-settings-backup-destination.png["Pagina destinazioni di backup"]
 
 . Selezionare *StorageGRID*.
 . Selezionare la freccia verso il basso accanto a ciascuna impostazione e immettere o selezionare i valori:
@@ -113,7 +113,7 @@ Per informazioni sulla gestione dello storage AWS in BlueXP, fare riferimento a.
 . Nella pagina *Impostazioni > Destinazioni di backup*, selezionare *Aggiungi*.
 . Immettere un nome per la destinazione di backup.
 +
-image:screen-settings-backup-destination-azure.png["Pagina destinazioni di backup"]
+image:screen-settings-backup-destination.png["Pagina destinazioni di backup"]
 
 . Selezionare *Amazon Web Services*.
 . Selezionare la freccia verso il basso accanto a ciascuna impostazione e immettere o selezionare i valori:
@@ -171,7 +171,7 @@ Per informazioni sulla gestione delle credenziali di Azure e delle iscrizioni al
 . Nella pagina *Impostazioni > Destinazioni di backup*, selezionare *Aggiungi*.
 . Immettere un nome per la destinazione di backup.
 +
-image:screen-settings-backup-destination-azure.png["Pagina destinazioni di backup"]
+image:screen-settings-backup-destination.png["Pagina destinazioni di backup"]
 
 . Selezionare *Azure*.
 . Selezionare la freccia verso il basso accanto a ciascuna impostazione e immettere o selezionare i valori:

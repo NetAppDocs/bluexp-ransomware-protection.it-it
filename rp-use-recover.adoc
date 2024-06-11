@@ -182,54 +182,14 @@ TIP: Il nome del nuovo volume viene visualizzato come nome originale del volume 
 . Dal menu superiore, selezionare *Recovery* (Ripristino) per esaminare il carico di lavoro nella pagina Recovery (Ripristino) in cui lo stato dell'operazione si sposta tra gli stati.
 
 
-
-
-=== Ripristinare un workload dell'applicazione a livello di file
-
-Scaricare un elenco dei file interessati* prima di ripristinare il carico di lavoro di un'applicazione a livello di file. È ora possibile accedere alla pagina Avvisi per scaricare un elenco di file interessati, quindi utilizzare la pagina di ripristino per caricare l'elenco e scegliere i file da ripristinare.
-
-.Fasi
-. Nella pagina Ripristina, nell'ambito Ripristina, selezionare *per file*.
-. Nell'elenco dei volumi, selezionare il volume che si desidera ripristinare.
-. *Sorgente*: Selezionare la freccia verso il basso accanto a sorgente per visualizzare i dettagli.
-+
-.. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
-+
-
-TIP: La protezione ransomware di BlueXP identifica il punto di ripristino migliore come l'ultimo backup poco prima dell'incidente e mostra un'indicazione "consigliata".
-
-.. Selezionare fino a 100 file o una singola cartella da ripristinare.
-
-
-. *Destinazione*: Selezionare la freccia verso il basso accanto a destinazione per visualizzare i dettagli.
-+
-.. Scegliere dove ripristinare i dati: Percorso di origine originale o percorso alternativo che è possibile specificare.
-+
-
-TIP: Mentre i file o la directory originali verranno sovrascritti dai dati ripristinati, i nomi dei file e delle cartelle originali rimarranno gli stessi a meno che non si specifichino nuovi nomi.
-
-.. Selezionare l'ambiente di lavoro.
-.. Selezionare la VM di storage.
-.. Facoltativamente, immettere il percorso.
-+
-
-TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristinati in un nuovo volume nella directory di livello superiore.
-
-.. Selezionare se si desidera che i nomi dei file o della directory ripristinati siano gli stessi nomi della posizione corrente o nomi diversi.
-
-
-. Selezionare *Salva*.
-. Selezionare *Avanti*.
-. Rivedere le selezioni.
-. Selezionare *Restore* (Ripristina).
-. Dal menu superiore, selezionare *Recovery* (Ripristino) per esaminare il carico di lavoro nella pagina Recovery (Ripristino) in cui lo stato dell'operazione si sposta tra gli stati.
+. Selezionare se si desidera che i nomi dei file o della directory ripristinati siano gli stessi nomi della posizione corrente o nomi diversi.
 
 
 
 
-=== Ripristino di una condivisione di file o di un datastore a livello di volume o file
+=== Ripristinare una condivisione di file o un datastore
 
-. Dopo aver selezionato una condivisione di file o un archivio dati da ripristinare, nella pagina Ripristina, nell'ambito Ripristina, selezionare *per volume* o *per file*.
+. Dopo aver selezionato una condivisione di file o un archivio dati da ripristinare, nella pagina Ripristina, nell'ambito Ripristina, selezionare *per volume*.
 +
 image:screen-recovery-fileshare.png["Pagina di ripristino che mostra il ripristino della condivisione file"]
 
