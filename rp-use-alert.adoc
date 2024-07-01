@@ -14,6 +14,11 @@ summary: 'Se la protezione ransomware di BlueXP rileva un possibile attacco, vie
 [role="lead"]
 Se la protezione ransomware di BlueXP rileva un possibile attacco, viene visualizzato un avviso nella dashboard di protezione dal ransomware di BlueXP e nelle notifiche di BlueXP, in alto a destra, che indica un potenziale attacco ransomware. Inoltre, il servizio avvia immediatamente l'acquisizione di una copia Snapshot. A questo punto, dovresti valutare il rischio potenziale nella scheda *Avvisi* della protezione dal ransomware di BlueXP.
 
+Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.
+
+
+TIP: Se si decide di ignorare l'avviso, il servizio apprenderà questo comportamento e lo assocerà alle normali operazioni e non avvierà nuovamente un avviso su tale comportamento.
+
 Per iniziare il ripristino dei dati, contrassegnare l'avviso come pronto per il ripristino in modo che l'amministratore dello storage possa avviare il processo di ripristino.
 
 Ogni avviso potrebbe avere più incidenti su volumi diversi con stati diversi, quindi assicurati di esaminare tutti gli incidenti.
@@ -39,6 +44,24 @@ Un avviso si basa sui seguenti tipi di comportamento:
 
 Le prove si basano sulle informazioni fornite dalla protezione autonoma dal ransomware in ONTAP. Per ulteriori informazioni, fare riferimento a. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Panoramica della protezione ransomware autonoma"^].
 
+Un avviso può avere uno dei seguenti stati:
+
+* *Nuovo*
+* *Inattivo*
+
+
+Un incidente di avviso è classificato in uno dei seguenti stati:
+
+* *Nuovo*: Tutti gli incidenti sono contrassegnati come "nuovi" quando vengono identificati per la prima volta.
+* *Respinto*: Se sospetti che l'attività non sia un attacco ransomware, puoi cambiare lo stato in "respinto".
++
+
+CAUTION: Dopo aver respinto un attacco, non è possibile modificarlo. Se elimini un carico di lavoro, tutte le copie Snapshot acquisite automaticamente in risposta al potenziale attacco ransomware verranno eliminate in maniera permanente.
+
+* *Licenziamento*: L'incidente è in fase di licenziamento.
+* *Risolto*: L'incidente è stato mitigato.
+
+
 
 
 == Visualizza avvisi
@@ -54,7 +77,12 @@ Puoi accedere agli avvisi dalla dashboard della protezione dal ransomware di Blu
 +
 image:screen-alerts.png["Pagina Avvisi"]
 
-. Continuare con <<Contrassegna gli incidenti ransomware come pronti per il recovery (dopo la neutralizzazione degli incidenti)>>.
+. Continua:
++
+** <<Contrassegna gli incidenti ransomware come pronti per il recovery (dopo la neutralizzazione degli incidenti)>>.
+** <<Elimina gli incidenti che non sono potenziali attacchi>>.
+
+
 
 
 
@@ -71,7 +99,7 @@ image:screen-alerts.png["Pagina Avvisi"]
 . Nella pagina Avvisi, selezionare l'avviso.
 . Esaminare gli incidenti nell'avviso.
 +
-image:screen-alerts-incidents.png["Pagina incidenti di avviso"]
+image:screen-alerts-incidents2.png["Pagina incidenti di avviso"]
 
 . Se si stabilisce che gli incidenti sono pronti per il ripristino, selezionare *Segna ripristino necessario*.
 . Confermare l'azione e selezionare *Segna ripristino necessario*.
@@ -80,3 +108,67 @@ image:screen-alerts-incidents.png["Pagina incidenti di avviso"]
 
 .Risultato
 Dopo aver contrassegnato l'avviso per il ripristino, l'avviso passa dalla scheda Avvisi alla scheda Ripristino.
+
+
+
+== Elimina gli incidenti che non sono potenziali attacchi
+
+Dopo aver esaminato gli incidenti, è necessario determinare se si tratta di potenziali attacchi. In caso contrario, possono essere respinte.
+
+Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati. Se si decide di ignorare l'avviso, il servizio apprenderà questo comportamento e lo assocerà alle normali operazioni e non avvierà nuovamente un avviso su tale comportamento.
+
+Se elimini un carico di lavoro, tutte le copie Snapshot acquisite automaticamente in risposta al potenziale attacco ransomware verranno eliminate in maniera permanente.
+
+
+CAUTION: Se si ignora un avviso, non è possibile ripristinare lo stato in qualsiasi altro stato e non è possibile annullare la modifica.
+
+.Fasi
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
++
+image:screen-alerts.png["Pagina Avvisi"]
+
+. Nella pagina Avvisi, selezionare l'avviso.
++
+image:screen-alerts-incidents2.png["Pagina incidenti di avviso"]
+
+. Selezionare uno o più incidenti. In alternativa, selezionare tutti gli incidenti selezionando la casella ID incidente nella parte superiore sinistra della tabella.
+. Se si stabilisce che l'incidente non è una minaccia, eliminarlo come falso positivo:
++
+** Se è stato selezionato un incidente, selezionare *azioni* … A destra, selezionare *Modifica stato*.
+** Se sono stati selezionati più incidenti, selezionare il pulsante *Modifica stato* sopra la tabella.
++
+image:screen-alerts-status-edit.png["Pagina Stato modifica avviso"]
+
+
+
+. Nella casella Modifica stato, selezionare lo stato *"respinto"*.
++
+Vengono visualizzate ulteriori informazioni sul carico di lavoro e sulle copie Snapshot che verranno eliminate.
+
+. Selezionare *Salva*.
++
+Lo stato dell'incidente o degli incidenti diventa "respinto".
+
+
+
+
+
+== Consente di visualizzare un elenco dei file interessati
+
+Prima di ripristinare un workload dell'applicazione a livello di file, è possibile visualizzare un elenco di file interessati. È possibile accedere alla pagina Avvisi per scaricare un elenco di file interessati. Quindi, utilizzare la pagina di ripristino per caricare l'elenco e scegliere i file da ripristinare.
+
+.Fasi
+Utilizzare la pagina Avvisi per recuperare l'elenco dei file interessati.
+
+
+TIP: Se un volume presenta più avvisi, potrebbe essere necessario scaricare l'elenco CSV dei file interessati per ciascun avviso.
+
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
+. Nella pagina Avvisi, ordinare i risultati per carico di lavoro per visualizzare gli avvisi per il carico di lavoro dell'applicazione che si desidera ripristinare.
+. Dall'elenco degli avvisi per il carico di lavoro, selezionare un avviso.
+. Per tale avviso, selezionare un singolo incidente.
++
+image:screen-alerts-incidents-impacted-files.png["elenco dei file interessati per un avviso specifico"]
+
+. Per quell'incidente, selezionare l'icona di download e scaricare l'elenco dei file interessati in formato CSV.
+

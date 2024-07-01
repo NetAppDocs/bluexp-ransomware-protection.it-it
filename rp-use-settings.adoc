@@ -83,15 +83,6 @@ image:screen-settings-backup-destination.png["Pagina destinazioni di backup"]
 *** IPSpace è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup. Le LIF intercluster per questo IPSpace devono disporre di accesso a Internet in uscita.
 
 
-** *Blocco di backup*: Scegliere se si desidera che il servizio protegga i backup dalla modifica o dall'eliminazione. Questa opzione utilizza la tecnologia DataLock di NetApp. Ciascun backup verrà bloccato durante il periodo di conservazione o per un minimo di 30 giorni, più un periodo di buffer massimo di 14 giorni.
-+
-
-CAUTION: Se si configura ora l'impostazione del blocco di backup, non sarà possibile modificarla in un secondo momento dopo la configurazione della destinazione di backup.
-
-+
-*** *Modalità conformità*: Gli utenti non possono sovrascrivere o eliminare i file di backup protetti durante il periodo di conservazione.
-
-
 
 
 . Selezionare *Aggiungi*.
@@ -196,16 +187,6 @@ Per impostazione predefinita, i dati dell'account sono crittografati con chiavi 
 +
 Se si desidera utilizzare Azure PrivateLink, consultare la sezione https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^].
 
-
-
-** *Blocco di backup*: Scegliere se si desidera che il servizio protegga i backup dalla modifica o dall'eliminazione. Questa opzione utilizza la tecnologia DataLock di NetApp. Ciascun backup verrà bloccato durante il periodo di conservazione o per un minimo di 30 giorni, più un periodo di buffer massimo di 14 giorni.
-+
-
-CAUTION: Se si configura ora l'impostazione del blocco di backup, non sarà possibile modificarla in un secondo momento dopo la configurazione della destinazione di backup.
-
-+
-*** *Sbloccato*: Utenti specifici possono sovrascrivere o eliminare i file protetti durante il periodo di conservazione.
-*** *Bloccato*: Gli utenti non possono sovrascrivere o eliminare i file di backup protetti durante il periodo di conservazione. Questa opzione soddisfa la piena conformità alle normative.
 
 
 

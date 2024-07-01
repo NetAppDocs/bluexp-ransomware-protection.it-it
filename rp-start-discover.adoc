@@ -23,11 +23,20 @@ Il servizio valuta il livello di protezione esistente, incluse le opzioni di pro
 
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
-. Selezionare *rileva carichi di lavoro* dalla landing page iniziale.
++
+Se è la prima volta che accedi a questo servizio, viene visualizzata la pagina iniziale.
+
++
+image:screen-landing.png["Screenshot della landing page per la protezione dal ransomware BlueXP"]
+
+. Dalla pagina iniziale, selezionare *inizia rilevando i carichi di lavoro*.
 +
 Il servizio rileva i dati del carico di lavoro e mostra lo stato di salute della protezione dei dati nella Dashboard.
 
 +
 image:screen-dashboard.png["Dashboard della protezione dal ransomware di BlueXP"]
+
++
+link:rp-use-dashboard.html["Scopri cosa ti mostra il dashboard."]
 
 

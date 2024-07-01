@@ -18,7 +18,7 @@ Con la protezione dal ransomware di BlueXP, puoi usare piani di licenza diversi.
 
 * Iscriviti per una prova gratuita di 90 giorni.
 * Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace.  Questo sarà disponibile a breve.
-* BYOL (Bring Your Own License), ovvero un file di licenza NetApp (NLF) ottenuto dal rappresentante vendite NetApp Puoi utilizzare il numero di serie della licenza per attivare il BYOL nel Digital Wallet di BlueXP. Questo sarà disponibile a breve.
+* BYOL (Bring Your Own License), ovvero un file di licenza NetApp (NLF) ottenuto dal rappresentante vendite NetApp Puoi utilizzare il numero di serie della licenza per attivare il BYOL nel Digital Wallet di BlueXP.
 
 
 Dopo aver configurato il BYOL o aver acquistato un abbonamento a PAYGO in AWS, puoi vedere la licenza nel portafoglio digitale di BlueXP *scheda licenze servizi dati* o l'abbonamento AWS attivo nella scheda *Sottoscrizioni* del portafoglio digitale di BlueXP.

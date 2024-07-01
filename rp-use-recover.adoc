@@ -12,14 +12,25 @@ summary: 'Dopo un attacco, la protezione dal ransomware di BlueXP verifica che i
 
 
 [role="lead"]
-Dopo che i carichi di lavoro sono stati contrassegnati come "pronti per il recovery", la protezione dal ransomware di BlueXP consiglia un recovery point effettivo (RPA) e orchestra il workflow per un recovery resistente ai crash.
+Dopo che i carichi di lavoro sono stati contrassegnati come "ripristino necessario", la protezione dal ransomware di BlueXP consiglia un recovery point effettivo (RPA) e orchestra il workflow per un recovery resistente ai crash.
 
-* Se l'applicazione o la macchina virtuale è gestita da SnapCenter, la protezione dal ransomware di BlueXP ripristina lo stato precedente dell'applicazione o della macchina virtuale e l'ultima transazione mediante un processo coerente con l'applicazione o con le macchine virtuali.
-* Se l'applicazione o la VM è _non_ gestita da SnapCenter, la protezione dal ransomware di BlueXP ripristina l'applicazione o la VM, ripristina il carico di lavoro selezionando tutti i volumi o i file.
+* Se l'applicazione o la macchina virtuale è gestita da SnapCenter, la protezione dal ransomware di BlueXP ripristina lo stato precedente dell'applicazione o della macchina virtuale e l'ultima transazione mediante un processo coerente con l'applicazione o con le macchine virtuali. Il ripristino coerente con l'applicazione o con la macchina virtuale aggiunge i dati che non sono stati inseriti nello storage, ad esempio i dati in cache o in un'operazione di i/o, ai dati del volume.
+* Se l'applicazione o la macchina virtuale è _non_ gestita da SnapCenter ed è gestita da backup e recovery di BlueXP o dalla protezione dal ransomware di BlueXP, la protezione dal ransomware di BlueXP esegue un ripristino coerente con il crash, in cui tutti i dati che erano nel volume nello stesso point of time vengono ripristinati, ad esempio, se il sistema si è bloccato.
++
+Puoi ripristinare il carico di lavoro selezionando tutti i volumi, volumi specifici o file specifici.
+
 
 
 
 TIP: Il ripristino dei workload può avere un impatto negativo sui workload in esecuzione. È necessario coordinare i processi di ripristino con gli stakeholder appropriati.
+
+Un carico di lavoro può avere uno dei seguenti stati di ripristino:
+
+* *Necessario ripristino*: Il carico di lavoro deve essere ripristinato.
+* *In corso*: L'operazione di ripristino è attualmente in corso.
+* *Ripristinato*: Il carico di lavoro è stato ripristinato.
+* *Non riuscito*: Impossibile completare il processo di ripristino del workload.
+
 
 
 
@@ -113,6 +124,9 @@ TIP: È possibile selezionare fino a 100 file o una singola cartella.
 
 === Ripristinare tutti i volumi
 
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Recovery*.
+. Seleziona un carico di lavoro in stato "Ripristino necessario".
+. Per ripristinare, selezionare *Ripristina*.
 . Nella pagina Ripristina, nell'ambito Ripristina, selezionare *tutti i volumi*.
 +
 image:screen-recovery-all-volumes.png["Pagina Ripristina da tutti i volumi"]
@@ -149,6 +163,9 @@ TIP: Il nome del nuovo volume viene visualizzato come prefisso + nome del volume
 
 === Ripristinare un workload dell'applicazione a livello di volume
 
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Recovery*.
+. Seleziona un carico di lavoro dell'applicazione in stato "Ripristino necessario".
+. Per ripristinare, selezionare *Ripristina*.
 . Nella pagina Ripristina, nell'ambito Ripristina, selezionare *per volume*.
 +
 image:screen-recovery-byvolume.png["Ripristino per pagina del volume"]
@@ -182,7 +199,80 @@ TIP: Il nome del nuovo volume viene visualizzato come nome originale del volume 
 . Dal menu superiore, selezionare *Recovery* (Ripristino) per esaminare il carico di lavoro nella pagina Recovery (Ripristino) in cui lo stato dell'operazione si sposta tra gli stati.
 
 
-. Selezionare se si desidera che i nomi dei file o della directory ripristinati siano gli stessi nomi della posizione corrente o nomi diversi.
+
+
+=== Ripristinare un workload dell'applicazione a livello di file
+
+Prima di ripristinare un workload dell'applicazione a livello di file, è possibile visualizzare un elenco di file interessati. È possibile accedere alla pagina Avvisi per scaricare un elenco di file interessati. Quindi, utilizzare la pagina di ripristino per caricare l'elenco e scegliere i file da ripristinare.
+
+È possibile ripristinare un workload dell'applicazione a livello di file nello stesso ambiente di lavoro o in un ambiente diverso.
+
+.Procedura per ottenere l'elenco dei file interessati
+Utilizzare la pagina Avvisi per recuperare l'elenco dei file interessati.
+
+
+TIP: Se un volume presenta più avvisi, sarà necessario scaricare l'elenco CSV dei file interessati per ciascun avviso.
+
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
+. Nella pagina Avvisi, ordinare i risultati per carico di lavoro per visualizzare gli avvisi per il carico di lavoro dell'applicazione che si desidera ripristinare.
+. Dall'elenco degli avvisi per il carico di lavoro, selezionare un avviso.
+. Per tale avviso, selezionare un singolo incidente.
++
+image:screen-alerts-incidents-impacted-files.png["elenco dei file interessati per un avviso specifico"]
+
+. Per visualizzare l'elenco completo dei file, selezionare *fare clic qui* nella parte superiore del riquadro file interessati.
+. Per quell'incidente, selezionare l'icona di download e scaricare l'elenco dei file interessati in formato CSV.
+
+
+.Procedura per ripristinare tali file
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Recovery*.
+. Seleziona un carico di lavoro dell'applicazione in stato "Ripristino necessario".
+. Per ripristinare, selezionare *Ripristina*.
+. Nella pagina Ripristina, nell'ambito Ripristina, selezionare *per file*.
+. Nell'elenco dei volumi, selezionare il volume contenente i file che si desidera ripristinare.
+. *Punto di ripristino*: Selezionare la freccia verso il basso accanto a *punto di ripristino* per visualizzare i dettagli. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+NOTE: La colonna Reason (motivo) nel riquadro Restore Points (punti di ripristino) mostra il motivo dell'istantanea o del backup come "Scheduled" (programmato) o "Automated Response to ransomware Incident" (Risposta automatizzata all'incidente ransomware).
+
+. *File*:
++
+** *Seleziona automaticamente i file*: Lascia che la protezione anti-ransomware di BlueXP selezioni i file da ripristinare.
+** *Carica elenco di file*: Carica un file CSV che contiene l'elenco dei file interessati dalla pagina Avvisi o di quelli in uso. È possibile ripristinare fino a 10.000 file alla volta.
++
+image:screen-recovery-app-by-file-upload-csv.png["Carica il file CSV che elenca i file interessati per l'avviso"]
+
+** *Selezione manuale dei file*: Selezionare fino a 10.000 file o una singola cartella da ripristinare.
++
+image:screen-recovery-app-by-file-select-files.png["Selezionare i file manualmente da ripristinare"]
+
++
+
+NOTE: Se non è possibile ripristinare i file utilizzando il punto di ripristino selezionato, viene visualizzato un messaggio che indica il numero di file che non è possibile ripristinare e consente di scaricare l'elenco di tali file selezionando *Scarica elenco dei file interessati*.
+
+
+
+. *Destinazione*: Selezionare la freccia verso il basso accanto a destinazione per visualizzare i dettagli.
++
+.. Scegliere dove ripristinare i dati: Percorso di origine originale o percorso alternativo che è possibile specificare.
++
+
+TIP: Mentre i file o la directory originali verranno sovrascritti dai dati ripristinati, i nomi dei file e delle cartelle originali rimarranno gli stessi a meno che non si specifichino nuovi nomi.
+
+.. Selezionare l'ambiente di lavoro.
+.. Selezionare la VM di storage.
+.. Facoltativamente, immettere il percorso.
++
+
+TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristinati in un nuovo volume nella directory di livello superiore.
+
+.. Selezionare se si desidera che i nomi dei file o della directory ripristinati siano gli stessi nomi della posizione corrente o nomi diversi.
+
+
+. Selezionare *Avanti*.
+. Rivedere le selezioni.
+. Selezionare *Restore* (Ripristina).
+. Dal menu superiore, selezionare *Recovery* (Ripristino) per esaminare il carico di lavoro nella pagina Recovery (Ripristino) in cui lo stato dell'operazione si sposta tra gli stati.
 
 
 
