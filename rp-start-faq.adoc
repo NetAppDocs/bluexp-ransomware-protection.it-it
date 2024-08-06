@@ -16,10 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
-== Accesso
-
-*Qual è l'URL di protezione dal ransomware BlueXP?*
-Per l'URL, in un browser, immettere: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Per accedere alla console BlueXP.
+== Implementazione
 
 *Ti serve una licenza per usare la protezione da ransomware di BlueXP?*
 
@@ -35,19 +32,24 @@ La protezione dal ransomware di BlueXP non richiede alcuna abilitazione. L'opzio
 
 Per iniziare, devi iscriverti o contattare il tuo rappresentante commerciale NetApp per provare questo servizio. Quindi, quando si utilizza il connettore BlueXP, esso includerà le funzionalità appropriate per il servizio.
 
-**La protezione anti-ransomware BlueXP è disponibile in modalità standard, limitata e privata?**
-Al momento, la protezione dal ransomware di BlueXP è disponibile solo in modalità standard. Continua a seguirci per saperne di più.
+Per iniziare con la protezione ransomware di BlueXP , fai clic su "inizia a rilevare i workload" nella sua landing page iniziale.
+
+*La protezione anti-ransomware BlueXP  è disponibile in modalità standard, limitata e privata?* Al momento, la protezione dal ransomware di BlueXP è disponibile solo in modalità standard. Continua a seguirci per saperne di più.
 
 Per una spiegazione di queste modalità in tutti i servizi BlueXP, fare riferimento a. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Modalità di implementazione di BlueXP"^].
 
-**Come vengono gestite le autorizzazioni di accesso?**
-Solo gli amministratori degli account possono avviare il servizio e rilevare i carichi di lavoro (perché questo implica impegnarsi all'utilizzo di una risorsa). Le interazioni successive possono essere effettuate da qualsiasi ruolo.
 
-**Qual è la migliore risoluzione del dispositivo?**
-La risoluzione consigliata del dispositivo per la protezione dal ransomware BlueXP è di 1920x1080 o superiore.
 
-**Quale browser devo utilizzare?**
-Qualsiasi browser moderno funzionerà.
+== Accesso
+
+*Qual è l'URL di protezione dal ransomware BlueXP?*
+Per l'URL, in un browser, immettere: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Per accedere alla console BlueXP.
+
+*Come vengono gestite le autorizzazioni di accesso?* Solo gli amministratori degli account possono avviare il servizio e rilevare i carichi di lavoro (perché questo implica impegnarsi all'utilizzo di una risorsa). Le interazioni successive possono essere effettuate da qualsiasi ruolo.
+
+*Qual è la migliore risoluzione del dispositivo?* La risoluzione consigliata del dispositivo per la protezione dal ransomware BlueXP è di 1920x1080 o superiore.
+
+*Quale browser devo utilizzare?* Qualsiasi browser moderno funzionerà.
 
 
 
@@ -59,25 +61,50 @@ Sì, la protezione dal ransomware BlueXP rileva le pianificazioni Snapshot impos
 *Se imposti una policy utilizzando la protezione dal ransomware di BlueXP, devi apportare modifiche future solo in questo servizio?*
 Ti consigliamo di apportare modifiche alla policy dal servizio di protezione dal ransomware di BlueXP.
 
+*In che modo la protezione ransomware BlueXP  interagisce con il backup e il ripristino di BlueXP  e con SnapCenter?*
+
+La protezione dal ransomware di BlueXP  utilizza i seguenti prodotti e servizi:
+
+* Backup e recovery di BlueXP  per rilevare e impostare policy di backup e snapshot per i carichi di lavoro di condivisioni di file
+* SnapCenter o SnapCenter per VMware per rilevare e impostare policy di backup e snapshot per applicazioni e carichi di lavoro delle VM.
+
+
+Inoltre, la protezione dal ransomware BlueXP  utilizza il backup e recovery di BlueXP  e SnapCenter / SnapCenter per VMware per eseguire recovery coerente con file e carico di lavoro.
+
 
 
 == Carichi di lavoro
 
-**Che cosa costituisce un carico di lavoro?**
-Un carico di lavoro include tutti i volumi utilizzati da una singola istanza dell'applicazione. Ad esempio, un'istanza di Oracle DB implementata in ora3.host.com può avere vol1 GB e vol2 GB rispettivamente per dati e registri. Questi volumi costituiscono insieme il carico di lavoro per quella specifica istanza dell'istanza del database Oracle.
+*Che cosa costituisce un carico di lavoro?* Un carico di lavoro è un'applicazione, una macchina virtuale o una condivisione di file. Un carico di lavoro include tutti i volumi utilizzati da una singola istanza dell'applicazione. Ad esempio, un'istanza di Oracle DB implementata in ora3.host.com può avere vol1 GB e vol2 GB rispettivamente per dati e registri. Questi volumi costituiscono insieme il carico di lavoro per quella specifica istanza dell'istanza del database Oracle.
 
 *In che modo la protezione dal ransomware di BlueXP assegna la priorità ai dati del carico di lavoro?*
 La priorità dei dati è determinata dalle copie Snapshot create e dai backup pianificati.
 
-La priorità del carico di lavoro è determinata dalle frequenze dell'istantanea.
+La priorità del carico di lavoro (critico, standard, importante) è determinata dalle frequenze di Snapshot già applicate a ciascun volume associato al carico di lavoro.
 
 link:rp-use-protect.html["Scopri la priorità o l'importanza del carico di lavoro"].
 
-**Aggiunto nuovo volume, ma non appare ancora**
-Se è stato aggiunto un nuovo volume al proprio ambiente, ripetere il rilevamento e applicare criteri di protezione per proteggere il nuovo volume.
+*Quali workload supporta la protezione ransomware BlueXP ?*
 
-**La Dashboard non mostra tutti i miei workload. Che cosa potrebbe essere sbagliato?**
-Al momento sono supportati solo volumi NFS e CIFS. I volumi iSCSI e altre configurazioni non supportate vengono filtrati e non vengono visualizzati nella dashboard.
+La protezione ransomware di BlueXP  è in grado di identificare i seguenti workload: Oracle, MySQL, file share, VM e datastore VM.
+
+Inoltre, se il cliente utilizza SnapCenter o SnapCenter per VMware, tutti i workload supportati da questi prodotti sono anche identificati nella protezione dal ransomware BlueXP  e nella protezione dal ransomware BlueXP  possono proteggere e ripristinare i dati in modo coerente con il carico di lavoro.
+
+*Come si associano i dati a un carico di lavoro?*
+
+La protezione ransomware BlueXP  associa i dati a un carico di lavoro nei seguenti modi:
+
+* La protezione ransomware BlueXP  rileva i volumi e le estensioni dei file e li associa al carico di lavoro appropriato.
+* Inoltre, se disponi di SnapCenter o SnapCenter per VMware e hai configurato i workload nel backup e recovery di BlueXP , la protezione dal ransomware BlueXP  scopre i workload gestiti da SnapCenter e SnapCenter per VMware e i loro volumi associati.
+
+
+*Che cos'è un carico di lavoro "protetto"?* Nella protezione ransomware di BlueXP , un carico di lavoro mostra uno stato "protetto" quando ha una policy di rilevamento principale abilitata. Per ora, ciò significa che ARP è abilitato su tutti i volumi correlati al carico di lavoro.
+
+*Che cos'è un carico di lavoro "a rischio"?* Se un carico di lavoro non ha abilitata una policy di rilevamento primaria, è "a rischio" anche se ha abilitata una policy di backup e snapshot.
+
+*Nuovo volume aggiunto, ma non ancora visualizzato* se è stato aggiunto un nuovo volume all'ambiente, avviare nuovamente il rilevamento e applicare i criteri di protezione per proteggere il nuovo volume.
+
+*Il Dashboard non mostra tutti i miei workload. Che cosa potrebbe essere sbagliato?* Al momento sono supportati solo volumi NFS e CIFS. I volumi iSCSI e altre configurazioni non supportate vengono filtrati e non vengono visualizzati nella dashboard.
 
 
 
@@ -87,3 +114,43 @@ Al momento sono supportati solo volumi NFS e CIFS. I volumi iSCSI e altre config
 Al momento, il backup e recovery di BlueXP (Cloud Backup) supporta una policy di backup per ogni volume. Pertanto, il backup e recovery di BlueXP e la protezione dal ransomware di BlueXP condividono le policy di backup.
 
 Le copie Snapshot non sono limitate e possono essere aggiunte separatamente da ciascun servizio.
+
+*Quali policy sono richieste in una strategia di protezione dal ransomware?*
+
+Nella strategia di protezione dal ransomware sono richieste le seguenti policy:
+
+* Policy di rilevamento del ransomware
+* Policy di Snapshot
+
+
+Nella strategia di protezione dal ransomware BlueXP  non è necessaria una policy di backup.
+
+*La protezione dal ransomware di BlueXP è a conoscenza delle impostazioni di protezione di NetApp ONTAP?*
+
+Sì, la protezione ransomware BlueXP  rileva le pianificazioni delle snapshot impostate in ONTAP e se ARP e FPolicy sono abilitati in tutti i volumi di un carico di lavoro rilevato. Le informazioni visualizzate inizialmente nella dashboard sono aggregate da altre soluzioni e prodotti NetApp.
+
+*La protezione dal ransomware BlueXP  è consapevole delle policy già adottate in backup e recovery di BlueXP  e SnapCenter?*
+
+Sì, se hai workload gestiti in backup e recovery di BlueXP  o SnapCenter, le policy gestite da questi prodotti sono integrate nella protezione dal ransomware di BlueXP .
+
+*È possibile modificare i criteri riportati dal backup e ripristino di BlueXP  e/o da SnapCenter?*
+
+No, non puoi modificare le policy gestite dal backup e recovery di BlueXP  o dal SnapCenter all'interno della protezione dal ransomware di BlueXP . Eventuali modifiche a tali criteri vengono gestite in backup e ripristino di BlueXP  o SnapCenter.
+
+*Se esistono policy di ONTAP (già attivate in Gestione sistema come ARP, FPolicy e snapshot), sono state modificate quelle nella protezione ransomware di BlueXP ?*
+
+N. La protezione dal ransomware BlueXP  non modifica alcuna policy di rilevamento esistente (ARP, impostazioni FPolicy) da ONTAP.
+
+*Cosa succede se Aggiungi nuove policy nel backup e ripristino di BlueXP  o in SnapCenter dopo aver effettuato la registrazione alla protezione dal ransomware di BlueXP ?*
+
+La protezione dal ransomware BlueXP  riconosce qualsiasi nuova policy creata in backup e recovery di BlueXP  o SnapCenter.
+
+*È possibile modificare le policy da ONTAP?*
+
+Sì, puoi modificare le policy di ONTAP nella protezione dal ransomware BlueXP . Puoi anche creare nuove policy nella protezione dal ransomware di BlueXP  e applicarle ai carichi di lavoro. Questa azione sostituisce le policy ONTAP esistenti con quelle create nella protezione dal ransomware BlueXP .
+
+*È possibile disabilitare i criteri?*
+
+È possibile disattivare ARP nei criteri di rilevamento utilizzando l'interfaccia utente, le API o la CLI di System Manager.
+
+È possibile disattivare FPolicy e i criteri di backup applicando un criterio diverso che non li include.

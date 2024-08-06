@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, detection, ARP' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP' 
 summary: Scopri le novità di BlueXP ransomware Protection. 
 ---
 = Note di release: Novità della protezione dal ransomware BlueXP
@@ -18,7 +18,21 @@ Scopri le novità di BlueXP ransomware Protection.
 
 
 
+== 5 agosto 2024
+
+Questa versione della protezione ransomware di BlueXP  include il seguente aggiornamento.
+
+* *Rilevamento delle minacce con Splunk Cloud*: Puoi inviare automaticamente i dati al tuo sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. Con le release precedenti, puoi selezionare solo l'AWS Security Hub come tuo SIEM. Con questa release, puoi selezionare AWS Security Hub o Splunk Cloud come tuo SIEM.
++
+Per ulteriori informazioni, fare riferimento alla link:rp-use-settings.html["Configurare le impostazioni di protezione dal ransomware BlueXP"].
+
+
+
+
+
 == 1 luglio 2024
+
+Questa versione della protezione dal ransomware di BlueXP include i seguenti aggiornamenti:
 
 * *Bring Your Own License (BYOL)*: Con questa release, puoi utilizzare una licenza BYOL, che è un file di licenza NetApp (NLF) che ottieni dal tuo rappresentante di vendita NetApp
 +

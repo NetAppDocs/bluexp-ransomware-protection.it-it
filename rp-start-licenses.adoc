@@ -17,13 +17,18 @@ Con la protezione dal ransomware di BlueXP, puoi usare piani di licenza diversi.
 È possibile utilizzare i seguenti tipi di licenza:
 
 * Iscriviti per una prova gratuita di 90 giorni.
-* Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace.  Questo sarà disponibile a breve.
+* Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace o Azure Marketplace (presto disponibile).
 * BYOL (Bring Your Own License), ovvero un file di licenza NetApp (NLF) ottenuto dal rappresentante vendite NetApp Puoi utilizzare il numero di serie della licenza per attivare il BYOL nel Digital Wallet di BlueXP.
 
 
-Dopo aver configurato il BYOL o aver acquistato un abbonamento a PAYGO in AWS, puoi vedere la licenza nel portafoglio digitale di BlueXP *scheda licenze servizi dati* o l'abbonamento AWS attivo nella scheda *Sottoscrizioni* del portafoglio digitale di BlueXP.
+La licenza di protezione ransomware BlueXP  non include prodotti NetApp aggiuntivi. La protezione dal ransomware di BlueXP  può usare il backup e recovery di BlueXP  anche se non disponi di una licenza per esso.
 
-Al termine della prova gratuita o alla scadenza della licenza o dell'abbonamento AWS, puoi comunque effettuare le seguenti operazioni nel servizio:
+
+NOTE: Se disponi sia di backup e recovery di BlueXP  che di protezione ransomware BlueXP , qualsiasi dato comune protetto da entrambi i prodotti verrà fatturato solo dalla protezione ransomware di BlueXP .
+
+Dopo aver impostato il proprio BYOL o aver acquistato un abbonamento a PAYGO, è possibile visualizzare la licenza nella scheda portafoglio digitale BlueXP  *licenze servizio dati* o l'abbonamento attivo nella scheda portafoglio digitale BlueXP  *Sottoscrizioni*.
+
+Al termine della prova gratuita o alla scadenza della licenza o dell'abbonamento, è comunque possibile effettuare le seguenti operazioni nel servizio:
 
 * Visualizzare la salute dei carichi di lavoro e dei carichi di lavoro.
 * Eliminare qualsiasi risorsa, ad esempio un carico di lavoro o una policy.
@@ -39,7 +44,7 @@ Puoi provare la protezione dal ransomware BlueXP utilizzando una prova gratuita 
 
 NOTE: Durante la prova non vengono applicati limiti di capacità.
 
-È possibile ottenere una licenza o sottoscrivere l'abbonamento in qualsiasi momento e non verrà addebitato alcun costo fino al termine della prova di 90 giorni. Per continuare dopo la prova di 90 giorni, dovrai acquistare una licenza BYOL o un abbonamento PAYGO AWS.
+È possibile ottenere una licenza o sottoscrivere l'abbonamento in qualsiasi momento e non verrà addebitato alcun costo fino al termine della prova di 90 giorni. Per continuare dopo la prova di 90 giorni, dovrai acquistare una licenza BYOL o un abbonamento PAYGO.
 
 Durante la prova, si dispone di tutte le funzionalità.
 
@@ -65,8 +70,7 @@ Per aggiungere un connettore, fare riferimento a. https://docs.netapp.com/us-en/
 
 Al termine della prova gratuita, puoi iscriverti tramite AWS Marketplace o acquistare una licenza da NetApp.
 
-<<Iscriviti tramite AWS Marketplace>>
-<<BYOL>>
+<<Iscriviti tramite AWS Marketplace>> <<Iscriviti tramite Microsoft Azure Marketplace>> <<BYOL>>
 
 
 
