@@ -24,7 +24,7 @@ Questa versione della protezione ransomware di BlueXP  include il seguente aggi
 
 * *Rilevamento delle minacce con Splunk Cloud*: Puoi inviare automaticamente i dati al tuo sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. Con le release precedenti, puoi selezionare solo l'AWS Security Hub come tuo SIEM. Con questa release, puoi selezionare AWS Security Hub o Splunk Cloud come tuo SIEM.
 +
-Per ulteriori informazioni, fare riferimento alla link:rp-use-settings.html["Configurare le impostazioni di protezione dal ransomware BlueXP"].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Scopri di più sulla configurazione delle impostazioni di protezione dal ransomware BlueXP "].
 
 
 
