@@ -42,6 +42,7 @@ Per proteggere questi workload, è necessario aggiungere una destinazione di bac
 
 * NetApp StorageGRID
 * Amazon Web Services (AWS)
+* Piattaforma Google Cloud
 * Microsoft Azure
 
 
@@ -107,7 +108,7 @@ image:screen-settings-backup-destination.png["Pagina destinazioni di backup"]
 .Risultato
 La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
 
-image:screen-settings-backup-destinations-list-azure.png["Pagina destinazioni di backup opzione Impostazioni"]
+image:screen-settings-backup-destinations-list2.png["Pagina destinazioni di backup opzione Impostazioni"]
 
 
 
@@ -165,7 +166,47 @@ CAUTION: Se si configura ora l'impostazione del blocco di backup, non sarà poss
 .Risultato
 La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
 
-image:screen-settings-backup-destinations-list-azure.png["Pagina destinazioni di backup opzione Impostazioni"]
+image:screen-settings-backup-destinations-list2.png["Pagina destinazioni di backup opzione Impostazioni"]
+
+
+
+=== Aggiungi Google Cloud Platform come destinazione di backup
+
+Per configurare Google Cloud Platform (GCP) come destinazione di backup, inserisci le seguenti informazioni.
+
+Per informazioni dettagliate sulla gestione dello storage GCP in BlueXP , fare riferimento alla https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Opzioni di installazione del connettore in Google Cloud"^].
+
+. Nella pagina *Impostazioni > Destinazioni di backup*, selezionare *Aggiungi*.
+. Immettere un nome per la destinazione di backup.
++
+image:screen-settings-backup-destination-gcp.png["Pagina destinazioni di backup"]
+
+. Selezionare *Google Cloud Platform*.
+. Selezionare la freccia verso il basso accanto a ciascuna impostazione e immettere o selezionare i valori:
++
+** *Impostazioni provider*:
++
+*** Creare un nuovo bucket. Immettere la chiave di accesso e la chiave segreta.
+*** Immettere o selezionare il progetto e la regione di Google Cloud Platform.
+
+
+** *Crittografia*: Se si sta creando un nuovo bucket, immettere le informazioni sulla chiave di crittografia fornite dal provider. Se si sceglie un bucket esistente, le informazioni di crittografia sono già disponibili.
++
+Per impostazione predefinita, i dati nel bucket sono crittografati con chiavi gestite da Google. È possibile continuare a utilizzare le chiavi gestite da Google.
+
+** *Rete*: Scegliere IPSpace e se si utilizza un endpoint privato.
++
+*** IPSpace è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup. Le LIF intercluster per questo IPSpace devono disporre di accesso a Internet in uscita.
+*** In alternativa, è possibile scegliere se utilizzare un endpoint privato GCP (PrivateLink) precedentemente configurato.
+
+
+
+
+. Selezionare *Aggiungi*.
+
+
+.Risultato
+La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
 
 
 
@@ -213,7 +254,7 @@ Se si desidera utilizzare Azure PrivateLink, consultare la sezione https://azure
 .Risultato
 La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
 
-image:screen-settings-backup-destinations-list-azure.png["Pagina destinazioni di backup opzione Impostazioni"]
+image:screen-settings-backup-destinations-list2.png["Pagina destinazioni di backup opzione Impostazioni"]
 
 
 

@@ -103,6 +103,9 @@ Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli
 Fare riferimento a. link:rp-use-protect.html["Proteggere il carico di lavoro dagli attacchi ransomware"]. 
 
 
+| Migliora la postura di sicurezza per l'ambiente di lavoro | Il consulente digitale NetApp ha identificato almeno un rischio di protezione elevato o critico. | Esaminate tutti i rischi per la sicurezza in NetApp Digital Advisor. Fare riferimento alla https://docs.netapp.com/us-en/active-iq/index.html["Documentazione di Digital Advisor"^]. 
+
+
 | Rafforzare una politica. | Alcuni carichi di lavoro potrebbero non disporre di una protezione sufficiente. Rafforza la protezione sui carichi di lavoro con una policy. | Aumenta la conservazione, Aggiungi i backup, applica i backup immutabili, blocca le estensioni di file sospette, abilita il rilevamento sullo storage secondario e molto altro ancora.
 Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
 

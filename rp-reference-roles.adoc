@@ -1,0 +1,225 @@
+---
+sidebar: sidebar 
+permalink: rp-reference-roles.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights 
+summary: Puoi configurare diverse opzioni, tra cui una destinazione di backup, nel servizio di protezione dal ransomware BlueXP. 
+---
+= Privileges per il controllo degli accessi in base al ruolo della protezione ransomware BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+La protezione ransomware BlueXP  utilizza il role-based access control (RBAC) per gestire l'accesso a funzionalità e azioni specifiche di ciascun utente. Il servizio utilizza i ruoli BlueXP  principali di account Admin e Viewer (non account Admin0).
+
+La tabella seguente indica quali azioni possono essere eseguite da ciascun ruolo.
+
+[cols="40,20a,20a"]
+|===
+| Funzione e azione | Amministratore account BlueXP  | Non amministratore (visualizzatore) 
+
+
+| Inizia la prova gratuita  a| 
+Y
+ a| 
+N
+
+
+
+| Visualizza dashboard  a| 
+Y
+ a| 
+Y
+
+
+
+| Visualizza scheda protezione  a| 
+Y
+ a| 
+Y
+
+
+
+| Visualizza scheda Avvisi  a| 
+Y
+ a| 
+Y
+
+
+
+| Visualizza scheda Recupera  a| 
+Y
+ a| 
+Y
+
+
+
+| Visualizza scheda rapporti  a| 
+Y
+ a| 
+Y
+
+
+
+| Visualizza scheda Impostazioni  a| 
+Y
+ a| 
+Y
+
+
+
+| Avvia il rilevamento dei carichi di lavoro  a| 
+Y
+ a| 
+N
+
+
+
+| Proteggere: Modificare o eliminare i criteri  a| 
+Y
+ a| 
+N
+
+
+
+| Protezione: Aggiunta di criteri  a| 
+Y
+ a| 
+N
+
+
+
+| Proteggere: Proteggere i carichi di lavoro  a| 
+Y
+ a| 
+N
+
+
+
+| Protezione: Identificazione dei dati sensibili  a| 
+Y
+ a| 
+N
+
+
+
+| Protezione: Modifica della protezione del carico di lavoro  a| 
+Y
+ a| 
+N
+
+
+
+| Protezione: Consente di visualizzare i dettagli del carico di lavoro  a| 
+Y
+ a| 
+Y
+
+
+
+| Protezione: Download dei dati  a| 
+Y
+ a| 
+Y
+
+
+
+| Avvisi: Consente di visualizzare i dettagli degli avvisi  a| 
+Y
+ a| 
+Y
+
+
+
+| Avvisi: Consente di modificare lo stato dell'incidente  a| 
+Y
+ a| 
+N
+
+
+
+| Avvisi: Consente di visualizzare i dettagli dell'incidente  a| 
+Y
+ a| 
+Y
+
+
+
+| Avvisi: Consente di ottenere l'elenco completo dei file interessati  a| 
+Y
+ a| 
+N
+
+
+
+| Avvisi: Scarica i dati degli avvisi  a| 
+Y
+ a| 
+Y
+
+
+
+| Recupera: Scarica i file interessati  a| 
+Y
+ a| 
+N
+
+
+
+| Ripristina: Ripristina il workload  a| 
+Y
+ a| 
+N
+
+
+
+| Recupera: Scarica i dati di recupero  a| 
+Y
+ a| 
+Y
+
+
+
+| Recupera: Scarica i report  a| 
+Y
+ a| 
+Y
+
+
+
+| Impostazioni: Aggiungere o modificare le destinazioni di backup  a| 
+Y
+ a| 
+N
+
+
+
+| Impostazioni: Aggiungere o modificare target SIEM  a| 
+Y
+ a| 
+N
+
+
+
+| Report: Scarica report  a| 
+Y
+ a| 
+Y
+
+
+
+| Documentazione: Consente di visualizzare la documentazione relativa al prodotto  a| 
+Y
+ a| 
+Y
+
+
+
+| Documentazione: Consente di visualizzare la documentazione sulle novità del prodotto  a| 
+Y
+ a| 
+Y
+
+|===

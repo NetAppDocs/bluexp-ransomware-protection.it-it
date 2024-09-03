@@ -17,27 +17,30 @@ Puoi proteggere i workload dagli attacchi ransomware eseguendo le seguenti azion
 * Abilita una protezione coerente con il carico di lavoro, che funziona con il software SnapCenter o il plug-in SnapCenter per VMware vSphere.
 * Creare o gestire strategie di protezione dal ransomware che includano policy create per snapshot, backup e rilevamento dei ransomware.
 * Importare una strategia e regolarla.
+* Modificare una strategia di protezione.
 * Eliminare una strategia di protezione.
 
 
 
 
-== Criteri di protezione che è possibile modificare in base alla copertura esistente
+== Policy di protezione
+
+Potrebbe essere utile esaminare le informazioni sui criteri di protezione che è possibile modificare e i tipi di criteri contenuti in una strategia di protezione.
+
+*Quali criteri di protezione potete modificare?*
 
 Puoi modificare le policy di protezione in base alla protezione dei workload di cui disponi:
 
 * *Workload non protetti dalle applicazioni NetApp*: Questi workload non sono gestiti da backup e ripristino SnapCenter, SnapCenter Plug-in per VMware vSphere o BlueXP . Questi carichi di lavoro potrebbero avere snapshot creati come parte di ONTAP o di altri prodotti. Se è attiva la protezione FPolicy di ONTAP, è possibile modificare la protezione FPolicy utilizzando ONTAP.
 * *Workload con protezione esistente da parte delle applicazioni NetApp*: Questi workload dispongono di policy di backup o snapshot gestite da SnapCenter, SnapCenter per VMware vSphere o backup e ripristino BlueXP .
 +
-** Se le policy di backup o Snapshot vengono gestite da backup e ripristino SnapCenter, SnapCenter per VMware o BlueXP , queste applicazioni continueranno a essere gestite da esse. Utilizzando la protezione dal ransomware di BlueXP , puoi anche applicare una policy di rilevamento del ransomware a questi carichi di lavoro.
+** Se le policy di backup o snapshot vengono gestite da backup e ripristino SnapCenter, SnapCenter per VMware o BlueXP , queste applicazioni continueranno a essere gestite da esse. Utilizzando la protezione dal ransomware di BlueXP , puoi anche applicare una policy di rilevamento del ransomware a questi carichi di lavoro.
 ** Se una policy di rilevamento del ransomware viene gestita da protezione autonoma dal ransomware (ARP) e FPolicy in ONTAP, quei workload sono protetti e continueranno a essere gestiti da ARP e FPolicy.
 
 
 
 
-
-
-== Quali policy sono richieste in una strategia di protezione dal ransomware?
+*Quali policy sono richieste in una strategia di protezione dal ransomware?*
 
 Nella strategia di protezione dal ransomware sono richieste le seguenti policy:
 
@@ -75,7 +78,7 @@ TIP: Quando la protezione è abilitata nella protezione ransomware BlueXP , il 
 
 *Criterio di rilevamento*: Viene visualizzato il nome del criterio di rilevamento ransomware, se ne è stato assegnato uno. Se il criterio di rilevamento non è stato assegnato, viene visualizzato "N/A".
 
-*Criteri di backup e snapshot*: In questa colonna vengono visualizzati i criteri di backup e snapshot applicati al carico di lavoro e al prodotto o servizio che gestisce tali criteri.
+*Criteri di snapshot e backup*: In questa colonna vengono visualizzati i criteri di snapshot e backup applicati al carico di lavoro e al prodotto o servizio che gestisce tali criteri.
 
 * Gestito da SnapCenter
 * Gestito dal plug-in SnapCenter per VMware vSphere
@@ -84,26 +87,22 @@ TIP: Quando la protezione è abilitata nella protezione ransomware BlueXP , il 
 * Nessuno
 
 
+*Importanza del carico di lavoro*
 
-
-=== Importanza del carico di lavoro
-
-La protezione dal ransomware di BlueXP assegna un'importanza o una priorità a ogni workload durante il rilevamento, in base a un'analisi di ogni workload. L'importanza del carico di lavoro è determinata dalle seguenti frequenze di istantanea:
+La protezione dal ransomware di BlueXP assegna un'importanza o una priorità a ogni workload durante il rilevamento, in base a un'analisi di ogni workload. L'importanza del carico di lavoro è determinata dalle seguenti frequenze di snapshot:
 
 * *Critico*: Le copie snapshot sono acquisite più di 1 TB all'ora (programma di protezione altamente aggressivo)
 * *Importante*: Le copie snapshot sono state acquisite meno di 1 TB all'ora ma più di 1 TB al giorno
 * *Standard*: Le copie snapshot sono state acquisite più di 1 copie al giorno
 
 
+*Criteri di rilevamento predefiniti*
 
-
-=== Policy di rilevamento ransomware predefinite basate sull'importanza dei workload
-
-Puoi scegliere una delle seguenti policy predefinite di protezione dal ransomware BlueXP che sono allineate con l'importanza dei carichi di lavoro:
+Puoi scegliere una delle seguenti policy predefinite di protezione dal ransomware BlueXP , allineate con l'importanza dei carichi di lavoro:
 
 [cols="10,15a,20,15,15,15"]
 |===
-| Livello dei criteri | Snapshot | Frequenza | Conservazione (giorni) | N. di copie Snapshot | Numero massimo totale di copie Snapshot 
+| Livello dei criteri | Snapshot | Frequenza | Conservazione (giorni) | n. di copie snapshot | Numero massimo totale di copie snapshot 
 
 
 .4+| *Politica critica dei carichi di lavoro*  a| 
@@ -195,7 +194,7 @@ NOTE: Per i workload che hanno già una policy di protezione con il servizio di 
 
 
 
-== Rivedere e aggiornare i dettagli sul carico di lavoro
+== Modificare i dettagli dei carichi di lavoro
 
 Puoi rivedere i dettagli dei workload come nome del workload, policy di protezione e informazioni sullo storage.
 
@@ -232,7 +231,7 @@ L'attivazione della protezione coerente con le applicazioni o le VM consente di 
 
 Questo processo avvia la registrazione del server software SnapCenter per le applicazioni o del plug-in SnapCenter per VMware vSphere per le VM utilizzando il backup e il ripristino BlueXP.
 
-Una volta abilitata una protezione coerente con il carico di lavoro, puoi gestire le strategie di protezione nella protezione dal ransomware di BlueXP. La strategia di protezione include le policy di backup e Snapshot gestite altrove, oltre a una policy di rilevamento del ransomware gestita nella protezione dal ransomware di BlueXP.
+Una volta abilitata una protezione coerente con il carico di lavoro, puoi gestire le strategie di protezione nella protezione dal ransomware di BlueXP. La strategia di protezione include le policy di backup e snapshot gestite altrove, oltre a una policy di rilevamento del ransomware gestita nella protezione dal ransomware BlueXP .
 
 Per ulteriori informazioni sulla registrazione di SnapCenter o del plug-in SnapCenter per VMware vSphere utilizzando il backup e recovery di BlueXP, consulta le seguenti informazioni:
 
@@ -257,12 +256,99 @@ Per ulteriori informazioni sulla registrazione di SnapCenter o del plug-in SnapC
 
 
 
-== Creare una strategia di protezione dal ransomware (se non disponi di policy di backup o snapshot)
+== Utilizzare la classificazione BlueXP  per eseguire la scansione delle informazioni di identificazione personale
 
-Se sul workload non esistono policy di backup o snapshot, puoi creare una strategia di protezione dal ransomware, che può includere le seguenti policy che crei nella protezione dal ransomware di BlueXP:
+All'interno del servizio di protezione ransomware BlueXP  puoi utilizzare la classificazione BlueXP , un componente fondamentale della famiglia BlueXP , per analizzare e classificare i dati in un carico di lavoro di condivisione file. La classificazione dei dati ti aiuta a capire se i tuoi dati includono informazioni personali o private, con conseguenti rischi per la sicurezza.
+
+
+
+=== Attiva classificazione BlueXP 
+
+Prima di utilizzare la classificazione BlueXP  all'interno del servizio di protezione dal ransomware BlueXP , devi abilitare la classificazione BlueXP  per eseguire la scansione dei tuoi dati.
+
+.Fasi
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Nella pagina protezione, individuare un carico di lavoro di condivisione file nella colonna carico di lavoro.
++
+image:screen-protection-exposure-link.png["Schermata di protezione che mostra la colonna esposizione alla privacy"]
+
+. Nella colonna esposizione privacy, selezionare *identifica esposizione*.
++
+image:screen-protection-sensitive-data.png["Schermata di identificazione dei dati sensibili"]
+
+. Rivedere le informazioni sulla classificazione BlueXP .
+. Selezionare *identifica*.
+
+
+.Risultato
+La classificazione BlueXP  si connette in remoto ai dati del workload ed esegue la scansione nel cloud NetApp. Solo le informazioni e le metriche identificate rimangono nel cloud NetApp, ma non nei tuoi dati.
+
+La pagina protezione mostra che la classificazione BlueXP  identifica i file e fornisce un'indicazione del numero di file che sta eseguendo la scansione.
+
+
+
+=== Esaminare l'esposizione alla privacy
+
+Una volta eseguita la scansione della classificazione BlueXP  per individuare le informazioni personali identificabili (PII), è possibile esaminare il rischio relativo ai dati PII.
+
+I dati PII possono avere uno dei seguenti stati di rischio:
+
+* *Alto*: Xnumber o più file con PII
+* *Basso*:
+
+
+.Fasi
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Nella pagina protezione, individuare il carico di lavoro della condivisione file nella colonna carico di lavoro che mostra uno stato nella colonna esposizione alla privacy.
++
+image:screen-protection-exposure-link.png["Schermata di protezione che mostra la colonna esposizione alla privacy"]
+
+. Seleziona il collegamento workload nella colonna workload per visualizzare i dettagli del workload.
++
+image:screen-protection-workload-details-privacy-exposure.png["Schermata Dettagli del carico di lavoro che mostra il riquadro esposizione privacy"]
+
+. Nella pagina Dettagli del carico di lavoro, rivedere le informazioni nel riquadro esposizione privacy.
+. Per esaminare l'esposizione nella classificazione BlueXP , selezionare *indagare*.
+. COSA SUCCEDE? Si passa ora alla classificazione? A cosa serve l'opzione marcia?
+
+
+Per ulteriori informazioni sulla classificazione BlueXP , fare riferimento ai seguenti argomenti di classificazione BlueXP :
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Scopri di più sulla classificazione BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Categorie di dati privati"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Esaminare i dati memorizzati nella propria organizzazione"^]
+
+
+
+
+=== Visualizzare le modifiche apportate alla priorità del carico di lavoro in base ai dati di sensibilità
+
+DA DEFINIRE
+
+
+
+== Aggiungi una strategia di protezione dal ransomware
+
+Puoi aggiungere una strategia di protezione dal ransomware ai carichi di lavoro. Le modalità di esecuzione dipendono dalla presenza o meno di criteri di snapshot e backup:
+
+* *Crea una strategia di protezione dal ransomware se non disponi di policy di backup o snapshot*. Se sul workload non esistono policy di backup o snapshot, puoi creare una strategia di protezione dal ransomware, che può includere le seguenti policy che crei nella protezione dal ransomware BlueXP :
++
+** Policy di Snapshot
+** Policy di backup
+** Policy di rilevamento del ransomware
+
+
+* *Creare un criterio di rilevamento per i workload che dispongono già di criteri di snapshot e backup*, che sono gestiti in altri prodotti o servizi NetApp. Il criterio di rilevamento non modifica i criteri gestiti in altri prodotti.
+
+
+
+
+=== Creare una strategia di protezione dal ransomware (se non disponi di policy di backup o snapshot)
+
+Se sul workload non esistono policy di backup o snapshot, puoi creare una strategia di protezione dal ransomware, che può includere le seguenti policy che crei nella protezione dal ransomware BlueXP :
 
 * Policy di Snapshot
-* Policy di backup
+* policy di backup
 * Policy di rilevamento del ransomware
 
 
@@ -287,7 +373,7 @@ NOTE: Se si sceglie di copiare e modificare una strategia esistente, il servizio
 +
 *** *Policy*: Scegliere uno dei criteri di rilevamento preprogettati.
 *** *Rilevamento primario*: Abilitare il rilevamento ransomware per fare in modo che il servizio rilevi potenziali attacchi ransomware.
-*** *Blocca estensioni file*: Abilitare questa opzione affinché il blocco di servizio conosca le estensioni file sospette. Il servizio esegue copie Snapshot automatizzate quando è abilitato il rilevamento primario.
+*** *Blocca estensioni file*: Abilitare questa opzione affinché il blocco di servizio conosca le estensioni file sospette. Quando è abilitato il rilevamento primario, il servizio crea copie snapshot automatizzate.
 +
 Se si desidera modificare le estensioni dei file bloccati, modificarle in System Manager.
 
@@ -295,10 +381,10 @@ Se si desidera modificare le estensioni dei file bloccati, modificarle in System
 
 ** *Snapshot policy*:
 +
-*** *Nome base criteri istantanea*: Selezionare un criterio o selezionare *Crea* e immettere un nome per il criterio istantanea.
-*** *Snapshot locking*: Permette di bloccare le copie Snapshot sullo storage primario in modo che non possano essere modificate o eliminate per un certo periodo di tempo, anche se un attacco ransomware gestisce la destinazione storage di backup. Questo viene anche chiamato _storage immutabile_. Ciò consente tempi di ripristino più rapidi.
+*** *Snapshot policy base ame*: Selezionare un criterio o selezionare *Create* (Crea*) e immettere un nome per il criterio snapshot.
+*** *Snapshot locking*: Permette di bloccare le copie snapshot sullo storage primario in modo che non possano essere modificate o eliminate per un certo periodo di tempo, anche se un attacco ransomware gestisce la destinazione storage di backup. Questo viene anche chiamato _storage immutabile_. Ciò consente tempi di ripristino più rapidi.
 +
-Quando uno Snapshot è bloccato, il tempo di scadenza del volume è impostato sull'ora di scadenza della copia Snapshot.
+Quando uno snapshot è bloccato, l'ora di scadenza del volume è impostata sull'ora di scadenza della copia snapshot.
 
 +
 Il blocco della copia snapshot è disponibile con ONTAP 9.12.1 e versioni successive. Per ulteriori informazioni su SnapLock, fare riferimento a. https://docs.netapp.com/us-en/ontap/snaplock/index.html["SnapLock a ONTAP"^].
@@ -323,13 +409,13 @@ TIP: Per abilitare il blocco dei backup nell'archiviazione secondaria, configura
 
 
 
-== Aggiungi una policy di rilevamento ai workload che dispongono già di policy di backup e snapshot
+=== Aggiungere una policy di rilevamento ai carichi di lavoro che dispongono già di policy di backup e snapshot
 
-Grazie alla protezione dal ransomware di BlueXP, puoi assegnare una policy di rilevamento del ransomware ai workload che hanno già policy di backup e snapshot, gestite in altri prodotti o servizi NetApp. Il criterio di rilevamento non modifica i criteri gestiti in altri prodotti.
+Con la protezione dal ransomware di BlueXP  puoi assegnare una policy di rilevamento del ransomware a workload che dispongono già di policy di backup e snapshot, gestite in altri prodotti o servizi NetApp. Il criterio di rilevamento non modifica i criteri gestiti in altri prodotti.
 
 Altri servizi, come backup e recovery di BlueXP e SnapCenter, utilizzano i seguenti tipi di policy per gestire i workload:
 
-* Criteri che governano gli snapshot
+* Policy che governano gli snapshot
 * Policy che governano la replica sullo storage secondario
 * Policy che governano i backup nello storage a oggetti
 
@@ -358,7 +444,7 @@ image:screen-protect-br-policies.png["Pagina di protezione che mostra le policy 
 . Per visualizzare i dettagli dei criteri gestiti altrove, fare clic sulla freccia *giù*.
 . Per applicare un criterio di rilevamento oltre ai criteri di snapshot e backup gestiti altrove, selezionare il criterio di rilevamento.
 . Selezionare *Proteggi*.
-. Nella pagina protezione, esaminare la colonna Criteri di rilevamento per vedere il criterio di rilevamento assegnato. Inoltre, nella colonna Criteri istantanea e backup viene visualizzato il nome del prodotto o servizio che gestisce i criteri.
+. Nella pagina protezione, esaminare la colonna Criteri di rilevamento per vedere il criterio di rilevamento assegnato. Inoltre, nella colonna Criteri di backup e snapshot viene visualizzato il nome del prodotto o servizio che gestisce i criteri.
 
 
 
@@ -377,7 +463,75 @@ image:screen-protect-br-policies.png["Pagina di protezione che mostra le policy 
 
 
 
-== Elimina una strategia di protezione dal ransomware
+== Gestire le strategie di protezione dal ransomware
+
+Puoi modificare o eliminare una strategia ransomware.
+
+
+
+=== Visualizza i carichi di lavoro protetti da una strategia di protezione dal ransomware
+
+Prima di modificare o eliminare una strategia di protezione dal ransomware, potresti voler visualizzare i carichi di lavoro protetti da tale strategia.
+
+È possibile visualizzare i carichi di lavoro dall'elenco delle strategie o quando si modifica una strategia specifica.
+
+.Procedura per la visualizzazione dell'elenco delle strategie
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Dalla pagina protezione, seleziona *Gestisci strategie di protezione ransomware*.
++
+La pagina delle strategie di protezione dal ransomware visualizza un elenco di strategie.
+
++
+image:screen-protection-strategy-list.png["Schermata delle strategie di protezione dal ransomware che mostra un elenco di strategie"]
+
+. Nella pagina strategie di protezione dal ransomware, nella colonna carichi di lavoro protetti, fare clic su *Visualizza* accanto al numero di carichi di lavoro protetti.
+
+
+.Passaggi durante la modifica di una strategia
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Dalla pagina protezione, seleziona *Gestisci strategie di protezione ransomware*.
++
+image:screen-protection-strategy-list-edit.png["Schermata delle strategie di protezione dal ransomware che mostra il menu azioni"]
+
+. Nella pagina Gestisci strategie, selezionare l'image:screenshot_horizontal_more_button.gif["Pulsante azioni"]opzione *azioni* per la strategia che si desidera modificare.
+. Dal menu Actions (azioni), selezionare *Edit* (Modifica).
++
+image:screen-protection-strategy-edit.png["Modifica la pagina della strategia di protezione dal ransomware"]
+
+. Visualizzare i carichi di lavoro protetti da questa strategia selezionando *Visualizza* accanto al numero di carichi di lavoro nella parte superiore della pagina.
+
+
+
+
+=== Modifica una strategia di protezione dal ransomware
+
+È possibile modificare una strategia di protezione selezionando una diversa strategia di criteri di rilevamento preconfigurati, selezionando un criterio diverso o aggiungendo un nuovo criterio di backup.
+
+.Fasi
+. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
+. Dalla pagina protezione, seleziona *Gestisci strategie di protezione ransomware*.
++
+image:screen-protection-strategy-list-edit.png["Schermata delle strategie di protezione dal ransomware che mostra il menu azioni"]
+
+. Nella pagina Gestisci strategie, selezionare l'image:screenshot_horizontal_more_button.gif["Pulsante azioni"]opzione *azioni* per la strategia che si desidera modificare.
+. Dal menu Actions (azioni), selezionare *Edit* (Modifica).
++
+image:screen-protection-strategy-edit.png["Modifica la pagina della strategia di protezione dal ransomware"]
+
+. Effettuare una delle seguenti operazioni:
++
+** Copia da una strategia esistente.
+** Selezionare un'istantanea o un criterio di backup diverso.
+** Aggiungere un nuovo snapshot o un nuovo criterio di backup.
+
+
+. Modificare i dettagli.
+. Selezionare *Salva* per terminare la modifica.
+
+
+
+
+=== Elimina una strategia di protezione dal ransomware
 
 Puoi eliminare una strategia di protezione non attualmente associata a alcun carico di lavoro.
 
