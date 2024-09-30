@@ -43,7 +43,9 @@ sidebar:
     - title: Visualizza la salute del carico di lavoro utilizzando la Dashboard
       url: "/rp-use-dashboard.html"
     - title: Proteggere i carichi di lavoro
-      url: "/rp-use-protect.html"
+      entries:
+      - title: Proteggi i carichi di lavoro con strategie di protezione dal ransomware
+        url: "/rp-use-protect.html"
     - title: Rispondere a un avviso rilevato
       url: "/rp-use-alert.html"
     - title: Ripristino da un attacco ransomware
