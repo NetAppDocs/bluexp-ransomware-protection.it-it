@@ -12,7 +12,7 @@ summary: Durante il rilevamento, la protezione dal ransomware BlueXP analizza tu
 
 
 [role="lead"]
-Per utilizzare la protezione dal ransomware di BlueXP, il servizio deve prima rilevare i dati. Durante il rilevamento, la protezione dal ransomware BlueXP analizza tutti i volumi e i file degli ambienti di lavoro in tutti i connettori e gli spazi di lavoro BlueXP all'interno di un account.
+Per utilizzare la protezione dal ransomware di BlueXP, il servizio deve prima rilevare i dati. Durante la scoperta, la protezione anti-ransomware BlueXP  analizza tutti i volumi e i file negli ambienti di lavoro su tutti i connettori BlueXP  e i progetti all'interno di un'organizzazione.
 
 La protezione dal ransomware di BlueXP valuta applicazioni MySQL, applicazioni Oracle, datastore VMware e condivisioni di file.
 

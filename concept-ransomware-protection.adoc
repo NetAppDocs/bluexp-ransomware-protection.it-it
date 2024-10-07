@@ -16,7 +16,7 @@ summary: Gli attacchi ransomware possono costare tempo di business, risorse e re
 [role="lead"]
 Gli attacchi ransomware possono bloccare l'accesso ai dati e gli hacker possono chiedere un riscatto in cambio del rilascio o della decrittografia dei dati. Secondo IDC, non è raro che le vittime del ransomware subiscano diversi attacchi ransomware. L'attacco può interrompere l'accesso ai tuoi dati tra un giorno e diverse settimane.
 
-La protezione dal ransomware di BlueXP è un servizio per proteggere i tuoi dati dai ransomware. Il servizio protegge i carichi di lavoro basati sulle applicazioni dei datastore Oracle, MySQL, VM e file share su storage NAS on-premise (utilizzando i protocolli NFS e CIFS), oltre a Cloud Volumes ONTAP per Amazon Web Services, Cloud Volumes ONTAP per Google Cloud Platform e Cloud Volumes ONTAP per Microsoft Azure su account BlueXP . Il servizio esegue il backup dei dati su Amazon Web Services, Google Cloud Platform, il cloud storage Microsoft Azure e NetApp StorageGRID.
+La protezione dal ransomware di BlueXP è un servizio per proteggere i tuoi dati dai ransomware. Il servizio protegge i carichi di lavoro basati su applicazioni dei datastore Oracle, MySQL, VM e file share su storage NAS on-premise (utilizzando i protocolli NFS e CIFS), oltre a Cloud Volumes ONTAP per Amazon Web Services, Cloud Volumes ONTAP per Google Cloud e Cloud Volumes ONTAP per Microsoft Azure nelle organizzazioni BlueXP . Il servizio esegue il backup dei dati su Amazon Web Services, Google Cloud, il cloud storage Microsoft Azure e NetApp StorageGRID.
 
 
 
@@ -39,7 +39,7 @@ image:concept-security-layer-diagram.png["Diagramma del livello di sicurezza"]
 
 Il servizio di protezione dal ransomware di BlueXP offre un utilizzo completo di diverse tecnologie NetApp così che il tuo amministratore dello storage, amministratore della sicurezza dei dati o ingegnere delle operazioni di sicurezza possano raggiungere i seguenti obiettivi:
 
-* *Identifica* tutti i carichi di lavoro basati su applicazioni, condivisioni di file o gestiti da VMware in NAS NetApp on-premise con ambienti di lavoro NFS o CIFS in BlueXP, tra account BlueXP, aree di lavoro e connettori BlueXP. Quindi, il servizio categorizza la priorità dei dati e offre consigli per i miglioramenti alla protezione dal ransomware.
+* *Identifica* tutti i workload basati su applicazioni, condivisioni di file o gestiti da VMware in NAS NetApp BlueXP  on-premise con ambienti di lavoro NFS o CIFS in BlueXP , tra organizzazioni, progetti e connettori BlueXP . Quindi, il servizio categorizza la priorità dei dati e offre consigli per i miglioramenti alla protezione dal ransomware.
 * *Proteggi* i tuoi workload abilitando backup, copie Snapshot e strategie di protezione dal ransomware sui tuoi dati.
 * *Rileva* anomalie che potrebbero essere attacchi ransomware.nota a piè di pagina:[Nessun sistema di rilevamento o prevenzione del ransomware può garantire completamente la sicurezza da un attacco ransomware. Anche se è possibile che un attacco non venga rilevato, la tecnologia NetApp funge da importante livello di difesa aggiuntivo.]
 * *Rispondi* ai potenziali attacchi ransomware avviando automaticamente una Snapshot NetApp ONTAP a prova di manomissione che è bloccata in modo che la copia non possa essere eliminata accidentalmente o malamente. I tuoi dati di backup rimarranno immutabili e protetti end-to-end dagli attacchi ransomware all'origine e alla destinazione.
