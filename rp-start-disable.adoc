@@ -8,7 +8,7 @@ summary: Se non vuoi più utilizzare il servizio di protezione dal ransomware di
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

@@ -8,7 +8,7 @@ summary: Inizia con il servizio di protezione dal ransomware BlueXP di NetApp in
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

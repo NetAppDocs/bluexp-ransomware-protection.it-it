@@ -8,7 +8,7 @@ summary: Per utilizzare la protezione dal ransomware di BlueXP, esegui alcuni pa
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: /media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -24,10 +24,11 @@ Preparare una delle seguenti destinazioni di backup:
 
 * NetApp StorageGRID
 * Amazon Web Services
+* Piattaforma Google Cloud
 * Microsoft Azure
 
 
-Dopo aver configurato le opzioni nella destinazione di backup stessa, la configurerai in seguito come destinazione di backup nel servizio di protezione dal ransomware di BlueXP.
+Dopo aver configurato le opzioni nella destinazione di backup stessa, la configurerai in seguito come destinazione di backup nel servizio di protezione dal ransomware di BlueXP. Per ulteriori informazioni su come configurare la destinazione di backup nella protezione ransomware BlueXP , fare riferimento a link:rp-use-settings.html["Configurare le destinazioni di backup"].
 
 
 

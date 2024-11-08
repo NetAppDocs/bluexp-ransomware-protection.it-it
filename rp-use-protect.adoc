@@ -8,7 +8,7 @@ summary: Puoi proteggere i workload dagli attacchi ransomware assegnando policy 
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -75,7 +75,7 @@ Uno dei primi passi nella protezione dei carichi di lavoro è la visualizzazione
 ** Nel riquadro protezione dati del dashboard, selezionare *Visualizza tutto*.
 ** Dal menu, selezionare *protezione*.
 +
-image:screen-protection3.png["Pagina di protezione"]
+image:screen-protection.png["Pagina di protezione"]
 
 
 
@@ -253,14 +253,14 @@ Puoi aggiungere una strategia di protezione dal ransomware ai carichi di lavoro.
 Se sul workload non esistono policy di backup o snapshot, puoi creare una strategia di protezione dal ransomware, che può includere le seguenti policy che crei nella protezione dal ransomware BlueXP :
 
 * Policy di Snapshot
-* policy di backup
+* Policy di backup
 * Policy di rilevamento del ransomware
 
 
 .Passaggi per creare una strategia di protezione dal ransomware
 . Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
 +
-image:screen-protection3.png["Pagina Gestione strategia"]
+image:screen-protection.png["Pagina Gestione strategia"]
 
 . Nella pagina protezione, selezionare *Gestisci strategie di protezione*.
 +
@@ -331,7 +331,7 @@ Altri servizi, come backup e recovery di BlueXP e SnapCenter, utilizzano i segue
 .Fasi
 . Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
 +
-image:screen-protection3.png["Pagina Gestione strategia"]
+image:screen-protection.png["Pagina Gestione strategia"]
 
 . Nella pagina protezione, selezionare un carico di lavoro e selezionare *Proteggi*.
 +
@@ -378,7 +378,7 @@ Il raggruppamento delle condivisioni dei file semplifica la protezione dell'ambi
 .Fasi
 . Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
 +
-image:screen-protection3.png["Pagina Gestione strategia"]
+image:screen-protection.png["Pagina Gestione strategia"]
 
 . Nella pagina protezione, selezionare la scheda *gruppi protezione*.
 +
@@ -418,52 +418,6 @@ image:screen-protection-groups-policy.png["Aggiungi gruppo protezione - pagina C
 . Selezionare *Avanti*.
 . Esaminare le selezioni per il gruppo protezione.
 . Selezionare *Aggiungi*.
-
-
-
-
-=== Aggiungere altri carichi di lavoro a un gruppo
-
-In seguito, potrebbe essere necessario aggiungere altri carichi di lavoro a un gruppo esistente.
-
-Se il gruppo include carichi di lavoro gestiti solo dalla protezione anti-ransomware BlueXP  (e non dal backup e recovery di SnapCenter o BlueXP ), dovresti utilizzare gruppi separati per i carichi di lavoro gestiti solo dalla protezione anti-ransomware BlueXP  e un altro gruppo per i carichi di lavoro gestiti da altri servizi.
-
-.Fasi
-. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
-. Nella pagina protezione, selezionare la scheda *gruppi protezione*.
-+
-image:screen-protection-groups.png["Pagina gruppi protezione"]
-
-. Selezionare il gruppo a cui si desidera aggiungere altri carichi di lavoro.
-+
-image:screen-protection-groups-more-workloads.png["Pagina dettagli gruppo protezione"]
-
-. Dalla pagina Gruppo protezione selezionato, selezionare *Aggiungi*.
-+
-La protezione ransomware di BlueXP  mostra solo i workload che non sono già nel gruppo che utilizzano le stesse policy di backup e snapshot del gruppo.
-
-+
-
-TIP: Nella parte superiore della pagina viene visualizzato il servizio che gestisce le policy di snapshot, backup e rilevamento.
-
-. Selezionare i carichi di lavoro aggiuntivi da aggiungere al gruppo.
-. Selezionare *Salva*.
-
-
-
-
-=== Modifica protezione gruppo
-
-È possibile modificare il criterio di rilevamento in un gruppo esistente. Se il criterio di rilevamento non è già stato aggiunto a questo gruppo, è possibile aggiungerlo ora.
-
-.Fasi
-. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
-. Nella pagina protezione, selezionare la scheda *gruppi protezione*.
-+
-image:screen-protection-groups-edit.png["Pagina gruppi protezione con opzione Modifica"]
-
-. Dal riquadro protezione, selezionare *Modifica protezione*.
-. Selezionare o aggiungere un criterio di rilevamento a questo gruppo.
 
 
 

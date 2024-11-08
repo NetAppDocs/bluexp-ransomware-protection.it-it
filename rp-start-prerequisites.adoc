@@ -20,8 +20,9 @@ Per utilizzare la protezione dal ransomware BlueXP , hai bisogno di questi prer
 
 == A BlueXP 
 
-* Un account utente BlueXP  con Privileges amministratore organizzazione per la ricerca delle risorse.
+* Un account utente BlueXP  con Organization Admin Privileges per il rilevamento delle risorse.
 * Un'organizzazione BlueXP  con almeno un connettore BlueXP  attivo che si connette ai cluster ONTAP on-premise o si connette a Cloud Volumes ONTAP in AWS o in Azure.
+* Il connettore BlueXP  deve avere il `cloudmanager-ransomware-protection` contenitore in uno stato attivo.
 * Almeno un ambiente di lavoro BlueXP  con un cluster ONTAP on-premise NetApp o Cloud Volume ONTAP in AWS o Azure (con protocolli NAS o CIFS).
 +
 ** Sono supportati i cluster ONTAP o Cloud Volume ONTAP con ONTAP OS versione 9.11.1 o superiore.
@@ -41,6 +42,7 @@ NOTE: Se disponi di più connettori BlueXP  in una singola organizzazione BlueX
 
 == In ONTAP 9.11.1 e versioni successive
 
+* Una licenza ONTAP One è abilitata sull'istanza ONTAP on-premise.
 * Una licenza per la protezione autonoma da ransomware NetApp, utilizzata dalla protezione BlueXP, abilitata sull'istanza ONTAP on-premise, a seconda della versione di ONTAP che stai utilizzando. Fare riferimento a. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Panoramica della protezione ransomware autonoma"^].
 +
 

@@ -22,9 +22,9 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 È possibile utilizzare i seguenti tipi di licenza:
 
-* Iscriviti per una prova gratuita di 90 giorni.
-* A breve potrai acquistare un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace.
-* Presto sarà possibile portare la propria licenza (BYOL), ovvero un file di licenza NetApp (NLF) che si ottiene dal proprio rappresentante di vendita NetApp Puoi utilizzare il numero di serie della licenza per attivare il BYOL nel Digital Wallet di BlueXP.
+* Iscriviti per una prova gratuita di 30 giorni.
+* Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace e Microsoft Azure Marketplace (presto disponibile).
+* BYOL (Bring Your Own License), ovvero un file di licenza NetApp (NLF) ottenuto dal rappresentante vendite NetApp Puoi utilizzare il numero di serie della licenza per attivare il BYOL nel Digital Wallet di BlueXP.
 
 
 *In che modo abiliti la protezione dal ransomware BlueXP?*
@@ -42,8 +42,7 @@ Per una spiegazione di queste modalità in tutti i servizi BlueXP, fare riferime
 
 == Accesso
 
-*Qual è l'URL di protezione dal ransomware BlueXP?*
-Per l'URL, in un browser, immettere: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Per accedere alla console BlueXP.
+*Qual è l'URL di protezione dal ransomware BlueXP?* Per l'URL, in un browser, immettere: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/ransomware-protection"^] Per accedere alla console BlueXP .
 
 *Come vengono gestite le autorizzazioni di accesso?* Solo gli amministratori dell'organizzazione possono avviare il servizio e rilevare i carichi di lavoro (perché comporta l'utilizzo di una risorsa). Le interazioni successive possono essere effettuate da qualsiasi ruolo.
 
