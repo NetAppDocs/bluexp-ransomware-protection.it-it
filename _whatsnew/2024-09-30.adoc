@@ -1,0 +1,11 @@
+= Raggruppamento personalizzato dei carichi di lavoro di condivisione file
+:allow-uri-read: 
+
+
+
+
+=== Raggruppamento personalizzato dei carichi di lavoro di condivisione file
+
+Con questa release, puoi raggruppare le condivisioni di file in gruppi per semplificare la protezione dell'ambiente dati. Il servizio può proteggere tutti i volumi in un gruppo allo stesso tempo. In precedenza, era necessario proteggere ciascun volume separatamente.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Scopri di più sul raggruppamento dei carichi di lavoro di condivisioni di file nelle strategie di protezione dal ransomware"].

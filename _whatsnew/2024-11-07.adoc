@@ -1,0 +1,49 @@
+= Abilitare la classificazione dei dati e la scansione delle informazioni di identificazione personale (PII)
+:allow-uri-read: 
+
+
+
+
+=== Abilitare la classificazione dei dati e la scansione delle informazioni di identificazione personale (PII)
+
+Con questa release, puoi abilitare la classificazione BlueXP , un componente fondamentale della famiglia BlueXP , per analizzare e classificare i dati nei carichi di lavoro di condivisione file. La classificazione dei dati ti aiuta a capire se i tuoi dati includono informazioni personali o private, con conseguenti rischi per la sicurezza. Questo processo influisce anche sull'importanza dei carichi di lavoro e ti aiuta ad assicurare che tu stia proteggendo i carichi di lavoro con il giusto livello di protezione.
+
+L'analisi dei dati PII nella protezione ransomware BlueXP  è generalmente disponibile per i clienti che hanno implementato la classificazione BlueX. La classificazione BlueXP  è disponibile come parte della piattaforma BlueXP  senza costi aggiuntivi e può essere implementata on-premise o nel cloud del cliente.
+
+La classificazione BlueXP  può anche essere implementata come modello SaaS come parte di un'anteprima tecnologica. Per attivare le funzionalità di anteprima, utilizza l'opzione protezione ransomware BlueXP  *Impostazioni*. Se si attiva Anteprima, viene visualizzata un'etichetta "Anteprima" accanto alla colonna *esposizione privacy* sulla pagina protezione insieme ad altre posizioni.
+
+Fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurare le impostazioni di protezione dal ransomware BlueXP"].
+
+Per avviare la scansione, nella pagina protezione, fare clic su *identifica esposizione* nella colonna esposizione privacy.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Eseguire la scansione dei dati sensibili identificabili personalmente con la classificazione BlueXP "].
+
+
+
+=== Prova le funzionalità di anteprima in arrivo prima che vengano rilasciate
+
+È ora possibile provare alcune funzioni etichettate "Preview" (Anteprima) prima del rilascio. A tale scopo, utilizzare l'opzione *Impostazioni* per visualizzare queste funzioni, contrassegnate con un'etichetta "Anteprima".
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Scopri di più sulla configurazione delle impostazioni di protezione dal ransomware BlueXP "].
+
+
+
+=== Integrazione SIEM con Microsoft Sentinel
+
+Ora potete inviare i dati al vostro sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce utilizzando Microsoft Sentinel. In precedenza, puoi selezionare AWS Security Hub o Splunk Cloud come tuo SIEM.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Scopri di più sulla configurazione delle impostazioni di protezione dal ransomware BlueXP "].
+
+
+
+=== Prova gratuita ora 30 giorni
+
+Con questa release, le nuove implementazioni della protezione ransomware BlueXP  ora hanno 30 giorni per una prova gratuita. In precedenza, la protezione ransomware di BlueXP  ha fornito 90 giorni come prova gratuita. Se sei già in prova gratuita di 90 giorni, l'offerta continua per i 90 giorni.
+
+
+
+=== Ripristina il carico di lavoro dell'applicazione a livello di file per Podman
+
+Prima di ripristinare un workload dell'applicazione a livello di file, è possibile visualizzare un elenco di file che potrebbero essere stati coinvolti da un attacco e identificare quelli che si desidera ripristinare. In precedenza, se i connettori BlueXP  di un'organizzazione (in precedenza un account) utilizzavano Podman, questa funzionalità era disattivata. Ora è abilitato per Podman. Puoi permettere alla protezione anti-ransomware di BlueXP di scegliere i file da ripristinare, caricare un file CSV che elenca tutti i file interessati da un avviso o identificare manualmente i file da ripristinare.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Scopri di più sul ripristino in seguito a un attacco ransomware"].
