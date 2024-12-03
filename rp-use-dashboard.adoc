@@ -33,7 +33,7 @@ image:screen-dashboard.png["Pagina del dashboard"]
 ** *Protezione dei dati del carico di lavoro*: Fare clic su *Visualizza tutto* per visualizzare tutti i carichi di lavoro a rischio o protetti nella pagina protezione. I carichi di lavoro sono a rischio quando i livelli di protezione non corrispondono a una policy di protezione. Fare riferimento a. link:rp-use-protect.html["Proteggere i carichi di lavoro"].
 +
 
-TIP: Fare clic sulla nota i per visualizzare i suggerimenti su questi dati. Per aumentare il limite del carico di lavoro, fare clic su *aumenta limite carico di lavoro* all'interno di questa nota. Facendo clic su questo pulsante si accede alla pagina di supporto BlueXP , in cui è possibile creare un ticket per il caso.
+TIP: Fare clic sulla nota "i" per visualizzare i suggerimenti su questi dati. Per aumentare il limite del carico di lavoro, fare clic su *aumenta limite carico di lavoro* all'interno di questa nota. Facendo clic su questo pulsante si accede alla pagina di supporto BlueXP , in cui è possibile creare un ticket per il caso.
 
 ** *Avvisi e recupero dati del carico di lavoro*: Fare clic su *Visualizza tutto* per visualizzare gli incidenti attivi che hanno influito sul carico di lavoro, sono pronti per il ripristino dopo che gli incidenti sono stati neutralizzati o sono in fase di recupero. Fare riferimento a. link:rp-use-alert.html["Rispondere a un avviso rilevato"].
 +

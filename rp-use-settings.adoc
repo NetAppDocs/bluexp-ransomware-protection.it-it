@@ -12,7 +12,7 @@ summary: Puoi configurare diverse opzioni, tra cui una destinazione di backup, n
 
 
 [role="lead"]
-È possibile configurare una destinazione di backup o abilitare il rilevamento delle minacce consultando i suggerimenti sul dashboard o accedendo all'opzione *Impostazioni*. È inoltre possibile visualizzare le funzioni di anteprima future.
+È possibile configurare una destinazione di backup o abilitare il rilevamento delle minacce consultando i suggerimenti sul dashboard o accedendo all'opzione *Impostazioni*.
 
 L'attivazione del rilevamento delle minacce invia automaticamente i dati al sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi delle minacce.
 
@@ -28,7 +28,6 @@ L'attivazione del rilevamento delle minacce invia automaticamente i dati al sist
 +
 ** Aggiungere una destinazione di backup.
 ** Collega il tuo sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce.
-** Mostra le prossime funzioni di anteprima.
 
 
 
@@ -477,24 +476,4 @@ NOTE: Le informazioni immesse dipendono dal SIEM selezionato.
 +
 Nella pagina Impostazioni viene visualizzato "connesso".
 
-
-
-
-
-== Mostra funzioni di anteprima
-
-È possibile provare le funzioni imminenti etichettate "Preview" (Anteprima) prima che vengano rilasciate. Queste funzioni vengono visualizzate nell'interfaccia utente con un'etichetta "Anteprima".
-
-.Prima di iniziare
-Per mostrare le funzionalità di anteprima, avrai bisogno di una chiave del team del prodotto di protezione ransomware di BlueXP . Per ottenere la chiave, invia un'e-mail a mailto:ng-rps-key@NetApp.com.
-
-.Fasi
-. Dal menu di protezione dal ransomware BlueXP, seleziona il menu Vertical (verticale) image:button-actions-vertical.png["Azioni verticali"]... opzione in alto a destra.
-. Selezionare *Impostazioni*.
-+
-image:screen-settings2.png["Pagina delle impostazioni"]
-
-. Nel riquadro *Anteprima funzioni*, selezionare *Mostra*.
-. Immettere la chiave.
-. Selezionare *Mostra*.
 

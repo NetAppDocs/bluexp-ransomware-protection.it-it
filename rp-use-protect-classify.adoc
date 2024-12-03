@@ -15,9 +15,6 @@ summary: 'All"interno del servizio di protezione ransomware BlueXP  puoi utiliz
 All'interno del servizio di protezione ransomware BlueXP  puoi utilizzare la classificazione BlueXP , un componente fondamentale della famiglia BlueXP , per analizzare e classificare i dati in un carico di lavoro di condivisione file. La classificazione dei dati consente di identificare se i dati includono informazioni di identificazione personale (PII, Personally Identifiable Information), con un conseguente aumento dei rischi per la sicurezza.
 
 
-IMPORTANT: La classificazione BlueXP  può essere implementata on-premise, nel cloud (implementazioni non SaaS) o come modello SaaS in un'anteprima tecnologica. Quando si utilizzano implementazioni non SaaS o implementazioni esistenti, la scansione dei dati PII nella protezione ransomware BlueXP  è generalmente disponibile e non in Anteprima. Per attivare le funzionalità di anteprima, utilizza l'opzione protezione ransomware BlueXP  *Impostazioni*. Fare riferimento alla link://rp-use-settings-html["Configurare le impostazioni di protezione dal ransomware BlueXP"].
-
-
 TIP: Questo processo può influire sull'importanza del carico di lavoro per garantire la protezione appropriata.
 
 
@@ -26,12 +23,9 @@ TIP: Questo processo può influire sull'importanza del carico di lavoro per gara
 
 Prima di utilizzare la classificazione BlueXP  all'interno del servizio di protezione dal ransomware BlueXP , devi abilitare la classificazione BlueXP  per eseguire la scansione dei tuoi dati.
 
-
-TIP: Questa operazione viene eseguita una sola volta; non è necessario attivare nuovamente la classificazione BlueXP  se si sceglie un altro carico di lavoro di condivisione file su cui identificare l'esposizione.
-
 Utilizzando l'interfaccia utente di classificazione BlueXP  come metodo alternativo, un amministratore può abilitare la classificazione BlueXP  nella protezione ransomware BlueXP .
 
-Per i dettagli sulla classificazione BlueXP  prima di iniziare a utilizzare il servizio, potrebbe essere utile esaminare queste risorse.
+Potrebbe essere utile esaminare queste risorse di classificazione BlueXP  prima di iniziare a utilizzare il servizio:
 
 * https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Scopri di più sulla classificazione BlueXP"^]
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Categorie di dati privati"^]
@@ -45,11 +39,6 @@ Per i dettagli sulla classificazione BlueXP  prima di iniziare a utilizzare il 
 image:screen-protection-sensitive-preview-column.png["Pagina di protezione che mostra la colonna esposizione alla privacy"]
 
 . Per abilitare la classificazione BlueXP  per la scansione dei dati personali, nella colonna *esposizione alla privacy*, selezionare *identifica esposizione*.
-+
-image:screen-protection-sensitive-data.png["Schermata di identificazione dei dati sensibili"]
-
-. Rivedere le informazioni sulla classificazione BlueXP .
-. Selezionare *identifica*.
 
 
 .Risultato
@@ -79,19 +68,11 @@ I dati PII possono avere uno dei seguenti stati di rischio per l'esposizione all
 +
 image:screen-protection-sensitive-preview-column-medium.png["Pagina di protezione che mostra la colonna esposizione alla privacy"]
 
-+
-
-TIP: Se lo stato cambia, nella colonna esposizione alla privacy viene visualizzata una freccia verso l'alto o verso il basso per indicare la modifica dell'esposizione alla privacy.
-
 . Seleziona il collegamento workload nella colonna workload per visualizzare i dettagli del workload.
 +
 image:screen-protection-workload-details-privacy-exposure.png["Schermata Dettagli del carico di lavoro che mostra il riquadro esposizione alla privacy"]
 
 . Nella pagina dei dettagli del carico di lavoro, rivedere le informazioni nel riquadro esposizione alla privacy.
-+
-
-TIP: Se la modifica dell'esposizione alla privacy influisce sull'importanza del carico di lavoro, viene visualizzata una freccia verso l'alto o verso il basso accanto allo stato priorità del carico di lavoro.
-
 
 
 
@@ -102,7 +83,7 @@ Le modifiche all'esposizione alla privacy possono influire sull'importanza del c
 
 [cols="15,20a,20,20"]
 |===
-| Quando l'esposizione alla privacy: | Da questa esposizione di segretezza | A questa esposizione alla privacy | Quindi, l'importanza del carico di lavoro fa quanto segue: . 
+| Quando l'esposizione alla privacy: | Da questa esposizione alla privacy: | A questa esposizione alla privacy: | Quindi, l'importanza del carico di lavoro fa quanto segue: . 
 
 
 | *Diminuisce*  a| 
@@ -124,34 +105,6 @@ Medio
 Alto
 | Modifiche da Standard o importante a critico 
 |===
-
-
-== Esaminare l'esposizione alla privacy direttamente nella classificazione BlueXP 
-
-Dall'interno della protezione ransomware BlueXP , puoi selezionare un carico di lavoro, visualizzarne i dettagli e quindi esaminare l'esposizione nella classificazione BlueXP .
-
-.Fasi
-. Dal menu protezione dal ransomware di BlueXP, seleziona *protezione*.
-. Nella pagina protezione, individuare il carico di lavoro della condivisione file nella colonna carico di lavoro che mostra uno stato nella colonna esposizione alla privacy.
-+
-image:screen-protection-sensitive-preview-column-medium.png["Pagina di protezione che mostra la colonna esposizione alla privacy"]
-
-. Seleziona il carico di lavoro nella colonna workload per visualizzarne i dettagli.
-+
-image:screen-protection-workload-details-privacy-exposure.png["Schermata Dettagli del carico di lavoro che mostra il riquadro esposizione privacy"]
-
-. Nella pagina dei dettagli del carico di lavoro, rivedere le informazioni nel riquadro esposizione alla privacy.
-. Per esaminare l'esposizione nella classificazione BlueXP , selezionare *indagare*.
-+
-Il servizio di classificazione BlueXP  si apre per visualizzare la scheda analisi.
-
-+
-image:screen-protection-classification-investigation.png["Classificazione BlueXP"]
-
-. Esaminare le informazioni nella scheda analisi.
-. Per tornare al servizio di protezione dal ransomware di BlueXP , seleziona *Torna alla protezione dal ransomware di BlueXP *.
-
-
 
 
 == Per ulteriori informazioni
