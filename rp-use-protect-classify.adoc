@@ -42,10 +42,7 @@ image:screen-protection-sensitive-preview-column.png["Pagina di protezione che m
 
 
 .Risultato
-La classificazione BlueXP  installa un connettore BlueXP , si connette in remoto ai dati del carico di lavoro ed esegue la scansione nel cloud NetApp (Amazon Web Services, US-West-1). Il cloud NetApp rimane solo per le informazioni e le metriche identificate.
-
-
-NOTE: La scansione potrebbe richiedere diversi minuti a seconda della quantità di dati. La pagina protezione mostra che la classificazione BlueXP  identifica i file e fornisce un'indicazione del numero di file che sta eseguendo la scansione.
+La scansione potrebbe richiedere diversi minuti a seconda della quantità di dati. La pagina protezione mostra che la classificazione BlueXP  identifica i file e fornisce un'indicazione del numero di file che sta eseguendo la scansione.
 
 Al termine della scansione, la colonna esposizione privacy visualizza il livello di esposizione basso, Medio o Alto.
 
