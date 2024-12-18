@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-settings.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
-summary: Puoi configurare diverse opzioni, tra cui una destinazione di backup, nel servizio di protezione dal ransomware BlueXP. 
+summary: Puoi configurare diverse opzioni, tra cui una destinazione di backup, il rilevamento di minacce e la connessione alla sicurezza del workload di Data Infrastructure Insights nel servizio di protezione dal ransomware BlueXP . 
 ---
 = Configurare le impostazioni di protezione dal ransomware BlueXP
 :hardbreaks:
@@ -12,9 +12,14 @@ summary: Puoi configurare diverse opzioni, tra cui una destinazione di backup, n
 
 
 [role="lead"]
-È possibile configurare una destinazione di backup o abilitare il rilevamento delle minacce consultando i suggerimenti sul dashboard o accedendo all'opzione *Impostazioni*.
+È possibile configurare una destinazione di backup, abilitare il rilevamento delle minacce o configurare la connessione alla sicurezza del carico di lavoro di Data Infrastructure Insights accedendo all'opzione *Impostazioni*. L'attivazione del rilevamento delle minacce invia automaticamente i dati al sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi delle minacce.
 
-L'attivazione del rilevamento delle minacce invia automaticamente i dati al sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi delle minacce.
+Dalla pagina Impostazioni, è possibile effettuare le seguenti operazioni:
+
+* Configurare la connessione alla sicurezza del carico di lavoro di Data Infrastructure Insights per vedere le informazioni utente sospette negli avvisi ransomware.
+* Aggiungere una destinazione di backup.
+* Collega il tuo sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce.
+
 
 
 
@@ -24,12 +29,38 @@ L'attivazione del rilevamento delle minacce invia automaticamente i dati al sist
 
 . Dal menu di protezione dal ransomware BlueXP, seleziona il menu Vertical (verticale) image:button-actions-vertical.png["Azioni verticali"]... opzione in alto a destra.
 . Dal menu a discesa, selezionare *Impostazioni*.
-. Dalla pagina Impostazioni, è possibile effettuare le seguenti operazioni:
+
+
+
+
+== Connettersi alla sicurezza del carico di lavoro di Data Infrastructure Insights per vedere il comportamento anomalo degli utenti sospettati
+
+Prima di poter visualizzare i dettagli del comportamento sospetto di un utente anomalo nella protezione ransomware BlueXP , devi configurare la connessione al sistema di sicurezza del workload di Data Infrastructure Insights.
+
+
+
+=== Ottenere un token di accesso API dal sistema di sicurezza del workload Data Infrastructure Insights
+
+Ottenere un token di accesso API dal sistema di sicurezza del workload Data Infrastructure Insights.
+
+. Accedere al sistema di sicurezza del carico di lavoro Data Infrastructure Insights.
+. Dal menu di navigazione a sinistra, selezionare *Ammin* > *accesso API*.
 +
-** Aggiungere una destinazione di backup.
-** Collega il tuo sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce.
+image:../media/screen-alerts-ci-api-access-token.png["Pagina di accesso API in Data Infrastructure Insights workload Security"]
+
+. Creare un token di accesso API o utilizzarne uno esistente.
+. Copiare il token di accesso API.
 
 
+
+
+=== Connettersi alla sicurezza del carico di lavoro di Data Infrastructure Insights
+
+. Dal menu Impostazioni protezione ransomware BlueXP , selezionare *connessione sicurezza carico di lavoro*.
+. Selezionare *Connect*.
+. Immettere l'URL per l'interfaccia utente di sicurezza del carico di lavoro dell'infrastruttura dati.
+. Immettere il token di accesso API che fornisce l'accesso alla sicurezza del workload.
+. Selezionare *Connect*.
 
 
 
@@ -46,7 +77,7 @@ Per proteggere questi workload, è necessario aggiungere una destinazione di bac
 * Microsoft Azure
 
 
-È possibile aggiungere una destinazione di backup in base all'azione consigliata dal Dashboard.
+È possibile aggiungere una destinazione di backup in base a un'azione consigliata dal Dashboard o accedendo all'opzione Impostazioni del menu.
 
 
 
@@ -62,18 +93,6 @@ image:screen-dashboard.png["Pagina del dashboard"]
 
 . Dal dashboard, selezionare *Rivedi e correggi* per la raccomandazione "prepara <backup provider> come destinazione di backup".
 . Continuare con le istruzioni a seconda del provider di backup.
-
-
-
-
-=== Accedere alle opzioni destinazione di backup dal menu a discesa azioni
-
-È possibile accedere facilmente alla pagina Impostazioni dall'opzione azioni accanto al menu principale.
-
-.Fasi
-. Dal menu di protezione dal ransomware BlueXP, seleziona il menu Vertical (verticale) image:button-actions-vertical.png["Azioni verticali"]... opzione in alto a destra.
-. Dal menu a discesa, selezionare *Impostazioni*.
-. Per aggiungere una destinazione di backup, selezionare *Aggiungi*.
 
 
 

@@ -41,7 +41,7 @@ Il servizio di protezione dal ransomware di BlueXP offre un utilizzo completo di
 
 * *Identifica* tutti i workload basati su applicazioni, condivisioni di file o gestiti da VMware in NAS NetApp BlueXP  on-premise con ambienti di lavoro NFS o CIFS in BlueXP , tra organizzazioni, progetti e connettori BlueXP . Quindi, il servizio categorizza la priorità dei dati e offre consigli per i miglioramenti alla protezione dal ransomware.
 * *Proteggi* i tuoi workload abilitando backup, copie Snapshot e strategie di protezione dal ransomware sui tuoi dati.
-* *Rileva* anomalie che potrebbero essere attacchi ransomware.nota a piè di pagina:[Nessun sistema di rilevamento o prevenzione del ransomware può garantire completamente la sicurezza da un attacco ransomware. Anche se è possibile che un attacco non venga rilevato, la tecnologia NetApp funge da importante livello di difesa aggiuntivo.]
+* *Rileva* anomalie che potrebbero essere attacchi ransomware.nota a piè di pagina:[anche se è possibile che un attacco non venga rilevato, la nostra ricerca indica che la tecnologia NetApp ha portato a un elevato grado di rilevamento per alcuni attacchi ransomware basati sulla crittografia dei file.]
 * *Rispondi* ai potenziali attacchi ransomware avviando automaticamente una Snapshot NetApp ONTAP a prova di manomissione che è bloccata in modo che la copia non possa essere eliminata accidentalmente o malamente. I tuoi dati di backup rimarranno immutabili e protetti end-to-end dagli attacchi ransomware all'origine e alla destinazione.
 * *Recupera* i tuoi workload che aiutano ad accelerare l'uptime dei workload orchestrando diverse tecnologie NetApp. È possibile scegliere di ripristinare volumi specifici. Il servizio fornisce consigli sulle opzioni migliori.
 * *Governare*: Implementa la tua strategia di protezione dal ransomware e monitora i risultati.
@@ -91,6 +91,8 @@ Il servizio di protezione dal ransomware di BlueXP  richiede una licenza NetApp
 
 La licenza di protezione ransomware BlueXP  non include prodotti NetApp aggiuntivi. La protezione dal ransomware di BlueXP  può usare il backup e recovery di BlueXP  anche se non disponi di una licenza per esso.
 
+Per rilevare un comportamento anomalo degli utenti, la protezione ransomware di BlueXP  sfrutta la protezione autonoma da ransomware NetApp, un modello di machine learning (ML) all'interno di ONTAP che rileva attività pericolose sui file. Questo modello è incluso nella licenza per la protezione dal ransomware di BlueXP . È inoltre possibile utilizzare Data Infrastructure Insights (in precedenza Cloud Insights) workload Security (licenza richiesta) per esaminare il comportamento degli utenti e bloccare utenti specifici da ulteriori attività.
+
 Per ulteriori informazioni, vedere link:rp-start-licenses.html["Impostare la licenza"].
 
 
@@ -127,7 +129,7 @@ Scopri di più https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["P
 | *RILEVA*  a| 
 * Rileva i potenziali attacchi con un modello di machine learning (ML) integrato che rileva crittografia e attività potenzialmente anomale.
 * Rilevamento a doppio livello che inizia con il rilevamento di potenziali attacchi ransomware nello storage primario e risponde ad attività anomale creando ulteriori copie Snapshot automatizzate per creare i punti di ripristino dei dati più vicini. Il servizio offre la possibilità di approfondire per identificare con maggiore precisione i potenziali attacchi, senza influire sulle performance dei carichi di lavoro primari.
-* Determina i file sospetti specifici e mappa gli attacchi ai carichi di lavoro associati, utilizzando le tecnologie ONTAP, protezione autonoma dal ransomware e FPolicy.
+* Determina i file sospetti specifici e le mappe che attaccano ai carichi di lavoro associati, utilizzando ONTAP, protezione autonoma dal ransomware, informazioni sull'infrastruttura dati (in precedenza Cloud Insights) sicurezza dei carichi di lavoro e tecnologie FPolicy.
 
 
 

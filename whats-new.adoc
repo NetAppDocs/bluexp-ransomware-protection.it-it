@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP, netapp' 
 summary: Scopri le novità di BlueXP ransomware Protection. 
 ---
 = Novità di BlueXP  per la protezione dal ransomware
@@ -15,6 +15,35 @@ summary: Scopri le novità di BlueXP ransomware Protection.
 
 [role="lead"]
 Scopri le novità di BlueXP ransomware Protection.
+
+
+
+== 16 dicembre 2024
+
+
+
+=== Rileva il comportamento anomalo degli utenti utilizzando Data Infrastructure Insights Storage workload Security
+
+Con questa release, puoi utilizzare Data Infrastructure Insights Storage workload Security per rilevare il comportamento anomalo degli utenti nei workload di storage. Questa funzionalità ti aiuta a identificare potenziali minacce alla sicurezza e a bloccare utenti potenzialmente malintenzionati per proteggere i tuoi dati.
+
+Per ulteriori informazioni, fare riferimento alla link://rp-use-alert.html["Rispondi a un avviso ransomware rilevato"].
+
+Prima di utilizzare Data Infrastructure Insights Storage workload Security per rilevare il comportamento anomalo degli utenti, devi configurare l'opzione utilizzando l'opzione protezione dal ransomware BlueXP  *Impostazioni*.
+
+Fare riferimento alla link://rp-use-settings-html["Configurare le impostazioni di protezione dal ransomware BlueXP"].
+
+
+
+=== Seleziona i workload da rilevare e proteggere
+
+Con questa versione, è possibile effettuare le seguenti operazioni:
+
+* All'interno di ogni connettore, seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro. Questa funzionalità può essere utile se si desidera proteggere carichi di lavoro specifici del proprio ambiente e non di altri.
+* Durante il rilevamento dei carichi di lavoro, è possibile abilitare il rilevamento automatico dei carichi di lavoro per ogni connettore. Questa funzionalità consente di selezionare i carichi di lavoro da proteggere.
+* Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza.
+
+
+Fare riferimento alla link://rp-start-discover-html["Rileva i carichi di lavoro"].
 
 
 

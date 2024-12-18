@@ -12,7 +12,7 @@ summary: 'Se la protezione ransomware di BlueXP rileva un possibile attacco, vie
 
 
 [role="lead"]
-Se la protezione ransomware di BlueXP rileva un possibile attacco, viene visualizzato un avviso nella dashboard di protezione dal ransomware di BlueXP e nelle notifiche di BlueXP, in alto a destra, che indica un potenziale attacco ransomware. Inoltre, il servizio avvia immediatamente l'acquisizione di una copia Snapshot. A questo punto, dovresti valutare il rischio potenziale nella scheda *Avvisi* della protezione dal ransomware di BlueXP.
+Se la protezione ransomware di BlueXP rileva un possibile attacco, viene visualizzato un avviso nella dashboard di protezione dal ransomware di BlueXP e nelle notifiche di BlueXP, in alto a destra, che indica un potenziale attacco ransomware. Inoltre, il servizio avvia immediatamente l'acquisizione di una copia snapshot. A questo punto, dovresti valutare il rischio potenziale nella scheda *Avvisi* della protezione dal ransomware di BlueXP.
 
 Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.
 
@@ -66,11 +66,11 @@ CAUTION: Dopo aver respinto un attacco, non è possibile modificarlo. Se elimini
 
 == Visualizza avvisi
 
-Puoi accedere agli avvisi dalla dashboard della protezione dal ransomware di BlueXP o dalla scheda *Alerts*.
+Puoi accedere agli avvisi dalla dashboard per la protezione dal ransomware di BlueXP  o dalla scheda *Avvisi*.
 
 .Fasi
 . Nella dashboard di protezione dal ransomware di BlueXP, consulta il pannello Alerts.
-. Selezionare *Visualizza tutto* sotto una delle statue.
+. Selezionare *Visualizza tutto* in uno degli stati.
 . Fare clic su un avviso per esaminare tutti gli incidenti su ciascun volume per ciascun avviso.
 . Per rivedere gli avvisi aggiuntivi, fare clic su *Alert* nella barra di navigazione in alto a sinistra.
 . Esaminare gli avvisi nella pagina Avvisi.
@@ -79,8 +79,101 @@ image:screen-alerts.png["Pagina Avvisi"]
 
 . Continua:
 +
+** <<Detect anomalous user behavior>>.
 ** <<Contrassegna gli incidenti ransomware come pronti per il recovery (dopo la neutralizzazione degli incidenti)>>.
 ** <<Elimina gli incidenti che non sono potenziali attacchi>>.
+
+
+
+
+
+
+== Rileva le attività pericolose e il comportamento anomalo degli utenti
+
+Esaminando la scheda Avvisi, è possibile identificare se vi sono attività dannose. I dettagli visualizzati dipendono dalla modalità di attivazione dell'avviso:
+
+* Attivato dalla funzionalità di protezione autonoma dal ransomware in ONTAP. In questo modo viene rilevata un'attività dannosa in base al comportamento dei file nel volume.
+* Attivato da Data Infrastructure Insights sicurezza del carico di lavoro. Ciò richiede una licenza per la sicurezza del workload di Insights dell'infrastruttura dati e che sia abilitata nella protezione dal ransomware BlueXP . Questa funzionalità rileva il comportamento anomalo dell'utente nei workload di storage e ti consente di bloccare tale utente da un ulteriore accesso.
++
+Per abilitare la protezione del carico di lavoro nella protezione anti-ransomware di BlueXP , vai alla pagina *Impostazioni* e seleziona l'opzione *connessione di sicurezza del carico di lavoro*.
+
++
+Per una panoramica sulla protezione del carico di lavoro di Data Infrastucture Insights, vedere https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Informazioni sulla sicurezza del carico di lavoro"^]
+
+
+
+
+TIP: Se non hai una licenza per la sicurezza dei workload dell'infrastruttura dati e non lo abiliti nella protezione dal ransomware di BlueXP , non vedrai le informazioni sui comportamenti anomali degli utenti.
+
+Quando si verifica un'attività dannosa, viene generato un avviso e viene creata una snapshot automatizzata.
+
+
+
+=== Visualizza attività pericolose solo dalla protezione autonoma dal ransomware
+
+Quando la protezione autonoma da ransomware attiva un avviso nella protezione ransomware BlueXP , puoi visualizzare i seguenti dettagli:
+
+* Entropia dei dati in arrivo
+* Velocità prevista di creazione dei nuovi file rispetto alla velocità rilevata
+* Velocità di eliminazione prevista dei file rispetto alla velocità rilevata
+* Velocità di ridenominazione prevista dei file rispetto alla velocità rilevata
+
+
+.Fasi
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
+. Selezionare un avviso.
+. Esaminare gli incidenti nell'avviso.
++
+image:screen-alerts-incidents3.png["Pagina incidenti di avviso"]
+
+. Selezionare un incidente per esaminare i dettagli dell'incidente.
++
+image:screen-alerts-incidents-details-arp.png["Pagina dettagli incidente"]
+
+
+
+
+
+=== Visualizza il comportamento anomalo degli utenti in Data Infrastructure Insights workload Security
+
+Quando Data Infrastructure Insights workload Security attiva un avviso nella protezione ransomware BlueXP , puoi visualizzare l'utente sospetto, bloccare l'utente e analizzare l'attività dell'utente direttamente in Data Infrastructure Insights workload Security.
+
+
+TIP: Queste funzionalità sono oltre ai dettagli disponibili da Just Autonomous ransomware Protection.
+
+.Prima di iniziare
+Questa opzione richiede una licenza per la sicurezza del workload di Insights dell'infrastruttura dati e la relativa attivazione nella protezione dal ransomware BlueXP .
+
+Per abilitare la sicurezza del carico di lavoro nella protezione dal ransomware BlueXP , esegui le seguenti operazioni:
+
+. Andare alla pagina *Impostazioni*.
+. Selezionare l'opzione *connessione di sicurezza del carico di lavoro*.
++
+Per ulteriori informazioni, vedere link:rp-use-settings.html["Configurare le impostazioni di protezione dal ransomware BlueXP"].
+
+
+
+.Fasi
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
+. Selezionare un avviso.
+. Esaminare gli incidenti nell'avviso.
++
+image:screen-alerts-incidents-diiws.png["Pagina incidenti di avviso che mostra i dettagli sulla sicurezza del carico di lavoro"]
+
+. Per impedire a un utente sospetto di accedere all'ambiente monitorato da BlueXP , selezionare il collegamento *Blocca utente*.
+. Ricercare l'avviso o un incidente nell'avviso:
++
+.. Per ricercare ulteriormente l'avviso in Data Infrastructure Insights workload Security, selezionare il collegamento *analisi in sicurezza del carico di lavoro*.
+.. Selezionare un incidente per esaminare i dettagli dell'incidente.
++
+image:screen-alerts-incidents-details-arp-diiws.png["Pagina dei dettagli dell'incidente che mostra i dettagli sulla sicurezza del carico di lavoro"]
+
++
+Data Infrastructure Insights workload Security si apre in una nuova scheda.
+
++
+image:screen-alerts-incidents-diiws-diiwspage.png["Esaminare in sicurezza del carico di lavoro"]
+
 
 
 
@@ -99,7 +192,7 @@ image:screen-alerts.png["Pagina Avvisi"]
 . Nella pagina Avvisi, selezionare l'avviso.
 . Esaminare gli incidenti nell'avviso.
 +
-image:screen-alerts-incidents2.png["Pagina incidenti di avviso"]
+image:screen-alerts-incidents3.png["Pagina incidenti di avviso"]
 
 . Se si stabilisce che gli incidenti sono pronti per il ripristino, selezionare *Segna ripristino necessario*.
 . Confermare l'azione e selezionare *Segna ripristino necessario*.
@@ -134,8 +227,8 @@ image:screen-alerts-incidents2.png["Pagina incidenti di avviso"]
 . Selezionare uno o più incidenti. In alternativa, selezionare tutti gli incidenti selezionando la casella ID incidente nella parte superiore sinistra della tabella.
 . Se si stabilisce che l'incidente non è una minaccia, eliminarlo come falso positivo:
 +
-** Se è stato selezionato un incidente, selezionare *azioni* … A destra, selezionare *Modifica stato*.
-** Se sono stati selezionati più incidenti, selezionare il pulsante *Modifica stato* sopra la tabella.
+** Selezionare l'incidente.
+** Selezionare il pulsante *Modifica stato* sopra la tabella.
 +
 image:screen-alerts-status-edit.png["Pagina Stato modifica avviso"]
 

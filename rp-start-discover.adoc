@@ -21,6 +21,18 @@ NOTE: Non verranno rilevati carichi di lavoro con volumi che utilizzano FlexGrou
 
 Il servizio valuta il livello di protezione esistente, incluse le opzioni di protezione di backup correnti, le copie Snapshot e le opzioni di protezione autonoma da ransomware NetApp. In base alla valutazione, il servizio consiglia quindi come migliorare la tua protezione dal ransomware.
 
+È possibile effettuare le seguenti operazioni:
+
+* All'interno di ogni connettore, seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro. Questa funzionalità può essere utile se si desidera proteggere carichi di lavoro specifici del proprio ambiente e non di altri.
+* Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza.
+
+
+
+
+== Seleziona i workload da rilevare e proteggere
+
+All'interno di ogni connettore, seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro.
+
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
 +
@@ -31,7 +43,32 @@ image:screen-landing.png["Screenshot della landing page per la protezione dal ra
 
 . Dalla pagina iniziale, selezionare *inizia rilevando i carichi di lavoro*.
 +
-Il servizio rileva i dati del carico di lavoro e mostra lo stato di salute della protezione dei dati nella Dashboard.
+Il servizio trova gli ambienti di lavoro nei connettori BlueXP .
+
++
+
+TIP: Questo processo potrebbe richiedere alcuni minuti.
+
++
+image:screen-discover-workloads.png["Screenshot della rilevazione dei carichi di lavoro"]
+
+. Dall'elenco dei connettori BlueXP , selezionare *trova nuovi ambienti di lavoro* accanto al connettore in cui si desidera rilevare i carichi di lavoro.
+. Selezionare gli ambienti di lavoro in cui si desidera rilevare il carico di lavoro o selezionare la casella nella parte superiore della tabella per rilevare i carichi di lavoro in tutti gli ambienti di carico di lavoro rilevati.
+. Selezionare *Discover*.
++
+Il servizio rileva i dati del carico di lavoro solo per i connettori con ambienti di lavoro selezionati.
+
++
+
+TIP: Questo processo potrebbe richiedere alcuni minuti.
+
++
+image:screen-discover-workloads-found.png["Screenshot dei carichi di lavoro rilevati"]
+
+. Per scaricare l'elenco dei carichi di lavoro rilevati, selezionare *Scarica risultati (CSV)*.
+. Per visualizzare la dashboard di protezione ransomware BlueXP , selezionare *Vai alla dashboard*.
++
+La Dashboard mostra lo stato di salute della data Protection. Il numero di workload a rischio o protetti aumenta in base ai workload appena rilevati.
 
 +
 image:screen-dashboard.png["Dashboard della protezione dal ransomware di BlueXP"]
@@ -39,4 +76,32 @@ image:screen-dashboard.png["Dashboard della protezione dal ransomware di BlueXP"
 +
 link:rp-use-dashboard.html["Scopri cosa ti mostra il dashboard."]
 
+
+
+
+
+== Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza
+
+Se sono già stati selezionati ambienti di lavoro per il rilevamento, è possibile rilevare i nuovi workload creati per tali ambienti.
+
+.Fasi
+. Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
+. Per identificare la data dell'ultimo rilevamento, nel dashboard, selezionare l'icona delle informazioni accanto al collegamento *rileva carichi di lavoro* in alto a destra.
+. Dal dashboard, selezionare *rileva carichi di lavoro*.
++
+È possibile visualizzare gli ambienti di lavoro precedentemente selezionati per ciascun connettore e trovare nuovi ambienti di lavoro.
+
+. Per ogni connettore, selezionare *trova nuovi ambienti di lavoro*.
++
+image:screen-discover-workloads-newly-discovered.png["Schermata degli ambienti di lavoro scoperti di recente"]
+
++
+
+TIP: Questo processo potrebbe richiedere alcuni minuti.
+
++
+image:screen-discover-workloads-select.png["Screenshot della rilevazione dei carichi di lavoro"]
+
+. Selezionare gli ambienti di lavoro in cui si desidera rilevare i carichi di lavoro o selezionare la casella nella parte superiore della tabella per rilevare i carichi di lavoro in tutti gli ambienti rilevati.
+. Selezionare *Vai al dashboard*.
 
