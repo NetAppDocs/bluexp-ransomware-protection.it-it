@@ -520,7 +520,6 @@ Fare riferimento a. <block ref="09d5258094b1e39cdb847e9d6bbdf0b2" category="inli
   <block id="1ac10a835f53c6060811d5cfb8fbff70" category="paragraph">Il suggerimento scompare dall'elenco delle attività e viene visualizzato nell'elenco delle attività respinte.</block>
   <block id="d546413031876c1e4d267a59f45f1a37" category="admonition">È possibile modificare in un secondo momento un elemento da liquidare in un elemento da fare. Quando si contrassegna un elemento completato o si modifica un elemento respinto in un'azione attività, le azioni totale aumentano di 1.</block>
   <block id="91ac2d2291b1ce27106b795a77ccc0f3" category="list-text">Per rivedere le informazioni su come agire in base alle raccomandazioni, selezionare l'icona *informazioni*.</block>
-  <block id="4f8bbc1e1bfabe0de65bf89f703d9f6c" category="summary">Se la protezione ransomware di BlueXP rileva un possibile attacco, viene visualizzato un avviso sulla dashboard della protezione dal ransomware di BlueXP, a indicare un potenziale attacco ransomware. Inoltre, il servizio avvia immediatamente l'acquisizione di una copia Snapshot. A questo punto, dovresti esaminare il rischio potenziale nella scheda degli avvisi della protezione ransomware di BlueXP.</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">Per iniziare il ripristino dei dati, contrassegnare l'avviso come pronto per il ripristino in modo che l'amministratore dello storage possa avviare il processo di ripristino.</block>
   <block id="bba950bac873be0f9671b852bd7790e8" category="paragraph">Ogni avviso potrebbe avere più incidenti su volumi diversi con stati diversi, quindi assicurati di esaminare tutti gli incidenti.</block>
   <block id="fae160f7262e5c6f08478e6435238dc7" category="paragraph">Il servizio fornisce informazioni denominate _prove_ su ciò che ha causato l'emissione dell'avviso, come le seguenti:</block>
@@ -1565,7 +1564,6 @@ Scopri di più<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-lin
   <block id="31565cee794bb7c0060f825cf5913e0b" category="paragraph">Puoi accedere agli avvisi dalla dashboard per la protezione dal ransomware di BlueXP  o dalla scheda *Avvisi*.</block>
   <block id="6f619b1b7d17720e868f27a6a00e82c3" category="list-text">Selezionare *Visualizza tutto* in uno degli stati.</block>
   <block id="1b02c89819a9f8ec9b1164be1da7b688" category="paragraph"><block ref="1b02c89819a9f8ec9b1164be1da7b688" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="803f5091a12e3e35b6d3d6140feba229" category="list-text"><block ref="19af54988de342a4a41b6206c0236ba4" category="inline-xref-macro-rx"></block>.</block>
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">Rileva le attività pericolose e il comportamento anomalo degli utenti</block>
   <block id="0e7cf92e4233591a071d880a54dd482a" category="paragraph">Esaminando la scheda Avvisi, è possibile identificare se vi sono attività dannose. I dettagli visualizzati dipendono dalla modalità di attivazione dell'avviso:</block>
   <block id="bb74e4460d1a07bd08ea60f0fbde3d0d" category="list-text">Attivato dalla funzionalità di protezione autonoma dal ransomware in ONTAP. In questo modo viene rilevata un'attività dannosa in base al comportamento dei file nel volume.</block>
@@ -1629,4 +1627,6 @@ Scopri di più<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-lin
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 dicembre 2024</block>
   <block id="51713ddd834a60df7d06db728cf08e05" category="paragraph">Per ulteriori informazioni, fare riferimento alla<block ref="7a6c0b2db283aa3c348e6e1a2f1f32b0" category="inline-link-rx"></block>.</block>
   <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">Fare riferimento alla<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block>.</block>
+  <block id="22ce28643829ddd0f15a1b23febaeee6" category="summary">Se la protezione ransomware BlueXP  rileva un possibile attacco, viene visualizzato un avviso sulla dashboard per la protezione dal ransomware BlueXP , a indicare un potenziale attacco. Inoltre, il servizio avvia immediatamente l'acquisizione di una copia Snapshot. A questo punto, dovresti esaminare il rischio potenziale nella scheda degli avvisi della protezione ransomware di BlueXP.</block>
+  <block id="16bb8d2d09aea22c9fad5f111efb3676" category="list-text"><block ref="d322145e637b6e2be162f7cd827e67de" category="inline-xref-macro-rx"></block>.</block>
 </blocks>
