@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-reference-roles.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
-summary: 'La protezione ransomware BlueXP  utilizza il role-based access control (RBAC) per gestire l"accesso a funzionalità e azioni specifiche di ciascun utente. Il servizio utilizza i ruoli BlueXP  principali di Amministratore organizzazione e Visualizzatore (non amministratore organizzazione).' 
+summary: 'La protezione ransomware BlueXP  utilizza il role-based access control (RBAC) per gestire l"accesso a funzionalità e azioni specifiche di ciascun utente. Il servizio utilizza ruoli specifici per la protezione dal ransomware BlueXP  (RPS).' 
 ---
-= Privileges per il controllo degli accessi in base al ruolo della protezione ransomware BlueXP 
+= Accesso alle funzionalità della protezione ransomware BlueXP  in base al ruolo
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,13 +12,19 @@ summary: 'La protezione ransomware BlueXP  utilizza il role-based access contro
 
 
 [role="lead"]
-La protezione ransomware BlueXP  utilizza il role-based access control (RBAC) per gestire l'accesso a funzionalità e azioni specifiche di ciascun utente. Il servizio utilizza i ruoli BlueXP  principali di Amministratore organizzazione e Visualizzatore (non amministratore organizzazione).
+La protezione ransomware BlueXP  impiega ruoli per gestire l'accesso che ogni utente ha a caratteristiche e azioni specifiche.
 
-La tabella seguente indica quali azioni possono essere eseguite da ciascun ruolo.
+La protezione ransomware BlueXP  utilizza i seguenti ruoli:
+
+* Amministratore dell'organizzazione
+* Visualizzatore (non amministratore dell'organizzazione)
+
+
+La tabella seguente indica le azioni eseguibili da ogni ruolo di protezione ransomware BlueXP .
 
 [cols="40,20a,20a"]
 |===
-| Funzione e azione | Amministratore dell'organizzazione BlueXP  | Non amministratore (visualizzatore) 
+| Funzione e azione | Amministratore dell'organizzazione | Visualizzatore 
 
 
 | Inizia la prova gratuita  a| 

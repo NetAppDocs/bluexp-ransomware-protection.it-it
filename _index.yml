@@ -30,8 +30,8 @@ indexpage:
     - title: Configurare le destinazioni di backup e abilitare il rilevamento delle
         minacce
       url: "/rp-use-settings.html"
-    - title: FAQ
-      url: "/rp-start-faq.html"
+    - title: Simula un attacco ransomware
+      url: "/rp-start-simulate.html"
   - title: Utilizzare la protezione ransomware BlueXP
     links:
     - title: USA una panoramica sulla protezione dal ransomware di BlueXP

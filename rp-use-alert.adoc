@@ -28,6 +28,7 @@ Il servizio fornisce informazioni denominate _prove_ su ciò che ha causato l'em
 * Le estensioni dei file sono state create o modificate
 * Si è verificata la creazione del file ed è stato aumentato di una percentuale elencata
 * Si è verificata l'eliminazione dei file e l'aumento è stato calcolato in percentuale
+* Quando la crittografia è alta, senza modifiche all'estensione del file
 
 
 Un avviso si basa sui seguenti tipi di comportamento:
@@ -93,12 +94,12 @@ image:screen-alerts.png["Pagina Avvisi"]
 Esaminando la scheda Avvisi, è possibile identificare se vi sono attività dannose. I dettagli visualizzati dipendono dalla modalità di attivazione dell'avviso:
 
 * Attivato dalla funzionalità di protezione autonoma dal ransomware in ONTAP. In questo modo viene rilevata un'attività dannosa in base al comportamento dei file nel volume.
-* Attivato da Data Infrastructure Insights sicurezza del carico di lavoro. Ciò richiede una licenza per la sicurezza del workload di Insights dell'infrastruttura dati e che sia abilitata nella protezione dal ransomware BlueXP . Questa funzionalità rileva il comportamento anomalo dell'utente nei workload di storage e ti consente di bloccare tale utente da un ulteriore accesso.
+* Attivato dalla sicurezza del carico di lavoro Data Infrastructure Insights. Ciò richiede una licenza per la sicurezza del workload di Insights dell'infrastruttura dati e che sia abilitata nella protezione dal ransomware BlueXP . Questa funzionalità rileva il comportamento anomalo dell'utente nei workload di storage e ti consente di bloccare tale utente da un ulteriore accesso.
 +
-Per abilitare la protezione del carico di lavoro nella protezione anti-ransomware di BlueXP , vai alla pagina *Impostazioni* e seleziona l'opzione *connessione di sicurezza del carico di lavoro*.
+Per abilitare la sicurezza del carico di lavoro nella protezione anti-ransomware di BlueXP , vai alla pagina *Impostazioni* e seleziona l'opzione *connessione di sicurezza del carico di lavoro*.
 
 +
-Per una panoramica sulla protezione del carico di lavoro di Data Infrastucture Insights, vedere https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Informazioni sulla sicurezza del carico di lavoro"^]
+Per una panoramica sulla sicurezza del carico di lavoro di Data Infrastucture Insights, vedere https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Informazioni sulla sicurezza dei carichi di lavoro"^].
 
 
 
@@ -117,6 +118,7 @@ Quando la protezione autonoma da ransomware attiva un avviso nella protezione ra
 * Velocità prevista di creazione dei nuovi file rispetto alla velocità rilevata
 * Velocità di eliminazione prevista dei file rispetto alla velocità rilevata
 * Velocità di ridenominazione prevista dei file rispetto alla velocità rilevata
+* File e directory interessati
 
 
 .Fasi
@@ -127,22 +129,19 @@ Quando la protezione autonoma da ransomware attiva un avviso nella protezione ra
 image:screen-alerts-incidents3.png["Pagina incidenti di avviso"]
 
 . Selezionare un incidente per esaminare i dettagli dell'incidente.
-+
-image:screen-alerts-incidents-details-arp.png["Pagina dettagli incidente"]
-
 
 
 
 
 === Visualizza il comportamento anomalo degli utenti in Data Infrastructure Insights workload Security
 
-Quando Data Infrastructure Insights workload Security attiva un avviso nella protezione ransomware BlueXP , puoi visualizzare l'utente sospetto, bloccare l'utente e analizzare l'attività dell'utente direttamente in Data Infrastructure Insights workload Security.
+Quando la sicurezza del carico di lavoro di Data Infrastructure Insights attiva un avviso nella protezione ransomware BlueXP , puoi visualizzare l'utente sospetto, bloccare l'utente e analizzare l'attività dell'utente direttamente nella sicurezza del carico di lavoro di Data Infrastructure Insights.
 
 
 TIP: Queste funzionalità sono oltre ai dettagli disponibili da Just Autonomous ransomware Protection.
 
 .Prima di iniziare
-Questa opzione richiede una licenza per la sicurezza del workload di Insights dell'infrastruttura dati e la relativa attivazione nella protezione dal ransomware BlueXP .
+Questa opzione richiede una licenza per la sicurezza del workload di Data Infrastructure Insights e la sua attivazione nella protezione dal ransomware BlueXP .
 
 Per abilitare la sicurezza del carico di lavoro nella protezione dal ransomware BlueXP , esegui le seguenti operazioni:
 
@@ -163,11 +162,8 @@ image:screen-alerts-incidents-diiws.png["Pagina incidenti di avviso che mostra i
 . Per impedire a un utente sospetto di accedere all'ambiente monitorato da BlueXP , selezionare il collegamento *Blocca utente*.
 . Ricercare l'avviso o un incidente nell'avviso:
 +
-.. Per ricercare ulteriormente l'avviso in Data Infrastructure Insights workload Security, selezionare il collegamento *analisi in sicurezza del carico di lavoro*.
+.. Per ricercare ulteriormente l'avviso nella protezione del carico di lavoro di Data Infrastructure Insights, selezionare il collegamento *esamina nella sicurezza del carico di lavoro*.
 .. Selezionare un incidente per esaminare i dettagli dell'incidente.
-+
-image:screen-alerts-incidents-details-arp-diiws.png["Pagina dei dettagli dell'incidente che mostra i dettagli sulla sicurezza del carico di lavoro"]
-
 +
 Data Infrastructure Insights workload Security si apre in una nuova scheda.
 
@@ -222,7 +218,7 @@ image:screen-alerts.png["Pagina Avvisi"]
 
 . Nella pagina Avvisi, selezionare l'avviso.
 +
-image:screen-alerts-incidents2.png["Pagina incidenti di avviso"]
+image:screen-alerts-incidents3.png["Pagina incidenti di avviso"]
 
 . Selezionare uno o più incidenti. In alternativa, selezionare tutti gli incidenti selezionando la casella ID incidente nella parte superiore sinistra della tabella.
 . Se si stabilisce che l'incidente non è una minaccia, eliminarlo come falso positivo:

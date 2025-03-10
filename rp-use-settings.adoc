@@ -12,13 +12,15 @@ summary: Puoi configurare diverse opzioni, tra cui una destinazione di backup, i
 
 
 [role="lead"]
-È possibile configurare una destinazione di backup, abilitare il rilevamento delle minacce o configurare la connessione alla sicurezza del carico di lavoro di Data Infrastructure Insights accedendo all'opzione *Impostazioni*. L'attivazione del rilevamento delle minacce invia automaticamente i dati al sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi delle minacce.
+È possibile configurare le destinazioni di backup, abilitare il rilevamento delle minacce, eseguire un'analisi della prontezza degli attacchi, configurare il rilevamento dei carichi di lavoro o configurare la connessione alla sicurezza del carico di lavoro di Data Infrastructure Insights accedendo all'opzione *Impostazioni*.
 
 Dalla pagina Impostazioni, è possibile effettuare le seguenti operazioni:
 
+* Simula un attacco ransomware eseguendo un drill-down di preparazione e rispondi a un avviso ransomware simulato. Per ulteriori informazioni, vedere link:rp-start-simulate.html["Condurre un'indagine sulla preparazione all'attacco ransomware"].
+* Configurare il rilevamento del carico di lavoro.
 * Configurare la connessione alla sicurezza del carico di lavoro di Data Infrastructure Insights per vedere le informazioni utente sospette negli avvisi ransomware.
 * Aggiungere una destinazione di backup.
-* Collega il tuo sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce.
+* Attiva il rilevamento delle minacce e collega il tuo sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. L'attivazione del rilevamento delle minacce invia automaticamente i dati al SIEM per l'analisi delle minacce.
 
 
 
@@ -33,7 +35,33 @@ Dalla pagina Impostazioni, è possibile effettuare le seguenti operazioni:
 
 
 
-== Connettersi alla sicurezza del carico di lavoro di Data Infrastructure Insights per vedere il comportamento anomalo degli utenti sospettati
+== Simula un attacco ransomware
+
+Condurre un'indagine di preparazione al ransomware simulando un attacco ransomware su un carico di lavoro di esempio appena creato. Quindi, esaminare l'attacco simulato e recuperare il carico di lavoro del campione. Questa funzionalità ti aiuta a essere preparato in caso di un attacco ransomware effettivo, testando i processi di notifica, risposta e recovery degli avvisi. Puoi eseguire più volte un'analisi di fattibilità del ransomware.
+
+Per ulteriori informazioni, fare riferimento alla link:rp-start-simulate.html["Condurre un'indagine sulla preparazione all'attacco ransomware"].
+
+
+
+== Configurare il rilevamento del carico di lavoro
+
+È possibile configurare il rilevamento dei carichi di lavoro in modo da rilevare automaticamente nuovi carichi di lavoro nel proprio ambiente.
+
+. Nella pagina Impostazioni, individuare il riquadro *rilevamento carico di lavoro*.
+. Nella sezione *rilevamento del carico di lavoro*, selezionare *rilevamento dei carichi di lavoro*.
++
+Questa pagina mostra i connettori BlueXP  con ambienti di lavoro che non sono stati selezionati in precedenza, i nuovi connettori BlueXP  disponibili e i nuovi ambienti di lavoro disponibili. Questa pagina non mostra gli ambienti di lavoro precedentemente selezionati.
+
+. Selezionare il connettore in cui si desidera rilevare i carichi di lavoro.
+. Esaminare l'elenco degli ambienti di lavoro.
+. Selezionare gli ambienti di lavoro in cui si desidera rilevare i carichi di lavoro o selezionare la casella nella parte superiore della tabella per rilevare i carichi di lavoro in tutti gli ambienti di carico di lavoro rilevati.
+. Eseguire questa operazione per altri ambienti di lavoro, se necessario.
+. Seleziona *Scopri* per fare in modo che la protezione ransomware BlueXP  rilevi automaticamente i nuovi carichi di lavoro nel connettore selezionato.
+
+
+
+
+== Vedi il comportamento anomalo degli utenti sospettati connettendoti alla sicurezza del workload di Data Infrastructure Insights
 
 Prima di poter visualizzare i dettagli del comportamento sospetto di un utente anomalo nella protezione ransomware BlueXP , devi configurare la connessione al sistema di sicurezza del workload di Data Infrastructure Insights.
 
@@ -56,7 +84,7 @@ image:../media/screen-alerts-ci-api-access-token.png["Pagina di accesso API in D
 
 === Connettersi alla sicurezza del carico di lavoro di Data Infrastructure Insights
 
-. Dal menu Impostazioni protezione ransomware BlueXP , selezionare *connessione sicurezza carico di lavoro*.
+. Dal menu Impostazioni protezione ransomware di BlueXP , individuare il riquadro *connessione sicurezza carico di lavoro*.
 . Selezionare *Connect*.
 . Immettere l'URL per l'interfaccia utente di sicurezza del carico di lavoro dell'infrastruttura dati.
 . Immettere il token di accesso API che fornisce l'accesso alla sicurezza del workload.

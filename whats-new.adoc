@@ -18,6 +18,40 @@ Scopri le novità di BlueXP ransomware Protection.
 
 
 
+== 10 marzo 2025
+
+
+
+=== Simula un attacco e rispondi
+
+Con questa release, simula un attacco ransomware per testare la risposta a un avviso ransomware. Questa funzionalità ti aiuta a essere preparato in caso di un attacco ransomware effettivo, testando i processi di notifica, risposta e recovery degli avvisi.
+
+Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Condurre un'indagine sulla preparazione all'attacco ransomware"].
+
+
+
+=== Miglioramenti al processo di rilevamento
+
+Questa versione include miglioramenti ai processi di rilevamento selettivo e riscoperta:
+
+* Con questa release, potrai rilevare i workload appena creati che sono stati aggiunti agli ambienti di lavoro precedentemente selezionati.
+* In questa versione è anche possibile selezionare _nuovi_ ambienti di lavoro. Questa funzionalità consente di proteggere i nuovi workload aggiunti al tuo ambiente.
+* Se si desidera scegliere tutti i carichi di lavoro rilevati, è possibile farlo utilizzando l'opzione *Seleziona tutto*.
+* È possibile eseguire questi processi di rilevamento durante il processo iniziale o all'interno dell'opzione Impostazioni.
+
+
+Per ulteriori informazioni, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza"] e https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurare i fetaures con l'opzione Impostazioni"].
+
+
+
+=== Avvisi generati quando viene rilevata una crittografia elevata
+
+Con questa versione, è possibile visualizzare avvisi quando viene rilevata una crittografia elevata sui carichi di lavoro, anche senza elevate modifiche all'estensione dei file. Questa funzionalità, che utilizza l'ai ONTAP Autonomous ransomware Protection (ARP), ti aiuta a identificare i workload che sono a rischio di attacchi ransomware. Utilizzare questa funzione e scaricare l'intero elenco dei file interessati con o senza modifiche alle estensioni.
+
+Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Rispondi a un avviso ransomware rilevato"].
+
+
+
 == 16 dicembre 2024
 
 

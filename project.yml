@@ -33,8 +33,10 @@ sidebar:
       url: "/rp-start-licenses.html"
     - title: Rileva i carichi di lavoro
       url: "/rp-start-discover.html"
-    - title: Configurare le destinazioni di backup e abilitare il rilevamento delle
-        minacce
+    - title: Simula un attacco ransomware
+      url: "/rp-start-simulate.html"
+    - title: Configura backup, rilevamento delle minacce e simulazioni degli attacchi
+        in Impostazioni
       url: "/rp-use-settings.html"
     - title: FAQ
       url: "/rp-start-faq.html"
