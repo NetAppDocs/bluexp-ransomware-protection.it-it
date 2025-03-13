@@ -51,21 +51,16 @@ Il servizio trova gli ambienti di lavoro nei connettori BlueXP .
 TIP: Questo processo potrebbe richiedere alcuni minuti.
 
 +
-image:screen-discover-workloads.png["Screenshot della rilevazione dei carichi di lavoro"]
+image:screen-discover-workloads1.png["Screenshot della rilevazione dei carichi di lavoro"]
 
-. Effettuare una delle seguenti operazioni:
-+
-** Per selezionare gli ambienti di lavoro per tutti i connettori, selezionare *Seleziona tutti gli ambienti di lavoro*.
-** Per rilevare i carichi di lavoro per un connettore specifico, selezionare *trova nuovi ambienti di lavoro* accanto al connettore in cui si desidera rilevare i carichi di lavoro.
+. Per rilevare i carichi di lavoro per un connettore specifico, selezionare *trova nuovi ambienti di lavoro* accanto al connettore in cui si desidera rilevare i carichi di lavoro.
 +
 Viene visualizzato un elenco degli ambienti di lavoro.
-
-
 
 +
 image:screen-discover-workloads-select-no-autodiscovery.png["Screenshot della rilevazione dei carichi di lavoro"]
 
-. Selezionare gli ambienti di lavoro in cui si desidera rilevare il carico di lavoro o selezionare la casella nella parte superiore della tabella per rilevare i carichi di lavoro in tutti gli ambienti di carico di lavoro rilevati.
+. Selezionare gli ambienti di lavoro in cui si desidera rilevare i carichi di lavoro o selezionare la casella nella parte superiore della tabella per rilevare i carichi di lavoro in tutti gli ambienti rilevati.
 . Selezionare *Discover*.
 +
 Il servizio rileva i dati del carico di lavoro solo per i connettori con ambienti di lavoro selezionati.
@@ -99,7 +94,7 @@ Se sono già stati selezionati ambienti di lavoro per il rilevamento, dalla dash
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
 . Per identificare la data dell'ultima ricerca, dal Dashboard, osservare la data e l'ora accanto all'icona *Aggiorna* in alto a destra.
-. Dal dashboard, selezionare l'icona *Aggiorna* e nella descrizione comandi visualizzata, selezionare *rileva carichi di lavoro*.
+. Dal dashboard, selezionare l'icona *Aggiorna* che avvia il rilevamento di nuovi carichi di lavoro.
 
 
 
@@ -110,10 +105,6 @@ Se sono già stati rilevati ambienti di lavoro, è possibile individuare gli amb
 
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
-. Effettuare una delle seguenti operazioni:
-+
-** Dal dashboard, selezionare *Aggiungi nuovo* e nella descrizione comandi visualizzata, selezionare *Aggiungi nuovi ambienti di lavoro*.
-** Dal menu BlueXP  ransomware Protection, seleziona l'image:button-actions-vertical.png["Azioni verticali"]opzione Vertical ... in alto a destra. Dal menu a discesa, selezionare *Impostazioni*. Nella scheda di rilevamento del carico di lavoro, selezionare *rileva carichi di lavoro*.
-
-
+. Dal menu BlueXP  ransomware Protection, seleziona l'image:button-actions-vertical.png["Azioni verticali"]opzione Vertical ... in alto a destra. Dal menu a discesa, selezionare *Impostazioni*.
+. Nella scheda di rilevamento del carico di lavoro, selezionare *rileva carichi di lavoro*.
 

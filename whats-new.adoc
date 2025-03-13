@@ -36,7 +36,6 @@ Questa versione include miglioramenti ai processi di rilevamento selettivo e ris
 
 * Con questa release, potrai rilevare i workload appena creati che sono stati aggiunti agli ambienti di lavoro precedentemente selezionati.
 * In questa versione è anche possibile selezionare _nuovi_ ambienti di lavoro. Questa funzionalità consente di proteggere i nuovi workload aggiunti al tuo ambiente.
-* Se si desidera scegliere tutti i carichi di lavoro rilevati, è possibile farlo utilizzando l'opzione *Seleziona tutto*.
 * È possibile eseguire questi processi di rilevamento durante il processo iniziale o all'interno dell'opzione Impostazioni.
 
 

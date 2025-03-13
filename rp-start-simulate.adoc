@@ -35,7 +35,7 @@ image:screen-settings-alert-drill-configure.png["Configurare la pagina di prepar
 
 . Selezionare il connettore BlueXP  che si desidera utilizzare per il drill-down.
 . Selezionare un ambiente di lavoro di prova.
-. Selezionare un nuovo carico di lavoro di test da creare.
+. Immettere il nome di un nuovo carico di lavoro di test da creare.
 . Selezionare *Salva*.
 +
 Viene visualizzato un messaggio che indica che l'ambiente di esercitazione è configurato. In questo messaggio, selezionare *Avvia esercitazione pronta* per avviare la perforazione.
@@ -54,8 +54,8 @@ Dopo aver configurato il drill-down, è possibile avviare il drill-down.
 .Fasi
 . Effettuare una delle seguenti operazioni:
 +
-** Dal menu Impostazioni protezione ransomware di BlueXP , selezionare *Avvia esercitazione di preparazione*.
-** OPPURE, dalla pagina Impostazioni, nella scheda preparazione, selezionare *Avvia esercitazione disponibilità*.
+** Dal menu Impostazioni protezione ransomware BlueXP , seleziona *esercitazione sulla preparazione*, quindi nella pagina di esercitazione sulla preparazione, seleziona *Avvia*.
+** OPPURE, nella scheda preparazione, nella pagina Impostazioni, selezionare *Avvia*.
 
 
 . Effettuare una delle seguenti operazioni:
@@ -69,41 +69,13 @@ image:screen-settings-alert-drill-needtoconfigure.png["Pagina delle impostazioni
 *** Continuare con le istruzioni riportate nella sezione precedente per configurare l'ambiente di prova della perforazione nell'opzione Impostazioni.
 
 
-** Se è già stato configurato il drill-down pronto, viene visualizzata la pagina Start Readiness drill (Avvia drill-down pronto):
-+
-image:screen-settings-alert-drill-start.png["Avviare la pagina di preparazione"]
+** Se è già stato configurato il ciclo di preparazione, dopo aver selezionato *Avvia*, viene avviata la procedura di preparazione.
 
 
-
-. Selezionare *Start*.
 
 
 
 NOTE: Una volta avviato il drill-down, non è possibile modificare la configurazione del drill-down pronto. È invece possibile arrestarlo.
-
-
-
-== Pulire e arrestare un esercizio di preparazione
-
-Se è necessario interrompere un'esercitazione di preparazione, è possibile farlo in qualsiasi momento. Al termine dell'analisi, la protezione dal ransomware BlueXP  elimina il carico di lavoro di test e i file di test.
-
-.Fasi
-. Effettuare una delle seguenti operazioni:
-+
-** Dal menu Impostazioni protezione ransomware BlueXP , passare il mouse sull'opzione Modifica nel riquadro preparazione e selezionare *esercitazione sulla pulizia*.
-** Dal menu BlueXP  ransomware Protection, selezionare l'image:button-actions-vertical.png["Azioni verticali"]opzione Vertical ... in alto a destra e selezionare *Clean up Readiness drill*.
-+
-image:screen-settings-alert-drill-cleanup.png["Pagina delle impostazioni che mostra l'opzione di arresto della perforazione pronta"]
-
-+
-
-NOTE: È inoltre possibile interrompere o pulire un'esercitazione sulla disponibilità dalla pagina Impostazioni che mostra la scheda di esercitazione sulla preparazione.
-
-
-
-. Esaminare le informazioni di esercitazione sulla disponibilità del carico di lavoro.
-. Selezionare *Pulisci*.
-
 
 
 
@@ -112,26 +84,19 @@ NOTE: È inoltre possibile interrompere o pulire un'esercitazione sulla disponib
 Verificare la propria disponibilità rispondendo a un avviso di esercitazione sulla disponibilità.
 
 .Fasi
-. Effettuare una delle seguenti operazioni:
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
 +
-** Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
-** Oppure, dal menu, selezionare l'icona *Notifiche*, selezionare *Visualizza avviso* accanto all'avviso di disponibilità.
-+
-image:screen-notifications-alert-drill.png["Sezione delle notifiche che mostra l'avviso di preparazione"]
+Viene visualizzata la pagina Avvisi. Nella colonna ID avviso, accanto all'ID viene visualizzato "Pronto drill".
 
-+
-Viene visualizzata la pagina Avvisi. Nella colonna ID avviso nella pagina Avvisi, accanto all'ID viene visualizzato "Pronto drill".
-
+. Selezionare l'avviso con l'indicazione "Pronto". Viene visualizzato un elenco di avvisi incidente.
 +
 image:screen-alerts-readiness.png["Pagina degli avvisi che mostra l'avviso di preparazione"]
 
-
-
-. Selezionare l'incidente con l'indicazione "Pronto".
+. Esaminare gli incidenti relativi agli avvisi.
+. Selezionare un incidente di avviso.
 +
-image:screen-alerts-readiness-incidents.png["Pagina incidente che mostra l'avviso di preparazione"]
+image:screen-alerts-readiness-incidents2.png["Pagina incidente che mostra l'avviso di preparazione"]
 
-. Esaminare i dettagli dell'avviso.
 +
 Ecco alcune cose da cercare:
 
@@ -170,7 +135,7 @@ Dopo aver esaminato l'avviso di preparazione, potrebbe essere necessario riprist
 ** Controllare la conferma e selezionare *Segna ripristino necessario* nella casella di conferma.
 +
 *** Dal menu di protezione dal ransomware BlueXP, seleziona *Recovery*.
-*** Selezionare il carico di lavoro di test che si desidera ripristinare.
+*** Selezionare il carico di lavoro del test contrassegnato con "esercitazione di preparazione" che si desidera ripristinare.
 *** Selezionare *Restore* (Ripristina).
 *** Nella pagina Ripristina, fornire le informazioni per il ripristino:
 
