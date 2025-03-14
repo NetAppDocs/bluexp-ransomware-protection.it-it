@@ -1649,7 +1649,6 @@ Scopri di più<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-lin
   <block id="fbb94dad4d4b0b642b9e4bcfccb31a40" category="paragraph"><block ref="fbb94dad4d4b0b642b9e4bcfccb31a40" category="inline-image-macro-rx" type="image"></block></block>
   <block id="648815687f26cfff9af80401c05502e1" category="list-text">Selezionare *Configura ambiente test di preparazione*.</block>
   <block id="2e80fabefee51d121eee410fb4a3be19" category="list-text">Continuare con le istruzioni riportate nella sezione precedente per configurare l'ambiente di prova della perforazione nell'opzione Impostazioni.</block>
-  <block id="8c5a9997ae160f52e3c8ede0e2590504" category="admonition">Una volta avviato il drill-down, non è possibile modificare la configurazione del drill-down pronto. È invece possibile arrestarlo.</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Rispondere a un avviso di esercitazione sulla disponibilità</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Verificare la propria disponibilità rispondendo a un avviso di esercitazione sulla disponibilità.</block>
   <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">Pagina degli avvisi che mostra l'avviso di preparazione</block>
@@ -1687,11 +1686,6 @@ Scopri di più<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-lin
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Respinto: Se sospetti che l'attività non sia un attacco ransomware, cambia lo stato in respinto.</block>
   <block id="ff8d215b189dca41bf900d6545392594" category="admonition">Dopo aver licenziato un attacco, non è possibile restituirlo. Se elimini un carico di lavoro, tutte le copie snapshot create automaticamente in risposta al potenziale attacco ransomware verranno eliminate in maniera permanente. Se si ignora l'avviso, l'esercitazione sulla disponibilità viene considerata completata.</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Risolto: L'incidente è stato mitigato.</block>
-  <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">Esaminare i rapporti sulla esercitazione sulla disponibilità</block>
-  <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">Al termine dell'esercitazione di preparazione, è possibile rivedere e salvare un rapporto sull'esercitazione.</block>
-  <block id="50ca22b8d354f001a742f726d3cf2be9" category="inline-image-macro">Pagina dei rapporti che mostra il rapporto di preparazione</block>
-  <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">Selezionare *esercitazioni per la preparazione* e *Download* per scaricare il report di esercitazione per la preparazione.</block>
   <block id="7491606097f73ec9ee4cd8649e24e37b" category="list-text">Quando la crittografia è alta, senza modifiche all'estensione del file</block>
   <block id="0152e4b08d769def55f114d835660cb2" category="list-text">Attivato dalla sicurezza del carico di lavoro Data Infrastructure Insights. Ciò richiede una licenza per la sicurezza del workload di Insights dell'infrastruttura dati e che sia abilitata nella protezione dal ransomware BlueXP . Questa funzionalità rileva il comportamento anomalo dell'utente nei workload di storage e ti consente di bloccare tale utente da un ulteriore accesso.</block>
   <block id="900224a7eb4d4424692600ce3e4b5262" category="paragraph">Per abilitare la sicurezza del carico di lavoro nella protezione anti-ransomware di BlueXP , vai alla pagina *Impostazioni* e seleziona l'opzione *connessione di sicurezza del carico di lavoro*.</block>
@@ -1739,4 +1733,5 @@ Scopri di più<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-lin
   <block id="8094150588327954ce01d91cf529ccfc" category="list-text">Selezionare un incidente di avviso.</block>
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
   <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Selezionare il carico di lavoro del test contrassegnato con "esercitazione di preparazione" che si desidera ripristinare.</block>
+  <block id="241197791593ba6fe12006bc7c44e045" category="admonition">Una volta avviato il drill-down, non è possibile modificare la configurazione del drill-down pronto. È possibile reimpostarlo per ricominciare.</block>
 </blocks>

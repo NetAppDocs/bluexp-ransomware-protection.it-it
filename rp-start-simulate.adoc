@@ -75,7 +75,7 @@ image:screen-settings-alert-drill-needtoconfigure.png["Pagina delle impostazioni
 
 
 
-NOTE: Una volta avviato il drill-down, non è possibile modificare la configurazione del drill-down pronto. È invece possibile arrestarlo.
+NOTE: Una volta avviato il drill-down, non è possibile modificare la configurazione del drill-down pronto. È possibile reimpostarlo per ricominciare.
 
 
 
@@ -177,18 +177,4 @@ IMPORTANT: Dopo aver licenziato un attacco, non è possibile restituirlo. Se eli
 ** Risolto: L'incidente è stato mitigato.
 
 
-
-
-
-
-== Esaminare i rapporti sulla esercitazione sulla disponibilità
-
-Al termine dell'esercitazione di preparazione, è possibile rivedere e salvare un rapporto sull'esercitazione.
-
-.Fasi
-. Dal menu di protezione dal ransomware di BlueXP, seleziona *Report*.
-+
-image:screen-reports.png["Pagina dei rapporti che mostra il rapporto di preparazione"]
-
-. Selezionare *esercitazioni per la preparazione* e *Download* per scaricare il report di esercitazione per la preparazione.
 
