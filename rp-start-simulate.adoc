@@ -37,9 +37,6 @@ image:screen-settings-alert-drill-configure.png["Configurare la pagina di prepar
 . Selezionare un ambiente di lavoro di prova.
 . Immettere il nome di un nuovo carico di lavoro di test da creare.
 . Selezionare *Salva*.
-+
-Viene visualizzato un messaggio che indica che l'ambiente di esercitazione è configurato. In questo messaggio, selezionare *Avvia esercitazione pronta* per avviare la perforazione.
-
 
 
 
@@ -58,20 +55,7 @@ Dopo aver configurato il drill-down, è possibile avviare il drill-down.
 ** OPPURE, nella scheda preparazione, nella pagina Impostazioni, selezionare *Avvia*.
 
 
-. Effettuare una delle seguenti operazioni:
-+
-** Se non è già stato configurato il drill-down, viene visualizzato un messaggio che indica che è necessario configurare il drill-down.
-+
-image:screen-settings-alert-drill-needtoconfigure.png["Pagina delle impostazioni che mostra il messaggio di preparazione che è necessario configurare il drill-down"]
-
-+
-*** Selezionare *Configura ambiente test di preparazione*.
-*** Continuare con le istruzioni riportate nella sezione precedente per configurare l'ambiente di prova della perforazione nell'opzione Impostazioni.
-
-
-** Se è già stato configurato il ciclo di preparazione, dopo aver selezionato *Avvia*, viene avviata la procedura di preparazione.
-
-
+. Se è già stato configurato il ciclo di preparazione, dopo aver selezionato *Avvia*, viene avviata la procedura di preparazione.
 
 
 
@@ -103,7 +87,6 @@ Ecco alcune cose da cercare:
 +
 ** Osservare il tipo di attacco potenziale. Se il tipo indica che un utente è sospetto di attività dannosa, rivedere il nome utente.
 +
-*** È possibile bloccare l'utente selezionando *Blocca utente*.
 *** È inoltre possibile esaminare l'utente in Data Infrastructure Insights workload Security selezionando *indagare sulla sicurezza del carico di lavoro*.
 
 

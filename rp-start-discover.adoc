@@ -25,7 +25,6 @@ Il servizio valuta il livello di protezione esistente, incluse le opzioni di pro
 
 * All'interno di ogni connettore, seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro. Questa funzionalità può essere utile se si desidera proteggere carichi di lavoro specifici del proprio ambiente e non di altri.
 * Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza.
-* Selezionare _nuovi_ ambienti di lavoro. Questa funzionalità consente di proteggere i nuovi workload aggiunti al tuo ambiente.
 
 
 
@@ -99,12 +98,16 @@ Se sono già stati selezionati ambienti di lavoro per il rilevamento, dalla dash
 
 
 
-== Scopri gli ambienti di lavoro appena creati
+== Scoprite nuovi ambienti di lavoro
 
-Se sono già stati rilevati ambienti di lavoro, è possibile individuare gli ambienti di lavoro appena creati dalla Dashboard.
+Se sono già stati rilevati ambienti di lavoro, è possibile rilevare eventuali ambienti di lavoro o ambienti di lavoro appena creati che non erano stati precedentemente selezionati durante i processi di rilevamento precedenti.
 
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
 . Dal menu BlueXP  ransomware Protection, seleziona l'image:button-actions-vertical.png["Azioni verticali"]opzione Vertical ... in alto a destra. Dal menu a discesa, selezionare *Impostazioni*.
 . Nella scheda di rilevamento del carico di lavoro, selezionare *rileva carichi di lavoro*.
++
+
+TIP: Questo processo potrebbe richiedere alcuni minuti, come indicato da un'icona di caricamento in corso.
+
 
