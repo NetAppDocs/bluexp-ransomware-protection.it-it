@@ -25,7 +25,7 @@ Prima di eseguire una simulazione, è necessario configurare un drill utilizzand
 
 .Fasi
 . Dal menu di protezione dal ransomware BlueXP, seleziona il menu Vertical (verticale) image:button-actions-vertical.png["Azioni verticali"]... opzione in alto a destra.
-. Dal menu a discesa, selezionare *Impostazioni*.
+. Dal menu a discesa, selezionare *Pronta drill* o *Impostazioni*.
 . Nella scheda di esercitazione pronta nella pagina Impostazioni, selezionare *Configura*.
 +
 Viene visualizzata la pagina Configura esercitazione pronta.
@@ -47,6 +47,11 @@ TIP: È possibile modificare la configurazione della sessione di preparazione in
 == Avviare un esercizio di preparazione
 
 Dopo aver configurato il drill-down, è possibile avviare il drill-down.
+
+Quando inizi la sessione di preparazione, la protezione dal ransomware BlueXP  ignora la modalità di apprendimento e avvia il sondaggio in modalità attiva. Lo stato di rilevamento del carico di lavoro è attivo.
+
+
+TIP: Un carico di lavoro può avere uno stato di rilevamento ransomware *modalità di apprendimento* che indica che è stata recentemente assegnata una policy di rilevamento ransomware al carico di lavoro e che il servizio sta analizzando i workload. Uno stato di rilevamento *attivo* indica che è stato assegnato un criterio di protezione dal rilevamento ransomware.
 
 .Fasi
 . Effettuare una delle seguenti operazioni:
@@ -72,36 +77,38 @@ Verificare la propria disponibilità rispondendo a un avviso di esercitazione su
 +
 Viene visualizzata la pagina Avvisi. Nella colonna ID avviso, accanto all'ID viene visualizzato "Pronto drill".
 
-. Selezionare l'avviso con l'indicazione "Pronto". Viene visualizzato un elenco di avvisi incidente.
 +
 image:screen-alerts-readiness.png["Pagina degli avvisi che mostra l'avviso di preparazione"]
+
+. Selezionare l'avviso con l'indicazione "Pronto". Nella pagina Dettagli avvisi viene visualizzato un elenco di avvisi incidente.
++
+image:screen-alerts-readiness-details.png["Pagina dei dettagli degli avvisi che mostra l'avviso di preparazione"]
 
 . Esaminare gli incidenti relativi agli avvisi.
 . Selezionare un incidente di avviso.
 +
 image:screen-alerts-readiness-incidents2.png["Pagina incidente che mostra l'avviso di preparazione"]
 
-+
+
+
 Ecco alcune cose da cercare:
 
+* Osservare il tipo di attacco potenziale.
 +
-** Osservare il tipo di attacco potenziale. Se il tipo indica che un utente è sospetto di attività dannosa, rivedere il nome utente.
+Se il tipo indica che un utente è sospetto di attività dannosa, rivedere il nome utente. Per approfondire l'argomento relativo alla sicurezza dei workload di Data Infrastructure Insights, selezionare *indagare sulla sicurezza dei workload*.
+
+
+
+* Esaminare l'attività del file e i processi sospetti:
 +
-*** È inoltre possibile esaminare l'utente in Data Infrastructure Insights workload Security selezionando *indagare sulla sicurezza del carico di lavoro*.
+** Controllare i dati rilevati in entrata rispetto ai dati previsti.
+** Osservare la velocità di creazione dei file rilevati rispetto alla velocità prevista.
+** Controllare la velocità di ridenominazione del file rilevata rispetto alla velocità prevista.
+** Controllare la frequenza di eliminazione rispetto alla frequenza prevista.
 
 
-** Esaminare l'attività del file e i processi sospetti:
-+
-*** Controllare i dati rilevati in entrata rispetto ai dati previsti.
-*** Osservare la velocità di creazione dei file rilevati rispetto alla velocità prevista.
-*** Controllare la velocità di ridenominazione del file rilevata rispetto alla velocità prevista.
-*** Controllare la frequenza di eliminazione rispetto alla frequenza prevista.
-
-
-** Esaminare l'elenco dei file interessati. Esaminare le estensioni che potrebbero causare l'attacco.
-** Determinare l'impatto e la portata dell'attacco esaminando il numero di file e directory interessati.
-
-
+* Esaminare l'elenco dei file interessati. Esaminare le estensioni che potrebbero causare l'attacco.
+* Determinare l'impatto e la portata dell'attacco esaminando il numero di file e directory interessati.
 
 
 
@@ -149,15 +156,25 @@ Dopo aver esaminato l'avviso di verifica della disponibilità e aver ripristinat
 .Fasi
 . Tornare alla pagina Dettagli avviso.
 . Selezionare nuovamente l'avviso.
-. Indicare lo stato selezionando *Modifica* e modificare lo stato in uno dei seguenti:
+. Indicare lo stato selezionando *Modifica stato* e modificare lo stato in uno dei seguenti:
 +
 ** Respinto: Se sospetti che l'attività non sia un attacco ransomware, cambia lo stato in respinto.
 +
 
 IMPORTANT: Dopo aver licenziato un attacco, non è possibile restituirlo. Se elimini un carico di lavoro, tutte le copie snapshot create automaticamente in risposta al potenziale attacco ransomware verranno eliminate in maniera permanente. Se si ignora l'avviso, l'esercitazione sulla disponibilità viene considerata completata.
 
-** In corso
 ** Risolto: L'incidente è stato mitigato.
 
 
+
+
+
+
+== Scarica il report di preparazione
+
+Al termine dell'esercitazione di preparazione, è possibile rivedere e salvare un rapporto CSV sull'esercitazione.
+
+.Fasi
+. Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
+. Selezionare l'avviso e selezionare la freccia *Download* per scaricare un file CSV.
 
