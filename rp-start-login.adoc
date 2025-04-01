@@ -35,7 +35,7 @@ image:screen-landing.png["Screenshot della landing page per la protezione dal ra
 In caso contrario, verrà visualizzata la dashboard di protezione dal ransomware BlueXP.
 
 +
-image:screen-dashboard.png["Dashboard della protezione dal ransomware di BlueXP"]
+image:screen-dashboard2.png["Dashboard della protezione dal ransomware di BlueXP"]
 
 +
 

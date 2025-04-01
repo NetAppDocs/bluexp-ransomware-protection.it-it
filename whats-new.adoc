@@ -39,7 +39,7 @@ Questa versione include miglioramenti ai processi di rilevamento selettivo e ris
 * È possibile eseguire questi processi di rilevamento durante il processo iniziale o all'interno dell'opzione Impostazioni.
 
 
-Per ulteriori informazioni, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza"] e https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurare i fetaures con l'opzione Impostazioni"].
+Per ulteriori informazioni, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza"] e https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurare le funzioni con l'opzione Impostazioni"].
 
 
 

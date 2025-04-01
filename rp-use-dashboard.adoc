@@ -26,7 +26,7 @@ Puoi anche utilizzare la dashboard per esaminare e agire in base ai consigli sul
 Dopo il rilevamento, la Dashboard mostra la salute della data Protection dei carichi di lavoro.
 
 +
-image:screen-dashboard.png["Pagina del dashboard"]
+image:screen-dashboard2.png["Pagina del dashboard"]
 
 . Dal Dashboard, è possibile eseguire le seguenti azioni in ciascuno dei riquadri:
 +
@@ -164,7 +164,7 @@ I file CSV includono i dati per tutti i carichi di lavoro su tutti gli ambienti 
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
 +
-image:screen-dashboard.png["Pagina del dashboard"]
+image:screen-dashboard2.png["Pagina del dashboard"]
 
 . Nella pagina, selezionare l'opzione *Aggiorna* image:button-refresh.png["Opzione di aggiornamento"] in alto a destra per aggiornare i dati che verranno visualizzati nei file.
 . Effettuare una delle seguenti operazioni:
