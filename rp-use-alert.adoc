@@ -26,12 +26,12 @@ Ogni avviso potrebbe avere più incidenti su volumi diversi con stati diversi, q
 Il servizio fornisce informazioni denominate _prove_ su ciò che ha causato l'emissione dell'avviso, come le seguenti:
 
 * Le estensioni dei file sono state create o modificate
-* Si è verificata la creazione del file ed è stato aumentato di una percentuale elencata
-* Si è verificata l'eliminazione dei file e l'aumento è stato calcolato in percentuale
+* Creazione di file con un confronto tra i tassi rilevati e quelli previsti
+* Eliminazione dei file con un confronto tra i tassi rilevati e quelli previsti
 * Quando la crittografia è alta, senza modifiche all'estensione del file
 
 
-Un avviso si basa sui seguenti tipi di comportamento:
+Un avviso è classificato come uno dei seguenti:
 
 * *Potenziale attacco*: Si verifica un avviso quando la protezione autonoma dal ransomware rileva una nuova estensione e l'evento viene ripetuto più di 20 volte nelle ultime 24 ore (comportamento predefinito).
 * *Avvertenza*: Si verifica un avviso basato sui seguenti comportamenti:

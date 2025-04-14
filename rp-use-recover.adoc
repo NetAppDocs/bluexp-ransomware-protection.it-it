@@ -78,7 +78,6 @@ TIP: La protezione ransomware di BlueXP identifica il punto di ripristino miglio
 
 
 . Se la destinazione originale non dispone di spazio sufficiente per ripristinare il carico di lavoro, viene visualizzata la riga "archiviazione temporanea". È possibile selezionare la memoria temporanea per ripristinare i dati del carico di lavoro. I dati ripristinati verranno copiati dalla memoria temporanea alla posizione originale. Fare clic sulla freccia *giù* nella riga archiviazione temporanea e impostare il cluster di destinazione, la VM di archiviazione e il livello locale.
-. *Posizione quarantena*: Se si desidera, selezionare la posizione in cui memorizzare i dati potenzialmente infetti prima di avviare il processo di ripristino per un'ulteriore analisi successiva al recupero.
 . Selezionare *Salva*.
 . Selezionare *Avanti*.
 . Rivedere le selezioni.
@@ -153,7 +152,6 @@ TIP: Il nome del nuovo volume viene visualizzato come prefisso + nome del volume
 
 
 
-. *Posizione quarantena*: Se si desidera, selezionare la posizione in cui memorizzare i dati potenzialmente infetti prima di avviare il processo di ripristino per un'ulteriore analisi successiva al recupero.
 . Selezionare *Salva*.
 . Selezionare *Avanti*.
 . Rivedere le selezioni.
@@ -194,7 +192,6 @@ TIP: Il nome del nuovo volume viene visualizzato come nome originale del volume 
 
 
 
-. *Posizione quarantena*: Se si desidera, selezionare la posizione in cui memorizzare i dati potenzialmente infetti prima di avviare il processo di ripristino per un'ulteriore analisi successiva al recupero.
 . Selezionare *Salva*.
 . Selezionare *Avanti*.
 . Rivedere le selezioni.
@@ -272,7 +269,6 @@ TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristi
 .. Selezionare se si desidera che i nomi dei file o della directory ripristinati siano gli stessi nomi della posizione corrente o nomi diversi.
 
 
-. *Posizione quarantena*: Se si desidera, selezionare la posizione in cui memorizzare i dati potenzialmente infetti prima di avviare il processo di ripristino per un'ulteriore analisi successiva al recupero.
 . Selezionare *Avanti*.
 . Rivedere le selezioni.
 . Selezionare *Restore* (Ripristina).

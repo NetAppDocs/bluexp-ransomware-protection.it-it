@@ -14,218 +14,322 @@ summary: 'La protezione ransomware BlueXP  utilizza il role-based access contro
 [role="lead"]
 La protezione ransomware BlueXP  impiega ruoli per gestire l'accesso che ogni utente ha a caratteristiche e azioni specifiche.
 
-La protezione ransomware BlueXP  utilizza i seguenti ruoli:
+Il servizio utilizza i ruoli seguenti, specifici per la protezione ransomware BlueXP .
 
-* Amministratore dell'organizzazione
-* Visualizzatore (non amministratore dell'organizzazione)
+* *Amministratore della protezione ransomware*: Consente di gestire le azioni nelle schede Protect, Alerts, Recover, Settings e Reports.
+* *Visualizzatore protezione ransomware*: Consente di visualizzare i dati del carico di lavoro, visualizzare i dati degli avvisi, scaricare i dati di recupero e scaricare i report.
 
+
+La piattaforma BlueXP  per tutti i servizi BlueXP  utilizza i seguenti tipi di ruoli:
+
+* *I ruoli della piattaforma* consentono di gestire gli utenti, assegnarli alle risorse e assegnare loro ruoli insieme ad altre azioni a livello di piattaforma.
++
+
+TIP: Per il rilevamento nella protezione ransomware BlueXP , devi avere il ruolo *Amministratore dell'organizzazione* oltre al ruolo *Amministratore della protezione ransomware*.
+
+* *I ruoli dei servizi dati* sono limitati solo a un servizio dati specifico. È possibile disporre di diversi ruoli per i servizi dati in base al proprio lavoro. La protezione ransomware BlueXP  è uno dei servizi dati di BlueXP .
+
+
+Per informazioni dettagliate sui ruoli della piattaforma, vedere https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["La documentazione di installazione e amministrazione di BlueXP "^].
 
 La tabella seguente indica le azioni eseguibili da ogni ruolo di protezione ransomware BlueXP .
 
 [cols="40,20a,20a"]
 |===
-| Funzione e azione | Amministratore dell'organizzazione | Visualizzatore 
+| Funzione e azione | Amministratore della protezione dal ransomware | Visualizzatore di protezione dal ransomware 
+
+
+| Visualizza dashboard e tutte le schede  a| 
+Sì
+ a| 
+Sì
+
+
+
+| Sul dashboard, aggiornare lo stato del suggerimento  a| 
+Sì
+ a| 
+No
+
 
 
 | Inizia la prova gratuita  a| 
-Y
+Sì
  a| 
-N
-
-
-
-| Visualizza dashboard  a| 
-Y
- a| 
-Y
-
-
-
-| Visualizza scheda protezione  a| 
-Y
- a| 
-Y
-
-
-
-| Visualizza scheda Avvisi  a| 
-Y
- a| 
-Y
-
-
-
-| Visualizza scheda Recupera  a| 
-Y
- a| 
-Y
-
-
-
-| Visualizza scheda rapporti  a| 
-Y
- a| 
-Y
-
-
-
-| Visualizza scheda Impostazioni  a| 
-Y
- a| 
-Y
+No
 
 
 
 | Avvia il rilevamento dei carichi di lavoro  a| 
-Y
+Sì
  a| 
-N
+No
 
 
 
-| Proteggere: Modificare o eliminare i criteri  a| 
-Y
+| Avvia il rilevamento dei carichi di lavoro  a| 
+Sì
  a| 
-N
+No
 
 
 
-| Protezione: Aggiunta di criteri  a| 
-Y
+3+| *Nella scheda protezione*: 
+
+
+| Aggiungere, modificare o eliminare i piani di protezione  a| 
+Sì
  a| 
-N
+No
 
 
 
-| Proteggere: Proteggere i carichi di lavoro  a| 
-Y
+| Proteggere i carichi di lavoro  a| 
+Sì
  a| 
-N
+No
 
 
 
-| Protezione: Identificazione dei dati sensibili  a| 
-Y
+| Identificazione dell'esposizione ai dati sensibili  a| 
+Sì
  a| 
-N
+No
 
 
 
-| Protezione: Modifica della protezione del carico di lavoro  a| 
-Y
+| Elencare i piani di protezione e i dettagli  a| 
+Sì
  a| 
-N
+Sì
 
 
 
-| Protezione: Consente di visualizzare i dettagli del carico di lavoro  a| 
-Y
+| Elencare i gruppi di protezione  a| 
+Sì
  a| 
-Y
+Sì
 
 
 
-| Protezione: Download dei dati  a| 
-Y
+| Visualizzare i dettagli del gruppo di protezione  a| 
+Sì
  a| 
-Y
+Sì
 
 
 
-| Avvisi: Consente di visualizzare i dettagli degli avvisi  a| 
-Y
+| Creare, modificare o eliminare un gruppo di protezione  a| 
+Sì
  a| 
-Y
+No
 
 
 
-| Avvisi: Consente di modificare lo stato dell'incidente  a| 
-Y
+| Scaricare i dati  a| 
+Sì
  a| 
-N
+Sì
 
 
 
-| Avvisi: Consente di visualizzare i dettagli dell'incidente  a| 
-Y
+3+| *Nella scheda Avvisi*: 
+
+
+| Visualizzare gli avvisi e i dettagli degli avvisi  a| 
+Sì
  a| 
-Y
+Sì
 
 
 
-| Avvisi: Consente di ottenere l'elenco completo dei file interessati  a| 
-Y
+| Modifica stato incidente  a| 
+Sì
  a| 
-N
+No
 
 
 
-| Avvisi: Scarica i dati degli avvisi  a| 
-Y
+| Contrassegnare un avviso per il ripristino  a| 
+Sì
  a| 
-Y
+No
 
 
 
-| Recupera: Scarica i file interessati  a| 
-Y
+| Visualizzare i dettagli dell'incidente  a| 
+Sì
  a| 
-N
+Sì
 
 
 
-| Ripristina: Ripristina il workload  a| 
-Y
+| Respingere o risolvere gli incidenti  a| 
+Sì
  a| 
-N
+No
 
 
 
-| Recupera: Scarica i dati di recupero  a| 
-Y
+| Blocca utente  a| 
+Sì
  a| 
-Y
+No
 
 
 
-| Recupera: Scarica i report  a| 
-Y
+| Ottieni l'elenco completo dei file interessati  a| 
+Sì
  a| 
-Y
+No
 
 
 
-| Impostazioni: Aggiungere o modificare le destinazioni di backup  a| 
-Y
+| Scarica i dati degli avvisi  a| 
+Sì
  a| 
-N
+Sì
 
 
 
-| Impostazioni: Aggiungere o modificare target SIEM  a| 
-Y
+3+| *Nella scheda Recupera*: 
+
+
+| Scaricare i file interessati  a| 
+Sì
  a| 
-N
+No
 
 
 
-| Report: Scarica report  a| 
-Y
+| Ripristina il workload  a| 
+Sì
  a| 
-Y
+No
 
 
 
-| Documentazione: Consente di visualizzare la documentazione relativa al prodotto  a| 
-Y
+| Scaricare i dati di ripristino  a| 
+Sì
  a| 
-Y
+Sì
 
 
 
-| Documentazione: Consente di visualizzare la documentazione sulle novità del prodotto  a| 
-Y
+| Scarica i report  a| 
+Sì
  a| 
-Y
+Sì
+
+
+
+3+| *Nella scheda Impostazioni*: 
+
+
+| Aggiungere o modificare le destinazioni di backup  a| 
+Sì
+ a| 
+No
+
+
+
+| Elencare le destinazioni di backup  a| 
+Sì
+ a| 
+Sì
+
+
+
+| Visualizza destinazioni SIEM connesse  a| 
+Sì
+ a| 
+Sì
+
+
+
+| Aggiungere o modificare target SIEM  a| 
+Sì
+ a| 
+No
+
+
+
+| Collegare gli obiettivi di sicurezza del carico di lavoro  a| 
+Sì
+ a| 
+No
+
+
+
+| Visualizzare lo stato della connessione di sicurezza del carico di lavoro  a| 
+Sì
+ a| 
+Sì
+
+
+
+| Scollegare le destinazioni di sicurezza del carico di lavoro  a| 
+Sì
+ a| 
+No
+
+
+
+| Configurare la preparazione  a| 
+Sì
+ a| 
+No
+
+
+
+| Avviare il drill-down  a| 
+Sì
+ a| 
+No
+
+
+
+| Reimpostare il trapano pronto  a| 
+Sì
+ a| 
+No
+
+
+
+| Modifica esercitazione di preparazione  a| 
+Sì
+ a| 
+No
+
+
+
+| Rivedere lo stato di preparazione  a| 
+Sì
+ a| 
+Sì
+
+
+
+| Aggiornare la configurazione del rilevamento  a| 
+Sì
+ a| 
+No
+
+
+
+| Visualizzare la configurazione del rilevamento  a| 
+Sì
+ a| 
+Sì
+
+
+
+3+| *Nella scheda rapporti*: 
+
+
+| Scarica i report  a| 
+Sì
+ a| 
+Sì
 
 |===
