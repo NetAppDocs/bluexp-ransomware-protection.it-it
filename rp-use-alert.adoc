@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: 'Se la protezione ransomware BlueXP  rileva un possibile attacco, viene visualizzato un avviso sulla dashboard per la protezione dal ransomware BlueXP , a indicare un potenziale attacco. Inoltre, il servizio avvia immediatamente l"acquisizione di una copia Snapshot. A questo punto, dovresti esaminare il rischio potenziale nella scheda degli avvisi della protezione ransomware di BlueXP.' 
+summary: 'Se la protezione ransomware BlueXP  rileva un possibile attacco, viene visualizzato un avviso sulla dashboard per la protezione dal ransomware BlueXP , a indicare un potenziale attacco. Inoltre, il servizio avvia immediatamente l"acquisizione di una copia snapshot. A questo punto, dovresti esaminare il rischio potenziale nella scheda degli avvisi della protezione ransomware di BlueXP.' 
 ---
 = Rispondi a un avviso ransomware rilevato
 :hardbreaks:
@@ -57,10 +57,11 @@ Un incidente di avviso è classificato in uno dei seguenti stati:
 * *Respinto*: Se sospetti che l'attività non sia un attacco ransomware, puoi cambiare lo stato in "respinto".
 +
 
-CAUTION: Dopo aver respinto un attacco, non è possibile modificarlo. Se elimini un carico di lavoro, tutte le copie Snapshot acquisite automaticamente in risposta al potenziale attacco ransomware verranno eliminate in maniera permanente.
+CAUTION: Dopo aver respinto un attacco, non è possibile modificarlo. Se elimini un carico di lavoro, tutte le copie snapshot create automaticamente in risposta al potenziale attacco ransomware verranno eliminate in maniera permanente.
 
 * *Licenziamento*: L'incidente è in fase di licenziamento.
 * *Risolto*: L'incidente è stato mitigato.
+* *Auto Resolved*: Per gli avvisi con priorità bassa, l'incidente viene risolto automaticamente se non è stata intrapresa alcuna azione entro 5 giorni.
 
 
 
@@ -206,7 +207,7 @@ Dopo aver esaminato gli incidenti, è necessario determinare se si tratta di pot
 
 Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati. Se si decide di ignorare l'avviso, il servizio apprenderà questo comportamento e lo assocerà alle normali operazioni e non avvierà nuovamente un avviso su tale comportamento.
 
-Se elimini un carico di lavoro, tutte le copie Snapshot acquisite automaticamente in risposta al potenziale attacco ransomware verranno eliminate in maniera permanente.
+Se elimini un carico di lavoro, tutte le copie snapshot create automaticamente in risposta al potenziale attacco ransomware verranno eliminate in maniera permanente.
 
 
 CAUTION: Se si ignora un avviso, non è possibile ripristinare lo stato in qualsiasi altro stato e non è possibile annullare la modifica.
@@ -232,7 +233,7 @@ image:screen-alerts-status-edit.png["Pagina Stato modifica avviso"]
 
 . Nella casella Modifica stato, selezionare lo stato *"respinto"*.
 +
-Vengono visualizzate ulteriori informazioni sul carico di lavoro e sulle copie Snapshot che verranno eliminate.
+Vengono visualizzate ulteriori informazioni sul carico di lavoro e sulle copie snapshot che verranno eliminate.
 
 . Selezionare *Salva*.
 +

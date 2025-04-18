@@ -257,7 +257,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 
 === Blocco delle copie Snapshot sullo storage primario
 
-Abilitare questo blocco per bloccare le copie Snapshot sullo storage primario in modo che non possano essere modificate o eliminate per un determinato periodo di tempo anche in caso di attacco ransomware che smetta di raggiungere la destinazione storage di backup.
+Abilita questa funzionalità per bloccare le copie Snapshot sullo storage primario in modo che non possano essere modificate o eliminate per un determinato periodo di tempo anche in caso di attacco ransomware che gestisca la destinazione storage del backup.
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Scopri di più sulla protezione dei carichi di lavoro e sull'abilitazione del blocco del backup in una strategia di protezione dal ransomware"].
 

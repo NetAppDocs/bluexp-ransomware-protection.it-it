@@ -54,8 +54,7 @@ Per una spiegazione di queste modalità in tutti i servizi BlueXP, fare riferime
 
 == Interazione con altri servizi
 
-*La protezione dal ransomware di BlueXP è a conoscenza delle impostazioni di protezione di NetApp ONTAP?*
-Sì, la protezione dal ransomware BlueXP rileva le pianificazioni Snapshot impostate in ONTAP.
+*La protezione dal ransomware di BlueXP è a conoscenza delle impostazioni di protezione di NetApp ONTAP?* Sì, la protezione ransomware di BlueXP  scopre le pianificazioni delle snapshot impostate in ONTAP.
 
 *Se imposti una policy utilizzando la protezione dal ransomware di BlueXP, devi apportare modifiche future solo in questo servizio?*
 Ti consigliamo di apportare modifiche alla policy dal servizio di protezione dal ransomware di BlueXP.
@@ -76,10 +75,9 @@ Inoltre, la protezione dal ransomware BlueXP  utilizza il backup e recovery di 
 
 *Che cosa costituisce un carico di lavoro?* Un carico di lavoro è un'applicazione, una macchina virtuale o una condivisione di file. Un carico di lavoro include tutti i volumi utilizzati da una singola istanza dell'applicazione. Ad esempio, un'istanza di Oracle DB implementata in ora3.host.com può avere vol1 GB e vol2 GB rispettivamente per dati e registri. Questi volumi costituiscono insieme il carico di lavoro per quella specifica istanza dell'istanza del database Oracle.
 
-*In che modo la protezione dal ransomware di BlueXP assegna la priorità ai dati del carico di lavoro?*
-La priorità dei dati è determinata dalle copie Snapshot create e dai backup pianificati.
+*In che modo la protezione dal ransomware di BlueXP assegna la priorità ai dati del carico di lavoro?* La priorità dei dati è determinata dalle copie snapshot effettuate e dai backup pianificati.
 
-La priorità del carico di lavoro (critico, standard, importante) è determinata dalle frequenze di Snapshot già applicate a ciascun volume associato al carico di lavoro.
+La priorità del carico di lavoro (critico, standard, importante) è determinata dalle frequenze di snapshot già applicate a ciascun volume associato al carico di lavoro.
 
 link:rp-use-protect.html["Scopri la priorità o l'importanza del carico di lavoro"].
 

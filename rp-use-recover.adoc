@@ -233,7 +233,7 @@ image:screen-alerts-incidents-impacted-files.png["elenco dei file interessati pe
 . *Punto di ripristino*: Selezionare la freccia verso il basso accanto a *punto di ripristino* per visualizzare i dettagli. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
 +
 
-NOTE: La colonna Reason (motivo) nel riquadro Restore Points (punti di ripristino) mostra il motivo dell'istantanea o del backup come "Scheduled" (programmato) o "Automated Response to ransomware Incident" (Risposta automatizzata all'incidente ransomware).
+NOTE: La colonna Reason (motivo) nel riquadro Restore Points (punti di ripristino) mostra il motivo dello snapshot o del backup come "Scheduled" (programmato) o "Automated Response to ransomware Incident" (Risposta automatizzata all'incidente ransomware).
 
 . *File*:
 +
