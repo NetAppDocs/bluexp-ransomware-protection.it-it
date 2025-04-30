@@ -19,3 +19,13 @@ Le limitazioni note identificano piattaforme, dispositivi o funzioni non support
 == Problema relativo all'opzione di ripristino della preparazione
 
 Se selezioni un volume ONTAP 9.11.1 per il drill-down per la preparazione all'attacco ransomware, la protezione ransomware BlueXP  ti avvisa con un avviso. Se si recuperano i dati utilizzando l'opzione "clone-to-volume" e si ripristina il drill, l'operazione di ripristino non riesce.
+
+
+
+== Limitazioni di Amazon FSX per NetApp ONTAP
+
+L'ambiente di lavoro Amazon FSX per NetApp ONTAP è supportato nella protezione ransomware di BlueXP . Le seguenti limitazioni si applicano a questo ambiente di lavoro:
+
+* I criteri di backup non sono supportati per FSX per ONTAP. In questo ambiente, è necessario eseguire le operazioni di backup utilizzando il servizio di backup Amazon FS per ONTAP. Puoi ripristinare questi workload utilizzando gli snapshot di protezione ransomware BlueXP .
+* Le operazioni di ripristino vengono eseguite solo da Snapshot.
+

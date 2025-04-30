@@ -4,7 +4,7 @@ permalink: rp-use-protect.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, protect, malware, attack 
 summary: Puoi proteggere i workload dagli attacchi ransomware assegnando policy a un carico di lavoro nella protezione dal ransomware di BlueXP. 
 ---
-= Proteggi i carichi di lavoro con le strategie ransomware
+= Proteggi i carichi di lavoro con strategie di protezione dal ransomware
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -42,10 +42,13 @@ Puoi modificare le policy di protezione in base alla protezione dei workload di 
 * *Workload con protezione esistente da parte delle applicazioni NetApp*: Questi workload dispongono di policy di backup o snapshot gestite da SnapCenter, SnapCenter per VMware vSphere o backup e ripristino BlueXP .
 +
 ** Se le policy di backup o snapshot vengono gestite da backup e ripristino SnapCenter, SnapCenter per VMware o BlueXP , queste applicazioni continueranno a essere gestite da esse. Utilizzando la protezione dal ransomware di BlueXP , puoi anche applicare una policy di rilevamento del ransomware a questi carichi di lavoro.
-** Se una policy di rilevamento del ransomware viene gestita da protezione autonoma dal ransomware (ARP) e FPolicy in ONTAP, quei workload sono protetti e continueranno a essere gestiti da ARP e FPolicy.
+** Se una policy di rilevamento del ransomware viene gestita da protezione autonoma dal ransomware (ARP o ARP/ai, a seconda della versione di ONTAP) e FPolicy in ONTAP, questi workload sono protetti e continueranno a essere gestiti da ARP e FPolicy.
 
 
 
+
+
+NOTE: Le destinazioni di backup non sono disponibili per i workload in Amazon FSX per NetApp ONTAP. Esegui le operazioni di backup usando il servizio di backup FSX per ONTAP. Imposta policy di backup per i workload in FSX per ONTAP in AWS, non nella protezione dal ransomware BlueXP . Le policy di backup appaiono nella protezione ransomware BlueXP  e rimangono invariate da AWS.
 
 *Quali policy sono richieste in una strategia di protezione dal ransomware?*
 
@@ -83,7 +86,7 @@ image:screen-protection.png["Pagina di protezione"]
 
 
 
-NOTE: Per i workload che hanno già una policy di protezione con il servizio di backup e recovery di SnapCenter o BlueXP, non puoi modificare la data Protection. Per questi workload, il ransomware BlueXP abilita la protezione autonoma dal ransomware e/o la protezione FPolicy, se sono già attivati in altri servizi. Ulteriori informazioni su https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione ransomware autonoma"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup e ripristino BlueXP"^]e https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy di ONTAP"^].
+NOTE: Per i workload che hanno già una policy di protezione con il servizio di backup e recovery di SnapCenter o BlueXP, non puoi modificare la data Protection. Per questi workload, il ransomware BlueXP  abilita la protezione autonoma dal ransomware e la protezione FPolicy se sono già attivati in altri servizi. Ulteriori informazioni su https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione ransomware autonoma"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup e ripristino BlueXP"^]e https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy di ONTAP"^].
 
 
 
@@ -93,7 +96,7 @@ La pagina protezione mostra le seguenti informazioni sulla protezione del carico
 
 *Stato di protezione*: Un carico di lavoro può mostrare uno dei seguenti stati di protezione per indicare se un criterio è applicato o meno:
 
-* *Protetto*: Viene applicato un criterio. ARP è abilitato su tutti i volumi correlati al carico di lavoro.
+* *Protetto*: Viene applicato un criterio. ARP (o ARP/ai a seconda della versione di ONTAP) è abilitato su tutti i volumi correlati al carico di lavoro.
 * *A rischio*: Non viene applicata alcuna politica. Se un carico di lavoro non ha una policy di rilevamento primaria abilitata, è "a rischio" anche se ha una policy di backup e snapshot attivate.
 * *In corso*: È in corso l'applicazione di un criterio, ma non è ancora stato completato.
 * *Non riuscito*: Un criterio è applicato ma non funziona.

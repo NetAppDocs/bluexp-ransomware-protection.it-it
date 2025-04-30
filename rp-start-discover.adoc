@@ -57,7 +57,7 @@ image:screen-discover-workloads1.png["Screenshot della rilevazione dei carichi d
 Viene visualizzato un elenco degli ambienti di lavoro.
 
 +
-image:screen-discover-workloads-select-no-autodiscovery.png["Screenshot della rilevazione dei carichi di lavoro"]
+image:screen-discover-workloads-select.png["Screenshot della rilevazione dei carichi di lavoro"]
 
 . Selezionare gli ambienti di lavoro in cui si desidera rilevare i carichi di lavoro o selezionare la casella nella parte superiore della tabella per rilevare i carichi di lavoro in tutti gli ambienti rilevati.
 . Selezionare *Discover*.

@@ -105,6 +105,9 @@ Per proteggere questi workload, è necessario aggiungere una destinazione di bac
 * Microsoft Azure
 
 
+
+NOTE: Le destinazioni di backup non sono disponibili per i workload in Amazon FSX per NetApp ONTAP. Esegui le operazioni di backup usando il servizio di backup FSX per ONTAP.
+
 È possibile aggiungere una destinazione di backup in base a un'azione consigliata dal Dashboard o accedendo all'opzione Impostazioni del menu.
 
 
