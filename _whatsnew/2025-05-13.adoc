@@ -21,4 +21,4 @@ Durante il flusso di lavoro di rilevamento, la protezione ransomware BlueXP  ri
 
 È possibile scaricare i risultati del processo di rilevamento dopo il rilevamento.
 
-Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discovery.html["Rileva i carichi di lavoro nella protezione dal ransomware di BlueXP"].
+Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Rileva i carichi di lavoro nella protezione dal ransomware di BlueXP"].
