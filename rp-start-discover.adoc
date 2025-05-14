@@ -17,7 +17,7 @@ Per utilizzare la protezione dal ransomware di BlueXP, il servizio deve prima ri
 La protezione dal ransomware di BlueXP valuta applicazioni MySQL, applicazioni Oracle, datastore VMware e condivisioni di file.
 
 
-NOTE: Non verranno rilevati carichi di lavoro con volumi che utilizzano FlexGroup o iSCSI. I carichi di lavoro su Amazon FSX per NetApp ONTAP o su Azure NetApp Files non sono supportati. Report di protezione ransomware BlueXP  su volumi non supportati sulla Dashboard dopo il processo di rilevamento.
+NOTE: Non verranno rilevati carichi di lavoro con volumi che utilizzano FlexGroup o iSCSI. I carichi di lavoro su Azure NetApp Files non sono supportati. Il servizio rileva e visualizza le configurazioni dell'ambiente di lavoro supportate e non supportate.
 
 Il servizio valuta il livello di protezione esistente, incluse le opzioni di protezione di backup correnti, le copie Snapshot e le opzioni di protezione autonoma da ransomware NetApp. In base alla valutazione, il servizio consiglia quindi come migliorare la tua protezione dal ransomware.
 
@@ -25,6 +25,7 @@ Il servizio valuta il livello di protezione esistente, incluse le opzioni di pro
 
 * All'interno di ogni connettore, seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro. Questa funzionalità può essere utile se si desidera proteggere carichi di lavoro specifici del proprio ambiente e non di altri.
 * Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza.
+* Scoprite nuovi ambienti di lavoro.
 
 
 
@@ -43,35 +44,21 @@ image:screen-landing.png["Screenshot della landing page per la protezione dal ra
 
 . Dalla pagina iniziale, selezionare *inizia rilevando i carichi di lavoro*.
 +
-Il servizio trova gli ambienti di lavoro nei connettori BlueXP .
+Il servizio trova ambienti di lavoro supportati e non supportati. Questo processo potrebbe richiedere alcuni minuti.
 
 +
+image:screen-discover-workloads-unsupported.png["Screenshot della rilevazione dei carichi di lavoro"]
 
-TIP: Questo processo potrebbe richiedere alcuni minuti.
-
-+
-image:screen-discover-workloads1.png["Screenshot della rilevazione dei carichi di lavoro"]
-
-. Per rilevare i carichi di lavoro per un connettore specifico, selezionare *trova nuovi ambienti di lavoro* accanto al connettore in cui si desidera rilevare i carichi di lavoro.
-+
-Viene visualizzato un elenco degli ambienti di lavoro.
-
-+
-image:screen-discover-workloads-select.png["Screenshot della rilevazione dei carichi di lavoro"]
-
-. Selezionare gli ambienti di lavoro in cui si desidera rilevare i carichi di lavoro o selezionare la casella nella parte superiore della tabella per rilevare i carichi di lavoro in tutti gli ambienti rilevati.
+. Per rilevare i carichi di lavoro per un connettore specifico, selezionare *Seleziona ambienti di lavoro* accanto al connettore in cui si desidera rilevare i carichi di lavoro.
+. Seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro.
 . Selezionare *Discover*.
 +
-Il servizio rileva i dati del carico di lavoro solo per i connettori con ambienti di lavoro selezionati.
+Il servizio rileva i dati del carico di lavoro solo per i connettori con ambienti di lavoro selezionati. Questo processo potrebbe richiedere alcuni minuti.
 
 +
+image:screen-discover-workloads-unsupported-collected.png["Screenshot dei carichi di lavoro rilevati"]
 
-TIP: Questo processo potrebbe richiedere alcuni minuti.
-
-+
-image:screen-discover-workloads-found2.png["Screenshot dei carichi di lavoro rilevati"]
-
-. Per scaricare l'elenco dei carichi di lavoro rilevati, selezionare *Scarica risultati (CSV)*.
+. Per scaricare l'elenco dei carichi di lavoro rilevati, selezionare *Scarica risultati*.
 . Per visualizzare la dashboard di protezione ransomware BlueXP , selezionare *Vai alla dashboard*.
 +
 La Dashboard mostra lo stato di salute della data Protection. Il numero di workload a rischio o protetti aumenta in base ai workload appena rilevati.
@@ -110,4 +97,6 @@ Se sono già stati rilevati ambienti di lavoro, è possibile rilevare eventuali 
 
 TIP: Questo processo potrebbe richiedere alcuni minuti, come indicato da un'icona di caricamento in corso.
 
+. Il servizio rileva ambienti di lavoro supportati e non supportati. Ci sono molti motivi per cui il servizio non supporta un ambiente di lavoro, ad esempio, la versione di ONTAP nell'ambiente di lavoro potrebbe essere inferiore alla versione richiesta. Quando si passa con il mouse su un ambiente di lavoro non supportato, viene visualizzata una descrizione comandi. Seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro.
+. Selezionare *Discover*.
 

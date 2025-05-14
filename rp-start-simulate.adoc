@@ -33,9 +33,14 @@ Viene visualizzata la pagina Configura esercitazione pronta.
 +
 image:screen-settings-alert-drill-configure.png["Configurare la pagina di preparazione"]
 
-. Selezionare il connettore BlueXP  che si desidera utilizzare per il drill-down.
-. Selezionare un ambiente di lavoro di prova.
-. Immettere il nome di un nuovo carico di lavoro di test da creare.
+. Effettuare le seguenti operazioni:
++
+.. Selezionare il connettore BlueXP  che si desidera utilizzare per il drill-down.
+.. Selezionare un ambiente di lavoro di prova.
+.. Seleziona una SVM per il test dello storage.
+.. Immettere il nome di un nuovo carico di lavoro di test da creare. Non includere trattini nel nome.
+
+
 . Selezionare *Salva*.
 
 
