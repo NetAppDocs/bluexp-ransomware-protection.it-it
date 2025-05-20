@@ -16,7 +16,7 @@ summary: Gli attacchi ransomware possono costare tempo di business, risorse e re
 [role="lead"]
 Gli attacchi ransomware possono bloccare l'accesso ai dati e gli hacker possono chiedere un riscatto in cambio del rilascio o della decrittografia dei dati. Secondo IDC, non è raro che le vittime del ransomware subiscano diversi attacchi ransomware. L'attacco può interrompere l'accesso ai tuoi dati tra un giorno e diverse settimane.
 
-La protezione dal ransomware di BlueXP è un servizio per proteggere i tuoi dati dai ransomware. Il servizio protegge i carichi di lavoro basati su applicazioni dei datastore Oracle, MySQL, VM e file share su storage NAS on-premise (utilizzando i protocolli NFS e CIFS), oltre a Cloud Volumes ONTAP per Amazon Web Services, Cloud Volumes ONTAP per Google Cloud e Cloud Volumes ONTAP per Microsoft Azure nelle organizzazioni BlueXP . Il servizio esegue il backup dei dati su Amazon Web Services, Google Cloud, il cloud storage Microsoft Azure e NetApp StorageGRID.
+La protezione ransomware di BlueXP  è un servizio che protegge i tuoi dati dagli attacchi ransomware. Il servizio protegge i carichi di lavoro basati su applicazioni dei datastore Oracle, MySQL, VM e file share su storage NAS on-premise (utilizzando i protocolli NFS e CIFS), oltre a Cloud Volumes ONTAP per Amazon Web Services, Cloud Volumes ONTAP per Google Cloud e Cloud Volumes ONTAP per Microsoft Azure nelle organizzazioni BlueXP . Il servizio esegue il backup dei dati su Amazon Web Services, Google Cloud, il cloud storage Microsoft Azure e NetApp StorageGRID.
 
 
 
