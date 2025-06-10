@@ -14,7 +14,9 @@ summary: Inizia con la protezione dal ransomware di BlueXP configurando licenze.
 [role="lead"]
 Con la protezione dal ransomware di BlueXP, puoi usare piani di licenza diversi.
 
-È possibile utilizzare i seguenti tipi di licenza:
+*Ruolo BlueXP obbligatorio* Ruolo di amministratore dell'organizzazione, di amministratore di cartelle o di progetti.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
+
+*Tipi di licenza* È possibile utilizzare i seguenti tipi di licenza:
 
 * Iscriviti per una prova gratuita di 30 giorni.
 * Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace o Azure Marketplace.

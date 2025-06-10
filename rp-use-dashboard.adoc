@@ -4,7 +4,7 @@ permalink: rp-use-dashboard.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: La dashboard della protezione dal ransomware di BlueXP fornisce informazioni sulla salute della protezione dei workload. È possibile determinare rapidamente i workload a rischio, protetti o coinvolti in un incidente o nel ripristino, nonché misurare la protezione tenendo conto della quantità di storage protetto o a rischio. È inoltre possibile utilizzare la dashboard per esaminare e agire in base ai consigli sulla protezione. 
 ---
-= Visualizza lo stato dei carichi di lavoro con un'occhiata utilizzando la dashboard
+= Monitora lo stato del carico di lavoro utilizzando la dashboard di protezione ransomware BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,7 +14,9 @@ summary: La dashboard della protezione dal ransomware di BlueXP fornisce informa
 [role="lead"]
 La dashboard per la protezione dal ransomware di BlueXP fornisce informazioni immediate sulla salute della protezione dei workload. Puoi determinare rapidamente i workload a rischio o protetti, identificare i workload che ne sono influenzati da un incidente o nel recovery e misurare il grado di protezione tenendo conto della quantità di storage protetto o a rischio.
 
-Puoi anche utilizzare la dashboard per esaminare e agire in base ai consigli sulla protezione, accedere alle impostazioni globali, scaricare i report e accedere a questa documentazione tecnica.
+Utilizzare la Dashboard per rivedere i suggerimenti sulla protezione, modificare le impostazioni, scaricare report e visualizzare la documentazione.
+
+*Ruolo BlueXP obbligatorio* Ruolo di amministratore dell'organizzazione, amministratore di cartelle o progetti, amministratore della protezione ransomware o visualizzatore della protezione ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
 
 
 
@@ -23,19 +25,19 @@ Puoi anche utilizzare la dashboard per esaminare e agire in base ai consigli sul
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
 +
-Dopo il rilevamento, la Dashboard mostra la salute della data Protection dei carichi di lavoro.
+Dopo che BlueXP rileva i carichi di lavoro, la Dashboard visualizza lo stato di protezione dei dati dei carichi di lavoro.
 
 +
 image:screen-dashboard2.png["Pagina del dashboard"]
 
 . Dal Dashboard, è possibile eseguire le seguenti azioni in ciascuno dei riquadri:
 +
-** *Protezione dei dati del carico di lavoro*: Fare clic su *Visualizza tutto* per visualizzare tutti i carichi di lavoro a rischio o protetti nella pagina protezione. I carichi di lavoro sono a rischio quando i livelli di protezione non corrispondono a una policy di protezione. Fare riferimento a. link:rp-use-protect.html["Proteggere i carichi di lavoro"].
+** *Protezione dei dati del carico di lavoro*: seleziona *Visualizza tutto* per visualizzare tutti i carichi di lavoro a rischio o protetti nella pagina Protezione. I carichi di lavoro sono a rischio quando i livelli di protezione non corrispondono a una policy di protezione. Fare riferimento alla link:rp-use-protect.html["Proteggere i carichi di lavoro"].
 +
 
-TIP: Fare clic sulla nota "i" per visualizzare i suggerimenti su questi dati. Per aumentare il limite del carico di lavoro, fare clic su *aumenta limite carico di lavoro* all'interno di questa nota. Facendo clic su questo pulsante si accede alla pagina di supporto BlueXP , in cui è possibile creare un ticket per il caso.
+TIP: Seleziona la nota "i" per visualizzare suggerimenti su questi dati. Per aumentare il limite del carico di lavoro, seleziona *Aumenta limite del carico di lavoro* all'interno di questa nota "i". Facendo clic su questo pulsante si accede alla pagina di supporto BlueXP , in cui è possibile creare un ticket per il caso.
 
-** *Avvisi e recupero dati del carico di lavoro*: Fare clic su *Visualizza tutto* per visualizzare gli incidenti attivi che hanno influito sul carico di lavoro, sono pronti per il ripristino dopo che gli incidenti sono stati neutralizzati o sono in fase di recupero. Fare riferimento a. link:rp-use-alert.html["Rispondere a un avviso rilevato"].
+** *Avvisi e ripristino dei dati del carico di lavoro*: seleziona *Visualizza tutto* per visualizzare gli incidenti attivi che hanno avuto un impatto sul tuo carico di lavoro, sono pronti per il ripristino dopo la neutralizzazione degli incidenti o sono in fase di ripristino. Fare riferimento alla link:rp-use-alert.html["Rispondere a un avviso rilevato"].
 +
 *** Un incidente è classificato in uno dei seguenti stati:
 +
@@ -61,15 +63,15 @@ TIP: Fare clic sulla nota "i" per visualizzare i suggerimenti su questi dati. Pe
 
 
 
-** *Azioni consigliate*: Per aumentare la protezione, rivedere ogni raccomandazione e fare clic su *Rivedi e correggi*.
+** *Azioni consigliate*: per aumentare la protezione, rivedi ogni consiglio e seleziona *Rivedi e correggi*.
 +
-Fare riferimento a. link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Rivedere i consigli sulla protezione sulla dashboard"] oppure link:rp-use-protect.html["Proteggere i carichi di lavoro"].
+Vedere link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Esaminare i suggerimenti di protezione sulla Dashboard"] O link:rp-use-protect.html["Proteggere i carichi di lavoro"] .
 
 +
-Tutti i suggerimenti aggiunti dall'ultima volta che si è visitato il Dashboard sono indicati con "nuovo" per almeno 24 ore. Le azioni sono elencate in ordine di priorità, con le più importanti in alto. È possibile rivedere e agire su ciascuno di essi o eliminarlo.
+BlueXP contrassegna i nuovi consigli ricevuti dalla tua ultima visita alla Dashboard con la dicitura "Nuovo" per 24 ore. Le azioni vengono visualizzate in ordine di priorità, con la più importante in cima. Puoi rivedere, agire o ignorare ogni consiglio.
 
 +
-Il numero totale di azioni non include le azioni respinte.
+Il numero totale di azioni non include le azioni ignorate.
 
 ** *Dati del carico di lavoro*: Monitoraggio delle modifiche apportate alla copertura di protezione negli ultimi 7 giorni.
 ** *Backup del carico di lavoro*: Monitoraggio delle modifiche apportate ai backup dei carichi di lavoro creati dal servizio che non sono riusciti o sono stati completati correttamente negli ultimi 7 giorni.
@@ -152,12 +154,12 @@ TIP: È possibile modificare in un secondo momento un elemento da liquidare in u
 
 È possibile scaricare i file CSV da una delle opzioni del menu principale:
 
-* *Protezione*: Contiene lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale protetto e a rischio.
+* *Protezione*: contiene lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale di carichi di lavoro contrassegnati da BlueXP come protetti o a rischio.
 * *Avvisi*: Include lo stato e i dettagli di tutti gli avvisi, compreso il numero totale di avvisi e istantanee automatiche.
-* *Recovery*: Include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro contrassegnati come "Ripristino necessario", "in corso", "Ripristino non riuscito" e "ripristinato correttamente".
+* *Ripristino*: include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro che BlueXP contrassegna come "Ripristino necessario", "In corso", "Ripristino non riuscito" e "Ripristinato correttamente".
 
 
-Se si scaricano file CSV dalla pagina protezione, Avvisi o Ripristino, solo i dati contenuti in tale pagina vengono inclusi nel file CSV.
+Scaricando un file CSV da una pagina vengono inclusi solo i dati di quella pagina.
 
 I file CSV includono i dati per tutti i carichi di lavoro su tutti gli ambienti di lavoro BlueXP.
 

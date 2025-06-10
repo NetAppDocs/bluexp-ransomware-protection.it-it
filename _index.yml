@@ -42,6 +42,9 @@ indexpage:
       url: "/rp-use-dashboard.html"
     - title: Proteggere i carichi di lavoro
       url: "/rp-use-protect.html"
+    - title: Eseguire la scansione delle informazioni di identificazione personale
+        con la classificazione BlueXP 
+      url: "/rp-use-protect-classify.html"
     - title: Rispondere a un avviso rilevato
       url: "/rp-use-alert.html"
     - title: Ripristino in seguito a un attacco

@@ -35,7 +35,7 @@ sidebar:
       url: "/rp-start-licenses.html"
     - title: Rileva i carichi di lavoro
       url: "/rp-start-discover.html"
-    - title: Simula un attacco ransomware
+    - title: Simula un attacco ransomware con un'esercitazione di preparazione
       url: "/rp-start-simulate.html"
     - title: Configura backup, rilevamento delle minacce e simulazioni degli attacchi
         in Impostazioni
@@ -61,10 +61,6 @@ sidebar:
     - title: Scarica i report
       url: "/rp-use-reports.html"
   - section: support
-  - title: Riferimento
-    entries:
-    - title: Privileges per il controllo degli accessi in base al ruolo
-      url: "/rp-reference-roles.html"
   - title: Note legali
     url: "/legal-notices.html"
 product-family:

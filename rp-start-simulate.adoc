@@ -4,7 +4,7 @@ permalink: rp-start-simulate.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
 summary: 'Condurre un"indagine di preparazione al ransomware simulando un attacco ransomware su un carico di lavoro di esempio appena creato. Quindi, esaminare l"attacco simulato e recuperare il carico di lavoro del campione. Puoi eseguire più volte un"analisi di fattibilità del ransomware.' 
 ---
-= Simula un attacco ransomware conducendo un sondaggio per la preparazione
+= Esegui un'esercitazione di preparazione agli attacchi ransomware nella protezione ransomware BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,23 +12,36 @@ summary: 'Condurre un"indagine di preparazione al ransomware simulando un attacc
 
 
 [role="lead"]
-Condurre un'indagine di preparazione al ransomware simulando un attacco ransomware su un carico di lavoro di esempio appena creato. Quindi, esaminare l'attacco simulato e recuperare il carico di lavoro del campione. Questa funzionalità ti aiuta a essere preparato in caso di un attacco ransomware effettivo, testando i processi di notifica, risposta e recovery degli avvisi. Puoi eseguire più volte un'analisi di fattibilità del ransomware.
+Esegui un'esercitazione di preparazione ad un attacco ransomware simulando un attacco su un nuovo carico di lavoro di esempio. Esamina l'attacco simulato e ripristina il carico di lavoro. Utilizza questa funzionalità per testare le notifiche di avviso, la risposta e il ripristino. Esegui l'esercitazione tutte le volte che è necessario.
 
 
-TIP: I dati del carico di lavoro reale non saranno influenzati.
+TIP: I dati del tuo carico di lavoro reale non subiscono alcun impatto.
+
+È possibile eseguire esercitazioni di preparazione sui carichi di lavoro NFS e CIFS (SMB).
 
 
 
 == Configurare un'indagine per la preparazione agli attacchi ransomware
 
-Prima di eseguire una simulazione, è necessario configurare un drill utilizzando la pagina Impostazioni. È possibile accedere facilmente alla pagina Impostazioni dall'opzione azioni accanto al menu principale.
+Prima di eseguire una simulazione, imposta un'esercitazione nella pagina Impostazioni. Accedi alla pagina Impostazioni dall'opzione Azioni nel menu in alto.
+
+Sarà necessario immettere un nome utente e una password nelle seguenti situazioni:
+
+* Se si sono verificate modifiche al nome utente o alla password per la VM di archiviazione selezionata in precedenza
+* Se selezioni una VM di archiviazione CIFS (SMB) diversa
+* Se si immette un nome di carico di lavoro di prova diverso
+
+
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
 
 .Fasi
-. Dal menu di protezione dal ransomware BlueXP, seleziona il menu Vertical (verticale) image:button-actions-vertical.png["Azioni verticali"]... opzione in alto a destra.
-. Dal menu a discesa, selezionare *Pronta drill* o *Impostazioni*.
+. Dal menu di protezione ransomware BlueXP, seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.
++
+image:screen-dashboard3.png["Pagina della dashboard che mostra il pulsante di esercitazione sulla preparazione all'esecuzione"]
+
 . Nella scheda di esercitazione pronta nella pagina Impostazioni, selezionare *Configura*.
 +
-Viene visualizzata la pagina Configura esercitazione pronta.
+BlueXP visualizza la pagina di esercitazione sulla configurazione della prontezza.
 
 +
 image:screen-settings-alert-drill-configure.png["Configurare la pagina di preparazione"]
@@ -38,6 +51,7 @@ image:screen-settings-alert-drill-configure.png["Configurare la pagina di prepar
 .. Selezionare il connettore BlueXP  che si desidera utilizzare per il drill-down.
 .. Selezionare un ambiente di lavoro di prova.
 .. Seleziona una SVM per il test dello storage.
+.. Se hai selezionato una VM di archiviazione CIFS (SMB), verranno visualizzati i campi Nome utente e Password. Inserisci il nome utente e la password per la VM di archiviazione.
 .. Immettere il nome di un nuovo carico di lavoro di test da creare. Non includere trattini nel nome.
 
 
@@ -53,15 +67,20 @@ TIP: È possibile modificare la configurazione della sessione di preparazione in
 
 Dopo aver configurato il drill-down, è possibile avviare il drill-down.
 
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
+
 Quando inizi la sessione di preparazione, la protezione dal ransomware BlueXP  ignora la modalità di apprendimento e avvia il sondaggio in modalità attiva. Lo stato di rilevamento del carico di lavoro è attivo.
 
 
-TIP: Un carico di lavoro può avere uno stato di rilevamento ransomware *modalità di apprendimento* che indica che è stata recentemente assegnata una policy di rilevamento ransomware al carico di lavoro e che il servizio sta analizzando i workload. Uno stato di rilevamento *attivo* indica che è stato assegnato un criterio di protezione dal rilevamento ransomware.
+TIP: Un carico di lavoro può avere uno stato di *Modalità di apprendimento* di rilevamento ransomware quando di recente è stato assegnato un criterio di rilevamento e il servizio esegue la scansione dei carichi di lavoro.
 
 .Fasi
 . Effettuare una delle seguenti operazioni:
 +
-** Dal menu Impostazioni protezione ransomware BlueXP , seleziona *esercitazione sulla preparazione*, quindi nella pagina di esercitazione sulla preparazione, seleziona *Avvia*.
+** Dal menu di protezione ransomware BlueXP, seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.
++
+image:screen-dashboard3.png["Pagina della dashboard che mostra il pulsante di esercitazione sulla preparazione all'esecuzione"]
+
 ** OPPURE, nella scheda preparazione, nella pagina Impostazioni, selezionare *Avvia*.
 
 
@@ -77,10 +96,12 @@ NOTE: Una volta avviato il drill-down, non è possibile modificare la configuraz
 
 Verificare la propria disponibilità rispondendo a un avviso di esercitazione sulla disponibilità.
 
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
+
 .Fasi
 . Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
 +
-Viene visualizzata la pagina Avvisi. Nella colonna ID avviso, accanto all'ID viene visualizzato "Pronto drill".
+BlueXP visualizza la pagina Avvisi. Nella colonna ID avviso, accanto all'ID è visibile la dicitura "Esercitazione di preparazione".
 
 +
 image:screen-alerts-readiness.png["Pagina degli avvisi che mostra l'avviso di preparazione"]
@@ -120,7 +141,9 @@ Se il tipo indica che un utente è sospetto di attività dannosa, rivedere il no
 
 == Ripristinare il carico di lavoro del test
 
-Dopo aver esaminato l'avviso di preparazione, potrebbe essere necessario ripristinare il carico di lavoro del test.
+Dopo aver esaminato l'avviso di esercitazione di preparazione, ripristinare il carico di lavoro del test, se necessario.
+
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
 
 .Fasi
 . Tornare alla pagina Dettagli avviso.
@@ -141,10 +164,10 @@ Dopo aver esaminato l'avviso di preparazione, potrebbe essere necessario riprist
 
 . Nella pagina Ripristina revisione, selezionare *Ripristina*.
 +
-La pagina Recovery (Ripristino) mostra lo stato del ripristino della preparazione come "in corso".
+BlueXP visualizza lo stato del ripristino del drill di prontezza come "In corso" nella pagina Ripristino.
 
 +
-Al termine del ripristino, lo stato del carico di lavoro cambia in *ripristinato*.
+Una volta completato il ripristino, BlueXP modifica lo stato del carico di lavoro in *Ripristinato*.
 
 . Esaminare il carico di lavoro ripristinato.
 
@@ -156,7 +179,9 @@ TIP: Per informazioni dettagliate sul processo di ripristino, vedere link:rp-use
 
 == Modificare lo stato degli avvisi dopo l'esercitazione di preparazione
 
-Dopo aver esaminato l'avviso di verifica della disponibilità e aver ripristinato il carico di lavoro, potrebbe essere necessario modificare lo stato dell'avviso.
+Dopo aver esaminato l'avviso di esercitazione di prontezza e aver ripristinato il carico di lavoro, modificare lo stato dell'avviso, se necessario.
+
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
 
 .Fasi
 . Tornare alla pagina Dettagli avviso.
@@ -178,6 +203,8 @@ IMPORTANT: Dopo aver licenziato un attacco, non è possibile restituirlo. Se eli
 == Esaminare i rapporti sulla esercitazione sulla disponibilità
 
 Al termine dell'esercitazione di preparazione, è possibile rivedere e salvare un rapporto sull'esercitazione.
+
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti, amministratore della protezione da ransomware o ruolo di visualizzatore di ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
 
 .Fasi
 . Dal menu di protezione dal ransomware di BlueXP, seleziona *Report*.

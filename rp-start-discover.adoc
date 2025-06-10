@@ -14,14 +14,18 @@ summary: Durante il rilevamento, la protezione dal ransomware BlueXP analizza tu
 [role="lead"]
 Per utilizzare la protezione dal ransomware di BlueXP, il servizio deve prima rilevare i dati. Durante la scoperta, la protezione anti-ransomware BlueXP  analizza tutti i volumi e i file negli ambienti di lavoro su tutti i connettori BlueXP  e i progetti all'interno di un'organizzazione.
 
-La protezione dal ransomware di BlueXP valuta applicazioni MySQL, applicazioni Oracle, datastore VMware e condivisioni di file.
+*Ruolo BlueXP obbligatorio* Ruolo di amministratore dell'organizzazione, amministratore di cartelle o progetti o amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
+
+*Cosa scopre il servizio?* La protezione dal ransomware di BlueXP valuta applicazioni MySQL, applicazioni Oracle, datastore VMware e condivisioni di file.
 
 
-NOTE: Non verranno rilevati carichi di lavoro con volumi che utilizzano FlexGroup o iSCSI. I carichi di lavoro su Azure NetApp Files non sono supportati. Il servizio rileva e visualizza le configurazioni dell'ambiente di lavoro supportate e non supportate.
+NOTE: Il servizio non rileva carichi di lavoro con volumi che utilizzano FlexGroup o iSCSI.
 
-Il servizio valuta il livello di protezione esistente, incluse le opzioni di protezione di backup correnti, le copie Snapshot e le opzioni di protezione autonoma da ransomware NetApp. In base alla valutazione, il servizio consiglia quindi come migliorare la tua protezione dal ransomware.
+La protezione ransomware BlueXP rileva e visualizza nella Dashboard sia le configurazioni dell'ambiente di lavoro supportate che quelle non supportate.
 
-È possibile effettuare le seguenti operazioni:
+Il servizio verifica la protezione di backup, le copie snapshot e le opzioni di protezione autonoma da ransomware di NetApp. Quindi, suggerisce soluzioni per migliorare la protezione da ransomware.
+
+*Come puoi scoprire i carichi di lavoro?* È possibile effettuare le seguenti operazioni:
 
 * All'interno di ogni connettore, seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro. Questa funzionalità può essere utile se si desidera proteggere carichi di lavoro specifici del proprio ambiente e non di altri.
 * Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza.
@@ -37,10 +41,14 @@ All'interno di ogni connettore, seleziona gli ambienti di lavoro in cui desideri
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
 +
-Se è la prima volta che accedi a questo servizio, viene visualizzata la pagina iniziale.
+Se è il primo accesso, verrà visualizzata la landing page.
 
 +
 image:screen-landing.png["Screenshot della landing page per la protezione dal ransomware BlueXP"]
+
++
+
+NOTE: Se hai avviato la prova gratuita, l'etichetta del pulsante *Inizia la prova gratuita di 30 giorni* cambia in *Inizia rilevando i carichi di lavoro*.
 
 . Dalla pagina iniziale, selezionare *inizia rilevando i carichi di lavoro*.
 +
@@ -61,10 +69,10 @@ image:screen-discover-workloads-unsupported-collected.png["Screenshot dei carich
 . Per scaricare l'elenco dei carichi di lavoro rilevati, selezionare *Scarica risultati*.
 . Per visualizzare la dashboard di protezione ransomware BlueXP , selezionare *Vai alla dashboard*.
 +
-La Dashboard mostra lo stato di salute della data Protection. Il numero di workload a rischio o protetti aumenta in base ai workload appena rilevati.
+La dashboard mostra lo stato di salute della protezione dei dati. Il numero di carichi di lavoro a rischio o protetti viene aggiornato man mano che vengono scoperti nuovi carichi di lavoro.
 
 +
-image:screen-dashboard.png["Dashboard della protezione dal ransomware di BlueXP"]
+image:screen-dashboard3.png["Dashboard della protezione dal ransomware di BlueXP"]
 
 +
 link:rp-use-dashboard.html["Scopri cosa ti mostra il dashboard."]
@@ -80,14 +88,14 @@ Se sono già stati selezionati ambienti di lavoro per il rilevamento, dalla dash
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
 . Per identificare la data dell'ultima ricerca, dal Dashboard, osservare la data e l'ora accanto all'icona *Aggiorna* in alto a destra.
-. Dal dashboard, selezionare l'icona *Aggiorna* che avvia il rilevamento di nuovi carichi di lavoro.
+. Dalla Dashboard, seleziona l'icona *Aggiorna* per trovare nuovi carichi di lavoro.
 
 
 
 
 == Scoprite nuovi ambienti di lavoro
 
-Se sono già stati rilevati ambienti di lavoro, è possibile rilevare eventuali ambienti di lavoro o ambienti di lavoro appena creati che non erano stati precedentemente selezionati durante i processi di rilevamento precedenti.
+Se hai già scoperto ambienti di lavoro, puoi trovarne di nuovi o non selezionati in precedenza.
 
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
@@ -95,8 +103,8 @@ Se sono già stati rilevati ambienti di lavoro, è possibile rilevare eventuali 
 . Nella scheda di rilevamento del carico di lavoro, selezionare *rileva carichi di lavoro*.
 +
 
-TIP: Questo processo potrebbe richiedere alcuni minuti, come indicato da un'icona di caricamento in corso.
+TIP: Questo processo potrebbe richiedere alcuni minuti e un'icona di caricamento ne mostra l'avanzamento.
 
-. Il servizio rileva ambienti di lavoro supportati e non supportati. Ci sono molti motivi per cui il servizio non supporta un ambiente di lavoro, ad esempio, la versione di ONTAP nell'ambiente di lavoro potrebbe essere inferiore alla versione richiesta. Quando si passa con il mouse su un ambiente di lavoro non supportato, viene visualizzata una descrizione comandi. Seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro.
+. Il servizio rileva ambienti di lavoro supportati e non supportati. Il servizio non supporta un ambiente di lavoro se la sua versione ONTAP è inferiore a quella richiesta. Quando si passa con il mouse su un ambiente di lavoro non supportato, viene visualizzata una descrizione comandi. Seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro.
 . Selezionare *Discover*.
 

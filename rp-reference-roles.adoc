@@ -23,14 +23,10 @@ Il servizio utilizza i ruoli seguenti, specifici per la protezione ransomware Bl
 La piattaforma BlueXP  per tutti i servizi BlueXP  utilizza i seguenti tipi di ruoli:
 
 * *I ruoli della piattaforma* consentono di gestire gli utenti, assegnarli alle risorse e assegnare loro ruoli insieme ad altre azioni a livello di piattaforma.
-+
-
-TIP: Per il rilevamento nella protezione ransomware BlueXP , devi avere il ruolo *Amministratore dell'organizzazione* oltre al ruolo *Amministratore della protezione ransomware*.
-
 * *I ruoli dei servizi dati* sono limitati solo a un servizio dati specifico. È possibile disporre di diversi ruoli per i servizi dati in base al proprio lavoro. La protezione ransomware BlueXP  è uno dei servizi dati di BlueXP .
 
 
-Altri ruoli delle piattaforme BlueXP  sono considerati spettatori nella protezione dal ransomware di BlueXP . Ad esempio, il ruolo *Organisation Viewer* ti consente di visualizzare i piani di protezione, ma non ti permette di eseguire alcuna azione nella protezione ransomware di BlueXP .
+Altri ruoli delle piattaforme BlueXP  sono considerati spettatori nella protezione dal ransomware di BlueXP . Ad esempio, il ruolo *Visualizzatore protezione ransomware* consente di visualizzare i piani di protezione, ma non di eseguire alcuna azione nella protezione ransomware BlueXP.
 
 Per informazioni dettagliate su tutti i ruoli della piattaforma BlueXP , vedere https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["La documentazione di installazione e amministrazione di BlueXP "^].
 

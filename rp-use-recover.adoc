@@ -4,7 +4,7 @@ permalink: rp-use-recover.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
 summary: 'Dopo un attacco, la protezione dal ransomware di BlueXP verifica che i dati di backup sullo storage secondario siano puliti, consiglia un recovery point effettivo (RPA) e orchestra il flusso di lavoro per un recovery resistente ai crash.' 
 ---
-= Ripristino in seguito a un attacco ransomware (dopo la neutralizzazione degli incidenti)
+= Recupera da un attacco ransomware (dopo che gli incidenti sono stati neutralizzati) con la protezione ransomware BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -59,6 +59,8 @@ Utilizzando la protezione dal ransomware di BlueXP, l'amministratore dello stora
 
 Lo stato dell'applicazione cambia se necessario per il ripristino. L'applicazione verrà ripristinata allo stato precedente dai file di controllo, se inclusi nel backup. Al termine del ripristino, l'applicazione si apre in modalità LETTURA/SCRITTURA.
 
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
+
 .Fasi
 . Dal menu di protezione dal ransomware BlueXP, seleziona *Recovery*.
 . Esaminare le informazioni sul carico di lavoro nella pagina *Ripristino*.
@@ -90,6 +92,8 @@ TIP: La protezione ransomware di BlueXP identifica il punto di ripristino miglio
 == Ripristino di un carico di lavoro non gestito da SnapCenter
 
 Utilizzando la protezione dal ransomware di BlueXP, l'amministratore dello storage può determinare la modalità migliore per ripristinare i workload dal punto di ripristino consigliato o dal punto di ripristino preferito.
+
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
 
 L'amministratore dello storage di sicurezza può ripristinare i dati a diversi livelli:
 

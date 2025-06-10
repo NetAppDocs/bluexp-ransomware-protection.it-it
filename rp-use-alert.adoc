@@ -4,7 +4,7 @@ permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
 summary: 'Se la protezione ransomware BlueXP  rileva un possibile attacco, viene visualizzato un avviso sulla dashboard per la protezione dal ransomware BlueXP , a indicare un potenziale attacco. Inoltre, il servizio avvia immediatamente l"acquisizione di una copia snapshot. A questo punto, dovresti esaminare il rischio potenziale nella scheda degli avvisi della protezione ransomware di BlueXP.' 
 ---
-= Rispondi a un avviso ransomware rilevato
+= Gestisci gli avvisi ransomware rilevati con la protezione ransomware BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,16 +12,16 @@ summary: 'Se la protezione ransomware BlueXP  rileva un possibile attacco, vien
 
 
 [role="lead"]
-Se la protezione ransomware di BlueXP rileva un possibile attacco, viene visualizzato un avviso nella dashboard di protezione dal ransomware di BlueXP e nelle notifiche di BlueXP, in alto a destra, che indica un potenziale attacco ransomware. Inoltre, il servizio avvia immediatamente l'acquisizione di una copia snapshot. A questo punto, dovresti valutare il rischio potenziale nella scheda *Avvisi* della protezione dal ransomware di BlueXP.
+Quando la protezione ransomware BlueXP rileva un possibile attacco, mostra un avviso nella Dashboard e nell'area Notifiche. Il servizio esegue immediatamente uno snapshot. Esamina il potenziale rischio nella scheda *Avvisi* della protezione ransomware BlueXP.
 
 Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.
 
 
-TIP: Se si decide di ignorare l'avviso, il servizio apprenderà questo comportamento e lo assocerà alle normali operazioni e non avvierà nuovamente un avviso su tale comportamento.
+TIP: Se si ignora l'avviso, il servizio apprende questo comportamento, lo associa alle normali operazioni e non avvia più un avviso.
 
 Per iniziare il ripristino dei dati, contrassegnare l'avviso come pronto per il ripristino in modo che l'amministratore dello storage possa avviare il processo di ripristino.
 
-Ogni avviso potrebbe avere più incidenti su volumi diversi con stati diversi, quindi assicurati di esaminare tutti gli incidenti.
+Ogni avviso potrebbe includere più incidenti con volumi e stati diversi. Esamina tutti gli incidenti.
 
 Il servizio fornisce informazioni denominate _prove_ su ciò che ha causato l'emissione dell'avviso, come le seguenti:
 
@@ -38,7 +38,7 @@ Un avviso è classificato come uno dei seguenti:
 +
 ** Il rilevamento di una nuova estensione non è stato identificato in precedenza e lo stesso comportamento non si ripete abbastanza volte per dichiararla come attacco.
 ** Si osserva un'elevata entropia.
-** Le operazioni di lettura/scrittura/ridenominazione/eliminazione dei file hanno subito un aumento dell'attività del 100% oltre la baseline.
+** L'attività di lettura, scrittura, ridenominazione ed eliminazione dei file è raddoppiata rispetto ai livelli normali.
 
 
 
@@ -51,7 +51,7 @@ Un avviso può avere uno dei seguenti stati:
 * *Inattivo*
 
 
-Un incidente di avviso è classificato in uno dei seguenti stati:
+Un incidente di allerta può avere uno dei seguenti stati:
 
 * *Nuovo*: Tutti gli incidenti sono contrassegnati come "nuovi" quando vengono identificati per la prima volta.
 * *Respinto*: Se sospetti che l'attività non sia un attacco ransomware, puoi cambiare lo stato in "respinto".
@@ -60,8 +60,8 @@ Un incidente di avviso è classificato in uno dei seguenti stati:
 CAUTION: Dopo aver respinto un attacco, non è possibile modificarlo. Se elimini un carico di lavoro, tutte le copie snapshot create automaticamente in risposta al potenziale attacco ransomware verranno eliminate in maniera permanente.
 
 * *Licenziamento*: L'incidente è in fase di licenziamento.
-* *Risolto*: L'incidente è stato mitigato.
-* *Auto Resolved*: Per gli avvisi con priorità bassa, l'incidente viene risolto automaticamente se non è stata intrapresa alcuna azione entro 5 giorni.
+* *Risolto*: l'incidente è stato risolto.
+* *Risoluzione automatica*: per gli avvisi di bassa priorità, l'incidente viene risolto automaticamente se non viene intrapresa alcuna azione entro cinque giorni.
 
 
 
@@ -70,11 +70,13 @@ CAUTION: Dopo aver respinto un attacco, non è possibile modificarlo. Se elimini
 
 Puoi accedere agli avvisi dalla dashboard per la protezione dal ransomware di BlueXP  o dalla scheda *Avvisi*.
 
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti, amministratore della protezione da ransomware o ruolo di visualizzatore di ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
+
 .Fasi
 . Nella dashboard di protezione dal ransomware di BlueXP, consulta il pannello Alerts.
 . Selezionare *Visualizza tutto* in uno degli stati.
-. Fare clic su un avviso per esaminare tutti gli incidenti su ciascun volume per ciascun avviso.
-. Per rivedere gli avvisi aggiuntivi, fare clic su *Alert* nella barra di navigazione in alto a sinistra.
+. Selezionare un avviso per rivedere tutti gli incidenti su ciascun volume per ciascun avviso.
+. Per rivedere altri avvisi, seleziona *Avviso* nel breadcrumb in alto a sinistra.
 . Esaminare gli avvisi nella pagina Avvisi.
 +
 image:screen-alerts.png["Pagina Avvisi"]
@@ -92,7 +94,11 @@ image:screen-alerts.png["Pagina Avvisi"]
 
 == Rileva le attività pericolose e il comportamento anomalo degli utenti
 
-Esaminando la scheda Avvisi, è possibile identificare se vi sono attività dannose. I dettagli visualizzati dipendono dalla modalità di attivazione dell'avviso:
+Esaminando la scheda Avvisi, è possibile identificare se vi sono attività dannose.
+
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
+
+*Quali dettagli appaiono?* I dettagli visualizzati dipendono dalla modalità di attivazione dell'avviso:
 
 * Attivato dalla funzionalità di protezione autonoma dal ransomware in ONTAP. In questo modo viene rilevata un'attività dannosa in base al comportamento dei file nel volume.
 * Attivato dalla sicurezza del carico di lavoro Data Infrastructure Insights. Ciò richiede una licenza per la sicurezza del workload di Insights dell'infrastruttura dati e che sia abilitata nella protezione dal ransomware BlueXP . Questa funzionalità rileva il comportamento anomalo dell'utente nei workload di storage e ti consente di bloccare tale utente da un ulteriore accesso.
@@ -179,7 +185,9 @@ image:screen-alerts-incidents-diiws-diiwspage.png["Esaminare in sicurezza del ca
 
 == Contrassegna gli incidenti ransomware come pronti per il recovery (dopo la neutralizzazione degli incidenti)
 
-Una volta mitigato l'attacco e sei pronto a ripristinare i carichi di lavoro, dovresti comunicare con il tuo team di amministrazione dello storage che i dati sono pronti per il recovery, in modo che possano avviare il processo di recovery.
+Dopo aver fermato l'attacco, informa l'amministratore dell'archiviazione che i dati sono pronti, in modo che possa iniziare il ripristino.
+
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
 
 .Fasi
 . Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
@@ -203,14 +211,16 @@ Dopo aver contrassegnato l'avviso per il ripristino, l'avviso passa dalla scheda
 
 == Elimina gli incidenti che non sono potenziali attacchi
 
-Dopo aver esaminato gli incidenti, è necessario determinare se si tratta di potenziali attacchi. In caso contrario, possono essere respinte.
+Dopo aver esaminato gli incidenti, è necessario determinare se si tratta di potenziali attacchi. Se la condizione precedente non viene rispettata, possono essere licenziati.
 
-Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati. Se si decide di ignorare l'avviso, il servizio apprenderà questo comportamento e lo assocerà alle normali operazioni e non avvierà nuovamente un avviso su tale comportamento.
+Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati. Se si ignora l'avviso, il servizio apprenderà questo comportamento e lo assocerà alle normali operazioni, senza più avviare un avviso per tale comportamento.
 
-Se elimini un carico di lavoro, tutte le copie snapshot create automaticamente in risposta al potenziale attacco ransomware verranno eliminate in maniera permanente.
+Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta a un potenziale attacco ransomware verranno eliminate definitivamente.
 
 
 CAUTION: Se si ignora un avviso, non è possibile ripristinare lo stato in qualsiasi altro stato e non è possibile annullare la modifica.
+
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
 
 .Fasi
 . Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.
@@ -233,7 +243,7 @@ image:screen-alerts-status-edit.png["Pagina Stato modifica avviso"]
 
 . Nella casella Modifica stato, selezionare lo stato *"respinto"*.
 +
-Vengono visualizzate ulteriori informazioni sul carico di lavoro e sulle copie snapshot che verranno eliminate.
+Vengono visualizzate informazioni aggiuntive sul carico di lavoro e sul fatto che le copie degli snapshot sono state eliminate.
 
 . Selezionare *Salva*.
 +
@@ -246,6 +256,8 @@ Lo stato dell'incidente o degli incidenti diventa "respinto".
 == Consente di visualizzare un elenco dei file interessati
 
 Prima di ripristinare un workload dell'applicazione a livello di file, è possibile visualizzare un elenco di file interessati. È possibile accedere alla pagina Avvisi per scaricare un elenco di file interessati. Quindi, utilizzare la pagina di ripristino per caricare l'elenco e scegliere i file da ripristinare.
+
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
 
 .Fasi
 Utilizzare la pagina Avvisi per recuperare l'elenco dei file interessati.
