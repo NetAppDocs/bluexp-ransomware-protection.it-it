@@ -14,6 +14,8 @@ summary: 'Se la protezione ransomware BlueXP  rileva un possibile attacco, vien
 [role="lead"]
 Quando la protezione ransomware BlueXP rileva un possibile attacco, mostra un avviso nella Dashboard e nell'area Notifiche. Il servizio esegue immediatamente uno snapshot. Esamina il potenziale rischio nella scheda *Avvisi* della protezione ransomware BlueXP.
 
+Se la BlueXP ransomware protection rileva un possibile attacco, viene visualizzata una notifica nelle Notifiche BlueXP e viene inviata un'e-mail all'indirizzo email configurato, che segnala un potenziale attacco ransomware. Il servizio avvia immediatamente anche uno snapshot. A questo punto, dovresti valutare il rischio potenziale nella scheda *Avvisi* della protezione dal ransomware di BlueXP.
+
 Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.
 
 
@@ -43,6 +45,9 @@ Un avviso è classificato come uno dei seguenti:
 
 
 
+
+NOTE: Per gli ambienti SAN, gli avvisi si basano solo sull'entropia elevata.
+
 Le prove si basano sulle informazioni fornite dalla protezione autonoma dal ransomware in ONTAP. Per ulteriori informazioni, fare riferimento a. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Panoramica della protezione ransomware autonoma"^].
 
 Un avviso può avere uno dei seguenti stati:
@@ -65,6 +70,9 @@ CAUTION: Dopo aver respinto un attacco, non è possibile modificarlo. Se elimini
 
 
 
+TIP: Se hai configurato un sistema di sicurezza e gestione degli eventi (SIEM) nella BlueXP ransomware protection nella pagina Impostazioni, il servizio invia i dettagli dell'avviso al tuo sistema SIEM.
+
+
 
 == Visualizza avvisi
 
@@ -81,7 +89,45 @@ Puoi accedere agli avvisi dalla dashboard per la protezione dal ransomware di Bl
 +
 image:screen-alerts.png["Pagina Avvisi"]
 
-. Continua:
+. Continua con una delle seguenti opzioni:
++
+** <<Rileva le attività pericolose e il comportamento anomalo degli utenti>>.
+** <<Contrassegna gli incidenti ransomware come pronti per il recovery (dopo la neutralizzazione degli incidenti)>>.
+** <<Elimina gli incidenti che non sono potenziali attacchi>>.
+
+
+
+
+
+
+== Rispondere a un'e-mail di avviso
+
+Quando la BlueXP ransomware protection rileva un potenziale attacco, invia una notifica via email agli utenti iscritti, in base alle preferenze di notifica impostate. L'email contiene informazioni sull'avviso, tra cui la gravità e le risorse interessate.
+
+Puoi ricevere notifiche via email per gli avvisi BlueXP ransomware protection . Questa funzionalità ti aiuta a rimanere informato sugli avvisi, sulla loro gravità e sulle risorse interessate.
+
+
+TIP: Per iscriversi alle notifiche e-mail, fare riferimento a  https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["Consente di impostare le notifiche e-mail"^] .
+
+. Nella BlueXP ransomware protection, vai alla pagina *Impostazioni*.
+. In *Notifiche*, individua le impostazioni delle notifiche e-mail.
+. Inserisci l'indirizzo email a cui desideri ricevere gli avvisi.
+. Salvare le modifiche.
+
+
+D'ora in poi riceverai notifiche via email quando verranno generati nuovi avvisi.
+
+*Ruolo BlueXP obbligatorio* Amministratore dell'organizzazione, amministratore di cartelle o progetti, amministratore della protezione da ransomware o ruolo di visualizzatore di ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
+
+.Fasi
+. Visualizza l'email.
+. Nell'e-mail, seleziona *Visualizza avviso* e accedi alla BlueXP ransomware protection.
++
+Viene visualizzata la pagina Avvisi.
+
+. Esaminare tutti gli incidenti su ciascun volume per ciascun avviso.
+. Per rivedere gli avvisi aggiuntivi, fare clic su *Alert* nella barra di navigazione in alto a sinistra.
+. Continua con una delle seguenti opzioni:
 +
 ** <<Rileva le attività pericolose e il comportamento anomalo degli utenti>>.
 ** <<Contrassegna gli incidenti ransomware come pronti per il recovery (dopo la neutralizzazione degli incidenti)>>.
@@ -127,6 +173,9 @@ Quando la protezione autonoma da ransomware attiva un avviso nella protezione ra
 * Velocità di ridenominazione prevista dei file rispetto alla velocità rilevata
 * File e directory interessati
 
+
+
+NOTE: Questi dettagli sono visualizzabili per i carichi di lavoro NAS. Per gli ambienti SAN, sono disponibili solo i dati sull'entropia.
 
 .Fasi
 . Dal menu di protezione dal ransomware BlueXP, seleziona *Avvisi*.

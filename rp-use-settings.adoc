@@ -12,7 +12,7 @@ summary: Puoi configurare diverse opzioni, tra cui una destinazione di backup, i
 
 
 [role="lead"]
-È possibile configurare le destinazioni di backup, abilitare il rilevamento delle minacce, eseguire un'analisi della prontezza degli attacchi, configurare il rilevamento dei carichi di lavoro o configurare la connessione alla sicurezza del carico di lavoro di Data Infrastructure Insights accedendo all'opzione *Impostazioni*.
+È possibile configurare destinazioni di backup, inviare dati a un sistema SIEM (sicurezza e gestione eventi) esterno, eseguire un'esercitazione di preparazione agli attacchi, configurare l'individuazione del carico di lavoro o configurare la connessione alla sicurezza del carico di lavoro Data Infrastructure Insights accedendo all'opzione *Impostazioni*.
 
 *Ruolo BlueXP obbligatorio* Ruolo di amministratore dell'organizzazione, amministratore di cartelle o progetti o amministratore della protezione anti-ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri i ruoli di accesso BlueXP per tutti i servizi"^] .
 
@@ -22,7 +22,7 @@ summary: Puoi configurare diverse opzioni, tra cui una destinazione di backup, i
 * Configurare il rilevamento del carico di lavoro.
 * Configurare la connessione alla sicurezza del carico di lavoro di Data Infrastructure Insights per vedere le informazioni utente sospette negli avvisi ransomware.
 * Aggiungere una destinazione di backup.
-* Attiva il rilevamento delle minacce e collega il tuo sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. L'attivazione del rilevamento delle minacce invia automaticamente i dati al SIEM per l'analisi delle minacce.
+* Collega il tuo sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. L'attivazione del rilevamento delle minacce invia automaticamente i dati al SIEM per l'analisi delle minacce.
 
 
 
@@ -315,7 +315,7 @@ image:screen-settings-backup-destinations-list2.png["Pagina destinazioni di back
 
 
 
-== Attivare il rilevamento delle minacce
+== Connettersi a un sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce
 
 Puoi inviare automaticamente i dati al tuo sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. Puoi selezionare AWS Security Hub, Microsoft Sentinel o Splunk Cloud come tuo SIEM.
 

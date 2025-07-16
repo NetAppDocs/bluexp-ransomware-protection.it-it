@@ -63,7 +63,7 @@ TIP: Seleziona la nota "i" per visualizzare suggerimenti su questi dati. Per aum
 
 
 
-** *Azioni consigliate*: per aumentare la protezione, rivedi ogni consiglio e seleziona *Rivedi e correggi*.
+** *Azioni consigliate*: per aumentare la protezione, rivedi ogni raccomandazione, quindi seleziona *Rivedi e correggi*.
 +
 Vedere link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Esaminare i suggerimenti di protezione sulla Dashboard"] O link:rp-use-protect.html["Proteggere i carichi di lavoro"] .
 
@@ -98,7 +98,7 @@ Ecco un esempio delle raccomandazioni che il servizio offre.
 Fare riferimento a. link:rp-use-protect.html["Proteggi i carichi di lavoro dagli attacchi ransomware"]. 
 
 
-| Connettersi a SEIM per la segnalazione delle minacce. | Inviare dati a un sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. | Immettere i dettagli del server SIEM/XDR per abilitare il rilevamento delle minacce. Fare riferimento alla link:rp-use-settings.html["Configurare le impostazioni di protezione"]. 
+| Connettersi a SIEM per la segnalazione delle minacce. | Inviare dati a un sistema di gestione degli eventi e della sicurezza (SIEM) per l'analisi e il rilevamento delle minacce. | Immettere i dettagli del server SIEM/XDR per abilitare il rilevamento delle minacce. Fare riferimento alla link:rp-use-settings.html["Configurare le impostazioni di protezione"]. 
 
 
 | Abilita una protezione coerente del carico di lavoro per applicazioni o VMware. | Questi workload non vengono gestiti dal software SnapCenter o dal plug-in SnapCenter per VMware vSphere. | Per farle gestire da SnapCenter, abilita una protezione coerente con il carico di lavoro.
@@ -134,7 +134,7 @@ Fare riferimento a. link:rp-use-alert.html["Rispondi a un avviso ransomware rile
 |===
 .Fasi
 . Dal menu di navigazione a sinistra di BlueXP, seleziona *protezione* > *protezione dal ransomware*.
-. Dal riquadro azioni consigliate, selezionare un suggerimento e selezionare *Rivedi e correggi*.
+. Dal riquadro Azioni consigliate, seleziona una raccomandazione, quindi seleziona *Rivedi e correggi*.
 . Per chiudere l'azione in un secondo momento, selezionare *Chiudi*.
 +
 Il suggerimento scompare dall'elenco delle attività e viene visualizzato nell'elenco delle attività respinte.
@@ -175,7 +175,7 @@ image:screen-dashboard2.png["Pagina del dashboard"]
 ** Dal menu di protezione dal ransomware di BlueXP, seleziona *Report*.
 
 
-. Se è stata selezionata l'opzione *rapporti*, selezionare uno dei file preconfigurati e selezionare *Download (CSV)* o *Download (JSON)*.
+. Se hai selezionato l'opzione *Report*, seleziona uno dei file preconfigurati, quindi seleziona *Scarica (CSV)* o *Scarica (JSON)*.
 
 
 

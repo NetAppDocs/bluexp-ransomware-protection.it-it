@@ -103,7 +103,7 @@ L'amministratore dello storage di sicurezza può ripristinare i dati a diversi l
 * Eseguire il ripristino da un datastore a livello di macchina virtuale.
 
 
-Il processo varia leggermente a seconda del tipo di carico di lavoro.
+Il processo varia a seconda del tipo di carico di lavoro.
 
 .Fasi
 . Dal menu di protezione dal ransomware BlueXP, seleziona *Recovery*.
@@ -115,6 +115,10 @@ Il processo varia leggermente a seconda del tipo di carico di lavoro.
 ** Tutti i volumi
 ** Per volume
 ** Per file: È possibile specificare una cartella o singoli file da ripristinare.
++
+
+IMPORTANT: Per i carichi di lavoro SAN, è possibile eseguire il ripristino solo per carico di lavoro.
+
 +
 
 TIP: È possibile selezionare fino a 100 file o una singola cartella.

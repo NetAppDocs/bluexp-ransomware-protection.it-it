@@ -83,9 +83,9 @@ link:rp-use-protect.html["Scopri la priorità o l'importanza del carico di lavor
 
 *Quali workload supporta la protezione ransomware BlueXP ?*
 
-La protezione ransomware di BlueXP  è in grado di identificare i seguenti workload: Oracle, MySQL, file share, VM e datastore VM.
+La BlueXP ransomware protection è in grado di identificare i seguenti carichi di lavoro: Oracle, MySQL, condivisioni di file, storage a blocchi, VM e datastore di VM.
 
-Inoltre, se il cliente utilizza SnapCenter o SnapCenter per VMware, tutti i workload supportati da questi prodotti sono anche identificati nella protezione dal ransomware BlueXP  e nella protezione dal ransomware BlueXP  possono proteggere e ripristinare i dati in modo coerente con il carico di lavoro.
+Inoltre, se si utilizza SnapCenter o SnapCenter per VMware, tutti i carichi di lavoro supportati da tali prodotti vengono identificati anche nella BlueXP ransomware protection , che può proteggerli e ripristinarli in modo coerente con il carico di lavoro.
 
 *Come si associano i dati a un carico di lavoro?*
 
