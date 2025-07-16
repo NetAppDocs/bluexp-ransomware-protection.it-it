@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: 'Se la protezione ransomware BlueXP  rileva un possibile attacco, viene visualizzato un avviso sulla dashboard per la protezione dal ransomware BlueXP , a indicare un potenziale attacco. Inoltre, il servizio avvia immediatamente l"acquisizione di una copia snapshot. A questo punto, dovresti esaminare il rischio potenziale nella scheda degli avvisi della protezione ransomware di BlueXP.' 
+summary: Se la protezione ransomware BlueXP  rileva un possibile attacco, viene visualizzato un avviso sulla dashboard per la protezione dal ransomware BlueXP , a indicare un potenziale attacco. A questo punto, dovresti esaminare il rischio potenziale nella scheda degli avvisi della protezione ransomware di BlueXP. 
 ---
 = Gestisci gli avvisi ransomware rilevati con la protezione ransomware BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Se la protezione ransomware BlueXP  rileva un possibile attacco, vien
 [role="lead"]
 Quando la protezione ransomware BlueXP rileva un possibile attacco, mostra un avviso nella Dashboard e nell'area Notifiche. Il servizio esegue immediatamente uno snapshot. Esamina il potenziale rischio nella scheda *Avvisi* della protezione ransomware BlueXP.
 
-Se la BlueXP ransomware protection rileva un possibile attacco, viene visualizzata una notifica nelle Notifiche BlueXP e viene inviata un'e-mail all'indirizzo email configurato, che segnala un potenziale attacco ransomware. Il servizio avvia immediatamente anche uno snapshot. A questo punto, dovresti valutare il rischio potenziale nella scheda *Avvisi* della protezione dal ransomware di BlueXP.
+Se la BlueXP ransomware protection rileva un possibile attacco, viene visualizzata una notifica nelle Notifiche BlueXP e viene inviata un'e-mail all'indirizzo configurato. L'e-mail include informazioni sulla gravità, sul carico di lavoro interessato e un link all'avviso nella scheda *Avvisi* della BlueXP ransomware protection .
 
 Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.
 
@@ -152,12 +152,12 @@ Esaminando la scheda Avvisi, è possibile identificare se vi sono attività dann
 Per abilitare la sicurezza del carico di lavoro nella protezione anti-ransomware di BlueXP , vai alla pagina *Impostazioni* e seleziona l'opzione *connessione di sicurezza del carico di lavoro*.
 
 +
-Per una panoramica sulla sicurezza del carico di lavoro di Data Infrastucture Insights, vedere https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Informazioni sulla sicurezza dei carichi di lavoro"^].
+Per una panoramica della sicurezza del carico di lavoro Data Infrastructure Insights , consultare  https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Informazioni sulla sicurezza dei carichi di lavoro"^] .
 
 
 
 
-TIP: Se non hai una licenza per la sicurezza dei workload dell'infrastruttura dati e non lo abiliti nella protezione dal ransomware di BlueXP , non vedrai le informazioni sui comportamenti anomali degli utenti.
+TIP: Se non si dispone di una licenza per la sicurezza del carico di lavoro dell'infrastruttura dati e non la si abilita nella BlueXP ransomware protection, non verranno visualizzate le informazioni sul comportamento anomalo dell'utente.
 
 Quando si verifica un'attività dannosa, viene generato un avviso e viene creata una snapshot automatizzata.
 
@@ -262,7 +262,7 @@ Dopo aver contrassegnato l'avviso per il ripristino, l'avviso passa dalla scheda
 
 Dopo aver esaminato gli incidenti, è necessario determinare se si tratta di potenziali attacchi. Se la condizione precedente non viene rispettata, possono essere licenziati.
 
-Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati. Se si ignora l'avviso, il servizio apprenderà questo comportamento e lo assocerà alle normali operazioni, senza più avviare un avviso per tale comportamento.
+Puoi liquidare i falsi positivi o decidere di recuperare immediatamente i tuoi dati. Se si ignora l'avviso, il servizio apprende questo comportamento, lo associa alle normali operazioni e non avvia più un avviso per tale comportamento.
 
 Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta a un potenziale attacco ransomware verranno eliminate definitivamente.
 
