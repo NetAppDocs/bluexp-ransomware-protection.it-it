@@ -321,6 +321,30 @@ Puoi inviare automaticamente i dati al tuo sistema di gestione degli eventi e de
 
 Prima di abilitare SIEM nella protezione dal ransomware BlueXP , devi configurare il tuo sistema SIEM.
 
+.Informazioni sui dati dell'evento inviati a un SIEM
+La BlueXP ransomware protection può inviare i seguenti dati sugli eventi al tuo sistema SIEM:
+
+* *contesto*:
++
+** *os*: Questa è una costante con il valore di ONTAP.
+** *os_version*: la versione di ONTAP in esecuzione nell'ambiente di lavoro.
+** *connector_id*: ID del connettore che gestisce l'ambiente di lavoro.
+** *cluster_id*: ID del cluster segnalato da ONTAP per l'ambiente di lavoro.
+** *svm_name*: Nome dell'SVM in cui è stato trovato l'avviso.
+** *volume_name*: Nome del volume su cui si trova l'avviso.
+** *volume_id*: ID del volume segnalato da ONTAP per l'ambiente di lavoro.
+
+
+* *incidente*:
++
+** *incident_id*: ID incidente generato dalla BlueXP ransomware protection per il volume sottoposto ad attacco nel servizio.
+** *alert_id*: ID generato dalla BlueXP ransomware protection per il carico di lavoro.
+** *gravità*: Uno dei seguenti livelli di allerta: "CRITICO", "ALTO", "MEDIO", "BASSO".
+** *descrizione*: Dettagli sull'avviso rilevato, ad esempio "Un potenziale attacco ransomware rilevato sul carico di lavoro arp_learning_mode_test_2630"
+
+
+
+
 
 
 === Configurare AWS Security Hub per il rilevamento delle minacce
